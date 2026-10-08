@@ -588,7 +588,8 @@ export class World {
       const narrow = W < 760;
       let tx = THREE.MathUtils.clamp(cx, r.w / 2 + (narrow ? 8 : 300), W - r.w / 2 - (narrow ? 8 : 20));
       let ty = above ? y0 - r.h / 2 - 22 : y1 + r.h / 2 + 18;
-      ty = THREE.MathUtils.clamp(ty, r.h / 2 + (narrow ? 130 : 80), H - r.h / 2 - 40);
+      const floor = this.hudBoxes.reduce((m, b) => (b.y0 > H * 0.7 && b.x0 < tx + r.w / 2 && b.x1 > tx - r.w / 2 ? Math.min(m, b.y0) : m), H - 34);
+      ty = THREE.MathUtils.clamp(ty, r.h / 2 + (narrow ? 130 : 80), floor - r.h / 2 - 6);
       // keep chronicle titles from stacking on one another
       for (let guard = 0; guard < 4; guard++) {
         const hit = targets.find((b) => tx - r.w / 2 < b.x1 && tx + r.w / 2 > b.x0 && ty - r.h / 2 < b.y1 && ty + r.h / 2 > b.y0);
@@ -613,7 +614,7 @@ export class World {
   /** Screen areas covered by HUD panels; soul labels there would sit under glass. */
   private measureHud() {
     const out: { x0: number; y0: number; x1: number; y1: number }[] = [];
-    for (const sel of ['.brand', '#layouts', '.tools', '#filters', '#dossier.open', '.hud-bottom', '#caption.show']) {
+    for (const sel of ['.brand', '#layouts', '.tools', '#filters', '#dossier.open', '.hud-bottom', '#caption.show', '#hint.show']) {
       const el = document.querySelector(sel);
       if (!el) continue;
       const r = el.getBoundingClientRect();
