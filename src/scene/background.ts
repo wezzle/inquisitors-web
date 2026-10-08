@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { NOISE, NOISE_LITE } from './glsl';
+import { PIXEL_RATIO } from './stage';
 
 /** The Immaterium backdrop: nebula shell, star field, drifting motes and a slow astrolabe of gilded rings. */
 export class Backdrop {
@@ -83,7 +84,7 @@ export class Backdrop {
       depthWrite: false,
       blending: THREE.AdditiveBlending,
       fog: false,
-      uniforms: { uTime: { value: 0 }, uPixel: { value: Math.min(window.devicePixelRatio, 2) } },
+      uniforms: { uTime: { value: 0 }, uPixel: PIXEL_RATIO },
       vertexShader: /* glsl */ `
         attribute float aSize; attribute float aSeed; attribute vec3 aColor;
         uniform float uTime; uniform float uPixel;
@@ -127,7 +128,7 @@ export class Backdrop {
       transparent: true,
       depthWrite: false,
       blending: THREE.AdditiveBlending,
-      uniforms: { uTime: { value: 0 }, uPixel: { value: Math.min(window.devicePixelRatio, 2) } },
+      uniforms: { uTime: { value: 0 }, uPixel: PIXEL_RATIO },
       vertexShader: /* glsl */ `
         attribute float aSeed; uniform float uTime; uniform float uPixel;
         varying float vA;

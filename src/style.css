@@ -1592,3 +1592,36 @@ body.pre .regions {
 .d-world:hover {
   background: rgba(201, 162, 75, 0.07);
 }
+.d-appear .b[data-book] {
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+.d-appear .b[data-book]:hover {
+  filter: brightness(1.5);
+}
+.d-link {
+  margin-top: 6px;
+  padding: 0;
+  background: none;
+  border: 0;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.d-link:hover {
+  color: var(--gold-hi);
+}
+
+.d-head-strip {
+  white-space: nowrap;
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
+}
+.d-head-strip .ser b {
+  font-weight: normal;
+}
+.intro.gone {
+  pointer-events: none;
+}

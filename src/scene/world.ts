@@ -62,8 +62,9 @@ export class World {
   }
   onThread: (t: Thread | null, from: string, to: string) => void = () => {};
   thread: Thread | null = null;
+  private threadCaption = false;
   private seal: THREE.Sprite;
-  private sealTex = new Map<string, THREE.Texture>();
+  private sealTex = new Map<string, Promise<THREE.Texture>>();
   private sealAlpha = 0;
   private raycaster = new THREE.Raycaster();
   private pointer = new THREE.Vector2();
@@ -104,6 +105,7 @@ export class World {
       this.touch();
     });
     dom.addEventListener('pointerup', (e) => this.pointerUp(e));
+    dom.addEventListener('pointerleave', () => this.clearHover());
     dom.addEventListener('wheel', () => this.touch(), { passive: true });
     dom.addEventListener('dblclick', (e) => {
       if (!this.pick(e as PointerEvent)) this.overview();
@@ -131,7 +133,21 @@ export class World {
     this.stage.controls.autoRotate = false;
   }
 
+  clearHover() {
+    if (this.hoveredLoc) {
+      this.hoveredLoc = null;
+      this.worlds.setHover(null);
+    }
+    if (this.hovered) {
+      this.hovered = null;
+      this.refresh();
+    }
+    this.stage.labels.domElement.style.cursor = '';
+    this.onHover(null);
+  }
+
   setLayout(id: LayoutId, fly = true) {
+    this.clearHover();
     if (id === this.layout && fly) {
       this.overview();
       return;
@@ -187,54 +203,106 @@ export class World {
   applyFilters() {
     for (const n of this.nodes.values()) n.vis = this.passes(n.c.id) ? 1 : 0;
     if (this.selected && !this.passes(this.selected)) this.select(null);
-    if (this.thread && !this.thread.ids.every((id) => this.passes(id))) this.clearThread();
+    if (
+      this.thread &&
+      (!this.thread.ids.every((id) => this.passes(id)) || !this.thread.bonds.every((i) => this.filters.bonds.has(bonds[i].kind)))
+    )
+      this.clearThread();
     const read = books.filter((b) => b.order <= spoilers.progress && this.filters.books.has(b.id));
     this.decor.activeBooks = read.length === books.length ? null : new Set(read.map((b) => b.id));
     this.decor.progress = spoilers.progress;
     this.refresh();
   }
 
+  private searchQuery: Set<string> | null = null;
+  private cast: Set<string> | null = null;
+
+  /** Search results to spotlight (null = none). */
   setQuery(ids: Set<string> | null) {
-    this.query = ids;
+    this.searchQuery = ids;
+    this.combineQuery();
+  }
+
+  /** The cast of an open volume card, spotlighted alongside any search. */
+  setCast(ids: Set<string> | null) {
+    this.cast = ids;
+    this.combineQuery();
+  }
+
+  private combineQuery() {
+    const a = this.searchQuery;
+    const b = this.cast;
+    this.query = a && b ? new Set([...a].filter((x) => b.has(x))) : (a ?? b);
     this.refresh();
   }
 
   async select(id: string | null, fly = true) {
+    if (id && !spoilers.isMet(charById.get(id)!)) return;
     if (id === this.selected && id) {
       if (fly) this.focus(id);
       return;
     }
     this.selected = id;
-    if (this.thread) {
+    if (this.thread || this.threadCaption) {
       this.thread = null;
+      this.threadCaption = false;
       this.onThread(null, '', '');
     }
     this.refresh();
     this.onSelect(id);
-    this.backdrop.turmoil = id && charById.get(id)!.faction === 'daemon' ? 1 : 0;
+    const sc = id ? charById.get(id)! : null;
+    this.backdrop.turmoil = sc?.psy === 'daemon' ? 1 : 0;
+    this.stage.desat = sc?.psy === 'blank' ? 0.75 : 0;
+    this.stage.taint = sc?.psy === 'daemon' ? 0.55 : 0;
     if (!id) return;
     if (fly) this.focus(id);
-    if (!this.sealTex.has(id)) {
-      const cv = await drawSeal(charById.get(id)!);
-      const tex = new THREE.CanvasTexture(cv);
-      tex.colorSpace = THREE.SRGBColorSpace;
-      this.sealTex.set(id, tex);
+    let pending = this.sealTex.get(id);
+    if (!pending) {
+      this.seal.material.map = null;
+      pending = drawSeal(charById.get(id)!).then((cv) => {
+        const tex = new THREE.CanvasTexture(cv);
+        tex.colorSpace = THREE.SRGBColorSpace;
+        return tex;
+      });
+      this.sealTex.set(id, pending);
+      // keep a small LRU of seal textures on the GPU
+      while (this.sealTex.size > 12) {
+        const [oldId, old] = this.sealTex.entries().next().value!;
+        this.sealTex.delete(oldId);
+        void old.then((t) => {
+          if (this.seal.material.map !== t) t.dispose();
+        });
+      }
+    } else {
+      // refresh LRU order
+      this.sealTex.delete(id);
+      this.sealTex.set(id, pending);
     }
+    const tex = await pending;
     if (this.selected === id) {
-      this.seal.material.map = this.sealTex.get(id)!;
+      this.seal.material.map = tex;
       this.seal.material.needsUpdate = true;
     }
   }
 
   focus(id: string, at?: THREE.Vector3, dur = 1.6) {
     const n = this.nodes.get(id)!;
-    const target = (at ?? n.position).clone();
+    const target = (at ?? layouts()[this.layout].get(id)!).clone();
     const cam = this.stage.camera.position;
     const dir = cam.clone().sub(this.stage.controls.target).normalize();
     if (dir.lengthSq() < 0.5) dir.set(0, 0.3, 1).normalize();
     dir.y = Math.max(dir.y, 0.18);
     dir.normalize();
-    const dist = 150 + n.radius * 8 + Math.min(bondsOf.get(id)!.length, 14) * 7;
+    // frame the soul's visible associates (using their destination positions if mid-transition)
+    const lay = layouts()[this.layout];
+    const home = at ?? lay.get(id)!;
+    let reach = 0;
+    for (const b of bondsOf.get(id)!) {
+      const o = other(b, id);
+      if (!this.passes(o) || !this.filters.bonds.has(b.kind)) continue;
+      reach = Math.max(reach, lay.get(o)!.distanceTo(home));
+    }
+    const dist = THREE.MathUtils.clamp(reach * 1.9, 150 + n.radius * 8, 680);
     this.stage.flyTo(this.fitted(target.clone().add(dir.multiplyScalar(dist)), target), target, dur);
   }
 
@@ -356,7 +424,7 @@ export class World {
     if (loc) return this.onLocation(loc);
     if (id && e.shiftKey && this.selected && id !== this.selected) this.traceTo(id);
     else if (id) this.select(id);
-    else if (this.thread) this.clearThread();
+    else if (this.thread || this.threadCaption) this.clearThread();
     else if (this.selected) this.select(null);
   }
 
@@ -393,6 +461,7 @@ export class World {
     const from = this.selected!;
     const t = this.findThread(from, id);
     this.thread = t;
+    this.threadCaption = true;
     this.onThread(t, from, id);
     this.refresh();
     if (!t) return;
@@ -407,8 +476,9 @@ export class World {
   }
 
   clearThread() {
-    if (!this.thread) return;
+    if (!this.thread && !this.threadCaption) return;
     this.thread = null;
+    this.threadCaption = false;
     this.onThread(null, '', '');
     this.refresh();
   }
@@ -461,6 +531,7 @@ export class World {
   });
   private regionBoxes: { x0: number; y0: number; x1: number; y1: number }[] = [];
   private settled = 0;
+  private regionFocus = 1;
 
   /**
    * Chronicle titles for the Web layout. Each title hugs the screen-space bounding box of the souls
@@ -471,8 +542,11 @@ export class World {
     let moving = 0;
     for (const c of cand) if (c.n.moving) moving++;
     this.settled += ((moving > 3 ? 0 : 1) - this.settled) * 0.05;
-    const f = this.decor.fade('web') * this.settled;
+    // titles step aside entirely while a soul or thread holds the focus
+    this.regionFocus += ((this.selected || this.thread ? 0 : 1) - this.regionFocus) * 0.08;
+    const f = this.decor.fade('web') * this.settled * this.regionFocus;
     this.regionBoxes.length = 0;
+    const targets: { x0: number; y0: number; x1: number; y1: number }[] = [];
     for (const r of this.regions) {
       let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity, cx = 0, cy = 0, k = 0;
       for (const c of cand) {
@@ -499,10 +573,13 @@ export class World {
       ty = THREE.MathUtils.clamp(ty, r.h / 2 + (narrow ? 130 : 80), H - r.h / 2 - 40);
       // keep chronicle titles from stacking on one another
       for (let guard = 0; guard < 4; guard++) {
-        const hit = this.regionBoxes.find((b) => tx - r.w / 2 < b.x1 && tx + r.w / 2 > b.x0 && ty - r.h / 2 < b.y1 && ty + r.h / 2 > b.y0);
+        const hit = targets.find((b) => tx - r.w / 2 < b.x1 && tx + r.w / 2 > b.x0 && ty - r.h / 2 < b.y1 && ty + r.h / 2 > b.y0);
         if (!hit) break;
-        ty = above ? hit.y1 + r.h / 2 + 4 : hit.y0 - r.h / 2 - 4;
+        // slide sideways away from the title already there
+        tx = tx < (hit.x0 + hit.x1) / 2 ? hit.x0 - r.w / 2 - 12 : hit.x1 + r.w / 2 + 12;
+        tx = THREE.MathUtils.clamp(tx, r.w / 2 + (narrow ? 8 : 300), W - r.w / 2 - (narrow ? 8 : 20));
       }
+      targets.push({ x0: tx - r.w / 2, y0: ty - r.h / 2, x1: tx + r.w / 2, y1: ty + r.h / 2 });
       if (Number.isNaN(r.x)) { r.x = tx; r.y = ty; }
       r.x += (tx - r.x) * 0.08;
       r.y += (ty - r.y) * 0.08;
@@ -512,12 +589,13 @@ export class World {
     }
   }
   private hudBoxes: { x0: number; y0: number; x1: number; y1: number }[] = [];
+  private free = { x0: 0, y0: 0, x1: window.innerWidth, y1: window.innerHeight };
   private frame = 0;
 
   /** Screen areas covered by HUD panels; soul labels there would sit under glass. */
   private measureHud() {
     const out: { x0: number; y0: number; x1: number; y1: number }[] = [];
-    for (const sel of ['.brand-title', '#layouts', '.tools', '#filters', '#dossier.open', '.hud-bottom', '#caption.show']) {
+    for (const sel of ['.brand', '#layouts', '.tools', '#filters', '#dossier.open', '.hud-bottom', '#caption.show']) {
       const el = document.querySelector(sel);
       if (!el) continue;
       const r = el.getBoundingClientRect();
@@ -545,7 +623,7 @@ export class World {
     const W = window.innerWidth;
     const H = window.innerHeight;
     const v = new THREE.Vector3();
-    const cand: { n: SoulNode; o: number; pri: number; x: number; y: number }[] = [];
+    const cand: { n: SoulNode; o: number; pri: number; x: number; y: number; yb: number }[] = [];
     for (const n of this.nodes.values()) {
       let o = 0;
       let pri: number = n.c.importance;
@@ -569,22 +647,45 @@ export class World {
       v.y += n.radius + 4;
       v.project(cam);
       if (v.z > 1) o = 0;
-      cand.push({ n, o, pri, x: ((v.x + 1) / 2) * W, y: ((1 - v.y) / 2) * H });
+      const x = ((v.x + 1) / 2) * W;
+      const y = ((1 - v.y) / 2) * H;
+      v.copy(n.position);
+      v.y -= n.radius + 4;
+      v.project(cam);
+      cand.push({ n, o, pri, x, y, yb: ((1 - v.y) / 2) * H });
     }
     // greedy declutter: higher-priority labels claim their screen rectangle first
     this.placeRegionTitles(cand, W, H);
     cand.sort((a, b) => b.pri - a.pri);
     this.labelBoxes.length = 0;
-    if (this.frame++ % 20 === 0) this.hudBoxes = this.measureHud();
+    if (this.frame++ % 20 === 0) {
+      this.hudBoxes = this.measureHud();
+      this.free = this.stage.freeArea();
+    }
     this.labelBoxes.push(...this.hudBoxes, ...this.regionBoxes, ...this.decor.labelBoxes(cam, W, H));
     for (const c of cand) {
       if (c.o > 0.02) {
         const w = this.labelWidth(c.n);
-        const h = (c.n.c.importance >= 4 || c.n.c.id === sel ? 30 : 16) + (c.n.labelEl.classList.contains('has-rel') ? 12 : 0);
-        const box = { x0: c.x - w / 2, x1: c.x + w / 2, y0: c.y - h, y1: c.y };
-        const clash = this.labelBoxes.some((b) => box.x0 < b.x1 && box.x1 > b.x0 && box.y0 < b.y1 && box.y1 > b.y0);
-        if (clash && c.pri < 100) c.o = 0;
-        else this.labelBoxes.push(box);
+        const h = (c.n.c.importance >= 4 || c.n.c.id === sel ? 36 : 18) + (c.n.labelEl.classList.contains('has-rel') ? 13 : 0);
+        // nudge sideways so the label stays inside the screen area the panels leave free
+        const lo = Math.max(this.free.x0, 290) + 14;
+        const hi = this.free.x1 - 14;
+        let dx = 0;
+        if (c.x - w / 2 < lo) dx = lo - (c.x - w / 2);
+        else if (c.x + w / 2 > hi) dx = hi - (c.x + w / 2);
+        if (Math.abs(dx) > w * 0.75 && c.pri < 100) dx = 0;
+        const above = { x0: c.x + dx - w / 2 - 4, x1: c.x + dx + w / 2 + 4, y0: c.y - h - 2, y1: c.y + 2 };
+        const below = { x0: above.x0, x1: above.x1, y0: c.yb - 2, y1: c.yb + h + 2 };
+        c.n.setLabelShift(dx);
+        const free = (box: typeof above) => !this.labelBoxes.some((b) => box.x0 < b.x1 && box.x1 > b.x0 && box.y0 < b.y1 && box.y1 > b.y0);
+        // try the side used last time first, so labels don't flicker between placements
+        const order = c.n.labelBelow ? [below, above] : [above, below];
+        const spot = c.pri >= 100 ? order[0] : order.find(free);
+        if (!spot) c.o = 0;
+        else {
+          this.labelBoxes.push(spot);
+          c.n.setLabelBelow(spot === below);
+        }
       }
       const n = c.n;
       const q = Math.round(c.o * 20) / 20;

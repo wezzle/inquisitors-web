@@ -7,7 +7,10 @@ import type { Character } from '../data/types';
  */
 export const spoilers = {
   all: false,
+  /** The effective bookmark (may be temporarily overridden by the saga replay). */
   progress: books.length - 1,
+  /** The reader's own bookmark, the one persisted. */
+  bookmark: books.length - 1,
   listeners: [] as (() => void)[],
 
   isSpoiled(c: Character) {
@@ -22,7 +25,8 @@ export const spoilers = {
 
   set(patch: Partial<{ all: boolean; progress: number }>, persist = true) {
     Object.assign(this, patch);
-    if (persist) localStorage.setItem('iw-spoilers', JSON.stringify({ all: this.all, progress: this.progress }));
+    if (persist && patch.progress !== undefined) this.bookmark = patch.progress;
+    if (persist) localStorage.setItem('iw-spoilers', JSON.stringify({ all: this.all, progress: this.bookmark }));
     this.listeners.forEach((f) => f());
   },
 
@@ -30,7 +34,7 @@ export const spoilers = {
     try {
       const s = JSON.parse(localStorage.getItem('iw-spoilers') ?? 'null');
       if (s && typeof s.all === 'boolean') this.all = s.all;
-      if (s && typeof s.progress === 'number' && s.progress >= 0 && s.progress < books.length) this.progress = s.progress;
+      if (s && typeof s.progress === 'number' && s.progress >= 0 && s.progress < books.length) this.progress = this.bookmark = s.progress;
     } catch {
       /* first visit */
     }

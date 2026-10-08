@@ -33,7 +33,6 @@ const dossier = new Dossier();
 const choir = new Choir();
 const tooltip = mountTooltip();
 const tooltipLoc = mountLocationTooltip();
-let bookQuery = false;
 const filters = mountFilters(world);
 mountTicker();
 
@@ -68,10 +67,7 @@ function select(id: string | null) {
   void world.select(id);
 }
 world.onSelect = (id) => {
-  if (bookQuery) {
-    bookQuery = false;
-    world.setQuery(null);
-  }
+  if (id) world.setCast(null);
   if (id) {
     void dossier.show(id);
     const c = charById.get(id)!;
@@ -95,6 +91,7 @@ world.onHoverLoc = (id, ev) => {
 world.onLocation = (id) => {
   tour.stop();
   tooltip(null);
+  world.setCast(null);
   if (world.selected) select(null);
   dossier.showLocation(id);
   choir.bell();
@@ -141,16 +138,10 @@ world.onBook = (id) => {
   if (world.selected) select(null);
   dossier.showBook(id);
   // light up the volume's cast in the scene while its card is open
-  world.setQuery(new Set(characters.filter((c) => c.books.includes(id)).map((c) => c.id)));
-  bookQuery = true;
+  world.setCast(new Set(characters.filter((c) => c.books.includes(id)).map((c) => c.id)));
   choir.bell();
 };
-dossier.onHide = () => {
-  if (bookQuery) {
-    bookQuery = false;
-    world.setQuery(null);
-  }
-};
+dossier.onHide = () => world.setCast(null);
 const search = mountSearch(world, (id) => {
   tour.stop();
   select(id);
@@ -193,12 +184,16 @@ const tour = new Tour(world, (id) => select(id), [
 ]);
 const tourBtn = $('btn-tour');
 tour.onStop = () => tourBtn.classList.remove('on');
+tour.onLayout = (id) => {
+  layoutButtons.forEach((b) => b.classList.toggle('on', b.dataset.layout === id));
+  world.setLayout(id, false);
+};
 tourBtn.addEventListener('click', () => {
   if (tour.active) tour.stop();
   else {
     saga.stop();
-    tourBtn.classList.add('on');
     tour.start();
+    tourBtn.classList.toggle('on', tour.active);
   }
 });
 stage.labels.domElement.addEventListener('pointerdown', () => tour.stop());
@@ -225,13 +220,15 @@ sagaBtn.addEventListener('click', () => {
 });
 stage.labels.domElement.addEventListener('pointerdown', () => saga.stop());
 world.onRegion = (s) => filters.isolateSeries(s);
+// moving the bookmark by hand ends any replay first (capture phase runs before the slider's own handler)
+document.addEventListener('input', (e) => (e.target as HTMLElement).id === 'f-progress' && saga.stop(false), true);
 
 // ---------------------------------------------------------------- toggles
 const spoilerBtn = $('btn-spoiler');
 spoilers.onChange(() => {
   spoilerBtn.classList.toggle('on', spoilers.all);
   world.applySpoilers();
-  if (world.selected) void dossier.show(world.selected);
+  dossier.refresh();
 });
 spoilerBtn.addEventListener('click', () => spoilers.set({ all: !spoilers.all }));
 spoilerBtn.classList.toggle('on', spoilers.all);
@@ -292,7 +289,7 @@ window.addEventListener('keydown', (e) => {
     case 'Escape':
       saga.stop();
       tour.stop();
-      if (world.thread) return world.clearThread();
+      if (world.thread || document.getElementById('caption')!.classList.contains('thread')) return world.clearThread();
       help.classList.remove('open');
       return select(null);
     case 't':
@@ -328,7 +325,10 @@ const FEED = [
   '+++ THOUGHT FOR THE DAY: INNOCENCE PROVES NOTHING +++',
 ];
 
+let started = false;
 function begin(sound: boolean) {
+  if (started) return;
+  started = true;
   const intro = $('intro');
   intro.classList.add('gone');
   document.body.classList.remove('pre');
@@ -336,10 +336,14 @@ function begin(sound: boolean) {
   stage.camera.position.set(0, 900, 1600);
   stage.controls.target.set(0, 0, 0);
   world.reveal();
-  stage.flyTo(world.fitted(new THREE.Vector3(40, 250, 600), new THREE.Vector3(0, -10, 0)), new THREE.Vector3(0, -10, 0), 4.2, () => {
-    const hash = decodeURIComponent(location.hash.slice(1));
-    if (hash && charById.has(hash)) select(hash);
-  });
+  // a deep link (#id) opens once the swoop lands, or after 4.4 s if the user interrupts it
+  let hash: string | null = decodeURIComponent(location.hash.slice(1));
+  const openHash = () => {
+    if (hash && charById.has(hash) && !world.selected) select(hash);
+    hash = null;
+  };
+  stage.flyTo(world.fitted(new THREE.Vector3(40, 250, 600), new THREE.Vector3(0, -10, 0)), new THREE.Vector3(0, -10, 0), 4.2, openHash);
+  setTimeout(openHash, 4400);
   stage.warp = 0.8;
 }
 

@@ -53,6 +53,15 @@ export class Dossier {
     this.el = document.getElementById('dossier')!;
   }
 
+  /** Re-render whatever card is open (after spoiler settings change). */
+  refresh() {
+    const cur = this.current;
+    if (!cur) return;
+    if (cur.startsWith('book:')) this.showBook(cur.slice(5));
+    else if (cur.startsWith('loc:')) this.showLocation(cur.slice(4));
+    else void this.show(cur);
+  }
+
   get isOpen() {
     return this.current !== null;
   }
@@ -162,7 +171,7 @@ export class Dossier {
         if (b.order > spoilers.progress)
           return `<div class="b unread ${b.kind}" style="--sc:${SERIES[b.series].color}" title="${esc(b.title)} — not yet read">?</div>`;
         const on = c.books.includes(b.id);
-        return `<div class="b ${on ? 'on' : ''} ${b.kind}" style="--sc:${SERIES[b.series].color}" title="${esc(b.title)} (${b.year})${on ? '' : ' — absent'}">${b.abbr}</div>`;
+        return `<div class="b ${on ? 'on' : ''} ${b.kind}" data-book="${b.id}" style="--sc:${SERIES[b.series].color}" title="${esc(b.title)} (${b.year})${on ? '' : ' — absent'} · click for the volume's card">${b.abbr}</div>`;
       })
       .join('');
     // arcs from chronicles the reader hasn't reached yet stay sealed
@@ -201,7 +210,7 @@ export class Dossier {
     this.el.innerHTML = `
       ${PURITY_SEAL}
       <button class="close" title="Release (Esc)">×</button>
-      <div class="d-head-strip"><span>+++ Dossier ${catalogue(c)} +++</span><span>${series.map((s) => SERIES[s].label).join(' · ')}</span></div>
+      <div class="d-head-strip"><span>+++ Dossier ${catalogue(c)} +++</span><span class="ser">${series.map((s) => `<b style="color:${SERIES[s].color}">${SERIES[s].label}</b>`).join(' · ')}</span></div>
       <div class="scroll">
         <div class="d-hero">
           <div class="d-seal"></div>
@@ -209,6 +218,7 @@ export class Dossier {
             <h2 class="d-name">${esc(c.name)}</h2>
             <div class="d-title">${esc(c.title)}</div>
             ${c.aliases.length ? `<div class="d-alias">Also known as ${c.aliases.map(esc).join(', ')}</div>` : ''}
+            <button class="d-link" title="Copy a link to this dossier">⧉ copy link</button>
           </div>
         </div>
         ${c.epithet ? `<div class="d-epithet">${esc(c.epithet)}</div>` : ''}
@@ -242,6 +252,18 @@ export class Dossier {
       s.classList.toggle('veiled', veiled);
       s.title = veiled ? 'Veiled: this soul\'s story continues past your reading. Click to unveil.' : '';
       s.addEventListener('click', () => s.classList.toggle('unveiled'));
+    });
+    this.el.querySelectorAll<HTMLElement>('.d-appear [data-book]').forEach((b) => b.addEventListener('click', () => this.onBook(b.dataset.book!)));
+    const link = this.el.querySelector<HTMLButtonElement>('.d-link')!;
+    link.addEventListener('click', async () => {
+      const url = `${location.origin}${location.pathname}#${id}`;
+      try {
+        await navigator.clipboard.writeText(url);
+        link.textContent = '✓ copied';
+      } catch {
+        link.textContent = url;
+      }
+      setTimeout(() => (link.textContent = '⧉ link'), 1800);
     });
     this.el.querySelectorAll<HTMLButtonElement>('[data-arc]').forEach((b) =>
       b.addEventListener('click', () => {

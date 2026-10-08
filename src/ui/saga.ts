@@ -14,6 +14,7 @@ export class Saga {
   private i = 0;
   private saved = 0;
   private timer = 0;
+  private captionTimer = 0;
   private caption = document.getElementById('caption')!;
   onStop: () => void = () => {};
 
@@ -24,18 +25,20 @@ export class Saga {
 
   start() {
     this.active = true;
-    this.saved = spoilers.progress;
+    this.saved = spoilers.bookmark;
     this.i = 0;
     this.enterChronicle();
     this.step();
   }
 
-  stop() {
+  /** @param restore put the reader's own bookmark back (skip when they are setting a new one) */
+  stop(restore = true) {
     if (!this.active) return;
     this.active = false;
     clearTimeout(this.timer);
+    clearTimeout(this.captionTimer);
     this.caption.classList.remove('show', 'saga');
-    spoilers.set({ progress: this.saved });
+    if (restore) spoilers.set({ progress: spoilers.bookmark }, false);
     this.onStop();
   }
 
@@ -49,7 +52,8 @@ export class Saga {
     this.caption.classList.remove('show', 'thread');
     this.caption.classList.add('saga');
     this.caption.style.setProperty('--fc', SERIES[b.series].color);
-    window.setTimeout(() => {
+    clearTimeout(this.captionTimer);
+    this.captionTimer = window.setTimeout(() => {
       if (!this.active) return;
       this.caption.innerHTML = `<div class="step">+++ Volume ${b.order + 1} of ${books.length} · ${b.year} · ${SERIES[b.series].label} +++</div><div class="n">${b.title}</div><div class="e">${first}</div>`;
       this.caption.classList.add('show');

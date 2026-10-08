@@ -17,6 +17,8 @@ export class Tour {
   private caption = document.getElementById('caption')!;
   active = false;
   onStop: () => void = () => {};
+  onLayout: (id: LayoutId) => void = () => {};
+  private captionTimer = 0;
 
   constructor(
     private world: World,
@@ -35,7 +37,7 @@ export class Tour {
     if (!this.steps.length) return;
     this.active = true;
     this.i = -1;
-    if (this.world.layout !== 'web') this.world.setLayout('web', false);
+    if (this.world.layout !== 'web') this.onLayout('web');
     this.next();
   }
 
@@ -43,6 +45,7 @@ export class Tour {
     if (!this.active) return;
     this.active = false;
     clearTimeout(this.timer);
+    clearTimeout(this.captionTimer);
     this.caption.classList.remove('show');
     this.onStop();
   }
@@ -55,7 +58,8 @@ export class Tour {
     this.select(step.id);
     this.caption.style.setProperty('--fc', FACTIONS[c.faction].color);
     this.caption.classList.remove('show', 'thread');
-    setTimeout(() => {
+    clearTimeout(this.captionTimer);
+    this.captionTimer = window.setTimeout(() => {
       if (!this.active) return;
       this.caption.innerHTML = `<div class="step">${String(this.i + 1).padStart(2, '0')} / ${String(this.steps.length).padStart(2, '0')}</div><div class="n">${c.name}</div><div class="e">${c.epithet}</div>`;
       this.caption.classList.add('show');

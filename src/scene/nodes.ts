@@ -3,7 +3,7 @@ import { CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js';
 import { FACTIONS, STATUS } from '../data/theme';
 import type { Character } from '../data/types';
 import { NOISE } from './glsl';
-import { easeInOutCubic } from './stage';
+import { easeInOutCubic, PIXEL_RATIO } from './stage';
 
 function radialTexture(stops: [number, string][], size = 256) {
   const cv = document.createElement('canvas');
@@ -244,7 +244,7 @@ export class SoulNode {
             uMode: { value: psy },
             uColor: { value: new THREE.Color(psy === 1 ? '#9fc4ff' : '#ff5a8a') },
             uAlpha: { value: 1 },
-            uPixel: { value: Math.min(window.devicePixelRatio, 2) },
+            uPixel: PIXEL_RATIO,
           },
           vertexShader: sparkVertex,
           fragmentShader: sparkFragment,
@@ -270,6 +270,25 @@ export class SoulNode {
     this.label.position.set(0, this.radius + 4, 0);
     this.label.center.set(0.5, 1);
     this.group.add(this.label);
+  }
+
+  labelBelow = false;
+  private labelDx = 0;
+
+  /** Horizontal nudge in px (CSS translate composes with CSS2DRenderer's own transform). */
+  setLabelShift(dx: number) {
+    const r = Math.round(dx);
+    if (r === this.labelDx) return;
+    this.labelDx = r;
+    this.labelEl.style.translate = r ? `${r}px 0` : '';
+  }
+
+  /** Hang the label beneath the soul instead of above it (used to dodge collisions). */
+  setLabelBelow(below: boolean) {
+    if (below === this.labelBelow) return;
+    this.labelBelow = below;
+    this.label.position.y = below ? -(this.radius + 4) : this.radius + 4;
+    this.label.center.set(0.5, below ? 0 : 1);
   }
 
   /** Small role tag above the name, e.g. "Master" while a neighbour is selected. */
