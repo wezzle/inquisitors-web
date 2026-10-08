@@ -1,0 +1,1927 @@
+{
+  "characters": [
+    {
+      "id": "gideon-ravenor",
+      "name": "Gideon Ravenor",
+      "title": "Inquisitor, Ordo Xenos",
+      "aliases": [
+        "Talon",
+        "the Chair"
+      ],
+      "faction": "inquisition",
+      "books": [
+        "ravenor",
+        "ravenor-returned",
+        "ravenor-rogue",
+        "thorn-wishes-talon"
+      ],
+      "importance": 5,
+      "psy": "psyker",
+      "status": "alive",
+      "fate": "After banishing Slyte alongside Molotch and then killing Molotch, he surrenders himself to the Inquisition to face judgement for going rogue.",
+      "origin": "",
+      "summary": "Former interrogator of Gregor Eisenhorn, horrifically burned in the Thracian atrocity and confined to a life-supporting force chair, his psychic powers magnified by its psy-boosters. He investigates the flect trade on Eustis Majoris, uncovers the Cognitae Enuncia conspiracy, and hunts his nemesis Zygmunt Molotch across the Angelus sub-sector. He is also a celebrated philosopher-author.",
+      "traits": [
+        "crippled genius",
+        "powerful telepath",
+        "wares his agents",
+        "compassionate",
+        "obsessive hunter"
+      ],
+      "wargear": "Armoured anti-grav force chair with psy-boosters, voice synthesiser and paired psycannons; wraithbone amulets worn by his agents",
+      "epithet": "A burned mind that sees everything",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "mentor",
+          "note": "his former master"
+        },
+        {
+          "target": "carl-thonius",
+          "type": "mentor",
+          "note": "trains his interrogator"
+        },
+        {
+          "target": "zygmunt-molotch",
+          "type": "enemy",
+          "note": "decades-long nemesis"
+        },
+        {
+          "target": "patience-kys",
+          "type": "master",
+          "note": "his deadliest agent"
+        },
+        {
+          "target": "harlon-nayl",
+          "type": "master",
+          "note": "senior agent, inherited from Eisenhorn"
+        },
+        {
+          "target": "kara-swole",
+          "type": "master",
+          "note": "senior agent, inherited from Eisenhorn"
+        },
+        {
+          "target": "zael",
+          "type": "master",
+          "note": "takes in the boy psyker"
+        },
+        {
+          "target": "wystan-frauka",
+          "type": "master",
+          "note": "his blank"
+        },
+        {
+          "target": "slyte",
+          "type": "enemy",
+          "note": "banishes the daemon"
+        },
+        {
+          "target": "angharad-esw-sweydyr",
+          "type": "master",
+          "note": "pained by her resemblance to Arianhrod"
+        },
+        {
+          "target": "orfeo-culzean",
+          "type": "enemy",
+          "note": "refuses then accepts his uneasy truce"
+        }
+      ],
+      "sources": [
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://tvtropes.org/pmwiki/pmwiki.php/Literature/Ravenor",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor",
+        "https://spalanz.com/2021/03/20/ravenor-rogue/"
+      ]
+    },
+    {
+      "id": "harlon-nayl",
+      "name": "Harlon Nayl",
+      "title": "Senior agent, ex-bounty hunter",
+      "aliases": [],
+      "faction": "retinue",
+      "books": [
+        "ravenor",
+        "ravenor-returned",
+        "ravenor-rogue",
+        "thorn-wishes-talon"
+      ],
+      "importance": 4,
+      "psy": "none",
+      "status": "alive",
+      "fate": "Leaves Ravenor's service after Angharad's death, intending to return her sword to her people.",
+      "origin": "Loki",
+      "summary": "A former bounty hunter from Loki who once served Eisenhorn and is now one of Ravenor's longest-serving operatives. Over a century old but juvenat-preserved, he is muscle and gunman for the team. In Ravenor Rogue he begins a secret affair with the Carthaen Angharad, straining his bond with Ravenor.",
+      "traits": [
+        "veteran",
+        "heavily armed",
+        "loyal",
+        "stubborn",
+        "ex-bounty hunter"
+      ],
+      "wargear": "Hecuter 10 heavy pistol and a large personal arsenal",
+      "epithet": "The old hunter who refuses to die",
+      "relationships": [
+        {
+          "target": "gideon-ravenor",
+          "type": "servant",
+          "note": "long-serving agent"
+        },
+        {
+          "target": "angharad-esw-sweydyr",
+          "type": "love",
+          "note": "secret affair"
+        },
+        {
+          "target": "kara-swole",
+          "type": "ally",
+          "note": "old comrade and former lover"
+        },
+        {
+          "target": "lucius-worna",
+          "type": "rival",
+          "note": "old bounty-hunter acquaintance"
+        },
+        {
+          "target": "zael",
+          "type": "ally",
+          "note": "first brings the boy in"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "ally",
+          "note": "his former master"
+        }
+      ],
+      "sources": [
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor",
+        "http://ladyrhian.blogspot.com/2009/05/ravenor-rogue-by-dan-abnett.html",
+        "https://www.joumontfort.com/recent-reads/wh40k-thorn-wishes-talon"
+      ]
+    },
+    {
+      "id": "kara-swole",
+      "name": "Kara Swole",
+      "title": "Agent, ex-acrobat",
+      "aliases": [],
+      "faction": "retinue",
+      "books": [
+        "ravenor",
+        "ravenor-returned",
+        "ravenor-rogue",
+        "thorn-wishes-talon"
+      ],
+      "importance": 4,
+      "psy": "none",
+      "status": "alive",
+      "fate": "Survives but awaits Inquisitorial judgement for having concealed that Thonius was Slyte's host; Belknap leaves her.",
+      "origin": "Bonaventure",
+      "summary": "A former dancer and circus acrobat who once served Eisenhorn, now an agile infiltrator for Ravenor. A spacewalk in the first novel leaves her with terminal cancer, which Thonius secretly cures with Slyte's power; he then clouds her memory so she cannot reveal him. Her silence about the daemon costs her dearly at the trilogy's end.",
+      "traits": [
+        "acrobat",
+        "infiltrator",
+        "warm-hearted",
+        "growing faith",
+        "secret-keeper"
+      ],
+      "wargear": "Blades; skill as contortionist and acrobat",
+      "epithet": "The dancer who kept a daemon's secret",
+      "relationships": [
+        {
+          "target": "gideon-ravenor",
+          "type": "servant",
+          "note": "senior agent"
+        },
+        {
+          "target": "patrik-belknap",
+          "type": "love",
+          "note": "romance begun while he treats her"
+        },
+        {
+          "target": "carl-thonius",
+          "type": "bound",
+          "note": "cured by him, forced to keep his secret"
+        },
+        {
+          "target": "harlon-nayl",
+          "type": "ally",
+          "note": "like brother and sister"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "ally",
+          "note": "her former master"
+        }
+      ],
+      "sources": [
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://www.joumontfort.com/recent-reads/wh40k-ravenor-returned-part-2",
+        "https://www.joumontfort.com/recent-reads/wh40k-ravenor-rogue-part-2",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor"
+      ]
+    },
+    {
+      "id": "patience-kys",
+      "name": "Patience Kys",
+      "title": "Telekine assassin",
+      "aliases": [
+        "Patience"
+      ],
+      "faction": "retinue",
+      "books": [
+        "ravenor",
+        "ravenor-returned",
+        "ravenor-rogue",
+        "thorn-wishes-talon"
+      ],
+      "importance": 4,
+      "psy": "psyker",
+      "status": "alive",
+      "fate": "Remains loyal to Ravenor, waiting nearby while he stands trial.",
+      "origin": "Sameter",
+      "summary": "A telekine whose real name is a secret; she took the name Patience Kys from the Kindred Youth Scholam where she was raised before Ravenor rescued her. Cold, lethal and arguably the deadliest member of the team, she fights with telekinetically guided kineblades. She kills Madsen and Ahenobarb in the first book and finally ends the near-unkillable Lucius Worna.",
+      "traits": [
+        "telekinetic",
+        "cold-blooded",
+        "secret name",
+        "fiercely loyal",
+        "deadliest agent"
+      ],
+      "wargear": "Kineblades (handleless telekinetic blades), tight bodyglove",
+      "epithet": "Silent blades on invisible strings",
+      "relationships": [
+        {
+          "target": "gideon-ravenor",
+          "type": "servant",
+          "note": "devoted to him"
+        },
+        {
+          "target": "lucius-worna",
+          "type": "enemy",
+          "note": "kills him"
+        },
+        {
+          "target": "sholto-unwerth",
+          "type": "ally",
+          "note": "rescues him, grows fond of him"
+        },
+        {
+          "target": "zael",
+          "type": "enemy",
+          "note": "tries to kill him believing he is Slyte"
+        },
+        {
+          "target": "madsen",
+          "type": "enemy",
+          "note": "kills her"
+        }
+      ],
+      "sources": [
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor"
+      ]
+    },
+    {
+      "id": "carl-thonius",
+      "name": "Carl Thonius",
+      "title": "Interrogator",
+      "aliases": [
+        "Slyte (host)"
+      ],
+      "faction": "retinue",
+      "books": [
+        "ravenor",
+        "ravenor-returned",
+        "ravenor-rogue",
+        "thorn-wishes-talon"
+      ],
+      "importance": 4,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Slyte fully manifests through him on Gudrun, destroying his body and soul.",
+      "origin": "",
+      "summary": "Ravenor's foppish, fastidious interrogator and the team's cogitator expert. After his arm is severed and reattached on Flint he turns to flects, and one contains the daemon Slyte, which possesses him. Believing he can control its power for the Imperium, he hides it, manipulating Kara, Plyton and even Ravenor, until it consumes him.",
+      "traits": [
+        "dandy",
+        "hacker",
+        "tragic",
+        "possessed",
+        "arrogant"
+      ],
+      "wargear": "Hecuter 6 autopistol (gift from Will Tallowhand), folding personal cogitator; later a hand crowded with rings",
+      "epithet": "The dandy who opened the door",
+      "relationships": [
+        {
+          "target": "gideon-ravenor",
+          "type": "student",
+          "note": "his interrogator"
+        },
+        {
+          "target": "slyte",
+          "type": "bound",
+          "note": "host of the daemon"
+        },
+        {
+          "target": "kara-swole",
+          "type": "betrayer",
+          "note": "cures then mind-wipes her"
+        },
+        {
+          "target": "jader-trice",
+          "type": "enemy",
+          "note": "kills him through Slyte"
+        },
+        {
+          "target": "maud-plyton",
+          "type": "betrayer",
+          "note": "clouds her mind"
+        }
+      ],
+      "sources": [
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://www.joumontfort.com/recent-reads/wh40k-ravenor-returned-part-2",
+        "https://www.joumontfort.com/recent-reads/wh40k-ravenor-rogue-part-2",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor"
+      ]
+    },
+    {
+      "id": "zeph-mathuin",
+      "name": "Zeph Mathuin",
+      "title": "Agent, ex-bounty hunter",
+      "aliases": [],
+      "faction": "retinue",
+      "books": [
+        "ravenor",
+        "ravenor-returned",
+        "thorn-wishes-talon"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Killed by Culzean's Brass Thief while defending Ravenor's Petropolis hideout.",
+      "origin": "",
+      "summary": "A taciturn, dreadlocked former bounty hunter with red augmetic eyes and an augmetic arm that interfaces with his rotator cannon. Ravenor often wares him when he needs to appear in person. He is the first of the retinue to die during the trilogy.",
+      "traits": [
+        "quiet",
+        "cyborg",
+        "heavy weapons",
+        "muscle"
+      ],
+      "wargear": "Six-barrelled rotator cannon with support frame; augmetic arm and eyes",
+      "epithet": "The gun Ravenor wore like a body",
+      "relationships": [
+        {
+          "target": "gideon-ravenor",
+          "type": "servant",
+          "note": "favoured vessel for waring"
+        },
+        {
+          "target": "brass-thief",
+          "type": "enemy",
+          "note": "killed by it"
+        },
+        {
+          "target": "feaver-skoh",
+          "type": "enemy",
+          "note": "kills Skoh's brother"
+        }
+      ],
+      "sources": [
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "http://lonepilgrimredux.blogspot.com/2008/06/review-ravenor-synopsis.html",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor"
+      ]
+    },
+    {
+      "id": "wystan-frauka",
+      "name": "Wystan Frauka",
+      "title": "Blank (untouchable)",
+      "aliases": [],
+      "faction": "retinue",
+      "books": [
+        "ravenor",
+        "ravenor-returned",
+        "ravenor-rogue"
+      ],
+      "importance": 3,
+      "psy": "blank",
+      "status": "alive",
+      "fate": "His blankness burned away by Zael, he is handed over to the Inquisition's black ships for testing.",
+      "origin": "",
+      "summary": "A chain-smoking, porn-reading untouchable whose limiter lets him switch his null aura on and off. He saves Ravenor by killing the psyker Kinsky in the first novel. Assigned to guard the comatose Zael in Ravenor Rogue, he is gradually psychically \"touched\" by the boy and helps reveal that Thonius is Slyte.",
+      "traits": [
+        "blank",
+        "cynical",
+        "chain-smoker",
+        "unappreciated",
+        "secretly brave"
+      ],
+      "wargear": "Pariah limiter implant, lho-sticks, trashy data-slates",
+      "epithet": "The soulless man who found a soul",
+      "relationships": [
+        {
+          "target": "gideon-ravenor",
+          "type": "servant",
+          "note": "his blank"
+        },
+        {
+          "target": "zael",
+          "type": "ally",
+          "note": "guardian and unlikely friend"
+        },
+        {
+          "target": "lomer-kinsky",
+          "type": "enemy",
+          "note": "snaps his neck"
+        }
+      ],
+      "sources": [
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://warhammer40k.fandom.com/wiki/Hyperion",
+        "http://lonepilgrimredux.blogspot.com/2008/06/review-ravenor-synopsis.html",
+        "https://www.joumontfort.com/recent-reads/wh40k-ravenor-rogue-part-1"
+      ]
+    },
+    {
+      "id": "zael",
+      "name": "Zael Effernetti",
+      "title": "Flect-addict boy psyker",
+      "aliases": [
+        "Hyperion (later)"
+      ],
+      "faction": "retinue",
+      "books": [
+        "ravenor",
+        "ravenor-returned",
+        "ravenor-rogue"
+      ],
+      "importance": 4,
+      "psy": "psyker",
+      "status": "alive",
+      "fate": "Taken into Inquisition custody; he later becomes the Grey Knight Hyperion.",
+      "origin": "Eustis Majoris (Petropolis underhive)",
+      "summary": "An orphaned, stunted underhive runt and flect addict whom Nayl drags into the investigation, revealing him as a rare \"mirror\" psyker. Suspected of being Slyte's vessel, he spends Ravenor Rogue in a self-induced coma, secretly reaching out through Frauka, and finally exposes Thonius as the daemon's host.",
+      "traits": [
+        "street urchin",
+        "mirror psyker",
+        "survivor",
+        "red herring",
+        "precocious"
+      ],
+      "wargear": "",
+      "epithet": "Street rat, mirror, future Grey Knight",
+      "relationships": [
+        {
+          "target": "gideon-ravenor",
+          "type": "servant",
+          "note": "taken in by him"
+        },
+        {
+          "target": "wystan-frauka",
+          "type": "ally",
+          "note": "communicates through him"
+        },
+        {
+          "target": "carl-thonius",
+          "type": "enemy",
+          "note": "unmasks him as Slyte"
+        },
+        {
+          "target": "harlon-nayl",
+          "type": "ally",
+          "note": "\"the guy\" who found him"
+        },
+        {
+          "target": "patrik-belknap",
+          "type": "ally",
+          "note": "Belknap once looked out for him"
+        }
+      ],
+      "sources": [
+        "https://warhammer40k.fandom.com/wiki/Hyperion",
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://www.joumontfort.com/recent-reads/wh40k-ravenor-rogue-part-1",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor"
+      ]
+    },
+    {
+      "id": "maud-plyton",
+      "name": "Maud Plyton",
+      "title": "Ex-Magistratum marshal",
+      "aliases": [],
+      "faction": "retinue",
+      "books": [
+        "ravenor",
+        "ravenor-returned",
+        "ravenor-rogue"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "alive",
+      "fate": "One of only two people still at Ravenor's side at the end, bringing him news of the Listening Post surgeon.",
+      "origin": "Eustis Majoris (Petropolis)",
+      "summary": "A junior marshal of Petropolis Magistratum Special Crimes who briefly arrests Kara in the first book. Investigating an archdeacon's death and a hidden ceiling mural, she becomes the sole survivor when the conspirators purge her department, and joins Ravenor. Thonius later toys with her mind.",
+      "traits": [
+        "dogged investigator",
+        "tough",
+        "claustrophobic",
+        "sole survivor"
+      ],
+      "wargear": "Shotgun",
+      "epithet": "The last honest cop in Petropolis",
+      "relationships": [
+        {
+          "target": "gideon-ravenor",
+          "type": "servant",
+          "note": "joins his team"
+        },
+        {
+          "target": "carl-thonius",
+          "type": "enemy",
+          "note": "her mind is manipulated by him"
+        },
+        {
+          "target": "jader-trice",
+          "type": "enemy",
+          "note": "his conspiracy destroys her unit"
+        }
+      ],
+      "sources": [
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "http://ladyrhian.blogspot.com/2009/05/ravenor-returned-by-dan-abnett.html",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor",
+        "http://lonepilgrimredux.blogspot.com/2008/06/review-ravenor-synopsis.html"
+      ]
+    },
+    {
+      "id": "patrik-belknap",
+      "name": "Patrik Belknap",
+      "title": "Medicae",
+      "aliases": [],
+      "faction": "retinue",
+      "books": [
+        "ravenor-returned",
+        "ravenor-rogue"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "alive",
+      "fate": "Leaves Kara and Ravenor's service after learning she hid Slyte's existence.",
+      "origin": "Eustis Majoris (Petropolis)",
+      "summary": "A former Imperial Guard field medic turned unlicensed back-street medicae in Petropolis who once looked out for Zael. He treats Kara's vampiric-blade wound, discovers her cancer, and falls in love with her. A devout man, he joins the team but walks away when Kara's secret is exposed.",
+      "traits": [
+        "devout",
+        "compassionate",
+        "ex-Guardsman",
+        "principled"
+      ],
+      "wargear": "Medicae kit",
+      "epithet": "A healer whose faith would not bend",
+      "relationships": [
+        {
+          "target": "kara-swole",
+          "type": "love",
+          "note": "falls for his patient"
+        },
+        {
+          "target": "gideon-ravenor",
+          "type": "servant",
+          "note": "joins as team medicae"
+        },
+        {
+          "target": "zael",
+          "type": "ally",
+          "note": "looked out for him"
+        }
+      ],
+      "sources": [
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://www.joumontfort.com/recent-reads/wh40k-ravenor-returned-part-2",
+        "https://www.joumontfort.com/recent-reads/wh40k-ravenor-rogue-part-2"
+      ]
+    },
+    {
+      "id": "angharad-esw-sweydyr",
+      "name": "Angharad Esw Sweydyr",
+      "title": "Carthaen swordswoman",
+      "aliases": [],
+      "faction": "retinue",
+      "books": [
+        "ravenor-rogue"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Devoured by Slyte on Gudrun when she stands to fight the manifested daemon.",
+      "origin": "Carthae",
+      "summary": "Niece of Arianhrod, Ravenor's lost love, and her near double. A member of Inquisitor Fenx's retinue, she survives Molotch's massacre only because she was late from a tryst with Nayl, rescues Ballack, and joins Ravenor. Her affair with Nayl wounds Ravenor deeply.",
+      "traits": [
+        "master swordswoman",
+        "proud",
+        "blunt",
+        "barbarian hero"
+      ],
+      "wargear": "Force sword Evisorex",
+      "epithet": "Evisorex thirsts, and so does she",
+      "relationships": [
+        {
+          "target": "harlon-nayl",
+          "type": "love",
+          "note": "secret lover"
+        },
+        {
+          "target": "inquisitor-fenx",
+          "type": "servant",
+          "note": "her original master"
+        },
+        {
+          "target": "gideon-ravenor",
+          "type": "servant",
+          "note": "joins his band"
+        },
+        {
+          "target": "gall-ballack",
+          "type": "ally",
+          "note": "cuts off his hand to save him"
+        },
+        {
+          "target": "slyte",
+          "type": "enemy",
+          "note": "devoured by it"
+        }
+      ],
+      "sources": [
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "http://ladyrhian.blogspot.com/2009/05/ravenor-rogue-by-dan-abnett.html",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor"
+      ]
+    },
+    {
+      "id": "gall-ballack",
+      "name": "Gall Ballack",
+      "title": "Interrogator, Cognitae mole",
+      "aliases": [],
+      "faction": "heretic",
+      "books": [
+        "ravenor-rogue"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Captured infiltrating Culzean's Gudrun stronghold and shot by Molotch while blurting the Cognitae code-greeting.",
+      "origin": "",
+      "summary": "White-haired interrogator to Inquisitor Fenx, secretly a third- or fourth-generation Cognitae who sold his master out to Molotch, only to be left for dead. He loses a hand escaping and joins Ravenor seeking revenge, hiding his true allegiance. Ravenor briefly suspects him of being Slyte.",
+      "traits": [
+        "traitor",
+        "vengeful",
+        "Cognitae-trained",
+        "secretive"
+      ],
+      "wargear": "Augmetic hand with hidden single-shot laspistol",
+      "epithet": "A mole left to rot by his master",
+      "relationships": [
+        {
+          "target": "inquisitor-fenx",
+          "type": "betrayer",
+          "note": "sold him to Molotch"
+        },
+        {
+          "target": "zygmunt-molotch",
+          "type": "enemy",
+          "note": "seeks revenge for betrayal"
+        },
+        {
+          "target": "gideon-ravenor",
+          "type": "ally",
+          "note": "joins him under false pretences"
+        }
+      ],
+      "sources": [
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://www.joumontfort.com/recent-reads/wh40k-ravenor-rogue-part-2",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor"
+      ]
+    },
+    {
+      "id": "inquisitor-fenx",
+      "name": "Inquisitor Fenx",
+      "title": "Inquisitor",
+      "aliases": [],
+      "faction": "inquisition",
+      "books": [
+        "ravenor-rogue"
+      ],
+      "importance": 1,
+      "psy": "none",
+      "status": "dead",
+      "fate": "He and his retinue are slaughtered by Molotch in a trap set with Ballack's help.",
+      "origin": "",
+      "summary": "An inquisitor on Tancred who takes over the hunt for Molotch when Ravenor is ordered to stand down. Betrayed by his own interrogator, his team is wiped out, proving Ravenor's hunch right and pushing him to go rogue.",
+      "traits": [
+        "ill-fated",
+        "by-the-book"
+      ],
+      "wargear": "",
+      "epithet": "The man who took Ravenor's hunt",
+      "relationships": [
+        {
+          "target": "gall-ballack",
+          "type": "master",
+          "note": "betrayed by him"
+        },
+        {
+          "target": "angharad-esw-sweydyr",
+          "type": "master",
+          "note": "his swordswoman"
+        },
+        {
+          "target": "zygmunt-molotch",
+          "type": "enemy",
+          "note": "killed by him"
+        }
+      ],
+      "sources": [
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor"
+      ]
+    },
+    {
+      "id": "lord-rorken",
+      "name": "Lord Rorken",
+      "title": "Inquisitor Lord",
+      "aliases": [],
+      "faction": "inquisition",
+      "books": [
+        "ravenor-returned",
+        "ravenor-rogue"
+      ],
+      "importance": 1,
+      "psy": "none",
+      "status": "alive",
+      "fate": "Remains Ravenor's superior as he faces judgement.",
+      "origin": "",
+      "summary": "Ravenor's superior and an old friend of Eisenhorn. Ravenor addresses his report in Ravenor Returned to him, and a recorded message from Rorken orders him off Molotch's trail in Ravenor Rogue. He appears largely off-page.",
+      "traits": [
+        "authority",
+        "distant"
+      ],
+      "wargear": "",
+      "epithet": "The only voice Ravenor answers to",
+      "relationships": [
+        {
+          "target": "gideon-ravenor",
+          "type": "master",
+          "note": "his superior"
+        }
+      ],
+      "sources": [
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "https://tvtropes.org/pmwiki/pmwiki.php/Literature/Ravenor"
+      ]
+    },
+    {
+      "id": "sholto-unwerth",
+      "name": "Sholto Unwerth",
+      "title": "Captain of the Arethusa",
+      "aliases": [],
+      "faction": "rogue",
+      "books": [
+        "ravenor",
+        "ravenor-returned",
+        "ravenor-rogue"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "alive",
+      "fate": "Survives and returns to trading, breaking contact with Ravenor.",
+      "origin": "",
+      "summary": "A tiny, eccentric trader captain, rumoured to have Squat ancestry, who mangles Low Gothic magnificently. First met at Bonner's Reach, he ferries Ravenor's team from then on. Tortured by Siskind and Worna in Ravenor Returned, losing four fingers, he remains unwaveringly loyal and is a brilliant pilot.",
+      "traits": [
+        "malapropist",
+        "loyal",
+        "brilliant pilot",
+        "comic relief"
+      ],
+      "wargear": "His ship Arethusa; his manhound servant Fyflank",
+      "epithet": "Small captain, big words, bigger heart",
+      "relationships": [
+        {
+          "target": "gideon-ravenor",
+          "type": "ally",
+          "note": "his ship-for-hire"
+        },
+        {
+          "target": "lucius-worna",
+          "type": "enemy",
+          "note": "tortured by him"
+        },
+        {
+          "target": "bartol-siskind",
+          "type": "enemy",
+          "note": "tortured on his orders"
+        },
+        {
+          "target": "patience-kys",
+          "type": "ally",
+          "note": "rescued by her"
+        }
+      ],
+      "sources": [
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "http://lonepilgrimredux.blogspot.com/2008/06/review-ravenor-synopsis.html"
+      ]
+    },
+    {
+      "id": "cynia-preest",
+      "name": "Cynia Preest",
+      "title": "Shipmistress of the Hinterlight",
+      "aliases": [],
+      "faction": "rogue",
+      "books": [
+        "ravenor",
+        "ravenor-rogue"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "alive",
+      "fate": "Survives and breaks off contact with Ravenor.",
+      "origin": "",
+      "summary": "The centuries-old mistress of the Hinterlight, the stealth-equipped rogue trader ship Ravenor regularly employs. Captured during the Bonner's Reach betrayal, she is freed by Kara and helps retake her ship. She returns with the Hinterlight to pick up Ravenor in Ravenor Rogue.",
+      "traits": [
+        "experienced captain",
+        "calm",
+        "non-combatant"
+      ],
+      "wargear": "The Hinterlight with its xenos-derived stealth system",
+      "epithet": "Mistress of a ship that hides",
+      "relationships": [
+        {
+          "target": "gideon-ravenor",
+          "type": "ally",
+          "note": "her regular patron"
+        },
+        {
+          "target": "kara-swole",
+          "type": "ally",
+          "note": "rescued by her"
+        }
+      ],
+      "sources": [
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "http://lonepilgrimredux.blogspot.com/2008/06/review-ravenor-synopsis.html",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor",
+        "https://tvtropes.org/pmwiki/pmwiki.php/Literature/Ravenor"
+      ]
+    },
+    {
+      "id": "iosob",
+      "name": "Iosob",
+      "title": "Wych House housekeeper",
+      "aliases": [
+        "the Child"
+      ],
+      "faction": "civilian",
+      "books": [
+        "ravenor-rogue"
+      ],
+      "importance": 2,
+      "psy": "blank",
+      "status": "alive",
+      "fate": "Taken away by the Inquisition for testing along with Zael and Frauka.",
+      "origin": "Utochre (the Wych House)",
+      "summary": "A young girl, barely adolescent, who serves as a keyholder of the Wych House of Utochre and its tri-portal door. When the House is destroyed she flees with Ravenor through the door, using her key to carry them across space and time.",
+      "traits": [
+        "keyholder",
+        "young",
+        "eerie",
+        "no psychic presence"
+      ],
+      "wargear": "Key to the Propylaeum Tripartite",
+      "epithet": "The child who holds the door's key",
+      "relationships": [
+        {
+          "target": "gideon-ravenor",
+          "type": "ally",
+          "note": "escapes with him"
+        }
+      ],
+      "sources": [
+        "https://wh40k-de.lexicanum.com/wiki/Wych_House_of_Utochre",
+        "https://tvtropes.org/pmwiki/pmwiki.php/Literature/Ravenor",
+        "https://spalanz.com/2021/03/20/ravenor-rogue/",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor"
+      ]
+    },
+    {
+      "id": "gregor-eisenhorn",
+      "name": "Gregor Eisenhorn",
+      "title": "Rogue Inquisitor",
+      "aliases": [
+        "Thorn"
+      ],
+      "faction": "inquisition",
+      "books": [
+        "thorn-wishes-talon"
+      ],
+      "importance": 2,
+      "psy": "psyker",
+      "status": "alive",
+      "fate": "Vanishes again after warning Ravenor of the prophesied daemon.",
+      "origin": "",
+      "summary": "Ravenor's old master, now a declared radical presumed dead, who summons him to Malinter with the coded message \"Thorn wishes Talon\". With Cherubael he destroys the Divine Fratery cultists and their Dreadnought, then warns Ravenor that a terrible daemon will manifest around his Eustis Majoris investigation.",
+      "traits": [
+        "radical",
+        "mentor",
+        "secretive",
+        "daemon-binder"
+      ],
+      "wargear": "Daemonhost Cherubael",
+      "epithet": "The master who sends warnings from shadow",
+      "relationships": [
+        {
+          "target": "gideon-ravenor",
+          "type": "mentor",
+          "note": "his former pupil"
+        },
+        {
+          "target": "cherubael",
+          "type": "master",
+          "note": "commands the daemonhost"
+        },
+        {
+          "target": "harlon-nayl",
+          "type": "ally",
+          "note": "old agent"
+        },
+        {
+          "target": "kara-swole",
+          "type": "ally",
+          "note": "old agent"
+        }
+      ],
+      "sources": [
+        "https://www.goodreads.com/book/show/13612667-thorn-wishes-talon",
+        "https://www.joumontfort.com/recent-reads/wh40k-thorn-wishes-talon",
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor"
+      ]
+    },
+    {
+      "id": "cherubael",
+      "name": "Cherubael",
+      "title": "Daemonhost",
+      "aliases": [],
+      "faction": "daemon",
+      "books": [
+        "thorn-wishes-talon"
+      ],
+      "importance": 1,
+      "psy": "daemon",
+      "status": "other",
+      "fate": "Remains bound in Eisenhorn's service.",
+      "origin": "",
+      "summary": "The daemonhost in Eisenhorn's thrall. On Malinter it battles entities summoned by the Divine Fratery in spectral combat over the fight and helps destroy the cult's Dreadnought.",
+      "traits": [
+        "bound daemon",
+        "spectral",
+        "overwhelming power"
+      ],
+      "wargear": "",
+      "epithet": "A chained god in a borrowed body",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "bound",
+          "note": "bound to serve him"
+        }
+      ],
+      "sources": [
+        "https://www.joumontfort.com/recent-reads/wh40k-thorn-wishes-talon",
+        "https://www.goodreads.com/book/show/13612667-thorn-wishes-talon"
+      ]
+    },
+    {
+      "id": "zygmunt-molotch",
+      "name": "Zygmunt Molotch",
+      "title": "Cognitae arch-heretic",
+      "aliases": [
+        "The Diadochoi",
+        "Oska Ludolf Barazan"
+      ],
+      "faction": "heretic",
+      "books": [
+        "ravenor",
+        "ravenor-returned",
+        "ravenor-rogue"
+      ],
+      "importance": 5,
+      "psy": "none",
+      "status": "dead",
+      "fate": "After allying with Ravenor to banish Slyte, he tries to flee and Ravenor destroys his mind in a field on Gudrun.",
+      "origin": "",
+      "summary": "A Cognitae-trained genius and Ravenor's nemesis for decades, apparently killed in the first novel's prologue. Hideously scarred, he secretly rules the sub-sector as Lord Governor Barazan, the Diadochoi, driving the Enuncia conspiracy and using the language to restore his body. Not a psyker, he uses a \"tone of command\", lethal martial skill and occult knowledge.",
+      "traits": [
+        "evil genius",
+        "manipulative",
+        "unarmed killer",
+        "petty",
+        "survivor"
+      ],
+      "wargear": "Enuncia; Cognitae training",
+      "epithet": "Moriarty to an Inquisitor's Holmes",
+      "relationships": [
+        {
+          "target": "gideon-ravenor",
+          "type": "enemy",
+          "note": "arch-nemesis"
+        },
+        {
+          "target": "orfeo-culzean",
+          "type": "ally",
+          "note": "uneasy partnership"
+        },
+        {
+          "target": "jader-trice",
+          "type": "master",
+          "note": "takes over his project"
+        },
+        {
+          "target": "gall-ballack",
+          "type": "betrayer",
+          "note": "discards and executes him"
+        },
+        {
+          "target": "slyte",
+          "type": "enemy",
+          "note": "helps banish it"
+        }
+      ],
+      "sources": [
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "http://lonepilgrimredux.blogspot.com/2008/06/review-ravenor-synopsis.html",
+        "https://www.joumontfort.com/recent-reads/wh40k-ravenor-returned-part-1",
+        "https://www.joumontfort.com/recent-reads/wh40k-ravenor-rogue-part-2",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor"
+      ]
+    },
+    {
+      "id": "orfeo-culzean",
+      "name": "Orfeo Culzean",
+      "title": "Expeditor and antiquarian",
+      "aliases": [],
+      "faction": "heretic",
+      "books": [
+        "ravenor-returned",
+        "ravenor-rogue"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Betrays Ravenor and Molotch to bind Slyte, is gut-shot, and is rotted alive by the daemon.",
+      "origin": "",
+      "summary": "A suave, cultured antiquities dealer who hires himself out as a facilitator to heretical cults, first to the Divine Fratery to bring about Slyte. He collects deodands, objects that caused accidental deaths, and commands the Brass Thief. In Ravenor Rogue he partners with Molotch, but his attempt to harness Slyte proves fatal.",
+      "traits": [
+        "urbane",
+        "pragmatic villain",
+        "collector",
+        "schemer",
+        "never kills personally"
+      ],
+      "wargear": "Deodand collection; the Brass Thief",
+      "epithet": "A gentleman who brokers apocalypses",
+      "relationships": [
+        {
+          "target": "zygmunt-molotch",
+          "type": "betrayer",
+          "note": "partner he turns on"
+        },
+        {
+          "target": "leyla-slade",
+          "type": "master",
+          "note": "his bodyguard"
+        },
+        {
+          "target": "brass-thief",
+          "type": "master",
+          "note": "commands the daemon"
+        },
+        {
+          "target": "gideon-ravenor",
+          "type": "enemy",
+          "note": "offers him an alliance"
+        },
+        {
+          "target": "slyte",
+          "type": "enemy",
+          "note": "seeks to bind it, is killed"
+        }
+      ],
+      "sources": [
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "http://ladyrhian.blogspot.com/2009/05/ravenor-returned-by-dan-abnett.html",
+        "https://www.joumontfort.com/recent-reads/wh40k-ravenor-returned-part-2",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor",
+        "https://www.goodreads.com/book/show/571522.Ravenor_Rogue"
+      ]
+    },
+    {
+      "id": "leyla-slade",
+      "name": "Leyla Slade",
+      "title": "Culzean's bodyguard",
+      "aliases": [],
+      "faction": "heretic",
+      "books": [
+        "ravenor-returned",
+        "ravenor-rogue"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "unknown",
+      "fate": "Last seen standing against the manifested Slyte to buy Culzean time to escape.",
+      "origin": "",
+      "summary": "Orfeo Culzean's fiercely loyal right hand and bodyguard, disdainful of Molotch and his schemes. A formidable fighter who battles Thonius to a standstill, she carries pistol rounds that summon daemons.",
+      "traits": [
+        "loyal",
+        "deadly",
+        "sceptical",
+        "bodyguard"
+      ],
+      "wargear": "Handgun with daemon-summoning ammunition",
+      "epithet": "Loyalty loaded with daemons",
+      "relationships": [
+        {
+          "target": "orfeo-culzean",
+          "type": "servant",
+          "note": "loyal bodyguard"
+        },
+        {
+          "target": "carl-thonius",
+          "type": "enemy",
+          "note": "fights him to a standstill"
+        }
+      ],
+      "sources": [
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor"
+      ]
+    },
+    {
+      "id": "brass-thief",
+      "name": "The Brass Thief",
+      "title": "Bound daemon assassin",
+      "aliases": [
+        "Incunabula"
+      ],
+      "faction": "daemon",
+      "books": [
+        "ravenor-returned"
+      ],
+      "importance": 2,
+      "psy": "daemon",
+      "status": "other",
+      "fate": "Its attack on Ravenor's hideout ends when Slyte, through Thonius, kills its controlling psykers.",
+      "origin": "",
+      "summary": "An ancient daemon bound into a gold-and-silver pyramid that unfolds into a clockwork body with \"rhyming swords\". Awakened by Culzean with sacrifices and directed by psykers, it is sent to kill Ravenor in Petropolis and slays Zeph Mathuin.",
+      "traits": [
+        "relentless",
+        "clockwork",
+        "assassin"
+      ],
+      "wargear": "Rhyming swords",
+      "epithet": "Clockwork shell, daemon heart",
+      "relationships": [
+        {
+          "target": "orfeo-culzean",
+          "type": "bound",
+          "note": "his summoned weapon"
+        },
+        {
+          "target": "zeph-mathuin",
+          "type": "enemy",
+          "note": "kills him"
+        }
+      ],
+      "sources": [
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor"
+      ]
+    },
+    {
+      "id": "slyte",
+      "name": "Slyte",
+      "title": "Greater daemon",
+      "aliases": [
+        "Sleet",
+        "Sleight",
+        "Slight"
+      ],
+      "faction": "daemon",
+      "books": [
+        "thorn-wishes-talon",
+        "ravenor-returned",
+        "ravenor-rogue"
+      ],
+      "importance": 4,
+      "psy": "daemon",
+      "status": "other",
+      "fate": "Fully manifests on Gudrun, then is banished into the warp through the tri-portal by Ravenor and Molotch.",
+      "origin": "The warp (via a flect)",
+      "summary": "An apocalyptic daemon foretold by the Divine Fratery to manifest through someone close to Ravenor, as Eisenhorn warns in Thorn Wishes Talon. It enters Carl Thonius through a flect, granting him terrible powers before finally consuming him and swelling into a mountainous horror of mouths and tentacles that brings rot and decay.",
+      "traits": [
+        "prophesied",
+        "decay",
+        "eldritch abomination",
+        "possessor"
+      ],
+      "wargear": "",
+      "epithet": "The prophecy wearing a friend's face",
+      "relationships": [
+        {
+          "target": "carl-thonius",
+          "type": "bound",
+          "note": "possesses him"
+        },
+        {
+          "target": "angharad-esw-sweydyr",
+          "type": "enemy",
+          "note": "devours her"
+        },
+        {
+          "target": "orfeo-culzean",
+          "type": "enemy",
+          "note": "destroys him"
+        },
+        {
+          "target": "jader-trice",
+          "type": "enemy",
+          "note": "reduces him to dust"
+        },
+        {
+          "target": "gideon-ravenor",
+          "type": "enemy",
+          "note": "banished by him"
+        }
+      ],
+      "sources": [
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor",
+        "https://warhammer40k.fandom.com/wiki/Hyperion",
+        "https://www.goodreads.com/book/show/13612667-thorn-wishes-talon",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor"
+      ]
+    },
+    {
+      "id": "jader-trice",
+      "name": "Jader Trice",
+      "title": "Grand Provost, Ministry of Sub-Sector Trade",
+      "aliases": [],
+      "faction": "heretic",
+      "books": [
+        "ravenor",
+        "ravenor-returned"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Withered to dust by Slyte as his Enuncia lexicon is torn apart.",
+      "origin": "Eustis Majoris",
+      "summary": "A former Cognitae who spent twenty years building the scheme to reconstruct Enuncia through tainted cogitators, only to have the Diadochoi take it over. Respected and well-groomed, he steers Ravenor towards the Mergent trap in the first book and leads the Secretists in the second.",
+      "traits": [
+        "bureaucrat villain",
+        "meticulous",
+        "resentful",
+        "non-combatant"
+      ],
+      "wargear": "The Enuncia lexicon",
+      "epithet": "A bureaucrat building a god's grammar",
+      "relationships": [
+        {
+          "target": "zygmunt-molotch",
+          "type": "servant",
+          "note": "subordinate to the Diadochoi"
+        },
+        {
+          "target": "toros-revoke",
+          "type": "master",
+          "note": "his enforcer"
+        },
+        {
+          "target": "gideon-ravenor",
+          "type": "enemy",
+          "note": "tries to dispose of him"
+        }
+      ],
+      "sources": [
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "http://lonepilgrimredux.blogspot.com/2008/06/review-ravenor-synopsis.html",
+        "https://www.joumontfort.com/recent-reads/wh40k-ravenor-returned-part-2"
+      ]
+    },
+    {
+      "id": "toros-revoke",
+      "name": "Toros Revoke",
+      "title": "Secretist enforcer",
+      "aliases": [],
+      "faction": "heretic",
+      "books": [
+        "ravenor-returned"
+      ],
+      "importance": 2,
+      "psy": "psyker",
+      "status": "dead",
+      "fate": "Killed by Ravenor after Nayl distracts him.",
+      "origin": "",
+      "summary": "Trice's hyper-competent right hand, a yellow-eyed psyker and skilled user of Enuncia who silences anyone who learns too much. He shatters bones with spoken words.",
+      "traits": [
+        "enforcer",
+        "psyker",
+        "Enuncia speaker",
+        "loyal"
+      ],
+      "wargear": "Enuncia",
+      "epithet": "Every word a broken bone",
+      "relationships": [
+        {
+          "target": "jader-trice",
+          "type": "servant",
+          "note": "his right hand"
+        },
+        {
+          "target": "gideon-ravenor",
+          "type": "enemy",
+          "note": "killed by him"
+        }
+      ],
+      "sources": [
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://tvtropes.org/pmwiki/pmwiki.php/Literature/Ravenor",
+        "https://www.goodreads.com/book/show/2444348"
+      ]
+    },
+    {
+      "id": "lomer-kinsky",
+      "name": "Lomer Kinsky",
+      "title": "Ministry psyker",
+      "aliases": [],
+      "faction": "imperial",
+      "books": [
+        "ravenor"
+      ],
+      "importance": 2,
+      "psy": "psyker",
+      "status": "dead",
+      "fate": "Frauka snaps his neck aboard the Hinterlight.",
+      "origin": "",
+      "summary": "A raw, enormously powerful psyker assigned by the Ministry of Sub-Sector Trade to assist Ravenor, who in truth helps lure him into a trap. He defeats Ravenor in their first psychic clash and nearly kills him in the second.",
+      "traits": [
+        "raw power",
+        "crude",
+        "treacherous"
+      ],
+      "wargear": "",
+      "epithet": "Brute strength of the mind",
+      "relationships": [
+        {
+          "target": "jader-trice",
+          "type": "servant",
+          "note": "Ministry agent"
+        },
+        {
+          "target": "gideon-ravenor",
+          "type": "enemy",
+          "note": "psychic duels"
+        },
+        {
+          "target": "ahenobarb",
+          "type": "ally",
+          "note": "his minder"
+        },
+        {
+          "target": "madsen",
+          "type": "ally",
+          "note": "team leader"
+        }
+      ],
+      "sources": [
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "http://lonepilgrimredux.blogspot.com/2008/06/review-ravenor-synopsis.html",
+        "https://warhammer40k.fandom.com/wiki/Gideon_Ravenor"
+      ]
+    },
+    {
+      "id": "madsen",
+      "name": "Madsen",
+      "title": "Ministry tech-adept",
+      "aliases": [],
+      "faction": "imperial",
+      "books": [
+        "ravenor"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Kys slits her throat with telekinetically flung scales.",
+      "origin": "",
+      "summary": "The tech-adept leader of the Ministry trio sent with Ravenor, and architect of the plan to seize the Hinterlight and send it into Bonner's Reach's star.",
+      "traits": [
+        "cold",
+        "tech-adept",
+        "plotter"
+      ],
+      "wargear": "",
+      "epithet": "The quiet hand on the tiller",
+      "relationships": [
+        {
+          "target": "jader-trice",
+          "type": "servant",
+          "note": "Ministry agent"
+        },
+        {
+          "target": "patience-kys",
+          "type": "enemy",
+          "note": "killed by her"
+        }
+      ],
+      "sources": [
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "http://lonepilgrimredux.blogspot.com/2008/06/review-ravenor-synopsis.html"
+      ]
+    },
+    {
+      "id": "ahenobarb",
+      "name": "Ahenobarb",
+      "title": "Kinsky's minder",
+      "aliases": [],
+      "faction": "imperial",
+      "books": [
+        "ravenor"
+      ],
+      "importance": 1,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Killed by Patience Kys aboard the Hinterlight.",
+      "origin": "",
+      "summary": "The burly minder who accompanies the psyker Kinsky as part of the Ministry team that betrays Ravenor at Bonner's Reach.",
+      "traits": [
+        "muscle",
+        "minder"
+      ],
+      "wargear": "",
+      "epithet": "The wall beside the psyker",
+      "relationships": [
+        {
+          "target": "lomer-kinsky",
+          "type": "ally",
+          "note": "his minder"
+        },
+        {
+          "target": "patience-kys",
+          "type": "enemy",
+          "note": "killed by her"
+        }
+      ],
+      "sources": [
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "http://lonepilgrimredux.blogspot.com/2008/06/review-ravenor-synopsis.html"
+      ]
+    },
+    {
+      "id": "feaver-skoh",
+      "name": "Feaver Skoh",
+      "title": "Xenos hunter",
+      "aliases": [],
+      "faction": "rogue",
+      "books": [
+        "ravenor"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "unknown",
+      "fate": "Knocked unconscious by Ravenor and interrogated, revealing Contract Thirteen.",
+      "origin": "",
+      "summary": "A xenos hunter working with rogue trader Kizary Thekla, blamed by Trice for the flect smuggling. He springs the trap on Ravenor at Bonner's Reach and boards the Hinterlight to hunt Kys.",
+      "traits": [
+        "hunter",
+        "ruthless"
+      ],
+      "wargear": "",
+      "epithet": "A hunter who boarded the wrong ship",
+      "relationships": [
+        {
+          "target": "kizary-thekla",
+          "type": "ally",
+          "note": "partner in the cartel"
+        },
+        {
+          "target": "harlon-nayl",
+          "type": "enemy",
+          "note": "fights him"
+        },
+        {
+          "target": "gideon-ravenor",
+          "type": "enemy",
+          "note": "captured and interrogated"
+        }
+      ],
+      "sources": [
+        "http://lonepilgrimredux.blogspot.com/2008/06/review-ravenor-synopsis.html"
+      ]
+    },
+    {
+      "id": "kizary-thekla",
+      "name": "Kizary Thekla",
+      "title": "Rogue trader, Oktober Country",
+      "aliases": [],
+      "faction": "rogue",
+      "books": [
+        "ravenor"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Killed when Ravenor forces down his shields and missiles strike the Oktober Country's bridge.",
+      "origin": "",
+      "summary": "A rogue trader of the Contract Thirteen cartel whose grandparents were tied to the Cognitae. Captaining the Oktober Country, he fires on the Hinterlight to kill Ravenor even at the cost of his allies.",
+      "traits": [
+        "ruthless",
+        "cartel member",
+        "Cognitae bloodline"
+      ],
+      "wargear": "The starship Oktober Country",
+      "epithet": "Profit at any cost, even his own",
+      "relationships": [
+        {
+          "target": "bartol-siskind",
+          "type": "kin",
+          "note": "distant relative"
+        },
+        {
+          "target": "gideon-ravenor",
+          "type": "enemy",
+          "note": "tries to destroy his ship"
+        }
+      ],
+      "sources": [
+        "http://lonepilgrimredux.blogspot.com/2008/06/review-ravenor-synopsis.html"
+      ]
+    },
+    {
+      "id": "bartol-siskind",
+      "name": "Bartol Siskind",
+      "title": "Would-be cartel member",
+      "aliases": [],
+      "faction": "heretic",
+      "books": [
+        "ravenor",
+        "ravenor-returned"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "unknown",
+      "fate": "Hires Worna to hunt Ravenor; his ultimate fate is not confirmed in the sources consulted.",
+      "origin": "",
+      "summary": "A distant relative of Thekla with a Cognitae bloodline who wanted into Contract Thirteen but lacked the funds. Questioned by Ravenor in the first book, he survives to hire Lucius Worna to hunt Ravenor, and tortures Sholto Unwerth.",
+      "traits": [
+        "opportunist",
+        "vengeful",
+        "Cognitae bloodline"
+      ],
+      "wargear": "",
+      "epithet": "A small heretic with a long grudge",
+      "relationships": [
+        {
+          "target": "kizary-thekla",
+          "type": "kin",
+          "note": "distant relative"
+        },
+        {
+          "target": "lucius-worna",
+          "type": "master",
+          "note": "hires him"
+        },
+        {
+          "target": "sholto-unwerth",
+          "type": "enemy",
+          "note": "tortures him"
+        }
+      ],
+      "sources": [
+        "http://lonepilgrimredux.blogspot.com/2008/06/review-ravenor-synopsis.html",
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://www.joumontfort.com/recent-reads/wh40k-ravenor-returned-part-1"
+      ]
+    },
+    {
+      "id": "lucius-worna",
+      "name": "Lucius Worna",
+      "title": "Bounty hunter",
+      "aliases": [],
+      "faction": "rogue",
+      "books": [
+        "ravenor",
+        "ravenor-returned",
+        "ravenor-rogue"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "dead",
+      "fate": "After surviving grenades and kineblades, Kys holds him out into a storm where lightning strikes him repeatedly.",
+      "origin": "",
+      "summary": "A colossal, scar-faced bounty hunter in mother-of-pearl power armour and an old associate of Nayl, possibly a renegade Space Marine. Glimpsed briefly in the first book, he is hired to hunt Ravenor and returns as the villains' muscle, almost impossible to kill.",
+      "traits": [
+        "unkillable",
+        "mercenary",
+        "brutal",
+        "\"end of story\""
+      ],
+      "wargear": "Mother-of-pearl power armour",
+      "epithet": "End of story, eventually",
+      "relationships": [
+        {
+          "target": "harlon-nayl",
+          "type": "rival",
+          "note": "owes him a life-debt"
+        },
+        {
+          "target": "bartol-siskind",
+          "type": "servant",
+          "note": "hired by him"
+        },
+        {
+          "target": "patience-kys",
+          "type": "enemy",
+          "note": "killed by her"
+        },
+        {
+          "target": "sholto-unwerth",
+          "type": "enemy",
+          "note": "tortures him"
+        }
+      ],
+      "sources": [
+        "https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor",
+        "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor"
+      ]
+    },
+    {
+      "id": "duboe",
+      "name": "Duboe",
+      "title": "Carnivora flect supplier",
+      "aliases": [],
+      "faction": "rogue",
+      "books": [
+        "ravenor"
+      ],
+      "importance": 1,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Released aboard the Hinterlight, he attacks the limited Ravenor and is killed by him.",
+      "origin": "",
+      "summary": "A member of the Carnivora circus who supplied flects to dealers on Eustis Majoris. Captured by the team, he is taken to Flint, where his interrogation yields the words \"Contract Thirteen\".",
+      "traits": [
+        "smuggler",
+        "prisoner"
+      ],
+      "wargear": "",
+      "epithet": "The circus thread in the flect web",
+      "relationships": [
+        {
+          "target": "feaver-skoh",
+          "type": "ally",
+          "note": "his supplier link"
+        },
+        {
+          "target": "gideon-ravenor",
+          "type": "enemy",
+          "note": "killed by him"
+        }
+      ],
+      "sources": [
+        "http://lonepilgrimredux.blogspot.com/2008/06/review-ravenor-synopsis.html"
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "id": "eustis-majoris",
+      "name": "Eustis Majoris",
+      "type": "planet",
+      "books": [
+        "ravenor",
+        "ravenor-returned",
+        "ravenor-rogue"
+      ],
+      "note": "Polluted hive world and capital of the Angelus sub-sector, where the flect trade and the Enuncia conspiracy unfold."
+    },
+    {
+      "id": "petropolis",
+      "name": "Petropolis",
+      "type": "city",
+      "books": [
+        "ravenor",
+        "ravenor-returned"
+      ],
+      "note": "Vast hive city on Eustis Majoris whose architecture was designed as a ritual pattern; much of it is devastated at the climax of Ravenor Returned."
+    },
+    {
+      "id": "flint",
+      "name": "Flint",
+      "type": "planet",
+      "books": [
+        "ravenor"
+      ],
+      "note": "Low-tech agri-world of beast-moots where Thonius loses his arm in a fight."
+    },
+    {
+      "id": "bonners-reach",
+      "name": "Bonner's Reach",
+      "type": "other",
+      "books": [
+        "ravenor"
+      ],
+      "note": "Lawless trading port in Lucky Space where the Ministry agents spring their trap on Ravenor."
+    },
+    {
+      "id": "lucky-space",
+      "name": "Lucky Space",
+      "type": "other",
+      "books": [
+        "ravenor"
+      ],
+      "note": "Lawless frontier region where Ravenor's disappearance would draw little scrutiny."
+    },
+    {
+      "id": "mergent-worlds",
+      "name": "Mergent Worlds",
+      "type": "other",
+      "books": [
+        "ravenor",
+        "ravenor-returned"
+      ],
+      "note": "Warp-ruined worlds whose shattered glass becomes flects and whose tainted cogitators are smuggled under Contract Thirteen."
+    },
+    {
+      "id": "hinterlight",
+      "name": "Hinterlight",
+      "type": "ship",
+      "books": [
+        "ravenor",
+        "ravenor-rogue"
+      ],
+      "note": "Cynia Preest's stealth-equipped rogue trader ship, hijacked by Madsen and sent towards a star."
+    },
+    {
+      "id": "arethusa",
+      "name": "Arethusa",
+      "type": "ship",
+      "books": [
+        "ravenor",
+        "ravenor-returned",
+        "ravenor-rogue"
+      ],
+      "note": "Sholto Unwerth's ship, Ravenor's transport from the end of the first novel."
+    },
+    {
+      "id": "oktober-country",
+      "name": "Oktober Country",
+      "type": "ship",
+      "books": [
+        "ravenor"
+      ],
+      "note": "Kizary Thekla's ship, destroyed by Ravenor; earlier the vessel that teleported Molotch to safety."
+    },
+    {
+      "id": "malinter",
+      "name": "Malinter",
+      "type": "planet",
+      "books": [
+        "thorn-wishes-talon"
+      ],
+      "note": "Backwater world where Ravenor fights the Divine Fratery and meets Eisenhorn."
+    },
+    {
+      "id": "tancred",
+      "name": "Tancred",
+      "type": "planet",
+      "books": [
+        "ravenor-rogue"
+      ],
+      "note": "World hosting an Inquisition headquarters where Ravenor is ordered off Molotch's trail and Fenx's team is massacred."
+    },
+    {
+      "id": "utochre",
+      "name": "Utochre",
+      "type": "planet",
+      "books": [
+        "ravenor-rogue"
+      ],
+      "note": "Ice-capped ocean world whose depths hide the Wych House."
+    },
+    {
+      "id": "wych-house",
+      "name": "Wych House of Utochre",
+      "type": "other",
+      "books": [
+        "ravenor-rogue"
+      ],
+      "note": "Psychically charged house deep beneath Utochre's ice that guards a divinatory tri-portal; destroyed in the Tyranid incursion."
+    },
+    {
+      "id": "propylaeum-tripartite",
+      "name": "Propylaeum Tripartite",
+      "type": "other",
+      "books": [
+        "ravenor-rogue"
+      ],
+      "note": "The three-sided warp door that throws the team across space and time and is finally used to banish Slyte."
+    },
+    {
+      "id": "listening-post-arethusa",
+      "name": "Listening Post Arethusa",
+      "type": "other",
+      "books": [
+        "ravenor-rogue"
+      ],
+      "note": "Outpost a thousand years in the past where the door strands Ravenor and a surgeon saves his life."
+    },
+    {
+      "id": "gudrun",
+      "name": "Gudrun",
+      "type": "planet",
+      "books": [
+        "ravenor-rogue"
+      ],
+      "note": "World of Culzean's mountain bolthole, where Slyte manifests and a mountain range is obliterated."
+    },
+    {
+      "id": "zenta-malhyde",
+      "name": "Zenta Malhyde",
+      "type": "planet",
+      "books": [
+        "ravenor"
+      ],
+      "note": "Site of the prologue dig where Ravenor's agents strike Molotch excavating Enuncia carvings."
+    },
+    {
+      "id": "carnivora",
+      "name": "The Carnivora",
+      "type": "other",
+      "books": [
+        "ravenor"
+      ],
+      "note": "Circus on Eustis Majoris used as a flect-smuggling front, infiltrated by the team."
+    },
+    {
+      "id": "force-chair",
+      "name": "Ravenor's force chair",
+      "type": "other",
+      "books": [
+        "ravenor",
+        "ravenor-returned",
+        "ravenor-rogue",
+        "thorn-wishes-talon"
+      ],
+      "note": "Armoured, anti-grav life-support chair with psy-boosters and psycannons that keeps Ravenor alive."
+    }
+  ],
+  "books": [
+    {
+      "id": "ravenor",
+      "title": "Ravenor",
+      "year": 2004,
+      "summary": "On Eustis Majoris, Inquisitor Ravenor and his band investigate flects, warp-tainted glass sold as a drug, picking up the boy psyker Zael along the way. The trail leads via Flint into Lucky Space, where Ministry of Sub-Sector Trade agents Kinsky, Madsen and Ahenobarb betray him at Bonner's Reach. Surviving, Ravenor learns of Contract Thirteen, a cartel smuggling tainted cogitators from the Mergent Worlds, and returns to Eustis Majoris in secret while presumed dead."
+    },
+    {
+      "id": "thorn-wishes-talon",
+      "title": "Thorn Wishes Talon",
+      "year": 2004,
+      "summary": "A coded summons draws Ravenor to Malinter, where his team battles the Divine Fratery cult and a Chaos Dreadnought. His mysterious contact proves to be Gregor Eisenhorn, aided by Cherubael. Eisenhorn warns that the Fratery has foreseen a terrible daemon manifesting in connection with Ravenor's Eustis Majoris investigation."
+    },
+    {
+      "id": "ravenor-returned",
+      "title": "Ravenor Returned",
+      "year": 2005,
+      "summary": "Working covertly on Eustis Majoris, Ravenor's team uncovers a Secretist conspiracy using tainted cogitators to reconstruct Enuncia, while Marshal Maud Plyton is hunted for what she found. Culzean's Brass Thief kills Mathuin, and Carl Thonius, a flect user, is secretly possessed by the daemon Slyte. Slyte's intervention wrecks the Enuncia ritual and much of Petropolis, and the Diadochoi is revealed as Zygmunt Molotch, who escapes."
+    },
+    {
+      "id": "ravenor-rogue",
+      "title": "Ravenor Rogue",
+      "year": 2007,
+      "summary": "Ordered off the hunt for Molotch, Ravenor goes rogue after Molotch massacres Inquisitor Fenx's team. A trap at the Wych House of Utochre scatters his band across space and time through a tri-portal, and the trail leads to Culzean's bolthole on Gudrun. Zael reveals Thonius as Slyte's host; the daemon manifests, Ravenor and Molotch banish it through the door, and Ravenor kills Molotch before surrendering to the Inquisition."
+    }
+  ]
+}

@@ -1,0 +1,2546 @@
+{
+  "characters": [
+    {
+      "id": "gregor-eisenhorn",
+      "name": "Gregor Eisenhorn",
+      "title": "Inquisitor, Ordo Xenos",
+      "aliases": [
+        "Farchaval (cover identity)"
+      ],
+      "faction": "inquisition",
+      "books": [
+        "xenos",
+        "missing-in-action",
+        "malleus",
+        "backcloth",
+        "hereticus"
+      ],
+      "importance": 5,
+      "psy": "psyker",
+      "status": "alive",
+      "fate": "Survives the Pontius Glaw affair crippled and held together by a crude augmetic rig, a declared outcast whose later fate the Inquisition never records.",
+      "origin": "DeKere's World",
+      "summary": "A puritan Ordo Xenos inquisitor and narrator of the trilogy, a telepath who uses his mind to compel people with his voice. Over 150 years he hunts Murdin Eyclone, House Glaw, the renegade Quixos and finally the resurrected Pontius Glaw. Along the way he comes to rely on daemonic tools: the Malus Codicium and the daemonhost Cherubael.",
+      "traits": [
+        "telepath",
+        "puritan turned radical",
+        "investigator",
+        "swordsman",
+        "cannot smile"
+      ],
+      "wargear": "Barbarisater force sword, runestaff, Deathwatch bolt pistol, Malus Codicium, gun-cutter",
+      "epithet": "The puritan who learned to wield the darkness",
+      "relationships": [
+        {
+          "target": "uber-aemos",
+          "type": "master",
+          "note": "his savant"
+        },
+        {
+          "target": "godwyn-fischig",
+          "type": "master",
+          "note": "former Arbites chastener"
+        },
+        {
+          "target": "alizebeth-bequin",
+          "type": "love",
+          "note": "long, unspoken bond"
+        },
+        {
+          "target": "midas-betancore",
+          "type": "master",
+          "note": "pilot and closest friend"
+        },
+        {
+          "target": "medea-betancore",
+          "type": "master",
+          "note": "pilot; daughter of Midas"
+        },
+        {
+          "target": "gideon-ravenor",
+          "type": "mentor",
+          "note": "former interrogator"
+        },
+        {
+          "target": "harlon-nayl",
+          "type": "master",
+          "note": "bounty hunter in his employ"
+        },
+        {
+          "target": "kara-swole",
+          "type": "master",
+          "note": "operative"
+        },
+        {
+          "target": "cherubael",
+          "type": "bound",
+          "note": "enslaved daemonhost"
+        },
+        {
+          "target": "pontius-glaw",
+          "type": "enemy",
+          "note": "arch-nemesis"
+        },
+        {
+          "target": "quixos",
+          "type": "enemy",
+          "note": "killed him on Farness Beta"
+        },
+        {
+          "target": "titus-endor",
+          "type": "ally",
+          "note": "old friend, later estranged"
+        },
+        {
+          "target": "commodus-voke",
+          "type": "ally",
+          "note": "uneasy colleague"
+        },
+        {
+          "target": "konrad-molitor",
+          "type": "enemy",
+          "note": "killed him on 56-Izar"
+        },
+        {
+          "target": "leonid-osma",
+          "type": "enemy",
+          "note": "persecutor"
+        },
+        {
+          "target": "golesh-heldane",
+          "type": "rival",
+          "note": "enduring enmity"
+        },
+        {
+          "target": "phlebas-alessandro-rorken",
+          "type": "servant",
+          "note": "his Ordo Xenos superior"
+        },
+        {
+          "target": "fayde-thuring",
+          "type": "enemy",
+          "note": "Midas Betancore's killer"
+        },
+        {
+          "target": "bastian-verveuk",
+          "type": "betrayer",
+          "note": "sacrificed him to bind Cherubael"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Gregor_Eisenhorn",
+        "https://warhammer40k.fandom.com/wiki/Gregor_Eisenhorn",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)"
+      ]
+    },
+    {
+      "id": "uber-aemos",
+      "name": "Uber Aemos",
+      "title": "Savant",
+      "aliases": [
+        "Doctor Savine (cover identity)"
+      ],
+      "faction": "retinue",
+      "books": [
+        "xenos",
+        "missing-in-action",
+        "malleus",
+        "backcloth",
+        "hereticus"
+      ],
+      "importance": 4,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Dies on a shuttle fleeing the Essene, his body broken after holding Cherubael inside himself; his last words are \"most perturbatory\".",
+      "origin": "",
+      "summary": "Eisenhorn's longest-serving retainer, an elderly savant who had served Eisenhorn's mentor Hapshant before him. A meme-virus caught at 42 made him compulsively hungry for data, and his augmented mind finds patterns at great speed. In Hereticus he turns to the Malus Codicium to translate the Ghül script, and Cherubael uses it to bargain with him.",
+      "traits": [
+        "savant",
+        "augmetic",
+        "data-addict",
+        "linguist",
+        "\"most perturbatory\""
+      ],
+      "wargear": "Oversized augmetic eyewear",
+      "epithet": "An encyclopaedia undone by curiosity",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "servant",
+          "note": "longest-serving agent"
+        },
+        {
+          "target": "cherubael",
+          "type": "enemy",
+          "note": "contained the daemon at the cost of his life"
+        },
+        {
+          "target": "godwyn-fischig",
+          "type": "ally",
+          "note": "fellow retainer"
+        },
+        {
+          "target": "alizebeth-bequin",
+          "type": "ally",
+          "note": "fellow retainer"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Uber_Aemos",
+        "https://warhammer40k.fandom.com/wiki/Uber_Aemos",
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Sameter",
+        "https://wh40k.lexicanum.com/wiki/Backcloth_for_a_Crown_Additional_(Short_Story)"
+      ]
+    },
+    {
+      "id": "godwyn-fischig",
+      "name": "Godwyn Fischig",
+      "title": "Arbites Chastener turned retainer",
+      "aliases": [
+        "Godwin Fischig"
+      ],
+      "faction": "retinue",
+      "books": [
+        "xenos",
+        "missing-in-action",
+        "malleus",
+        "hereticus"
+      ],
+      "importance": 4,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Betrays Eisenhorn to Osma and Heldane to save his soul, shoots out his knees, is killed by Medea Betancore, and his corpse becomes Cherubael's new host.",
+      "origin": "Hubris",
+      "summary": "A tall, fair-haired Adeptus Arbites chastener whom Hubris's High Custodian assigns to watch Eisenhorn during the Eyclone affair. He then leaves the Arbites and joins Eisenhorn's retinue for good. A devout puritan, he helps break Eisenhorn out of prison on Cadia, but he cannot accept his master's turn to radical methods in Hereticus.",
+      "traits": [
+        "arbitrator",
+        "puritan",
+        "investigator",
+        "loyal to a fault"
+      ],
+      "wargear": "",
+      "epithet": "The friend who tried to save his soul",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "betrayer",
+          "note": "sold him out to Osma to save his soul"
+        },
+        {
+          "target": "leonid-osma",
+          "type": "ally",
+          "note": "helped set the Jeganda trap"
+        },
+        {
+          "target": "medea-betancore",
+          "type": "enemy",
+          "note": "killed by her"
+        },
+        {
+          "target": "cherubael",
+          "type": "bound",
+          "note": "his corpse became its host"
+        },
+        {
+          "target": "alizebeth-bequin",
+          "type": "mentor",
+          "note": "trained her with laspistols"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Godwyn_Fischig",
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)"
+      ]
+    },
+    {
+      "id": "alizebeth-bequin",
+      "name": "Alizebeth Bequin",
+      "title": "Untouchable; head of the Distaff",
+      "aliases": [
+        "Lyse B"
+      ],
+      "faction": "retinue",
+      "books": [
+        "xenos",
+        "malleus",
+        "backcloth",
+        "hereticus"
+      ],
+      "importance": 4,
+      "psy": "blank",
+      "status": "other",
+      "fate": "Her mind is shattered by the backlash from the Titan Cruor Vult on Durer, and she is left brain-dead on life support in stasis.",
+      "origin": "Bonaventure",
+      "summary": "A pleasure girl from Hubris's Sun Dome whom Eisenhorn recognises as a pariah, a psychic blank who nullifies psychic powers. She proves a fine undercover operative and later leads the Distaff, Eisenhorn's cadre of blanks. She and Eisenhorn share a deep but never consummated attachment.",
+      "traits": [
+        "psychic blank",
+        "undercover operative",
+        "dual laspistols",
+        "leader of the Distaff"
+      ],
+      "wargear": "Twin laspistols",
+      "epithet": "A silence in the warp, beloved",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "love",
+          "note": "unspoken devotion"
+        },
+        {
+          "target": "godwyn-fischig",
+          "type": "student",
+          "note": "weapons training"
+        },
+        {
+          "target": "pontius-glaw",
+          "type": "enemy",
+          "note": "conversed with his psy-memory"
+        },
+        {
+          "target": "eleena-koi",
+          "type": "mentor",
+          "note": "led the Distaff"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Alizebeth_Bequin",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Backcloth_for_a_Crown_Additional_(Short_Story)",
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)"
+      ]
+    },
+    {
+      "id": "midas-betancore",
+      "name": "Midas Betancore",
+      "title": "Glavian pilot",
+      "aliases": [],
+      "faction": "retinue",
+      "books": [
+        "xenos"
+      ],
+      "importance": 4,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Killed by the heretic Fayde Thuring in 312.M41, a month before his daughter Medea was born.",
+      "origin": "Glavia",
+      "summary": "Eisenhorn's hot-tempered Glavian pilot and his closest friend. Bio-circuitry in his hands links him to the gun-cutter. On Gudrun he evades capture by House Glaw and raises the alarm that brings Voke's forces to rescue the captured team.",
+      "traits": [
+        "pilot",
+        "Glavian bio-circuitry",
+        "marksman",
+        "hothead"
+      ],
+      "wargear": "Twin needle pistols, gun-cutter",
+      "epithet": "The pilot whose memory flies on",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "servant",
+          "note": "pilot and best friend"
+        },
+        {
+          "target": "medea-betancore",
+          "type": "kin",
+          "note": "father"
+        },
+        {
+          "target": "fayde-thuring",
+          "type": "enemy",
+          "note": "his killer"
+        },
+        {
+          "target": "lores-vibben",
+          "type": "ally",
+          "note": "fellow retainer"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Midas_Betancore",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)"
+      ]
+    },
+    {
+      "id": "medea-betancore",
+      "name": "Medea Betancore",
+      "title": "Glavian pilot",
+      "aliases": [],
+      "faction": "retinue",
+      "books": [
+        "malleus",
+        "hereticus"
+      ],
+      "importance": 4,
+      "psy": "none",
+      "status": "alive",
+      "fate": "Survives the trilogy; after Thuring's death she reaches her father's psy-memory through an auto-seance, and she kills Fischig at Jeganda to save Eisenhorn.",
+      "origin": "Glavia",
+      "summary": "Midas Betancore's daughter, born after his death. She grows up to fly Eisenhorn's gun-cutter and is every bit her father's equal as a pilot and in temper. In Hereticus she demands to be present for the hunt for her father's killer, Fayde Thuring.",
+      "traits": [
+        "pilot",
+        "Glavian",
+        "hothead",
+        "loyal"
+      ],
+      "wargear": "Gun-cutter",
+      "epithet": "Her father's daughter, at the controls",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "servant",
+          "note": "pilot"
+        },
+        {
+          "target": "midas-betancore",
+          "type": "kin",
+          "note": "daughter"
+        },
+        {
+          "target": "godwyn-fischig",
+          "type": "enemy",
+          "note": "killed him to save Eisenhorn"
+        },
+        {
+          "target": "fayde-thuring",
+          "type": "enemy",
+          "note": "sought vengeance"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Medea_Betancore",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)"
+      ]
+    },
+    {
+      "id": "harlon-nayl",
+      "name": "Harlon Nayl",
+      "title": "Bounty hunter",
+      "aliases": [],
+      "faction": "retinue",
+      "books": [
+        "malleus",
+        "hereticus"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "alive",
+      "fate": "Survives the Glaw purge with Ravenor's help and goes on to serve in Ravenor's team.",
+      "origin": "",
+      "summary": "A big, heavily armed former bounty hunter in Eisenhorn's employ. In Malleus he goes undercover with Eisenhorn as a mutant on Eechan to trail Lyko. Ravenor extracts him and Kara Swole during Glaw's attacks, and they rejoin Eisenhorn on Promody.",
+      "traits": [
+        "bounty hunter",
+        "muscle",
+        "undercover",
+        "veteran"
+      ],
+      "wargear": "Heavy personal arsenal",
+      "epithet": "A hired gun who stayed loyal",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "servant",
+          "note": "operative"
+        },
+        {
+          "target": "kara-swole",
+          "type": "love",
+          "note": "brief affair"
+        },
+        {
+          "target": "gideon-ravenor",
+          "type": "ally",
+          "note": "later joins his team"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Gideon_Ravenor",
+        "https://wh40k.lexicanum.com/wiki/Kara_Swole"
+      ]
+    },
+    {
+      "id": "kara-swole",
+      "name": "Kara Swole",
+      "title": "Acrobat and operative",
+      "aliases": [],
+      "faction": "retinue",
+      "books": [
+        "malleus",
+        "hereticus"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "alive",
+      "fate": "Survives and transfers to Gideon Ravenor's service after Eisenhorn disappears.",
+      "origin": "Bonaventure",
+      "summary": "A former circus acrobat and dancer whom Eisenhorn recruits for her athleticism and her skill at theatrics. She serves him for many years. Ravenor rescues her and Nayl during Pontius Glaw's purge, and they rejoin Eisenhorn on Promody.",
+      "traits": [
+        "acrobat",
+        "dancer",
+        "infiltrator",
+        "cheerful"
+      ],
+      "wargear": "",
+      "epithet": "The show must go on",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "servant",
+          "note": "operative"
+        },
+        {
+          "target": "harlon-nayl",
+          "type": "love",
+          "note": "brief affair"
+        },
+        {
+          "target": "gideon-ravenor",
+          "type": "ally",
+          "note": "later joins his team"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Kara_Swole",
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)"
+      ]
+    },
+    {
+      "id": "gideon-ravenor",
+      "name": "Gideon Ravenor",
+      "title": "Interrogator, later Inquisitor (Ordo Xenos)",
+      "aliases": [],
+      "faction": "inquisition",
+      "books": [
+        "malleus",
+        "hereticus"
+      ],
+      "importance": 4,
+      "psy": "psyker",
+      "status": "alive",
+      "fate": "Promoted to full Inquisitor in 346.M41; he helps Eisenhorn bring down Pontius Glaw on Ghül.",
+      "origin": "",
+      "summary": "Eisenhorn's gifted interrogator. He loses his lover Arianhrod on Lethe Eleven, then is horrifically burned in the Thracian Atrocity and confined to a force chair. His psychic power only grows: he finds Quixos's base on Farness Beta and in Hereticus returns as an Inquisitor to extract Nayl and Swole and foresee Glaw's apocalypse.",
+      "traits": [
+        "psyker",
+        "crippled",
+        "force chair",
+        "philosopher",
+        "protégé"
+      ],
+      "wargear": "Psi-amplifying force chair",
+      "epithet": "Mind unbound by a ruined body",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "student",
+          "note": "his interrogator"
+        },
+        {
+          "target": "arianhrod-esw-sweydyr",
+          "type": "love",
+          "note": "lover killed on Lethe Eleven"
+        },
+        {
+          "target": "harlon-nayl",
+          "type": "ally",
+          "note": "extracts him"
+        },
+        {
+          "target": "kara-swole",
+          "type": "ally",
+          "note": "extracts her"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Gideon_Ravenor",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)"
+      ]
+    },
+    {
+      "id": "nathun-inshabel",
+      "name": "Nathun Inshabel",
+      "title": "Interrogator",
+      "aliases": [],
+      "faction": "inquisition",
+      "books": [
+        "malleus"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Murdered with his entire staff in Pontius Glaw's simultaneous strikes on Eisenhorn's network.",
+      "origin": "",
+      "summary": "An interrogator who works with Eisenhorn during the Quixos affair. He discovers that the psyker Lyko 'killed' on Thracian Primaris was not really Esarhaddon, and he is with Eisenhorn on Cinchare when Eisenhorn bargains with Glaw.",
+      "traits": [
+        "interrogator",
+        "investigator"
+      ],
+      "wargear": "",
+      "epithet": "A loyal blade cut down off-stage",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "ally",
+          "note": "trusted colleague"
+        },
+        {
+          "target": "pontius-glaw",
+          "type": "enemy",
+          "note": "murdered on his orders"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)"
+      ]
+    },
+    {
+      "id": "tobias-maxilla",
+      "name": "Tobias Maxilla",
+      "title": "Rogue Trader, master of the Essene",
+      "aliases": [
+        "Tobius Maxilla"
+      ],
+      "faction": "retinue",
+      "books": [
+        "xenos",
+        "malleus",
+        "hereticus"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Mortally wounded when Osma's forces board the Essene, he uses his last strength to shoot Osma dead and save Eisenhorn.",
+      "origin": "",
+      "summary": "An extravagantly dressed rogue trader, raised by the trader Vaden Awl, whose ship the Essene carries Eisenhorn through all three novels. When an assassination attempt on Eisenhorn injures him, it reveals that much of his lower body is mechanical. He helps spring Eisenhorn from the Carnificina.",
+      "traits": [
+        "rogue trader",
+        "dandy",
+        "partly mechanical",
+        "ship captain"
+      ],
+      "wargear": "The starship Essene, digital ring weapon",
+      "epithet": "A dandy who died a hero",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "ally",
+          "note": "long-time shipmaster"
+        },
+        {
+          "target": "leonid-osma",
+          "type": "enemy",
+          "note": "killed him"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Tobias_Maxilla",
+        "https://wh40k.lexicanum.com/wiki/Leonid_Osma",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)"
+      ]
+    },
+    {
+      "id": "lowink",
+      "name": "Lowink",
+      "title": "Astropath",
+      "aliases": [],
+      "faction": "retinue",
+      "books": [
+        "xenos"
+      ],
+      "importance": 1,
+      "psy": "psyker",
+      "status": "dead",
+      "fate": "Killed by the warp entity that manifests during the auto-seance on Malahite's corpse.",
+      "origin": "",
+      "summary": "Eisenhorn's young, sickly astropath during the Necroteuch affair, his skull and arms studded with implant plugs. He is only a weak psyker, but he knows Eisenhorn's methods well enough to orchestrate the auto-seances that probe Eyclone's secrets.",
+      "traits": [
+        "astropath",
+        "auto-seance",
+        "frail"
+      ],
+      "wargear": "",
+      "epithet": "A frail voice in the empyrean",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "servant",
+          "note": "his astropath"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)",
+        "https://www.blacklibrary.com/downloads/product/pdf/x/xenos.pdf"
+      ]
+    },
+    {
+      "id": "lores-vibben",
+      "name": "Lores Vibben",
+      "title": "Bodyguard",
+      "aliases": [],
+      "faction": "retinue",
+      "books": [
+        "xenos"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Killed on Hubris by Murdin Eyclone; Eisenhorn executes Eyclone with her pistol and buries it with her.",
+      "origin": "",
+      "summary": "An ex-ganger who served as Eisenhorn's bodyguard and aide. She marked his stub pistol with her gang's skull-and-rose colours, which he later understood as an honour. Her death in the first chapter of Xenos sets the tone of the trilogy.",
+      "traits": [
+        "ex-ganger",
+        "bodyguard",
+        "loyal"
+      ],
+      "wargear": "Gang-marked Scipio stub pistol (given to Eisenhorn)",
+      "epithet": "Her pistol delivered the final verdict",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "servant",
+          "note": "bodyguard"
+        },
+        {
+          "target": "murdin-eyclone",
+          "type": "enemy",
+          "note": "her killer"
+        }
+      ],
+      "sources": [
+        "https://warhammer40k.fandom.com/wiki/Gregor_Eisenhorn",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)"
+      ]
+    },
+    {
+      "id": "arianhrod-esw-sweydyr",
+      "name": "Arianhrod Esw Sweydyr",
+      "title": "Carthaen swordswoman",
+      "aliases": [],
+      "faction": "retinue",
+      "books": [
+        "malleus"
+      ],
+      "importance": 2,
+      "psy": "psyker",
+      "status": "dead",
+      "fate": "Killed on Lethe Eleven by a Dark Eldar haemonculus during the raid on Beldame Sadia.",
+      "origin": "Carthae",
+      "summary": "A swordswoman of the Esw Sweydyr tribe of Carthae, and Gideon Ravenor's lover. She carried Barbarisater, a semi-sentient blade that her tribe had held for nineteen generations. After her death the sword passes to Eisenhorn, and Magos Bure reworks it into his force sword.",
+      "traits": [
+        "swordswoman",
+        "tribal warrior",
+        "psychic blade-bond"
+      ],
+      "wargear": "Barbarisater",
+      "epithet": "Her blade outlived her",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "servant",
+          "note": "retainer"
+        },
+        {
+          "target": "gideon-ravenor",
+          "type": "love",
+          "note": "lovers"
+        }
+      ],
+      "sources": [
+        "https://warhammer40k.fandom.com/wiki/Gregor_Eisenhorn",
+        "https://wh40k.lexicanum.com/wiki/Gideon_Ravenor",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)"
+      ]
+    },
+    {
+      "id": "eleena-koi",
+      "name": "Eleena Koi",
+      "title": "Distaff blank",
+      "aliases": [],
+      "faction": "retinue",
+      "books": [
+        "hereticus"
+      ],
+      "importance": 1,
+      "psy": "blank",
+      "status": "alive",
+      "fate": "Survives the fall of Spaeton House and stays with Eisenhorn through the hunt for Glaw.",
+      "origin": "",
+      "summary": "A psychic blank of the Distaff who is at Eisenhorn's Gudrun estate when Glaw's mercenaries attack. She escapes with Eisenhorn and Aemos and helps rescue Medea.",
+      "traits": [
+        "psychic blank",
+        "Distaff",
+        "survivor"
+      ],
+      "wargear": "",
+      "epithet": "One silence left after the slaughter",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "servant",
+          "note": "Distaff operative"
+        },
+        {
+          "target": "alizebeth-bequin",
+          "type": "student",
+          "note": "Distaff member"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)"
+      ]
+    },
+    {
+      "id": "geard-bure",
+      "name": "Geard Bure",
+      "title": "Magos, Adeptus Mechanicus",
+      "aliases": [],
+      "faction": "imperial",
+      "books": [
+        "malleus"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Some years after Malleus, Pontius Glaw kills him using the mechanical body Bure built, then escapes Cinchare.",
+      "origin": "",
+      "summary": "An ancient tech-priest and former Titan forge architect who keeps the Pontius casket for Eisenhorn on Cinchare. In Malleus he destroys the Chaos-tainted geode called the Lith, forges Eisenhorn's runestaff and reworks Barbarisater. At Eisenhorn's request he builds Glaw a body, which proves fatal.",
+      "traits": [
+        "tech-priest",
+        "ancient",
+        "metallurgist",
+        "artificer"
+      ],
+      "wargear": "Mobile digging machine",
+      "epithet": "The smith who built his own killer",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "ally",
+          "note": "old friend and artificer"
+        },
+        {
+          "target": "pontius-glaw",
+          "type": "enemy",
+          "note": "his gaoler, then his victim"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Pontius_Glaw",
+        "https://warhammer40k.fandom.com/wiki/Gregor_Eisenhorn"
+      ]
+    },
+    {
+      "id": "cherubael",
+      "name": "Cherubael",
+      "title": "Daemon Prince in a daemonhost",
+      "aliases": [
+        "The Cherub of Bael",
+        "Death of Worlds",
+        "The Scourge"
+      ],
+      "faction": "daemon",
+      "books": [
+        "xenos",
+        "malleus",
+        "hereticus"
+      ],
+      "importance": 4,
+      "psy": "daemon",
+      "status": "other",
+      "fate": "Bound by Eisenhorn into Fischig's corpse, it ends the omnibus as his enslaved, ever-present weapon.",
+      "origin": "Warp (once worshipped as a god on Clanar II)",
+      "summary": "A Daemon Prince whom Quixos bound into a human host. It first appears disguised as one of Molitor's henchmen on 56-Izar and spends a century steering Eisenhorn toward freeing it. Eisenhorn rebinds it, unleashes it against the Titan Cruor Vult, and comes to depend on it.",
+      "traits": [
+        "daemonhost",
+        "manipulator",
+        "prescient",
+        "sardonic",
+        "unkillable"
+      ],
+      "wargear": "",
+      "epithet": "Patient puppeteer of an inquisitor's fall",
+      "relationships": [
+        {
+          "target": "quixos",
+          "type": "bound",
+          "note": "his enslaver"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "bound",
+          "note": "enslaved by and manipulating him"
+        },
+        {
+          "target": "konrad-molitor",
+          "type": "ally",
+          "note": "posed as his henchman"
+        },
+        {
+          "target": "uber-aemos",
+          "type": "enemy",
+          "note": "bargained through the Codicium"
+        },
+        {
+          "target": "godwyn-fischig",
+          "type": "bound",
+          "note": "host body"
+        },
+        {
+          "target": "bastian-verveuk",
+          "type": "bound",
+          "note": "host body"
+        },
+        {
+          "target": "lyko",
+          "type": "enemy",
+          "note": "burned out his mind"
+        },
+        {
+          "target": "esarhaddon",
+          "type": "enemy",
+          "note": "abducted him for Quixos"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Cherubael",
+        "https://warhammer40k.fandom.com/wiki/Cherubael",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)"
+      ]
+    },
+    {
+      "id": "commodus-voke",
+      "name": "Commodus Voke",
+      "title": "Inquisitor, Ordo Malleus",
+      "aliases": [],
+      "faction": "inquisition",
+      "books": [
+        "xenos",
+        "malleus"
+      ],
+      "importance": 3,
+      "psy": "psyker",
+      "status": "dead",
+      "fate": "Killed in psychic combat with the daemonhost Prophaniti on Farness Beta; buried with full honours on Thracian Primaris.",
+      "origin": "",
+      "summary": "An ancient, caustic, powerfully psychic Thorian inquisitor. As a young novice he helped hunt down Pontius Glaw two centuries earlier. He investigates House Glaw alongside Eisenhorn, runs the auto-seance on Malahite with him, and later joins his cell against Quixos.",
+      "traits": [
+        "psyker",
+        "ancient",
+        "puritan",
+        "abrasive"
+      ],
+      "wargear": "",
+      "epithet": "An old flame burning out",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "ally",
+          "note": "uneasy colleague"
+        },
+        {
+          "target": "golesh-heldane",
+          "type": "mentor",
+          "note": "his pupil"
+        },
+        {
+          "target": "prophaniti",
+          "type": "enemy",
+          "note": "his killer"
+        },
+        {
+          "target": "pontius-glaw",
+          "type": "enemy",
+          "note": "helped hunt him originally"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Commodus_Voke",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)"
+      ]
+    },
+    {
+      "id": "golesh-heldane",
+      "name": "Golesh Heldane",
+      "title": "Interrogator, later Inquisitor (Ordo Malleus)",
+      "aliases": [
+        "Golesh Constantine Pheppos Heldane"
+      ],
+      "faction": "inquisition",
+      "books": [
+        "xenos",
+        "malleus",
+        "hereticus"
+      ],
+      "importance": 3,
+      "psy": "psyker",
+      "status": "alive",
+      "fate": "Survives the boarding of the Essene, nearly killed by Cherubael, and keeps silent about how Osma died.",
+      "origin": "",
+      "summary": "Voke's pupil, horribly mauled by a carnodon in the Glaw arena and later surgically exaggerating the scars into an equine face. As an inquisitor his psychic power surpasses Voke's. With Osma he springs the trap at Jeganda to capture Eisenhorn and seize Cherubael and the Codicium.",
+      "traits": [
+        "psyker",
+        "scarred",
+        "ambitious",
+        "puritan turned radical"
+      ],
+      "wargear": "",
+      "epithet": "Scarred zealot with a long memory",
+      "relationships": [
+        {
+          "target": "commodus-voke",
+          "type": "student",
+          "note": "his master"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "rival",
+          "note": "lifelong enmity"
+        },
+        {
+          "target": "leonid-osma",
+          "type": "ally",
+          "note": "co-conspirator against Eisenhorn"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Heldane",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)"
+      ]
+    },
+    {
+      "id": "titus-endor",
+      "name": "Titus Endor",
+      "title": "Inquisitor, Ordo Xenos then Ordo Malleus",
+      "aliases": [],
+      "faction": "inquisition",
+      "books": [
+        "xenos",
+        "malleus"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "alive",
+      "fate": "Badly wounded on Farness Beta and estranged from Eisenhorn; he later dies of cerebral worms caught from Hapshant (told outside the omnibus).",
+      "origin": "",
+      "summary": "Eisenhorn's fellow interrogator under Hapshant and his only real friend in the Inquisition. In Xenos he chases Gorgone Locke on 56-Izar. Pressured into the Ordo Malleus, he agrees to spy on Eisenhorn, and on Farness Beta it emerges that he meant to arrest him after the battle, which ends their friendship.",
+      "traits": [
+        "old friend",
+        "drinker",
+        "divided loyalties"
+      ],
+      "wargear": "Saurapt-tooth necklace",
+      "epithet": "A friend who was made to spy",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "betrayer",
+          "note": "spied on him for the Ordo Malleus"
+        },
+        {
+          "target": "leonid-osma",
+          "type": "servant",
+          "note": "coerced informant"
+        },
+        {
+          "target": "gorgone-locke",
+          "type": "enemy",
+          "note": "pursued him on 56-Izar"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Titus_Endor",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)"
+      ]
+    },
+    {
+      "id": "konrad-molitor",
+      "name": "Konrad Molitor",
+      "title": "Radical Inquisitor",
+      "aliases": [],
+      "faction": "inquisition",
+      "books": [
+        "xenos"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Killed by Eisenhorn (with Bequin's help) on 56-Izar while trying to seize the Necroteuch.",
+      "origin": "",
+      "summary": "A flamboyant radical inquisitor in yellow-and-black who flays the captive Malahite to death before Eisenhorn can question him. On 56-Izar he tries to take the Necroteuch for study and calls down a bombardment. He is secretly acting for Quixos, and one of his henchmen is Cherubael in disguise.",
+      "traits": [
+        "radical",
+        "arrogant",
+        "secret agent of Quixos"
+      ],
+      "wargear": "Ornate power sword, laspistol, arco-flagellants",
+      "epithet": "Quixos's smiling cat's-paw",
+      "relationships": [
+        {
+          "target": "quixos",
+          "type": "servant",
+          "note": "acted on his behalf"
+        },
+        {
+          "target": "cherubael",
+          "type": "ally",
+          "note": "daemonhost in his entourage"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "killed by him"
+        },
+        {
+          "target": "girolamo-malahite",
+          "type": "enemy",
+          "note": "killed him under interrogation"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Konrad_Molitor",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)"
+      ]
+    },
+    {
+      "id": "phlebas-alessandro-rorken",
+      "name": "Phlebas Alessandro Rorken",
+      "title": "Lord Inquisitor, Master of the Ordo Xenos Helican",
+      "aliases": [
+        "Plebas Alessandro Rorken"
+      ],
+      "faction": "inquisition",
+      "books": [
+        "xenos",
+        "malleus"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "alive",
+      "fate": "Survives; his illness is why Eisenhorn presides at Durer, and he succeeds Osma as Grandmaster of the Ordos Helican.",
+      "origin": "",
+      "summary": "Eisenhorn's superior, a stern puritan Lord Inquisitor in crimson robes. He leads the task force against 56-Izar and later quietly helps Eisenhorn when he is outlawed, sending Massimo Ricci to join the hunt for Quixos.",
+      "traits": [
+        "puritan",
+        "commander",
+        "patron"
+      ],
+      "wargear": "Holy flamer (used against a daemon)",
+      "epithet": "The steady hand above the storm",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "master",
+          "note": "his superior"
+        },
+        {
+          "target": "massimo-ricci",
+          "type": "master",
+          "note": "valued subordinate"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Massimo_Ricci",
+        "https://wh40k.lexicanum.com/wiki/Leonid_Osma"
+      ]
+    },
+    {
+      "id": "leonid-osma",
+      "name": "Leonid Osma",
+      "title": "Inquisitor, Ordo Malleus; later Grandmaster",
+      "aliases": [],
+      "faction": "inquisition",
+      "books": [
+        "malleus",
+        "hereticus"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Shot in the back of the head by Tobias Maxilla aboard the Essene just before he can kill Eisenhorn.",
+      "origin": "",
+      "summary": "A pugnacious Ordo Malleus inquisitor with a bionic jaw who arrests Eisenhorn on Cadia, declares him Extremis Diabolus and has him imprisoned in the Carnificina. Risen to Grandmaster by Hereticus, he uses Fischig to trap Eisenhorn, apparently wanting Cherubael and the Codicium for himself.",
+      "traits": [
+        "puritan zealot",
+        "ambitious",
+        "bionic jaw",
+        "power hammer"
+      ],
+      "wargear": "Power hammer",
+      "epithet": "A hammer seeking the wrong anvil",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "persecutor"
+        },
+        {
+          "target": "golesh-heldane",
+          "type": "ally",
+          "note": "co-conspirator"
+        },
+        {
+          "target": "godwyn-fischig",
+          "type": "ally",
+          "note": "used him as informant"
+        },
+        {
+          "target": "titus-endor",
+          "type": "master",
+          "note": "coerced him to spy"
+        },
+        {
+          "target": "tobias-maxilla",
+          "type": "enemy",
+          "note": "killed by him"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Leonid_Osma",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)"
+      ]
+    },
+    {
+      "id": "neve",
+      "name": "Neve",
+      "title": "Inquisitor General, Cadia",
+      "aliases": [],
+      "faction": "inquisition",
+      "books": [
+        "malleus"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "alive",
+      "fate": "Gravely wounded by Prophaniti at the Cadian pylon; later sends Raum Grumman as her proxy.",
+      "origin": "Cadia",
+      "summary": "A stern puritan Inquisitor General on Cadia who distrusts roving inquisitors. Eisenhorn wins her over, and together they trace the Sons of Bael cult to Quixos. She opens the Cadian archives at Kasr Derth to him.",
+      "traits": [
+        "puritan",
+        "Cadian",
+        "stern"
+      ],
+      "wargear": "",
+      "epithet": "Guardian of the Gate, slow to trust",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "ally",
+          "note": "reluctant ally"
+        },
+        {
+          "target": "raum-grumman",
+          "type": "master",
+          "note": "her subordinate"
+        },
+        {
+          "target": "prophaniti",
+          "type": "enemy",
+          "note": "wounded by it"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Neve",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)"
+      ]
+    },
+    {
+      "id": "raum-grumman",
+      "name": "Raum Grumman",
+      "title": "Inquisitor, Ordo Hereticus",
+      "aliases": [],
+      "faction": "inquisition",
+      "books": [
+        "malleus"
+      ],
+      "importance": 1,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Beheaded by Quixos at Ferell Sidor on Farness Beta.",
+      "origin": "",
+      "summary": "Neve's subordinate, sent as her proxy in the Eisenhorn matter. He joins Eisenhorn's cell of inquisitors hunting Quixos.",
+      "traits": [
+        "inquisitor",
+        "proxy"
+      ],
+      "wargear": "",
+      "epithet": "Sent as a proxy, fell for real",
+      "relationships": [
+        {
+          "target": "neve",
+          "type": "servant",
+          "note": "her subordinate"
+        },
+        {
+          "target": "quixos",
+          "type": "enemy",
+          "note": "his killer"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "ally",
+          "note": "joined his cell"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Raum_Grumman",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)"
+      ]
+    },
+    {
+      "id": "massimo-ricci",
+      "name": "Massimo Ricci",
+      "title": "Inquisitor, Ordo Xenos",
+      "aliases": [],
+      "faction": "inquisition",
+      "books": [
+        "malleus"
+      ],
+      "importance": 1,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Slain by Quixos on Farness Beta; a library on Hesperus is later named for him.",
+      "origin": "Hesperus",
+      "summary": "One of Lord Rorken's most valued subordinates, sent in Rorken's place to join the outlawed Eisenhorn's hunt for Quixos.",
+      "traits": [
+        "inquisitor",
+        "rising star"
+      ],
+      "wargear": "",
+      "epithet": "Rorken's proxy at the altar of the sun",
+      "relationships": [
+        {
+          "target": "phlebas-alessandro-rorken",
+          "type": "servant",
+          "note": "his subordinate"
+        },
+        {
+          "target": "quixos",
+          "type": "enemy",
+          "note": "his killer"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "ally",
+          "note": "joined his cell"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Massimo_Ricci",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)"
+      ]
+    },
+    {
+      "id": "quixos",
+      "name": "Quixos",
+      "title": "Renegade Inquisitor, Ordo Malleus",
+      "aliases": [
+        "Quixos the Great",
+        "Quixos the Bright"
+      ],
+      "faction": "heretic",
+      "books": [
+        "malleus"
+      ],
+      "importance": 4,
+      "psy": "psyker",
+      "status": "dead",
+      "fate": "Run through by the broken point of Barbarisater on Farness Beta, he crumbles to dust calling Eisenhorn a heretic.",
+      "origin": "",
+      "summary": "Once one of the most lauded inquisitors, Quixos fell to radicalism after a daemon claw lodged in his heart. He stole the Malus Codicium and bound Cherubael and Prophaniti as daemonhosts. He engineers the Thracian Atrocity to free alpha-plus psykers, meaning to use a replica Cadian pylon to collapse the Eye of Terror.",
+      "traits": [
+        "renegade",
+        "psyker",
+        "daemon-binder",
+        "deluded",
+        "ancient"
+      ],
+      "wargear": "Daemonsword Kharnagar, Malus Codicium",
+      "epithet": "A hero who forgot he had fallen",
+      "relationships": [
+        {
+          "target": "cherubael",
+          "type": "master",
+          "note": "bound it as daemonhost"
+        },
+        {
+          "target": "prophaniti",
+          "type": "master",
+          "note": "bound it as daemonhost"
+        },
+        {
+          "target": "konrad-molitor",
+          "type": "master",
+          "note": "his agent"
+        },
+        {
+          "target": "lyko",
+          "type": "master",
+          "note": "his agent"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "his killer"
+        },
+        {
+          "target": "esarhaddon",
+          "type": "master",
+          "note": "freed him for his scheme"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Quixos",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)"
+      ]
+    },
+    {
+      "id": "prophaniti",
+      "name": "Prophaniti",
+      "title": "Daemonhost",
+      "aliases": [],
+      "faction": "daemon",
+      "books": [
+        "malleus"
+      ],
+      "importance": 2,
+      "psy": "daemon",
+      "status": "dead",
+      "fate": "Destroyed by Eisenhorn's runestaff on Farness Beta, apparently suffering a true death.",
+      "origin": "",
+      "summary": "Quixos's second daemonhost, a daemon whose true name Quixos never learned. It battles Eisenhorn and Neve at a Cadian pylon and survives the loss of its host by possessing Husmaan. On Farness Beta it kills Commodus Voke.",
+      "traits": [
+        "daemonhost",
+        "nameless",
+        "savage"
+      ],
+      "wargear": "",
+      "epithet": "A nameless profanity given flesh",
+      "relationships": [
+        {
+          "target": "quixos",
+          "type": "bound",
+          "note": "enslaved by him"
+        },
+        {
+          "target": "commodus-voke",
+          "type": "enemy",
+          "note": "killed him"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "destroyed by him"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Prophaniti",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)"
+      ]
+    },
+    {
+      "id": "lyko",
+      "name": "Lyko",
+      "title": "Inquisitor (traitor)",
+      "aliases": [],
+      "faction": "inquisition",
+      "books": [
+        "malleus"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Cornered on Eechan, his brain is burned out by Cherubael before Eisenhorn can read his mind.",
+      "origin": "",
+      "summary": "An inquisitor who helped capture the 33 psykers in the Helican Crusade. During the Thracian Atrocity he appears to incinerate the escaped psyker Esarhaddon, but the victim was someone else. Eisenhorn trails him to an auction on Eechan, where his collusion with Cherubael is exposed.",
+      "traits": [
+        "traitor",
+        "inquisitor",
+        "collaborator"
+      ],
+      "wargear": "Plasma gun",
+      "epithet": "The inquisitor who sold the triumph",
+      "relationships": [
+        {
+          "target": "quixos",
+          "type": "servant",
+          "note": "collaborator"
+        },
+        {
+          "target": "cherubael",
+          "type": "ally",
+          "note": "co-conspirator, then killer"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "hunted by him"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Heldane"
+      ]
+    },
+    {
+      "id": "esarhaddon",
+      "name": "Esarhaddon",
+      "title": "Alpha-plus rogue psyker",
+      "aliases": [],
+      "faction": "heretic",
+      "books": [
+        "malleus"
+      ],
+      "importance": 2,
+      "psy": "psyker",
+      "status": "unknown",
+      "fate": "Taken by Cherubael to Quixos on Farness Beta; whether he survives the assault is not clearly recorded.",
+      "origin": "",
+      "summary": "The most powerful of the alpha-plus psykers paraded at the Thracian Primaris Triumph, and the real prize of the Atrocity. A decoy dies in his place, and he is auctioned on Eechan before Cherubael carries him off.",
+      "traits": [
+        "alpha-plus psyker",
+        "captive",
+        "prize"
+      ],
+      "wargear": "",
+      "epithet": "The prize behind the massacre",
+      "relationships": [
+        {
+          "target": "quixos",
+          "type": "servant",
+          "note": "captive asset"
+        },
+        {
+          "target": "cherubael",
+          "type": "bound",
+          "note": "abducted by it"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)"
+      ]
+    },
+    {
+      "id": "javes-thysser",
+      "name": "Javes Thysser",
+      "title": "Inquisitor, Ordo Xenos",
+      "aliases": [],
+      "faction": "inquisition",
+      "books": [
+        "malleus"
+      ],
+      "importance": 1,
+      "psy": "none",
+      "status": "alive",
+      "fate": "Survives his encounter with Cherubael and reports it to Lord Rorken.",
+      "origin": "",
+      "summary": "In Malleus's prologue his retinue is slaughtered by Cherubael, which then spares him, apologising for mistaking him for Eisenhorn. His report first casts suspicion on Eisenhorn.",
+      "traits": [
+        "inquisitor",
+        "witness"
+      ],
+      "wargear": "",
+      "epithet": "Spared by a daemon's mistake",
+      "relationships": [
+        {
+          "target": "cherubael",
+          "type": "enemy",
+          "note": "slew his retinue"
+        },
+        {
+          "target": "phlebas-alessandro-rorken",
+          "type": "servant",
+          "note": "reported to him"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Javes_Thysser",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)"
+      ]
+    },
+    {
+      "id": "arnault-tantalid",
+      "name": "Arnault Tantalid",
+      "title": "Witchfinder, Ordo Hereticus",
+      "aliases": [],
+      "faction": "inquisition",
+      "books": [
+        "malleus"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Killed by Eisenhorn on Orbul Infanta after killing the astropath Ungish.",
+      "origin": "",
+      "summary": "A witch hunter who comes to Lethe Eleven to arrest Eisenhorn for heresy. He ends up saving his life by killing Beldame Sadia. Medea drives him off, and he later ambushes the outlawed Eisenhorn on Orbul Infanta.",
+      "traits": [
+        "witch hunter",
+        "zealot",
+        "relentless"
+      ],
+      "wargear": "",
+      "epithet": "Zeal without discernment",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "sought to arrest him"
+        },
+        {
+          "target": "beldame-sadia",
+          "type": "enemy",
+          "note": "killed her"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Beldame_Sadia"
+      ]
+    },
+    {
+      "id": "bastian-verveuk",
+      "name": "Bastian Verveuk",
+      "title": "Inquisitor (newly elevated)",
+      "aliases": [],
+      "faction": "inquisition",
+      "books": [
+        "hereticus"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Dying after the fight with Cruor Vult, he is made the host body for Cherubael by Eisenhorn.",
+      "origin": "",
+      "summary": "A young, naive puritan inquisitor sent to shadow Eisenhorn at the Durer Court of Examination, to Eisenhorn's irritation. He insists on joining the hunt for Fayde Thuring. Using him as a host is one of Eisenhorn's darkest acts.",
+      "traits": [
+        "naive",
+        "puritan",
+        "idealist"
+      ],
+      "wargear": "",
+      "epithet": "An idealist spent as a vessel",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "student",
+          "note": "shadowed him"
+        },
+        {
+          "target": "cherubael",
+          "type": "bound",
+          "note": "became its host"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)",
+        "https://warhammer40k.fandom.com/wiki/Gregor_Eisenhorn"
+      ]
+    },
+    {
+      "id": "brytnoth",
+      "name": "Brytnoth",
+      "title": "Deathwatch Librarian",
+      "aliases": [],
+      "faction": "imperial",
+      "books": [
+        "xenos"
+      ],
+      "importance": 1,
+      "psy": "psyker",
+      "status": "unknown",
+      "fate": "Fights alongside Eisenhorn on 56-Izar; his later fate is not recorded.",
+      "origin": "",
+      "summary": "A Librarian of Watch Captain Cynewolf's Deathwatch kill-team on 56-Izar. He gives Eisenhorn the compact bolt pistol that Eisenhorn carries for over a century.",
+      "traits": [
+        "Space Marine",
+        "Deathwatch",
+        "Librarian"
+      ],
+      "wargear": "Gifted Eisenhorn a master-crafted bolt pistol",
+      "epithet": "Gift-giver in power armour",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "ally",
+          "note": "gave him a bolt pistol"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Brytnoth",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)"
+      ]
+    },
+    {
+      "id": "pontius-glaw",
+      "name": "Pontius Glaw",
+      "title": "Arch-heretic of House Glaw",
+      "aliases": [
+        "The Pontius",
+        "Khanjar the Sharp"
+      ],
+      "faction": "heretic",
+      "books": [
+        "xenos",
+        "malleus",
+        "hereticus"
+      ],
+      "importance": 5,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Killed for good on Ghül when Eisenhorn drives Barbarisater through the head of his mechanical body, shattering the crystal holding his essence.",
+      "origin": "Gudrun",
+      "summary": "A dissolute seventh son of House Glaw who fell to Chaos and was executed two centuries before Xenos, his mind preserved in a crystal called \"the Pontius\". Eisenhorn keeps him prisoner and bargains with him, and Bure builds him a body. Escaping as \"Khanjar the Sharp\", he destroys Eisenhorn's organisation and seeks the daemon-king Yssarile's barque on Ghül.",
+      "traits": [
+        "charismatic",
+        "erudite",
+        "psy-engram",
+        "vengeful",
+        "mechanical body"
+      ],
+      "wargear": "Mechanical combat body with a cloak of knives",
+      "epithet": "A cultured devil in a crystal cage",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "captor turned nemesis"
+        },
+        {
+          "target": "geard-bure",
+          "type": "enemy",
+          "note": "killed his gaoler"
+        },
+        {
+          "target": "marla-tarray",
+          "type": "kin",
+          "note": "his daughter"
+        },
+        {
+          "target": "oberon-glaw",
+          "type": "kin",
+          "note": "family"
+        },
+        {
+          "target": "urisel-glaw",
+          "type": "kin",
+          "note": "family"
+        },
+        {
+          "target": "murdin-eyclone",
+          "type": "master",
+          "note": "Eyclone worked for his resurrection"
+        },
+        {
+          "target": "alizebeth-bequin",
+          "type": "enemy",
+          "note": "tried to sway her"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Pontius_Glaw",
+        "https://wh40k.lexicanum.com/wiki/House_Glaw",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Godwyn_Fischig"
+      ]
+    },
+    {
+      "id": "murdin-eyclone",
+      "name": "Murdin Eyclone",
+      "title": "Chaos \"facilitator\"",
+      "aliases": [
+        "Murdin Eyeclone"
+      ],
+      "faction": "heretic",
+      "books": [
+        "xenos"
+      ],
+      "importance": 2,
+      "psy": "psyker",
+      "status": "dead",
+      "fate": "Shot dead by Eisenhorn on Hubris with Lores Vibben's pistol.",
+      "origin": "",
+      "summary": "A psyker-for-hire to Chaos cults who can control minds and wipe memories. After a six-year hunt Eisenhorn corners him on Hubris, where he murders thousands of cryo-sleepers in a ritual meant to aid Pontius Glaw.",
+      "traits": [
+        "psyker",
+        "mind-controller",
+        "mass murderer",
+        "mercenary cultist"
+      ],
+      "wargear": "Extending metallic worm hidden under a fingernail",
+      "epithet": "The murderer who opened the case",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "hunted by him for six years"
+        },
+        {
+          "target": "lores-vibben",
+          "type": "enemy",
+          "note": "killed her"
+        },
+        {
+          "target": "pontius-glaw",
+          "type": "servant",
+          "note": "worked toward his resurrection"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Murdin_Eyclone",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)"
+      ]
+    },
+    {
+      "id": "gorgone-locke",
+      "name": "Gorgone Locke",
+      "title": "Shipmaster of House Glaw",
+      "aliases": [
+        "Gorgonne Locke"
+      ],
+      "faction": "heretic",
+      "books": [
+        "xenos"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Crushed by a falling column on 56-Izar; Eisenhorn carves the mark of heresy on his brow as he dies.",
+      "origin": "",
+      "summary": "A red-haired giant of a shipmaster who serves House Glaw as a torturer. His neural scourge leaves Eisenhorn's face permanently unable to smile. He flees with the cabal to trade for the Necroteuch.",
+      "traits": [
+        "torturer",
+        "giant",
+        "shipmaster"
+      ],
+      "wargear": "Neural scourge / nerve probe",
+      "epithet": "The man who stole a smile",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "tortured him"
+        },
+        {
+          "target": "oberon-glaw",
+          "type": "servant",
+          "note": "served House Glaw"
+        },
+        {
+          "target": "titus-endor",
+          "type": "enemy",
+          "note": "pursued by him"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Gorgone_Locke",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)"
+      ]
+    },
+    {
+      "id": "oberon-glaw",
+      "name": "Oberon Glaw",
+      "title": "Lord of House Glaw",
+      "aliases": [],
+      "faction": "heretic",
+      "books": [
+        "xenos"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Killed on KCX-1288 when shrapnel from an explosion impales him during the Necroteuch exchange.",
+      "origin": "Gudrun",
+      "summary": "The head of House Glaw in 240.M41, secretly devoted to Slaanesh. He leads the family's plot to obtain the Necroteuch from the saruthi and escapes Voke's purge of the Glaw estate aboard Captain Estrum's renegade ships.",
+      "traits": [
+        "noble",
+        "Slaaneshi",
+        "schemer"
+      ],
+      "wargear": "",
+      "epithet": "Old blood, rotten to the core",
+      "relationships": [
+        {
+          "target": "pontius-glaw",
+          "type": "kin",
+          "note": "family"
+        },
+        {
+          "target": "urisel-glaw",
+          "type": "kin",
+          "note": "brother"
+        },
+        {
+          "target": "mandragore-carrion",
+          "type": "ally",
+          "note": "allied Chaos Marine"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "foe"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Oberon_Glaw",
+        "https://wh40k.lexicanum.com/wiki/House_Glaw",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)"
+      ]
+    },
+    {
+      "id": "urisel-glaw",
+      "name": "Urisel Glaw",
+      "title": "Commander of the Glaw militia",
+      "aliases": [],
+      "faction": "heretic",
+      "books": [
+        "xenos"
+      ],
+      "importance": 1,
+      "psy": "none",
+      "status": "unknown",
+      "fate": "Captured by Eisenhorn during the raid on the Glaw estate; he resists Inquisitorial torture and his final fate is not recorded.",
+      "origin": "Gudrun",
+      "summary": "Oberon's brother and leader of House Glaw's militia. Eisenhorn takes him prisoner, and his stubborn silence under torture shows the inquisitors that a larger plot is under way.",
+      "traits": [
+        "noble",
+        "militia commander",
+        "unbreakable"
+      ],
+      "wargear": "",
+      "epithet": "Silent under the knife",
+      "relationships": [
+        {
+          "target": "oberon-glaw",
+          "type": "kin",
+          "note": "brother"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "captured by him"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/House_Glaw",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)"
+      ]
+    },
+    {
+      "id": "mandragore-carrion",
+      "name": "Mandragore Carrion",
+      "title": "Emperor's Children Chaos Space Marine",
+      "aliases": [],
+      "faction": "heretic",
+      "books": [
+        "xenos"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Tricked into grasping the Necroteuch, he is paralysed and beheaded by Eisenhorn on KCX-1288.",
+      "origin": "",
+      "summary": "A Traitor Astartes champion of Slaanesh who helps House Glaw's hunt for the Necroteuch, first met overseeing the excavation on Damask.",
+      "traits": [
+        "Chaos Space Marine",
+        "Emperor's Children",
+        "Slaaneshi champion"
+      ],
+      "wargear": "",
+      "epithet": "A Slaaneshi giant felled by a book",
+      "relationships": [
+        {
+          "target": "oberon-glaw",
+          "type": "ally",
+          "note": "allied with House Glaw"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "beheaded by him"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Mandragore_Carrion",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)"
+      ]
+    },
+    {
+      "id": "girolamo-malahite",
+      "name": "Girolamo Malahite",
+      "title": "Archaeoxenologist",
+      "aliases": [],
+      "faction": "heretic",
+      "books": [
+        "xenos"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Dies under Molitor's interrogation; even dead, his mind summons a daemon during the auto-seance.",
+      "origin": "",
+      "summary": "House Glaw's expert on the saruthi, captured by Eisenhorn on KCX-1288. Through an auto-seance on his corpse, Eisenhorn and Voke learn that the saruthi hold their own copy of the Necroteuch.",
+      "traits": [
+        "xenologist",
+        "scholar",
+        "cabalist"
+      ],
+      "wargear": "",
+      "epithet": "Secrets wrung from a corpse",
+      "relationships": [
+        {
+          "target": "oberon-glaw",
+          "type": "servant",
+          "note": "House Glaw ally"
+        },
+        {
+          "target": "konrad-molitor",
+          "type": "enemy",
+          "note": "killed by him"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "captured by him"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/Konrad_Molitor",
+        "https://wh40k.lexicanum.com/wiki/Heldane"
+      ]
+    },
+    {
+      "id": "captain-estrum",
+      "name": "Estrum",
+      "title": "Renegade Imperial Navy captain",
+      "aliases": [],
+      "faction": "heretic",
+      "books": [
+        "xenos"
+      ],
+      "importance": 1,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Executed by Eisenhorn during the firefight at the saruthi exchange on KCX-1288.",
+      "origin": "",
+      "summary": "Commander of a Battlefleet Scarus frigate wing who goes rogue to carry the Glaw cabal and its forces to their meeting with the saruthi.",
+      "traits": [
+        "renegade",
+        "naval officer"
+      ],
+      "wargear": "Frigate wing",
+      "epithet": "A captain who sold his ships",
+      "relationships": [
+        {
+          "target": "oberon-glaw",
+          "type": "ally",
+          "note": "ferried the cabal"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "executed by him"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)",
+        "https://wh40k.lexicanum.com/wiki/House_Glaw"
+      ]
+    },
+    {
+      "id": "beldame-sadia",
+      "name": "Beldame Sadia",
+      "title": "Xenophile cult leader",
+      "aliases": [
+        "The Beldame"
+      ],
+      "faction": "heretic",
+      "books": [
+        "malleus"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Killed by the witchfinder Tantalid on Lethe Eleven as she tries to murder the poisoned Eisenhorn.",
+      "origin": "",
+      "summary": "A centuries-old xenophile who struck compacts with the Dark Eldar. She recruits only convicted murderers and moves on an eight-legged spider carriage, with venom sacs in her cheeks. Eisenhorn's raid on her cult opens Malleus.",
+      "traits": [
+        "xenophile",
+        "augmetic",
+        "poisoner",
+        "ancient"
+      ],
+      "wargear": "Spider-legged carriage, venom sacs, augmetic fangs",
+      "epithet": "A spider in a ruined church",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "foe"
+        },
+        {
+          "target": "arnault-tantalid",
+          "type": "enemy",
+          "note": "killed by him"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Beldame_Sadia",
+        "https://wh40k.lexicanum.com/wiki/Malleus_(Novel)"
+      ]
+    },
+    {
+      "id": "fayde-thuring",
+      "name": "Fayde Thuring",
+      "title": "Heretic",
+      "aliases": [],
+      "faction": "heretic",
+      "books": [
+        "hereticus"
+      ],
+      "importance": 3,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Dies when Cherubael destroys the Chaos Titan Cruor Vult he has awakened on Durer.",
+      "origin": "",
+      "summary": "A survivor of the Hearthood cult who killed Midas Betancore in 312.M41 and evaded Eisenhorn for decades. On Durer's island of Miquol he awakens the Warlord Titan Cruor Vult, and the cost of defeating it is terrible.",
+      "traits": [
+        "heretic",
+        "fugitive",
+        "Titan-waker"
+      ],
+      "wargear": "Chaos Warlord Titan Cruor Vult",
+      "epithet": "Eighty years of debt, paid in fire",
+      "relationships": [
+        {
+          "target": "midas-betancore",
+          "type": "enemy",
+          "note": "his killer"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "hunted for decades"
+        },
+        {
+          "target": "medea-betancore",
+          "type": "enemy",
+          "note": "target of her vengeance"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Fayde_Thuring",
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)"
+      ]
+    },
+    {
+      "id": "marla-tarray",
+      "name": "Marla Tarray",
+      "title": "Mercenary paymaster",
+      "aliases": [],
+      "faction": "heretic",
+      "books": [
+        "hereticus"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Annihilated in New Gevae by a warp vortex Eisenhorn unleashes through a reanimated thrall.",
+      "origin": "",
+      "summary": "The woman who hires the Vessorine Janissaries and other mercenaries on behalf of \"Khanjar the Sharp\" for the coordinated strikes on Eisenhorn. She is revealed to be the daughter of Pontius Glaw.",
+      "traits": [
+        "mercenary broker",
+        "Glaw heir",
+        "ruthless"
+      ],
+      "wargear": "",
+      "epithet": "Glaw's daughter, the hand behind the knives",
+      "relationships": [
+        {
+          "target": "pontius-glaw",
+          "type": "kin",
+          "note": "his daughter"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "killed by his sorcery"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)"
+      ]
+    },
+    {
+      "id": "crezia-berschilde",
+      "name": "Crezia Berschilde",
+      "title": "Surgeon of Ravello",
+      "aliases": [],
+      "faction": "civilian",
+      "books": [
+        "hereticus"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "alive",
+      "fate": "Survives and later becomes Chief Medicae at the Universitariate of New Gevae.",
+      "origin": "Gudrun",
+      "summary": "A surgeon and Eisenhorn's former lover, first met when she treated him after he lost his hand. She shelters the fugitive team in Ravello, treats the wounded Medea, and flees with them to New Gevae.",
+      "traits": [
+        "surgeon",
+        "former lover",
+        "brave civilian"
+      ],
+      "wargear": "",
+      "epithet": "A healer who opened her door",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "love",
+          "note": "former lover"
+        },
+        {
+          "target": "medea-betancore",
+          "type": "ally",
+          "note": "tended her wounds"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Hereticus_(Novel)"
+      ]
+    },
+    {
+      "id": "eskeen-hansaard",
+      "name": "Eskeen Hansaard",
+      "title": "Minister of Security, Urbitane",
+      "aliases": [],
+      "faction": "imperial",
+      "books": [
+        "missing-in-action"
+      ],
+      "importance": 1,
+      "psy": "none",
+      "status": "unknown",
+      "fate": "Last seen when the veterans' \"cult\" is broken; his later fate is not recorded.",
+      "origin": "Sameter",
+      "summary": "The official in Urbitane on Sameter who asks Eisenhorn to investigate a string of apparent ritual murders. These turn out to be the work of traumatised Imperial Guard veterans, not Chaos cultists.",
+      "traits": [
+        "official",
+        "petitioner"
+      ],
+      "wargear": "",
+      "epithet": "The man who asked the right question",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "ally",
+          "note": "requested his help"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Sameter",
+        "https://wh40k.lexicanum.com/wiki/Missing_in_Action_(Short_Story)"
+      ]
+    },
+    {
+      "id": "bakunin",
+      "name": "Bakunin",
+      "title": "Hololithographer of Sunsable's Fair",
+      "aliases": [],
+      "faction": "civilian",
+      "books": [
+        "backcloth"
+      ],
+      "importance": 1,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Dragged into a warp vortex by the ghosts trapped in his pictures; his screaming image appears on every remaining hololith.",
+      "origin": "",
+      "summary": "A kindly old portraitist with a travelling fair on Gudrun. He unknowingly bought a never-emptying vial of warp-tainted fixer, which kills people and traps them in his portraits.",
+      "traits": [
+        "portraitist",
+        "innocent",
+        "tragic"
+      ],
+      "wargear": "Warp-tainted fixer vial",
+      "epithet": "A portraitist captured in his own art",
+      "relationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "ally",
+          "note": "investigated, then tried to help"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Backcloth_for_a_Crown_Additional_(Short_Story)"
+      ]
+    },
+    {
+      "id": "the-saruthi",
+      "name": "The Saruthi",
+      "title": "Xenos race",
+      "aliases": [],
+      "faction": "xenos",
+      "books": [
+        "xenos"
+      ],
+      "importance": 2,
+      "psy": "none",
+      "status": "dead",
+      "fate": "Their world 56-Izar is purged and subjected to Exterminatus once their Necroteuch is destroyed.",
+      "origin": "56-Izar",
+      "summary": "An eyeless, many-limbed alien race corrupted by a copy of the Necroteuch, from which they made their own \"Xenoteuch\". They build asymmetrical four-dimensional \"tetrascapes\" and travel through tetragates instead of ships. House Glaw bargains with them for the tome.",
+      "traits": [
+        "xenos",
+        "four-dimensional",
+        "asymmetric",
+        "Chaos-tainted"
+      ],
+      "wargear": "Tetrascapes, tetragates, energy-field bolts",
+      "epithet": "Asymmetry made flesh",
+      "relationships": [
+        {
+          "target": "oberon-glaw",
+          "type": "ally",
+          "note": "traded the Necroteuch"
+        },
+        {
+          "target": "gregor-eisenhorn",
+          "type": "enemy",
+          "note": "destroyed their tome"
+        }
+      ],
+      "sources": [
+        "https://wh40k.lexicanum.com/wiki/Saruthi",
+        "https://wh40k.lexicanum.com/wiki/Xenos_(Novel)"
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "id": "hubris",
+      "name": "Hubris",
+      "type": "planet",
+      "books": [
+        "xenos"
+      ],
+      "note": "Icebound world whose population sleeps out the long winter in cryo-vaults; there Eisenhorn kills Eyclone and recruits Fischig and Bequin."
+    },
+    {
+      "id": "gudrun",
+      "name": "Gudrun",
+      "type": "planet",
+      "books": [
+        "xenos",
+        "backcloth",
+        "hereticus"
+      ],
+      "note": "Helican capital world, home of House Glaw and later of Eisenhorn's estate; Glaw's mercenaries strike Eisenhorn there."
+    },
+    {
+      "id": "damask",
+      "name": "Damask",
+      "type": "planet",
+      "books": [
+        "xenos"
+      ],
+      "note": "Frontier world where the Glaw cabal digs up saruthi tiles under Mandragore's supervision."
+    },
+    {
+      "id": "kcx-1288",
+      "name": "KCX-1288",
+      "type": "planet",
+      "books": [
+        "xenos"
+      ],
+      "note": "Collapsing abandoned saruthi system whose tetrascape hosts the Necroteuch exchange."
+    },
+    {
+      "id": "56-izar",
+      "name": "56-Izar",
+      "type": "planet",
+      "books": [
+        "xenos"
+      ],
+      "note": "Saruthi core world invaded by an Inquisitorial task force and then subjected to Exterminatus."
+    },
+    {
+      "id": "essene",
+      "name": "Essene",
+      "type": "ship",
+      "books": [
+        "xenos",
+        "malleus",
+        "hereticus"
+      ],
+      "note": "Tobias Maxilla's ship, which carries Eisenhorn until it is destroyed after Osma's boarding."
+    },
+    {
+      "id": "saint-scythus",
+      "name": "Saint Scythus",
+      "type": "ship",
+      "books": [
+        "xenos"
+      ],
+      "note": "Inquisitorial warship where Rorken convenes the inquisitors and the Malahite auto-seance summons a daemon."
+    },
+    {
+      "id": "sameter",
+      "name": "Sameter",
+      "type": "planet",
+      "books": [
+        "missing-in-action"
+      ],
+      "note": "Declining agro-chemical world; in its hive Urbitane, Eisenhorn uncovers the veterans' ritual killings and loses his left hand."
+    },
+    {
+      "id": "lethe-eleven",
+      "name": "Lethe Eleven",
+      "type": "planet",
+      "books": [
+        "malleus"
+      ],
+      "note": "Where Eisenhorn breaks Beldame Sadia's cult at the cost of Sweydyr's life."
+    },
+    {
+      "id": "thracian-primaris",
+      "name": "Thracian Primaris",
+      "type": "planet",
+      "books": [
+        "malleus"
+      ],
+      "note": "Hive world and subsector capital; the Triumph parade there becomes the Thracian Atrocity."
+    },
+    {
+      "id": "eechan",
+      "name": "Eechan",
+      "type": "planet",
+      "books": [
+        "malleus"
+      ],
+      "note": "Agri world where Eisenhorn and Nayl pose as mutants to expose Lyko at a psyker auction."
+    },
+    {
+      "id": "cadia",
+      "name": "Cadia",
+      "type": "planet",
+      "books": [
+        "malleus"
+      ],
+      "note": "Fortress world where the Sons of Bael study the pylons and Osma arrests Eisenhorn."
+    },
+    {
+      "id": "cinchare",
+      "name": "Cinchare",
+      "type": "planet",
+      "books": [
+        "malleus"
+      ],
+      "note": "Rogue mining world in the Halo Stars where Magos Bure guards the Pontius and destroys the Lith."
+    },
+    {
+      "id": "farness-beta",
+      "name": "Farness Beta",
+      "type": "planet",
+      "books": [
+        "malleus"
+      ],
+      "note": "World at the edge of the Eye of Terror where Eisenhorn's cell storms Ferell Sidor and kills Quixos."
+    },
+    {
+      "id": "durer",
+      "name": "Durer",
+      "type": "planet",
+      "books": [
+        "hereticus"
+      ],
+      "note": "Ophidian world where Fayde Thuring awakens the Titan Cruor Vult on the island of Miquol."
+    },
+    {
+      "id": "messina",
+      "name": "Messina",
+      "type": "planet",
+      "books": [
+        "backcloth",
+        "hereticus"
+      ],
+      "note": "Headquarters of the Distaff, wiped out by Glaw's mercenaries."
+    },
+    {
+      "id": "promody",
+      "name": "Promody",
+      "type": "planet",
+      "books": [
+        "hereticus"
+      ],
+      "note": "One of seven ancient daemon-conquered worlds, where the team regroups with Ravenor."
+    },
+    {
+      "id": "jeganda",
+      "name": "Jeganda",
+      "type": "other",
+      "books": [
+        "hereticus"
+      ],
+      "note": "Where the Essene is serviced and Fischig's betrayal springs Osma and Heldane's trap."
+    },
+    {
+      "id": "ghul",
+      "name": "Ghül (5213X)",
+      "type": "planet",
+      "books": [
+        "hereticus"
+      ],
+      "note": "Capital of a long-dead daemon empire holding Yssarile's barque; Eisenhorn kills Glaw there."
+    }
+  ],
+  "books": [
+    {
+      "id": "xenos",
+      "title": "Xenos",
+      "year": 2001,
+      "summary": "In 240.M41 Eisenhorn kills the murderer Murdin Eyclone on Hubris and follows his trail to House Glaw on Gudrun, where he is captured and tortured before Voke's purge. He chases the surviving cabal to Damask and KCX-1288, destroys the Necroteuch they meant to buy from the saruthi, and takes the psy-engram of Pontius Glaw. An Inquisitorial strike on 56-Izar destroys the saruthi copy and unmasks Molitor and the daemonhost Cherubael."
+    },
+    {
+      "id": "missing-in-action",
+      "title": "Missing in Action",
+      "year": 2002,
+      "summary": "In 241.M41, on the declining world of Sameter, Eisenhorn looks into ritual murders in the hive city of Urbitane at the request of its Minister of Security. The \"cult\" turns out to be traumatised Imperial Guard veterans who believe Chaos has infiltrated their world. Eisenhorn breaks them up but must kill several and loses his left hand."
+    },
+    {
+      "id": "malleus",
+      "title": "Malleus",
+      "year": 2001,
+      "summary": "A century later, after the Thracian Atrocity frees 33 captive alpha-plus psykers and cripples Ravenor, Eisenhorn traces the conspiracy through the traitor Lyko and Cherubael to the long-vanished renegade Quixos. Osma arrests him on Cadia and declares him Extremis Diabolus. Freed by his retinue, he consults Pontius Glaw on Cinchare, forms a cell of inquisitors, and kills Quixos on Farness Beta, then secretly binds Cherubael anew with the Malus Codicium."
+    },
+    {
+      "id": "backcloth",
+      "title": "Backcloth for a Crown Additional",
+      "year": 2003,
+      "summary": "In 355.M41 on Gudrun, a friend's death \"of fright\" leads Eisenhorn and Bequin to a travelling fair. They find that a hololithographer's warp-tainted fixer is killing people and trapping their ghosts in portraits. Eisenhorn smashes the vial with Barbarisater, but the old portraitist Bakunin is dragged into the warp."
+    },
+    {
+      "id": "hereticus",
+      "title": "Hereticus",
+      "year": 2002,
+      "summary": "In 386.M41 Eisenhorn finally kills Midas Betancore's murderer, but only by unleashing Cherubael, and Bequin is left brain-dead. Pontius Glaw, escaped in a mechanical body, wipes out Eisenhorn's network, and the Inquisition outlaws him again. Fischig betrays him, and Aemos and Maxilla die. With Ravenor's help Eisenhorn reaches Ghül, where he destroys the Malus Codicium and kills Glaw."
+    }
+  ]
+}

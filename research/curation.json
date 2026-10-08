@@ -1,0 +1,67 @@
+{
+  "merge": {
+    "lord-rorken": "phlebas-alessandro-rorken"
+  },
+  "characters": {
+    "phlebas-alessandro-rorken": {
+      "name": "Phlebas Alessandro Rorken",
+      "title": "Lord Inquisitor, Ordo Xenos Helican",
+      "aliases": [
+        "Lord Rorken"
+      ],
+      "importance": 2,
+      "status": "alive",
+      "fate": "Outlives the Eisenhorn trilogy to become Grandmaster of the Ordos Helican, and is still Ravenor's superior when Ravenor surrenders himself for judgement at the end of Ravenor Rogue."
+    },
+    "pontius-glaw": {
+      "importance": 4,
+      "aliases": [
+        "Khanjar the Sharp"
+      ]
+    },
+    "zygmunt-molotch": {
+      "importance": 4
+    },
+    "king-in-yellow": {
+      "faction": "heretic",
+      "name": "The King in Yellow",
+      "importance": 4
+    },
+    "sadoth-xarbia": {
+      "faction": "heretic"
+    },
+    "senefuru-of-tizca": {
+      "faction": "heretic"
+    },
+    "deathrow": {
+      "faction": "rogue"
+    },
+    "cherubael": {
+      "status": "other"
+    },
+    "the-saruthi": {
+      "name": "The Saruthi",
+      "title": "Xenos race of 56-Izar"
+    },
+    "gideon-ravenor": {
+      "removeRelationships": [
+        "gregor-eisenhorn:mentor"
+      ]
+    },
+    "beta-bequin": {
+      "removeRelationships": [
+        "gregor-eisenhorn:mentor"
+      ],
+      "addRelationships": [
+        {
+          "target": "gregor-eisenhorn",
+          "type": "student",
+          "note": "joins his hunt; he treats her as a surrogate daughter"
+        }
+      ]
+    }
+  },
+  "dropLocations": [
+    "force-chair"
+  ]
+}

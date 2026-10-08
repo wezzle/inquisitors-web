@@ -1,0 +1,100 @@
+fetching https://www.joumontfort.com/recent-reads/wh40k-ravenor-rogue-part-2
+Ravenor Rogue (The Ravenor Trilogy, Book 3) (Part 2) — Jou Montfort
+I do book reviews and rewrite proposals for films and TV shows.
+              [Jou Montfort Stories of the Phoenix and the Five Worlds](/)
+        ## Mar 27 Ravenor Rogue (The Ravenor Trilogy, Book 3) (Part 2)
+          [Jou Montfort](/recent-reads?author=5b6e0a9a49bad62bac2f6615) 
+  Hello, all.  Welcome to the second half of the review of *Ravenor Rogue.*
+Please check out [Part 1 ](/recent-reads/wh40k-ravenor-rogue-part-1)if you’d like the overview information and the discussion of the worldbuilding.  Otherwise, let’s dive back into the grim darkness of the 41st Millennium.
+Publisher: Black Library (Games Workshop Publishing)
+Both minor and heavy spoilers for *Ravenor Rogue *will be provided throughout this review.  I will try to keep the first paragraph of each section as spoiler-free as possible and will confine heavy spoilers to clearly labeled sections.
+Heavy, unmarked spoilers will be provided for all of the [Ravenor ](/recent-reads/tag/Ravenor)content we’ve covered thus far (*Ravenor, Ravenor Returned, *“Playing Patience”, and “Thorn Wishes Talon”).  There will also be mild spoilers for the [Eisenhorn ](/recent-reads/tag/Eisenhorn)stories.
+After the twisting investigation that defined the first two books, I was pleasantly surprised by how smoothly the story transitioned into a straightforward manhunt.
+That’s not to say that there aren’t twists.  Ravenor finds himself operating heavily off hunches, restoring to pursuing arcane leads to try to get ahead of Molotch when his trail goes cold.  At the same time, Molotch remains a step ahead of him, setting traps that Ravenor then needs to escape.  This cat-and-mouse game leads to an ending that is a tad rushed yet still satisfying.
+This was something that nagged me in the previous books, yet I feel like Abnett managed to turn things around a stick the landing.
+In the previous two books, Molotch was just … some guy.  We knew he was Cognitae, and that he’d bombed a ship Ravenor was on and killed a bunch of Ravenor’s people, but we were never shown how the two came into conflict in the first place.  Our first exposure to Molotch was the prologue of *Ravenor, *which felt like a payoff to something that wasn’t setup.  Then in *Ravenor Returned, *he was revealed as the mastermind of a Cognitae scheme, this made sense, but didn’t feel particularly rewarding.
+Now, in *Ravenor Rogue, *Molotch is being framed as a Ravenor’s answer to Pontius Glaw, an enemy who defines him so utterly that Ravenor is willing to go rogue(properly rouge, not the “Special Investigation Status” he was under in the last book) to kill or capture him.
+Abnett put in the legwork to make this work.  In the opening the book, he has Ravenor acknowledge that this manhunt is going way too far.  Ravenor is devoted to bringing Molotch down, but this isn’t the core of his character.  He’s merely dedicated to tying off a lose end.  When the Inquisition puts its foot down, tells him that he has no hard evidence to continue his hunt, and orders him back to Eustis Majoris to clean up the mess he left in that world, Ravenor admits that things have gone too far.  It’s not until Molotch kills another inquisitor, thereby proving both how close Ravenor was to catching him and that he has contacts into the Inquisition, that Raveor goes all-in to finish his task.
+Much like the previous books, this one also features a prologue that doesn’t feel entirely appropriate to this book, but it does help with playing catch-up and preparing for a twist in the back half of the book.
+So, back in 336.M41 (before Ravenor was mutilated in the events of *Malleus*), Molotch was one of the sole survivors of a Cognitae operation that Eisenhorn and Ravenor stopped.  He only narrowly escaped being killed by Ravenor before teleporting out.
+During the events of this book, it is revealed that this encounter caught the notice of the Chaos Gods.  They preordained the pair to be locked into a struggle that would help bring Slyte into the physical world.  Ravenor’s ability to stay one step behind Molotch is attributed to “hunches” that are sent by the Chaos Gods.
+Molotch does not want this.  While the Cognitae are a Chaos think-tank, they want to use Chaos for humanity, not to serve the Chaos Gods.  Molotch therefore offers to work with Ravenor to destroy this mutual threat.  While Ravenor initially refuses, once he learns of Slyte’s true identity from Molotch, he agrees to work together to banish the dæmon.
+While I found the team-up somewhat cliché at first, I think that the way it plays out makes sense.  Ravenor and Molotch agree to pool resources as a practical measure to deal with a mutual enemy.  The moment this alliance has run its course, Molotch tries to escape, and Ravenor kills him.
+Some of the mysteries of this book only exist because Abnett withholds information for maximum drama.  The most glaring example of this is the Wych House.  When Ravenor and his retinue arrive on Utochre, we get two chapters of investigation before it’s even clear that they are trying to seek out the House, and it isn’t until they’re already inside it that Ravenor explains why they are there.  Abnett even plays the pronoun game (or, perhaps more accurately, the common noun game) at the start of the investigation so as to bury the fact that the first scene of this investigation is Patience Kys interviewing a suspected contact of the House.  I don’t think that this breaks the story, yet it does feel needless and a tad annoying.
+This is the story where Carl’s dalliance with the Warp comes to its natural conclusion, for better and for worse (narratively speaking).
+It’s explained early on that Carl is experimenting with Slyte’s power.  In particular, he’s using it to cover his tracks, tampering with the minds of Kara Swole, newcomer Maud Plyton, and even Ravenor, allowing him to puppet them and even erase memories of his actions.  Inevitably, this leads to him losing control and becoming the doorway through which Slyte fully manifests in the world.
+For the most part, there are no issues with this … but at a certain point, it becomes hard to believe that Ravenor doesn’t figure things out.
+During the fight with the Tyrannids, Carl needs to use Slyte’s power at a critical moment to keep them all from being overwhelmed.  The blast of power is so intense that Ravenor can’t pinpoint the source.  Afterwards, he concludes that another newcomer to the team, Interrogator Gall Ballack, is Slyte.  This conclusion is drawn based on the fact that he noticed Ballack has psychic defenses that only a member of the Cognitae would possess.
+By itself, this logic holds up.  Ravenor trusts his people, and he knows the Cognitae was involved in the events that potentially birthed Slyte in the last book.  There’s just one tiny problem: Ravenor already suspected Zael of being Slyte.
+Ballack was not around for the events that led him to draw this conclusion.  That means that, if Slyte was both present for the events that led him to suspect Zael but is also present during the Tyrannid fight, then Slyte must be an established member of his retinue.  His only options are Harlon Nayl, Patience Kys, or Carl Thonius - and of the three, he’s been noticing a chance in Carl’s behavior since the events of *Ravenor Returned.*
+All this is the say that Ravenor should be able to figure out that Carl is Slyte on his own.
+And sure, we can argue that this doesn’t change the logistics of the story.  By the time Ravenor should have figured this out, he was cut off from the team, and by the team he’d be able to alert them, everyone was already in the positions that they’d be in when Zael delivered the reveal.  That’s sort of my point, though.  Ravenor’s skills as an investigator are undermined to hold off the revelation until a moment of maximum drama, and then the worldbuilding is broken to ensure that the revelation can still take place.
+Beyond that, though, I don’t have an issue with how the Slyte story ends.  Carl goes into the finale believing that he can control the dæmon, he is proven wrong, and then the resulting manifestation forces Ravenor and Molotch to team up to banish him.  It’s a tragic and powerful finale.
+The titular character of this series has always been demonstrated to be more moderate and compassionate than Eisenhorn.  Ravenor is not afraid to make the hard call, but he’s always willing to shield people and give them second chances (something he did with Patience in “Playing Patience”, with Zael in *Ravenor, *and by not immediately executing Zael the second he believed Zael to be Slyte in *Ravenor Returned*).  The opening of this book reinforces this trait.  Ravenor holds off on killing Zael until he is certain that Zael is Slyte, knowing that doing so goes against what he is caught.  He is also evaluating the well-being of his team and considering whether any of them would be better off stepping away from the inquisitorial lifestyle.
+We also see this with Molotch.  Eisenhorn demonstrated with Glaw that here is no length he won’t go to in order to finish off an enemy.  Ravenor, by contrast, knows he’s pushing his limits, is prepared to surrender the case to others when directly ordered to do so, and only commits to becoming a rogue when he feels circumstances have forced his hand.  Also unlike Eisenhorn, he’s fully prepared to turn himself in once his task is done.
+I do like that Abnett doesn’t try to force the idea that dealing with Molotch is personal for Ravenor.  There are shades of that, of course - the bombing that killed members of Ravenor’s team is brought up again - but it’s not the foundation of the conflict.  Ravenor is hunting Molotch because it is a task that needs to be finished, not because he truly believes they are bound together by destinty.
+Carl’s arc in this story is predictable but still tragic.  He believes he can control the dæmonic power inside him for the good of the Imperium and is ultimately proven wrong.  He dies corrupted, blaming everyone but himself for his mistake.  This arc is hardly original for this setting, yet Carl’s descent still hurts, as he remains a likeable and sympathetic character right until the end.
+Ravenor’s associates continue to be a colorful cast with their own personalities, motivations, and dynamics with both each other and Ravenor.  For the most part, this enriches the story.  Unfortunately, there is a moment of character assassination that is hard to swallow.
+In the climax of *Ravenor Returned, *Carl manifested Slyte in front of Kara Swole.  Not wanting to kill her, Carl uses Warp sorcery to keep her quiet.  He cures her cancer, and when she tells Carl that she needs to inform Ravenor anyway, he attacks her mind.
+The Kara Swole we meet in *Ravenor Rogue *has progressed in her faith of the God-Emperor, likely a product of her ongoing relationship with Patrik Belknap.  This is fine as an ongoing development.  We also learn that Kara is resisting Carl’s attempts to suppress her memory, forcing him to further tamper with her mind.  Despite this tampering, the anxiety of the secret she is keeping, however, unwillingly, continues to gnaw at Kara.
+In the climax, though, we get the reveal that Kara willingly kept Carl’s secret out of fear.
+Then why imply at the end of the *Ravenor Returned *that Carl is tampering with her mind?  Why re-establish that this is the case in their introductory scene in this book?  Why show Kara struggling against the tampering and then confessing the Ravenor the first chance she has upon breaking the block?
+It’s not impossible to rationalize a member of the Inquisition or a person of renewed faith keeping a secret like this.  The issue is that we’re Shown that Kara is only kept from revealing the truth because Carl tampers with her agency, and then we’re Told that she had the agency to reveal the truth at some point yet chose not to.  This is a character assassination.  What’s more, it undermines the tragedy of how Kara’s arc ends.
+Belknap leaves Kara as a result of this revelatoin.  Ravenor explicitly blames this on Belknap being uncompromising in faith.  If Abnett had committed to Kara having no agency, and then Belknap left her because she was tainted by Chaos despite having no say in the matter - yes, that would have been tragic.  One of the great tragedies of Warhammer 40K is that you can do everything and yet still be tainted by Chaos because Chaos went out of its way to harm one.
+However, Abnett changed the story at the end of it.  Now, Kara is a traitor.  She *chose *to cooperate with an entity of Chaos, even if it was out of fear.  She is corrupted.  By the standards of this setting, she is lucky to have not be executed by a bolt-gun round to the head.  There’s no redemption from that sort of thing within this setting. “The Emperor’s Mercy” isn’t just a euphemism; death, and an appeal to the God Emperor to save one’s soul, really is the only way back.  By the standards of this setting, Belknap leaving her is not only fully justified but also a necessity to avoid being corrupted himself.
+This feels like another good example of trying to have things both ways and it not paying off.
+- If Abnett explored Kara keeping the secret purely out of fear, fine.
+- If Kara was deprived of agency the whole time, fine.
+Doing things halfway took a genuinely interesting character in a tragic situation and undermined sympathy for her.
+Back in *Ravenor Returned, *I predicted that Molotch wouldn’t be a compelling enough antagonist to carry the story forward.  I feel like that prediction panned out.  Molotch appears in only a few scenes, and Orfeo Culzean ends up having a much more direct influence on the story.
+Abnett did try to make Molotch a more engaging antagonist by exploring what makes Molotch so threatening.  Within the first handful of chapters, we see his intellect, his dedication to Chaos, his psychopathic behavior, and his skills in combat.  If the story has dedicated more time to exploring his plans and letting him showcase that intellect, I think he could have been compelling.  Still, just having him be threatening works well enough for the story being told.
+That being said, I think Abnett made Molotch too powerful.  He is a master marital artist who can tear through entire teams of inquisitorial agents, can casually manipulate the Warp to disarm people, and can disable people just by speaking their name.  His power is so immense that it became hard to believe that Ravenor could actually overcome him.  Abnett handles the finale in a manner that negates this issue, but seeing Molotch in action, it really did feel like overkill.
+While *Ravenor Rogue *has its issues, it is still a satisfying finale to the Ravenor Trilogy.  I would highly recommend reading this whole series (preferably in the omnibus, so that the short stories written after the books can help smooth out some of the bumps), especially if you are looking for an easy entry into Warhammer 40K.
+On that note, neither the omnibus nor Ravenor’s story are quite done.  We still need to see what happened to Ravenor after he surrendered himself to the Inquisition’s justify in the epilogue of this book.  We’ll get into that next Wednesday, April 1st, with the final short story, “Perihelion”.
+Thank you all for joining me on this journey.  Please remember to subscribe and share if you enjoy what you read here.  Take care, everyone, and have a good week.
+          [Art by OLIVER_ARTWORK](/art-credits/tag/OLIVER_ARTWORK)
+  Looking for more stories like *Ravenor Rogue*?  Check out my free novella, *The Unbottled Idol*, [available over in Tales of the Five Worlds!](/tales-of-the-five-worlds/announcing-the-unbottled-idol)
+> Mohsen Yavari's task within the Imperial Inquisition of the Kimian Empire is simple: monitor the gods' activities in the mortal world. However, when a diplomat is killed by a goddess, a maverick inquisitor recruits him for her investigation. Their search for answers will lay bare sinister truths, with a child’s soul hanging in the balance.
+Join me on this adventure of intrigue, martial arts, and divine assassination!
+            [Jou Montfort](/recent-reads?author=5b6e0a9a49bad62bac2f6615)
+              [Ravenor](/recent-reads/tag/Ravenor), [WH40K](/recent-reads/tag/WH40K), [Reviews](/recent-reads/tag/Reviews), [Tie-In](/recent-reads/tag/Tie-In), [Ravenor Rogue](/recent-reads/tag/Ravenor+Rogue), [WH40K Inquisitor Series](/recent-reads/tag/WH40K+Inquisitor+Series)
+      ](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.joumontfort.com%2Frecent-reads%2Fwh40k-ravenor-rogue-part-2)[
+      ](https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.joumontfort.com%2Frecent-reads%2Fwh40k-ravenor-rogue-part-2&text=)[
+      ](https://www.linkedin.com/shareArticle?mini=true&source=Jou+Montfort&summary=&url=https%3A%2F%2Fwww.joumontfort.com%2Frecent-reads%2Fwh40k-ravenor-rogue-part-2)[
+      ](https://www.reddit.com/submit?url=https%3A%2F%2Fwww.joumontfort.com%2Frecent-reads%2Fwh40k-ravenor-rogue-part-2)[
+      ](https://www.tumblr.com/share/link?url=https%3A%2F%2Fwww.joumontfort.com%2Frecent-reads%2Fwh40k-ravenor-rogue-part-2)[
+      ](https://www.pinterest.com/pin/create/link/?description=&media=https://images.squarespace-cdn.com/content/v1/5dd5d9c6fb70035a42b3db34/1759229296831-SQQEHDXILZJJW9R0S025/%2849%29+Blog+Picture+-+Ravenor+the+Omnibus.jpg&url=https%3A%2F%2Fwww.joumontfort.com%2Frecent-reads%2Fwh40k-ravenor-rogue-part-2)[
+  ](/recent-reads?author=5b6e0a9a49bad62bac2f6615)
+[Jou Montfort](/recent-reads?author=5b6e0a9a49bad62bac2f6615)
+  ](/recent-reads?author=5b6e0a9a49bad62bac2f6615)
+[Jou Montfort](/recent-reads?author=5b6e0a9a49bad62bac2f6615)
+      This newsletter signup form needs a storage option. Edit the block and enter a storage location via the **Storage** tab.
+      Get updates whenever I make a new post.
+                A Chime for These Hallowed Bones (Chapter 11, Part 1)
+            [Read more &#8594;](/tales-of-the-five-worlds/chime-chapter-11-part-1)
+                Moral Support (Chapter 3, Part 2)
+            [Read more &#8594;](/tales-of-the-five-worlds/moral-support-chapter-3-part-2)
+                Moral Support (Chapter 3, Part 1)
+            [Read more &#8594;](/tales-of-the-five-worlds/moral-support-chapter-3-part-1)
+  ## [RECENT READS](https://www.joumontfort.com/recent-reads)
+                Prophecy (Masquerade Cycle, Book 3)
+            [Read more &#8594;](/recent-reads/mtg-prophecy)
+                Focus and Continuity (A Prelude to Threshing Day)
+            [Read more &#8594;](/recent-reads/threshing-day-prelude)
+                Kingmaker (An Assassinorum Novel) (Part 3 - Characters & Worldbuilding)
+            [Read more &#8594;](/recent-reads/wh40k-kingmaker-part-3)
+                Nemesis (Masquerade Cycle, Book 2)
+            [Read more &#8594;](/recent-reads/mtg-nemesis)
+                Kingmaker (An Assassinorum Novel) (Part 2 - Plot)
+            [Read more &#8594;](/recent-reads/wh40k-kingmaker-part-2)
+                If They Planned It All Ahead - The Star Wars Sequel Trilogy, Part 2 (Rewrite Overview)
+            [Read more &#8594;](/reflect-amp-redraft/itpiaa-sequel-trilogy-part-2)
+                If They Planned It All Ahead - The Star Wars Sequel Trilogy, Part 1 (Reflection)
+            [Read more &#8594;](/reflect-amp-redraft/itpiaa-sequel-trilogy-part-1)
+                Missed the Mark - Captain Marvel
+            [Read more &#8594;](/reflect-amp-redraft/mtm-captain-marvel)
+      Mar 29 Runebreaker (Part 2 - Romance)
+      Mar 25 Game of Captives (Part 1 - Overview)
+  ](/recent-reads/game-of-captives-part-1)
+      This newsletter signup form needs a storage option. Edit the block and enter a storage location via the **Storage** tab.
+  Powered by [Squarespace](http://www.squarespace.com?channel=word_of_mouth&amp;subchannel=customer&amp;source=footer&amp;campaign=4fd1028ee4b02be53c65dfb3)

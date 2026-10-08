@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An interactive three.js codex of the characters of Dan Abnett's Eisenhorn, Ravenor, Pariah and Penitent." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23090608'/%3E%3Cg fill='%23f2c14e'%3E%3Crect x='45' y='6' width='10' height='88'/%3E%3Crect x='27' y='12' width='46' height='7'/%3E%3Crect x='22' y='81' width='56' height='7'/%3E%3Ccircle cx='50' cy='46' r='16'/%3E%3C/g%3E%3C/svg%3E" />
+    <title>The Inquisitor's Web — Eisenhorn · Ravenor · Bequin</title>
+  </head>
+  <body>
+    <div id="stage"></div>
+
+    <!-- intro -->
+    <div id="intro" class="intro">
+      <div class="intro-inner">
+        <div class="intro-rosette"></div>
+        <pre class="intro-feed" id="intro-feed"></pre>
+        <h1 class="intro-title"><span>The</span> Inquisitor's Web</h1>
+        <p class="intro-sub">Dramatis personæ of the Eisenhorn, Ravenor &amp; Bequin chronicles of Dan Abnett</p>
+        <button id="intro-go" class="btn-gilt">Commence Inquisition</button>
+        <label class="intro-opt"><input type="checkbox" id="intro-sound" checked /> with ambient choir</label>
+        <p class="intro-small">Spoiler warning: the dossiers record fates across all eight books. Raise the <em>Spoiler Ward</em> to veil them.</p>
+      </div>
+    </div>
+
+    <!-- HUD -->
+    <header class="hud-top">
+      <div class="brand">
+        <div class="brand-kicker">+++ Ordo Xenos · Calixis Sector · Cogitator Codex +++</div>
+        <div class="brand-title">The Inquisitor's Web</div>
+        <div class="brand-sub" id="brand-sub"></div>
+      </div>
+
+      <nav class="layouts" id="layouts">
+        <button data-layout="web" class="on" title="Bonds of service, love and enmity (1)"><span class="k">I</span>The Web</button>
+        <button data-layout="chronicle" title="Lifelines through the eight books (2)"><span class="k">II</span>Chronicle</button>
+        <button data-layout="allegiance" title="Grouped by allegiance (3)"><span class="k">III</span>Allegiance</button>
+      </nav>
+
+      <div class="tools">
+        <div class="search">
+          <input id="search" type="search" placeholder="Seek a name…  ( / )" autocomplete="off" spellcheck="false" />
+          <ul id="search-results" class="search-results"></ul>
+        </div>
+        <button class="tool" id="btn-tour" title="Cinematic tour (T)">
+          <svg viewBox="0 0 24 24"><path d="M7 5l12 7-12 7z" /></svg>
+        </button>
+        <button class="tool" id="btn-spoiler" title="Spoiler Ward: veil fates (S)">
+          <svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5z" /></svg>
+        </button>
+        <button class="tool" id="btn-sound" title="Ambient choir (M)">
+          <svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z" /><path class="wave" d="M16 8.5a5 5 0 010 7M18.5 6a8.5 8.5 0 010 12" fill="none" stroke-width="1.8" /></svg>
+        </button>
+        <button class="tool" id="btn-help" title="Instructions (?)">?</button>
+      </div>
+    </header>
+
+    <aside class="panel filters" id="filters">
+      <button class="panel-toggle" id="filters-toggle" title="Toggle cogitator filters">
+        <span>Cogitator Filters</span>
+      </button>
+      <div class="panel-body">
+        <section>
+          <h3>Reading progress</h3>
+          <input type="range" id="f-progress" min="0" step="1" />
+          <div class="progress-ticks" id="f-progress-ticks"></div>
+          <div class="range-caption" id="f-progress-caption"></div>
+        </section>
+        <section>
+          <h3>Chronicles</h3>
+          <div id="f-series" class="series-list"></div>
+        </section>
+        <section>
+          <h3>Volumes</h3>
+          <div id="f-books" class="book-list"></div>
+        </section>
+        <section>
+          <h3>Allegiance</h3>
+          <div id="f-factions" class="legend"></div>
+        </section>
+        <section>
+          <h3>Bonds</h3>
+          <div id="f-bonds" class="legend"></div>
+        </section>
+        <section>
+          <h3>Significance</h3>
+          <input type="range" id="f-importance" min="1" max="5" step="1" value="1" />
+          <div class="range-caption" id="f-importance-caption"></div>
+        </section>
+        <section class="marks">
+          <h3>Signs</h3>
+          <div class="sign"><i class="s-psyker"></i>Psyker — motes orbit the soul</div>
+          <div class="sign"><i class="s-blank"></i>Untouchable — a hole in the light</div>
+          <div class="sign"><i class="s-daemon"></i>Daemon — embers boil upward</div>
+          <div class="sign"><i class="s-dead"></i>Deceased — ash &amp; cinder cracks</div>
+          <div class="sign"><i class="s-ring"></i>Rings — principal &amp; protagonist</div>
+        </section>
+        <button class="btn-plain" id="f-reset">Restore all</button>
+      </div>
+    </aside>
+
+    <aside class="panel dossier" id="dossier" aria-live="polite"></aside>
+
+    <div class="tooltip" id="tooltip"></div>
+    <div class="caption" id="caption"></div>
+
+    <footer class="hud-bottom">
+      <div class="ticker"><div class="ticker-track" id="ticker"></div></div>
+    </footer>
+
+    <div class="help" id="help">
+      <div class="help-card">
+        <h2>Instructions for the Acolyte</h2>
+        <ul>
+          <li><b>Drag</b> to orbit · <b>scroll</b> to zoom · <b>right-drag</b> to pan</li>
+          <li><b>Click</b> a soul to open their dossier; click empty space to release</li>
+          <li><b>1 · 2 · 3</b> switch between the Web, the Chronicle and Allegiance</li>
+          <li><b>/</b> search · <b>T</b> tour · <b>S</b> spoiler ward · <b>M</b> sound · <b>F</b> filters</li>
+          <li><b>← →</b> step through associates of the selected soul · <b>Esc</b> release</li>
+        </ul>
+        <p>
+          <b>The Web</b> pulls each character toward the chronicle(s) they inhabit — those who walk through all three gather at the heart.
+          <b>The Chronicle</b> stacks the books as rings in order of publication: every soul rests on the ring where they first appear, and a lifeline rises through
+          each later volume they return in. <b>Allegiance</b> sorts the cast by the powers they serve.
+        </p>
+        <p class="fine">
+          A fan-made visualization. Characters &amp; settings © Games Workshop / Black Library; novels by Dan Abnett. Character data compiled from
+          the Warhammer 40k Wiki and Lexicanum.
+        </p>
+        <button class="btn-gilt" id="help-close">By the Emperor's will</button>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
