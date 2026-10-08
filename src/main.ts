@@ -59,6 +59,15 @@ stage.freeArea = () => {
   return a;
 };
 
+let hintDone = false;
+let glossiaCall = false;
+function dismissHint() {
+  if (hintDone) return;
+  hintDone = true;
+  $('hint').classList.remove('show');
+  localStorage.setItem('iw-hinted', '1');
+}
+
 // ---------------------------------------------------------------- selection
 function select(id: string | null) {
   if (id && !spoilers.isMet(charById.get(id)!)) return;
@@ -67,6 +76,7 @@ function select(id: string | null) {
   void world.select(id);
 }
 world.onSelect = (id) => {
+  if (id) dismissHint();
   if (id) world.setCast(null);
   if (id) {
     void dossier.show(id);
@@ -122,7 +132,9 @@ world.onThread = (t, from, to) => {
       return `<i style="color:${BONDS[b.kind].color}">— ${roleOf(b, t.ids[i - 1]).toLowerCase()} —</i> ${name}`;
     })
     .join(' ');
-  caption.innerHTML = `<div class="step">+++ A thread of ${t.bonds.length} bond${t.bonds.length > 1 ? 's' : ''} +++</div><div class="chain">${chain}</div><div class="hint">Esc or click empty space to release</div>`;
+  const head = glossiaCall ? 'Thorn wishes Talon · Talon attends' : `A thread of ${t.bonds.length} bond${t.bonds.length > 1 ? 's' : ''}`;
+  glossiaCall = false;
+  caption.innerHTML = `<div class="step">+++ ${head} +++</div><div class="chain">${chain}</div><div class="hint">Esc or click empty space to release</div>`;
 };
 dossier.onBook = (id) => world.onBook(id);
 dossier.onPreview = (id, on) => {
@@ -142,10 +154,23 @@ world.onBook = (id) => {
   choir.bell();
 };
 dossier.onHide = () => world.setCast(null);
-const search = mountSearch(world, (id) => {
-  tour.stop();
-  select(id);
-});
+const search = mountSearch(
+  world,
+  (id) => {
+    tour.stop();
+    select(id);
+  },
+  () => {
+    // "Thorn wishes Talon": Eisenhorn summons Ravenor
+    tour.stop();
+    select('gregor-eisenhorn');
+    setTimeout(() => {
+      glossiaCall = true;
+      world.traceTo('gideon-ravenor');
+    }, 900);
+    choir.bell(true);
+  },
+);
 
 // ---------------------------------------------------------------- layouts
 const layoutButtons = [...document.querySelectorAll<HTMLButtonElement>('#layouts button')];
@@ -345,6 +370,11 @@ function begin(sound: boolean) {
   stage.flyTo(world.fitted(new THREE.Vector3(40, 250, 600), new THREE.Vector3(0, -10, 0)), new THREE.Vector3(0, -10, 0), 4.2, openHash);
   setTimeout(openHash, 4400);
   stage.warp = 0.8;
+  // a one-time hint, dismissed by the first selection or after a while
+  if (!localStorage.getItem('iw-hinted')) {
+    setTimeout(() => !hintDone && $('hint').classList.add('show'), 5200);
+    setTimeout(dismissHint, 22000);
+  }
 }
 
 $('intro').querySelector('.intro-rosette')!.innerHTML = emblemSVG('inquisition');

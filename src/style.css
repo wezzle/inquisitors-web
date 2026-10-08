@@ -1625,3 +1625,35 @@ body.pre .regions {
 .intro.gone {
   pointer-events: none;
 }
+.hint {
+  position: fixed;
+  left: 50%;
+  bottom: 44px;
+  transform: translate(-50%, 6px);
+  z-index: 4;
+  font-size: 14px;
+  font-style: italic;
+  color: #b9ac91;
+  background: rgba(6, 4, 7, 0.7);
+  border: 1px solid rgba(201, 162, 75, 0.25);
+  padding: 7px 16px;
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s, transform 1s;
+  white-space: nowrap;
+}
+.hint b {
+  font-family: var(--f-cap);
+  font-style: normal;
+  color: var(--gold-hi);
+}
+.hint.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+@media (max-width: 760px) {
+  .hint {
+    display: none;
+  }
+}

@@ -162,7 +162,7 @@ export function mountFilters(world: World) {
 }
 
 /** Name search with live highlighting in the scene and a keyboard-navigable result list. */
-export function mountSearch(world: World, select: (id: string) => void) {
+export function mountSearch(world: World, select: (id: string) => void, glossia?: () => void) {
   const input = $<HTMLInputElement>('search');
   const list = $('search-results');
   let active = 0;
@@ -220,6 +220,13 @@ export function mountSearch(world: World, select: (id: string) => void) {
       active = (active + (e.key === 'ArrowDown' ? 1 : -1) + items.length) % items.length;
       items.forEach((li, i) => li.classList.toggle('active', i === active));
     } else if (e.key === 'Enter') {
+      // Glossia: the private cant of Eisenhorn's circle
+      if (glossia && /^thorn\s+wishes\s+talon$/i.test(input.value.trim())) {
+        input.value = '';
+        run();
+        input.blur();
+        return glossia();
+      }
       if (results[active]) choose(results[active]);
     } else if (e.key === 'Escape') {
       input.value = '';

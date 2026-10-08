@@ -220,10 +220,30 @@ export async function drawSeal(c: Character, size = 512): Promise<HTMLCanvasElem
     ang += (w / 2 + spacing) / rText;
   }
 
-  // emblem
+  // emblem as a faint watermark, the soul's blackletter monogram over it
   const img = await loadSVG(emblemSVG(c.faction, col));
-  const e = size * 0.46;
-  g.globalAlpha = 1;
+  const e = size * 0.5;
+  g.globalAlpha = 0.28;
   g.drawImage(img, -e / 2, -e / 2, e, e);
+  g.globalAlpha = 1;
+  const mono = monogram(c.name);
+  g.font = `${Math.round(size * (mono.length > 1 ? 0.26 : 0.32))}px UnifrakturMaguntia, serif`;
+  g.textAlign = 'center';
+  g.textBaseline = 'middle';
+  g.shadowColor = 'rgba(0,0,0,0.9)';
+  g.shadowBlur = size * 0.03;
+  g.fillStyle = col;
+  g.fillText(mono, 0, size * 0.015);
+  g.shadowBlur = 0;
   return cv;
+}
+
+/** Initials for a seal: "Gregor Eisenhorn" → "GE", "The King in Yellow" → "KY", "Cherubael" → "C". */
+export function monogram(name: string) {
+  const words = name
+    .replace(/["“”'‘’()]/g, ' ')
+    .split(/\s+/)
+    .filter((w) => w && !/^(the|of|in|esw|de|von|van)$/i.test(w));
+  if (words.length === 1) return words[0][0].toUpperCase();
+  return (words[0][0] + words[words.length - 1][0]).toUpperCase();
 }

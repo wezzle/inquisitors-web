@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { bonds, bondsOf, bookById, books, characters, charById, other, roleOf, seriesOf } from '../data/codex';
 import { spoilers } from '../ui/spoilers';
 import type { BondKind, Faction, SeriesId } from '../data/types';
-import { BONDS, BOND_ORDER, FACTION_ORDER, SERIES, SERIES_ORDER } from '../data/theme';
+import { BONDS, BOND_ORDER, FACTIONS, FACTION_ORDER, SERIES, SERIES_ORDER } from '../data/theme';
 import { drawSeal } from '../ui/sigils';
 import { Backdrop } from './background';
 import { Decor } from './decor';
@@ -66,6 +66,8 @@ export class World {
   private seal: THREE.Sprite;
   private sealTex = new Map<string, Promise<THREE.Texture>>();
   private sealAlpha = 0;
+  private pulse: THREE.Sprite;
+  private pulseT = 1;
   private raycaster = new THREE.Raycaster();
   private pointer = new THREE.Vector2();
   private hits: THREE.Object3D[] = [];
@@ -93,6 +95,11 @@ export class World {
     );
     this.seal.renderOrder = -1;
     stage.scene.add(this.seal);
+    this.pulse = new THREE.Sprite(
+      new THREE.SpriteMaterial({ map: ringTexture(), transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, opacity: 0 }),
+    );
+    this.pulse.visible = false;
+    stage.scene.add(this.pulse);
 
     const lay = layouts().web;
     for (const n of this.nodes.values()) n.place(lay.get(n.c.id)!.clone().multiplyScalar(0.02));
@@ -256,6 +263,9 @@ export class World {
     this.stage.taint = sc?.psy === 'daemon' ? 0.55 : 0;
     if (!id) return;
     if (fly) this.focus(id);
+    // an auspex ping ripples out from the chosen soul
+    this.pulseT = 0;
+    this.pulse.material.color.set(FACTIONS[charById.get(id)!.faction].color);
     let pending = this.sealTex.get(id);
     if (!pending) {
       this.seal.material.map = null;
@@ -509,6 +519,14 @@ export class World {
       if (sel.moving && !this.stage.flying) this.stage.controls.target.lerp(sel.position, 0.08);
     }
     this.seal.material.opacity = this.sealAlpha * 0.75;
+    if (this.pulseT < 1 && sel) {
+      this.pulseT = Math.min(1, this.pulseT + dt / 1.6);
+      const k = 1 - Math.pow(1 - this.pulseT, 3);
+      this.pulse.visible = true;
+      this.pulse.position.copy(sel.position);
+      this.pulse.scale.setScalar(sel.radius * (3 + k * 30));
+      this.pulse.material.opacity = (1 - this.pulseT) * 0.8;
+    } else this.pulse.visible = false;
     this.seal.material.rotation = -t * 0.08;
 
     // gentle idle drift
@@ -699,4 +717,19 @@ export class World {
       }
     }
   }
+}
+
+function ringTexture() {
+  const s = 256;
+  const cv = document.createElement('canvas');
+  cv.width = cv.height = s;
+  const g = cv.getContext('2d')!;
+  const grd = g.createRadialGradient(s / 2, s / 2, s * 0.36, s / 2, s / 2, s / 2);
+  grd.addColorStop(0, 'rgba(255,255,255,0)');
+  grd.addColorStop(0.7, 'rgba(255,255,255,0.9)');
+  grd.addColorStop(0.8, 'rgba(255,255,255,0.25)');
+  grd.addColorStop(1, 'rgba(255,255,255,0)');
+  g.fillStyle = grd;
+  g.fillRect(0, 0, s, s);
+  return new THREE.CanvasTexture(cv);
 }

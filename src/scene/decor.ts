@@ -133,6 +133,22 @@ export class Decor {
 
     }
 
+    // the Inquisitorial sigil, engraved faintly on the floor of the web
+    const floor = new THREE.Mesh(
+      new THREE.PlaneGeometry(520, 520),
+      new THREE.MeshBasicMaterial({ transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide }),
+    );
+    floor.rotation.x = -Math.PI / 2;
+    floor.position.y = -95;
+    void emblemCanvas('inquisition', '#c99a4b', 1024).then((cv) => {
+      const t = new THREE.CanvasTexture(cv);
+      t.colorSpace = THREE.SRGBColorSpace;
+      (floor.material as THREE.MeshBasicMaterial).map = t;
+      (floor.material as THREE.MeshBasicMaterial).needsUpdate = true;
+    });
+    this.add('web', floor, 0.09);
+    this.spinners.push(floor);
+
     // ---------- CHRONICLE: a ring per book, a central spine, lifelines and beads
     const lay = layouts().chronicle;
     let maxR = 0;

@@ -51,6 +51,8 @@ Useful URL options:
   choir and struck bells). There are no samples.
 - Filters for chronicle, volume, allegiance, bond type and significance. Shift-click any filter to isolate it.
 
+The search box also answers to at least one phrase of Glossia, the private cant of Eisenhorn's circle.
+
 Keyboard: `1` `2` `3` switch views · `/` search · `T` tour · `S` spoiler ward · `M` sound · `F` filters ·
 `←`/`→` step to an associate · `Esc` release · `Home` recentre (or double-click empty space).
 
