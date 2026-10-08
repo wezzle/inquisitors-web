@@ -47,6 +47,8 @@ export class BondWeb {
   private baseTarget = 1;
 
   constructor(private bonds: Bond[], private nodes: Map<string, SoulNode>) {
+    this.cacheA = bonds.map(() => new THREE.Vector3(Infinity, 0, 0));
+    this.cacheB = bonds.map(() => new THREE.Vector3(Infinity, 0, 0));
     const nv = bonds.length * SEG * 2;
     this.pos = new Float32Array(nv * 3);
     this.state = new Float32Array(nv);
@@ -138,49 +140,148 @@ export class BondWeb {
   /** Replace the highlighted bond set (these run at full strength and carry sparks). */
   highlight(ids: Set<number>) {
     this.highlighted = ids;
+    for (const [i, t] of this.tubes) {
+      if (!ids.has(i)) {
+        t.mesh.removeFromParent();
+        t.mesh.geometry.dispose();
+        t.mesh.material.dispose();
+        this.tubes.delete(i);
+      }
+    }
   }
+
+  /** Glowing tubes for highlighted bonds; rebuilt only when an endpoint has moved. */
+  private tubes = new Map<number, { mesh: THREE.Mesh<THREE.TubeGeometry, THREE.ShaderMaterial>; a: THREE.Vector3; b: THREE.Vector3 }>();
+
+  private updateTube(i: number, a: THREE.Vector3, c: THREE.Vector3, b: THREE.Vector3, lv: number, time: number) {
+    let t = this.tubes.get(i);
+    const bond = this.bonds[i];
+    if (!t) {
+      const mat = new THREE.ShaderMaterial({
+        transparent: true,
+        depthWrite: false,
+        blending: THREE.AdditiveBlending,
+        uniforms: {
+          uColor: { value: new THREE.Color(BONDS[bond.kind].color) },
+          uTime: { value: 0 },
+          uLevel: { value: 0 },
+          uFlip: { value: bond.from === bond.b ? 1 : 0 },
+        },
+        vertexShader: /* glsl */ `
+          varying vec2 vUv; varying vec3 vN; varying vec3 vV;
+          void main() {
+            vUv = uv;
+            vec4 mv = modelViewMatrix * vec4(position, 1.0);
+            vN = normalize(normalMatrix * normal);
+            vV = normalize(-mv.xyz);
+            gl_Position = projectionMatrix * mv;
+          }
+        `,
+        fragmentShader: /* glsl */ `
+          uniform vec3 uColor; uniform float uTime; uniform float uLevel; uniform float uFlip;
+          varying vec2 vUv; varying vec3 vN; varying vec3 vV;
+          void main() {
+            float u = mix(vUv.x, 1.0 - vUv.x, uFlip);
+            float core = pow(abs(dot(normalize(vN), normalize(vV))), 1.5);
+            float pulse = pow(0.5 + 0.5 * sin((u * 9.0 - uTime * 2.2) * 3.14159), 6.0);
+            float ends = smoothstep(0.0, 0.1, vUv.x) * smoothstep(1.0, 0.9, vUv.x);
+            float a = (0.35 + 0.65 * pulse) * (0.35 + 0.65 * core) * ends * uLevel;
+            gl_FragColor = vec4(uColor * (0.8 + pulse * 1.2), a);
+          }
+        `,
+      });
+      t = { mesh: new THREE.Mesh(new THREE.TubeGeometry(), mat), a: new THREE.Vector3(Infinity, 0, 0), b: new THREE.Vector3() };
+      this.tubes.set(i, t);
+      this.group.add(t.mesh);
+    }
+    if (t.a.distanceToSquared(a) > 0.01 || t.b.distanceToSquared(b) > 0.01) {
+      t.a.copy(a);
+      t.b.copy(b);
+      t.mesh.geometry.dispose();
+      t.mesh.geometry = new THREE.TubeGeometry(new THREE.QuadraticBezierCurve3(a.clone(), c.clone(), b.clone()), 40, 0.45, 6, false);
+    }
+    t.mesh.material.uniforms.uTime.value = time;
+    // many simultaneous tubes converge on one soul: share the light between them
+    const crowd = Math.min(1, Math.sqrt(6 / Math.max(this.highlighted.size, 1)));
+    t.mesh.material.uniforms.uLevel.value = lv * 0.7 * crowd;
+  }
+
+  private tmpCol = new THREE.Color();
+  private va = new THREE.Vector3();
+  private vb = new THREE.Vector3();
+  private vc = new THREE.Vector3();
+  private vp = new THREE.Vector3();
+  private cacheA: THREE.Vector3[];
+  private cacheB: THREE.Vector3[];
 
   update(time: number, dt: number) {
     const fade = 1 - Math.exp(-dt * 5);
     this.base += (this.baseTarget - this.base) * fade;
-    const a = new THREE.Vector3();
-    const b = new THREE.Vector3();
-    const c = new THREE.Vector3();
-    const p = new THREE.Vector3();
+    const a = this.va;
+    const b = this.vb;
+    const c = this.vc;
+    const p = this.vp;
     let si = 0;
-    const col = new THREE.Color();
+    let geoDirty = false;
+    const hiLevel = 0.55 + 0.45 * Math.min(1, Math.sqrt(6 / Math.max(this.highlighted.size, 1)));
+    const col = this.tmpCol;
     for (let i = 0; i < this.bonds.length; i++) {
       const bond = this.bonds[i];
       const na = this.nodes.get(bond.a)!;
       const nb = this.nodes.get(bond.b)!;
       this.level[i] += (this.target[i] * Math.min(na.alpha, nb.alpha) - this.level[i]) * fade;
-      const lv = this.level[i] * (this.highlighted.has(i) ? 1 : this.base);
+      const lv = this.level[i] * (this.highlighted.has(i) ? hiLevel : this.base);
       a.copy(na.position);
       b.copy(nb.position);
       control(a, b, c);
       const off = i * SEG * 2;
       if (lv < 0.002) {
         // collapsed: zero state so the fragment shader discards
-        this.state.fill(0, off, off + SEG * 2);
+        if (this.state[off] !== 0) this.state.fill(0, off, off + SEG * 2);
         continue;
       }
-      for (let k = 0; k <= SEG; k++) {
-        bezier(a, c, b, k / SEG, p);
-        if (k < SEG) this.pos.set([p.x, p.y, p.z], (off + k * 2) * 3);
-        if (k > 0) this.pos.set([p.x, p.y, p.z], (off + k * 2 - 1) * 3);
+      // only re-tessellate arcs whose endpoints moved since we last drew them
+      const ca = this.cacheA[i];
+      const cb = this.cacheB[i];
+      if (ca.distanceToSquared(a) > 1e-4 || cb.distanceToSquared(b) > 1e-4) {
+        ca.copy(a);
+        cb.copy(b);
+        geoDirty = true;
+        const P = this.pos;
+        for (let k = 0; k <= SEG; k++) {
+          bezier(a, c, b, k / SEG, p);
+          if (k < SEG) {
+            const o = (off + k * 2) * 3;
+            P[o] = p.x;
+            P[o + 1] = p.y;
+            P[o + 2] = p.z;
+          }
+          if (k > 0) {
+            const o = (off + k * 2 - 1) * 3;
+            P[o] = p.x;
+            P[o + 1] = p.y;
+            P[o + 2] = p.z;
+          }
+        }
       }
       this.state.fill(lv, off, off + SEG * 2);
 
       if (this.highlighted.has(i)) {
+        this.updateTube(i, a, c, b, lv, time);
         col.set(BONDS[bond.kind].color);
         const flip = bond.from === bond.b;
         for (let s = 0; s < 5 && si < 600; s++, si++) {
           let t = (time * 0.18 + s / 5 + i * 0.13) % 1;
           if (flip) t = 1 - t;
           bezier(a, c, b, t, p);
-          this.sparkPos.set([p.x, p.y, p.z], si * 3);
+          const o = si * 3;
+          this.sparkPos[o] = p.x;
+          this.sparkPos[o + 1] = p.y;
+          this.sparkPos[o + 2] = p.z;
           const fadeEnds = Math.sin(Math.PI * t) * lv;
-          this.sparkCol.set([col.r * fadeEnds, col.g * fadeEnds, col.b * fadeEnds], si * 3);
+          this.sparkCol[o] = col.r * fadeEnds;
+          this.sparkCol[o + 1] = col.g * fadeEnds;
+          this.sparkCol[o + 2] = col.b * fadeEnds;
         }
       }
     }
@@ -188,7 +289,7 @@ export class BondWeb {
     this.sparkGeo.attributes.position.needsUpdate = true;
     this.sparkGeo.attributes.color.needsUpdate = true;
     const g = this.lines.geometry;
-    g.attributes.position.needsUpdate = true;
+    if (geoDirty) g.attributes.position.needsUpdate = true;
     g.attributes.aState.needsUpdate = true;
     this.lines.material.uniforms.uTime.value = time;
   }

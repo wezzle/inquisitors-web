@@ -119,8 +119,7 @@
    "aliases": [
     "Beta",
     "Laurael Raeside (cover identity)",
-    "Padua Prate (cover identity)",
-    "Penitent (Glossia codename)"
+    "Padua Prate (cover identity)"
    ],
    "faction": "retinue",
    "books": [
@@ -217,9 +216,8 @@
    "name": "Gideon Ravenor",
    "title": "Inquisitor, Ordo Xenos",
    "aliases": [
-    "Talon",
-    "the Chair",
-    "Thorn (Glossia codename)"
+    "Talon (Glossia codename)",
+    "the Chair"
    ],
    "faction": "inquisition",
    "books": [
@@ -377,8 +375,7 @@
    "title": "Inquisitor, Ordo Xenos",
    "aliases": [
     "Farchaval (cover identity)",
-    "Thorn",
-    "Talon (Glossia codename)"
+    "Thorn (Glossia codename)"
    ],
    "faction": "inquisition",
    "books": [
@@ -504,11 +501,6 @@
      "target": "fayde-thuring",
      "type": "enemy",
      "note": "Midas Betancore's killer"
-    },
-    {
-     "target": "bastian-verveuk",
-     "type": "betrayer",
-     "note": "sacrificed him to bind Cherubael"
     },
     {
      "target": "cherubael",
@@ -994,7 +986,6 @@
    "aliases": [],
    "faction": "retinue",
    "books": [
-    "malleus",
     "hereticus",
     "ravenor",
     "ravenor-returned",
@@ -1053,11 +1044,6 @@
      "note": "romance begun while he treats her"
     },
     {
-     "target": "carl-thonius",
-     "type": "bound",
-     "note": "cured by him, forced to keep his secret"
-    },
-    {
      "target": "harlon-nayl",
      "type": "ally",
      "note": "like brother and sister"
@@ -1071,6 +1057,11 @@
      "target": "gregor-eisenhorn",
      "type": "enemy",
      "note": "resents his fall"
+    },
+    {
+     "target": "carl-thonius",
+     "type": "enemy",
+     "note": "cured by him, then mind-blocked to keep his secret"
     }
    ],
    "sources": [
@@ -1515,7 +1506,7 @@
   {
    "id": "slyte",
    "name": "Slyte",
-   "title": "Greater daemon",
+   "title": "Daemon prince",
    "aliases": [
     "Sleet",
     "Sleight",
@@ -1788,7 +1779,7 @@
    "importance": 4,
    "psy": "none",
    "status": "dead",
-   "fate": "After allying with Ravenor to banish Slyte, he tries to flee and Ravenor destroys his mind in a field on Gudrun.",
+   "fate": "After allying with Ravenor to banish Slyte, he tries to flee once more and Ravenor executes him on Gudrun.",
    "origin": "",
    "summary": "A Cognitae-trained genius and Ravenor's nemesis for decades, apparently killed in the first novel's prologue. Hideously scarred, he secretly rules the sub-sector as Lord Governor Barazan, the Diadochoi, driving the Enuncia conspiracy and using the language to restore his body. Not a psyker, he uses a \"tone of command\", lethal martial skill and occult knowledge.",
    "arcs": {
@@ -3066,7 +3057,7 @@
    "importance": 3,
    "psy": "blank",
    "status": "alive",
-   "fate": "His blankness burned away by Zael, he is handed over to the Inquisition's black ships for testing.",
+   "fate": "His blankness burned away by Zael, he is taken away by the Inquisition for testing.",
    "origin": "",
    "summary": "A chain-smoking, porn-reading untouchable whose limiter lets him switch his null aura on and off. He saves Ravenor by killing the psyker Kinsky in the first novel. Assigned to guard the comatose Zael in Ravenor Rogue, he is gradually psychically \"touched\" by the boy and helps reveal that Thonius is Slyte.",
    "arcs": {
@@ -3219,7 +3210,7 @@
     "malleus"
    ],
    "importance": 2,
-   "psy": "psyker",
+   "psy": "none",
    "status": "dead",
    "fate": "Killed on Lethe Eleven by a Dark Eldar haemonculus during the raid on Beldame Sadia.",
    "origin": "Carthae",
@@ -3742,8 +3733,8 @@
     },
     {
      "target": "cherubael",
-     "type": "bound",
-     "note": "abducted by it"
+     "type": "enemy",
+     "note": "abducted by it for Quixos"
     }
    ],
    "sources": [
@@ -4737,7 +4728,7 @@
    "importance": 2,
    "psy": "none",
    "status": "dead",
-   "fate": "His conditioning by the King's agents made him lead the graels to Mam Mordaunt. He was then killed, apparently by Mordaunt at his own request.",
+   "fate": "His conditioning by the King's agents made him lead the graels to Mam Mordaunt, and he was killed immediately afterwards.",
    "origin": "Queen Mab, Sancour",
    "summary": "Beta's combat instructor, whom she saved from Voriet. He signalled the dispersal during Ravenor's raid. Ravenor later took him on as an apparent amnesiac. In Penitent he joins Beta and Lightburn to infiltrate Mordaunt's tower, where his hidden conditioning betrays them.",
    "arcs": {

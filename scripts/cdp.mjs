@@ -96,7 +96,8 @@ for (const s of spec.steps) {
     await send('Input.dispatchKeyEvent', { type: 'keyUp', key: s.key });
   }
   if (s.shot) {
-    const r = await send('Page.captureScreenshot', { format: 'png' });
+    const jpg = /\.jpe?g$/.test(s.shot);
+    const r = await send('Page.captureScreenshot', jpg ? { format: 'jpeg', quality: 86 } : { format: 'png' });
     writeFileSync(s.shot, Buffer.from(r.result.data, 'base64'));
     console.log('[shot]', s.shot);
   }

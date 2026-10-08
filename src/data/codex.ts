@@ -9,7 +9,14 @@ export const characters: Character[] = codex.characters;
 export const locations = codex.locations;
 export const charById = new Map(characters.map((c) => [c.id, c]));
 
+const seriesCache = new Map<string, SeriesId[]>();
 export function seriesOf(c: Character): SeriesId[] {
+  let hit = seriesCache.get(c.id);
+  if (!hit) seriesCache.set(c.id, (hit = computeSeries(c)));
+  return hit;
+}
+
+function computeSeries(c: Character): SeriesId[] {
   const s = new Set<SeriesId>();
   for (const b of c.books) {
     const book = bookById.get(b);

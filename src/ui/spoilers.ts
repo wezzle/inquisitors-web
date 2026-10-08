@@ -20,9 +20,9 @@ export const spoilers = {
     return spanOf(c)[0] <= this.progress;
   },
 
-  set(patch: Partial<{ all: boolean; progress: number }>) {
+  set(patch: Partial<{ all: boolean; progress: number }>, persist = true) {
     Object.assign(this, patch);
-    localStorage.setItem('iw-spoilers', JSON.stringify({ all: this.all, progress: this.progress }));
+    if (persist) localStorage.setItem('iw-spoilers', JSON.stringify({ all: this.all, progress: this.progress }));
     this.listeners.forEach((f) => f());
   },
 

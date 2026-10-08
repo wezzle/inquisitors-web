@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { NOISE } from './glsl';
+import { NOISE, NOISE_LITE } from './glsl';
 
 /** The Immaterium backdrop: nebula shell, star field, drifting motes and a slow astrolabe of gilded rings. */
 export class Backdrop {
@@ -31,11 +31,12 @@ export class Backdrop {
         uniform vec3 uTint;
         varying vec3 vDir;
         ${NOISE}
+        ${NOISE_LITE}
         void main() {
           vec3 d = normalize(vDir);
           float t = uTime * 0.012;
           vec3 q = d * 1.6 + vec3(t, -t * 0.6, t * 0.3);
-          float warpN = fbm(q + fbm(q * 1.7 + t) * (0.9 + uTurmoil * 0.8));
+          float warpN = fbm(q + fbm3(q * 1.7 + t) * (0.9 + uTurmoil * 0.8));
           float clouds = smoothstep(-0.15, 0.85, warpN);
           float veins = pow(1.0 - abs(snoise(d * 4.0 + warpN * 2.0 + t * 2.0)), 9.0);
           // palette: void black -> bruise violet -> blood -> tarnished gold veins

@@ -8,6 +8,7 @@ import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js';
 import { CSS2DRenderer } from 'three/examples/jsm/renderers/CSS2DRenderer.js';
 
 const HQ = new URLSearchParams(location.search).has('hq');
+export const REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /** Final grade: vignette, film grain, faint chromatic fringe and a warm "pict-feed" tone. */
 const GradeShader = {
@@ -108,7 +109,7 @@ export class Stage {
 
     this.composer = new EffectComposer(this.renderer);
     this.composer.addPass(new RenderPass(this.scene, this.camera));
-    this.bloom = new UnrealBloomPass(new THREE.Vector2(window.innerWidth / 2, window.innerHeight / 2), 1.05, 0.62, 0.12);
+    this.bloom = new UnrealBloomPass(new THREE.Vector2(window.innerWidth / 2, window.innerHeight / 2), 0.95, 0.6, 0.16);
     this.composer.addPass(this.bloom);
     this.grade = new ShaderPass(GradeShader);
     this.composer.addPass(this.grade);
@@ -157,6 +158,25 @@ export class Stage {
   }
 
   private perf = { acc: 0, frames: 0, level: 0 };
+  /** Returns the unobstructed screen rect; the projection centre glides toward its middle. */
+  freeArea: () => { x0: number; y0: number; x1: number; y1: number } = () => ({ x0: 0, y0: 0, x1: window.innerWidth, y1: window.innerHeight });
+  private shift = { x: 0, y: 0, tx: 0, ty: 0, n: 0 };
+
+  private updateShift(dt: number) {
+    const s = this.shift;
+    if (s.n++ % 10 === 0) {
+      const a = this.freeArea();
+      s.tx = window.innerWidth / 2 - (a.x0 + a.x1) / 2;
+      s.ty = window.innerHeight / 2 - (a.y0 + a.y1) / 2;
+    }
+    const k = 1 - Math.exp(-dt * 3);
+    s.x += (s.tx - s.x) * k;
+    s.y += (s.ty - s.y) * k;
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    if (Math.abs(s.x) < 0.5 && Math.abs(s.y) < 0.5) this.camera.clearViewOffset();
+    else this.camera.setViewOffset(w, h, s.x, s.y, w, h);
+  }
 
   /** Step render resolution down if the device can't hold ~40 fps (checked every 2 s). */
   private adapt(dt: number) {
@@ -180,11 +200,11 @@ export class Stage {
   start() {
     const loop = () => {
       this.timer.update();
-      const dt = Math.min(this.timer.getDelta(), 0.05);
+      const dt = Math.min(this.timer.getDelta(), 0.1);
       const t = this.timer.getElapsed();
       if (this.flight) {
         const f = this.flight;
-        f.t += dt / f.dur;
+        f.t += Math.min(this.timer.getDelta(), 0.25) / f.dur;
         const k = f.t >= 1 ? 1 : easeInOutCubic(f.t);
         // arc the path a little so long flights feel like a swoop rather than a slide
         const lift = Math.sin(Math.PI * k) * f.fromPos.distanceTo(f.toPos) * 0.12;
@@ -197,10 +217,11 @@ export class Stage {
         }
       }
       this.adapt(this.timer.getDelta());
+      this.updateShift(dt);
       for (const fn of this.tickers) fn(t, dt);
       this.controls.update();
       this.grade.uniforms.uTime.value = t;
-      this.grade.uniforms.uWarp.value = this.warp;
+      this.grade.uniforms.uWarp.value = REDUCED_MOTION ? 0 : this.warp;
       this.composer.render();
       this.labels.render(this.scene, this.camera);
       requestAnimationFrame(loop);

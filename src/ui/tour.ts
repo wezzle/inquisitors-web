@@ -24,9 +24,14 @@ export class Tour {
     order: string[],
   ) {
     this.steps = order.filter((id) => charById.has(id)).map((id) => ({ id }));
+    this.all = this.steps;
   }
 
+  private all: Step[] = [];
+
   start() {
+    // only souls the reader has met (and that pass the current filters) join the procession
+    this.steps = this.all.filter((s) => this.world.passes(s.id));
     if (!this.steps.length) return;
     this.active = true;
     this.i = -1;
@@ -49,7 +54,7 @@ export class Tour {
     const c = charById.get(step.id)!;
     this.select(step.id);
     this.caption.style.setProperty('--fc', FACTIONS[c.faction].color);
-    this.caption.classList.remove('show');
+    this.caption.classList.remove('show', 'thread');
     setTimeout(() => {
       if (!this.active) return;
       this.caption.innerHTML = `<div class="step">${String(this.i + 1).padStart(2, '0')} / ${String(this.steps.length).padStart(2, '0')}</div><div class="n">${c.name}</div><div class="e">${c.epithet}</div>`;

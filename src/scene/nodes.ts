@@ -162,7 +162,7 @@ export class SoulNode {
   emphasisTarget = 1;
   hover = 0;
   hoverTarget = 0;
-  labelKey = "";
+  labelKey = '';
 
   constructor(readonly c: Character) {
     const color = new THREE.Color(FACTIONS[c.faction].color);

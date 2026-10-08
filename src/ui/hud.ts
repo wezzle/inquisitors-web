@@ -1,4 +1,4 @@
-import { bonds, bookById, books, characters, charById, seriesOf } from '../data/codex';
+import { bonds, bookById, books, characters, charById, locations, seriesOf } from '../data/codex';
 import { spoilers } from './spoilers';
 import { BONDS, BOND_ORDER, FACTIONS, FACTION_ORDER, IMPORTANCE_LABEL, SERIES, SERIES_ORDER } from '../data/theme';
 import type { SeriesId } from '../data/types';
@@ -93,6 +93,8 @@ export function mountFilters(world: World) {
       else f.factions.add(fac);
       render();
     });
+    b.addEventListener('mouseenter', () => world.preview({ faction: fac }));
+    b.addEventListener('mouseleave', () => world.preview({}));
     facEl.appendChild(b);
   }
 
@@ -112,6 +114,8 @@ export function mountFilters(world: World) {
       else f.bonds.add(k);
       render();
     });
+    b.addEventListener('mouseenter', () => world.preview({ bond: k }));
+    b.addEventListener('mouseleave', () => world.preview({}));
     bondEl.appendChild(b);
   }
 
@@ -146,7 +150,15 @@ export function mountFilters(world: World) {
   $('filters-toggle').addEventListener('click', () => panel.classList.toggle('collapsed'));
   if (window.innerWidth < 760) panel.classList.add('collapsed');
   render();
-  return { toggle: () => panel.classList.toggle('collapsed') };
+  /** Isolate one chronicle (or restore all if it is already isolated). */
+  const isolateSeries = (s: SeriesId) => {
+    const ids = books.filter((x) => x.series === s).map((x) => x.id);
+    const isolated = f.books.size === ids.length && ids.every((id) => f.books.has(id));
+    f.books.clear();
+    (isolated ? books.map((x) => x.id) : ids).forEach((id) => f.books.add(id));
+    render();
+  };
+  return { toggle: () => panel.classList.toggle('collapsed'), isolateSeries };
 }
 
 /** Name search with live highlighting in the scene and a keyboard-navigable result list. */
@@ -166,6 +178,7 @@ export function mountSearch(world: World, select: (id: string) => void) {
       return;
     }
     const scored = characters
+      .filter((c) => spoilers.isMet(c))
       .map((c) => {
         const hay = [c.name, ...c.aliases].map(norm);
         let s = 0;
@@ -235,11 +248,13 @@ export function mountTooltip() {
     if (!id) {
       el.classList.remove('show');
       current = null;
+      delete el.dataset.loc;
       return;
     }
     const c = charById.get(id)!;
-    if (id !== current) {
+    if (id !== current || el.dataset.loc) {
       current = id;
+      delete el.dataset.loc;
       el.style.setProperty('--fc', FACTIONS[c.faction].color);
       el.innerHTML = `<div class="n">${c.name}</div><div class="t">${c.title}</div>${c.epithet ? `<div class="e">${c.epithet}</div>` : ''}`;
     }
@@ -283,4 +298,24 @@ export function mountTicker() {
   }
   $('ticker').textContent = lines.map((l) => `+++ ${l} `).join('') + '+++';
   $('brand-sub').textContent = `Dramatis personæ of Dan Abnett's Eisenhorn, Ravenor & Bequin chronicles — ${cast} souls, ${bonds.length} bonds`;
+}
+
+/** Hover card for worlds and places on the Chronicle. */
+export function mountLocationTooltip() {
+  const el = $('tooltip');
+  return (id: string, ev?: PointerEvent) => {
+    const l = locations.find((x) => x.id === id);
+    if (!l) return;
+    if (el.dataset.loc !== id) {
+      el.dataset.loc = id;
+      el.style.setProperty('--fc', '#c9a24b');
+      const first = books.find((b) => l.books.includes(b.id));
+      el.innerHTML = `<div class="n">${l.name}</div><div class="t">${l.type !== 'other' ? l.type + ' · ' : ''}first seen in ${first?.title ?? '?'}</div><div class="e">${l.note}</div>`;
+    }
+    el.classList.add('show');
+    if (ev) {
+      el.style.left = `${Math.min(ev.clientX + 18, window.innerWidth - el.offsetWidth - 12)}px`;
+      el.style.top = `${Math.min(ev.clientY + 18, window.innerHeight - el.offsetHeight - 40)}px`;
+    }
+  };
 }

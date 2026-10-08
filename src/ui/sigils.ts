@@ -148,6 +148,24 @@ function loadSVG(svg: string): Promise<HTMLImageElement> {
   });
 }
 
+/** The bare emblem rasterised onto a transparent canvas, ringed by a thin circle. */
+export async function emblemCanvas(f: Faction, color: string, size = 512): Promise<HTMLCanvasElement> {
+  const cv = document.createElement('canvas');
+  cv.width = cv.height = size;
+  const g = cv.getContext('2d')!;
+  g.strokeStyle = color;
+  g.lineWidth = size * 0.008;
+  for (const r of [0.48, 0.44]) {
+    g.beginPath();
+    g.arc(size / 2, size / 2, size * r, 0, Math.PI * 2);
+    g.stroke();
+  }
+  const img = await loadSVG(emblemSVG(f, color));
+  const e = size * 0.62;
+  g.drawImage(img, (size - e) / 2, (size - e) / 2, e, e);
+  return cv;
+}
+
 /** Renders a wax-seal style roundel for a character: emblem centre, name inscribed around the rim. */
 export async function drawSeal(c: Character, size = 512): Promise<HTMLCanvasElement> {
   const col = FACTIONS[c.faction].color;

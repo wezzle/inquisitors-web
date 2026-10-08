@@ -38,6 +38,16 @@ export class Dossier {
   private current: string | null = null;
   onNavigate: (id: string) => void = () => {};
   onClose: () => void = () => {};
+  onPreview: (id: string, on: boolean) => void = () => {};
+  onHide: () => void = () => {};
+
+  private wireGoto() {
+    this.el.querySelectorAll<HTMLButtonElement>('[data-goto]').forEach((b) => {
+      b.addEventListener('click', () => this.onNavigate(b.dataset.goto!));
+      b.addEventListener('mouseenter', () => this.onPreview(b.dataset.goto!, true));
+      b.addEventListener('mouseleave', () => this.onPreview(b.dataset.goto!, false));
+    });
+  }
 
   constructor() {
     this.el = document.getElementById('dossier')!;
@@ -50,7 +60,41 @@ export class Dossier {
   hide() {
     this.current = null;
     this.el.classList.remove('open');
+    document.body.classList.remove('dossier-open');
+    this.onHide();
   }
+
+  /** A place card: what it is, and the volumes that visit it (unread ones veiled). */
+  showLocation(id: string) {
+    const l = locations.find((x) => x.id === id)!;
+    this.current = `loc:${id}`;
+    this.el.style.setProperty('--fc', '#c9a24b');
+    const vols = books.filter((b) => l.books.includes(b.id));
+    const volHtml = vols
+      .map((b) => {
+        const unread = b.order > spoilers.progress;
+        return `<button data-book="${b.id}" style="--fc:${SERIES[b.series].color};--bc:${SERIES[b.series].color}" ${unread ? 'class="unread"' : ''}>
+          <i></i><span><span class="n">${unread ? 'An unread volume' : esc(b.title)}</span><span class="note">${SERIES[b.series].label} · ${b.year}</span></span>
+          <span class="kind">${b.kind === 'short' ? 'Short story' : 'Novel'}</span></button>`;
+      })
+      .join('');
+    this.el.innerHTML = `
+      <button class="close" title="Close (Esc)">×</button>
+      <div class="d-head-strip"><span>+++ Astrocartographic record +++</span><span>${l.type === 'other' ? 'Place' : esc(l.type)}</span></div>
+      <div class="scroll">
+        <div class="d-book-hero">
+          <div class="yr">${l.type === 'other' ? 'Place of note' : esc(l.type)}</div>
+          <h2>${esc(l.name)}</h2>
+        </div>
+        <div class="d-sec"><h4>Record</h4><p class="d-text">${esc(l.note)}</p></div>
+        <div class="d-sec"><h4>Visited in · ${vols.length}</h4><div class="d-assoc">${volHtml}</div></div>
+      </div>`;
+    this.el.classList.add('open');
+    document.body.classList.add('dossier-open');
+    this.el.querySelector('.close')!.addEventListener('click', () => this.onClose());
+    this.el.querySelectorAll<HTMLButtonElement>('[data-book]').forEach((b) => b.addEventListener('click', () => this.onBook(b.dataset.book!)));
+  }
+  onBook: (id: string) => void = () => {};
 
   /** A volume card: synopsis, the worlds it visits and its dramatis personae. */
   showBook(bookId: string) {
@@ -71,7 +115,7 @@ export class Dossier {
       )
       .join('');
     const worldHtml = worlds
-      .map((l) => `<div class="d-world"><span class="n">${esc(l.name)}</span><span class="t">${esc(l.type)}</span><p>${esc(l.note)}</p></div>`)
+      .map((l) => `<div class="d-world" data-loc="${l.id}"><span class="n">${esc(l.name)}</span>${l.type && l.type !== 'other' ? `<span class="t">${esc(l.type)}</span>` : ''}<p>${esc(l.note)}</p></div>`)
       .join('');
     this.el.innerHTML = `
       <button class="close" title="Close (Esc)">×</button>
@@ -87,9 +131,18 @@ export class Dossier {
         <div class="d-sec"><h4>Dramatis personæ · ${cast.length}</h4><div class="d-assoc">${castHtml || '<p class="d-text plain">Read further to meet them.</p>'}</div></div>
       </div>`;
     this.el.classList.add('open');
+    document.body.classList.add('dossier-open');
     this.el.querySelector('.close')!.addEventListener('click', () => this.onClose());
-    this.el.querySelectorAll<HTMLButtonElement>('[data-goto]').forEach((x) => x.addEventListener('click', () => this.onNavigate(x.dataset.goto!)));
+    this.wireGoto();
     this.el.querySelectorAll<HTMLElement>('[data-spoiler]').forEach((s) => s.addEventListener('click', () => s.classList.toggle('unveiled')));
+    this.el.querySelectorAll<HTMLElement>('[data-loc]').forEach((x) =>
+      x.addEventListener('click', (e) => {
+        if (!(x.closest('[data-spoiler]') as HTMLElement | null)?.classList.contains('veiled') || (x.closest('[data-spoiler]') as HTMLElement).classList.contains('unveiled')) {
+          e.stopPropagation();
+          this.showLocation(x.dataset.loc!);
+        }
+      }),
+    );
   }
 
   async show(id: string) {
@@ -175,13 +228,15 @@ export class Dossier {
         ${c.wargear ? `<div class="d-sec"><h4>Wargear &amp; effects</h4><p class="d-text plain" style="font-size:14.5px">${esc(c.wargear)}</p></div>` : ''}
         ${c.traits.length ? `<div class="d-sec"><h4>Marks</h4><div class="d-tags">${c.traits.map((t) => `<span>${esc(t)}</span>`).join('')}</div></div>` : ''}
         ${assoc ? `<div class="d-sec"><h4>Known associates · ${bonds.length}</h4><div class="d-assoc">${assoc}</div></div>` : ''}
+        <div class="d-hint">Shift-click another soul to trace the thread that binds them.</div>
         ${srcs ? `<div class="d-sources">Sources: ${srcs}</div>` : ''}
       </div>`;
     this.el.classList.add('open');
+    document.body.classList.add('dossier-open');
     this.el.querySelector('.scroll')!.scrollTop = 0;
 
     this.el.querySelector('.close')!.addEventListener('click', () => this.onClose());
-    this.el.querySelectorAll<HTMLButtonElement>('[data-goto]').forEach((b) => b.addEventListener('click', () => this.onNavigate(b.dataset.goto!)));
+    this.wireGoto();
     const veiled = spoilers.isSpoiled(c);
     this.el.querySelectorAll<HTMLElement>('[data-spoiler]').forEach((s) => {
       s.classList.toggle('veiled', veiled);

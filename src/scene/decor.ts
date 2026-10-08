@@ -4,6 +4,70 @@ import { books, characters } from '../data/codex';
 import { FACTIONS, FACTION_ORDER, SERIES, SERIES_ORDER } from '../data/theme';
 import { CHRONICLE, factionCentre, layouts, SERIES_ANCHOR, type LayoutId } from './layouts';
 import type { SoulNode } from './nodes';
+import { emblemCanvas } from '../ui/sigils';
+
+const SPIRE_RISE = 150;
+
+/** Gothic ribs climbing past the book rings and arching together into a spire. */
+function spire(R: number) {
+  const pts: number[] = [];
+  const bottom = CHRONICLE.ringY(0) - 30;
+  const top = CHRONICLE.ringY(books.length - 1) + 12;
+  const apexY = top + SPIRE_RISE;
+  const N = 16;
+  const seg = (a: THREE.Vector3, b: THREE.Vector3) => pts.push(a.x, a.y, a.z, b.x, b.y, b.z);
+  for (let i = 0; i < N; i++) {
+    const ang = (i / N) * Math.PI * 2;
+    const cx = Math.cos(ang);
+    const cz = Math.sin(ang);
+    const major = i % 2 === 0;
+    const r = major ? R : R * 0.97;
+    seg(new THREE.Vector3(cx * r, bottom, cz * r), new THREE.Vector3(cx * r, top, cz * r));
+    // ogive arch from the top of the rib to the apex
+    const a = new THREE.Vector3(cx * r, top, cz * r);
+    const c = new THREE.Vector3(cx * r * (major ? 0.98 : 0.9), top + SPIRE_RISE * 0.62, cz * r * (major ? 0.98 : 0.9));
+    const b = new THREE.Vector3(0, apexY, 0);
+    const curve = new THREE.QuadraticBezierCurve3(a, c, b);
+    const P = curve.getPoints(28);
+    for (let k = 0; k < P.length - 1; k++) seg(P[k], P[k + 1]);
+  }
+  // tracery bands between ribs
+  for (const y of [bottom, top]) {
+    for (let i = 0; i < 128; i++) {
+      const a0 = (i / 128) * Math.PI * 2;
+      const a1 = ((i + 1) / 128) * Math.PI * 2;
+      seg(new THREE.Vector3(Math.cos(a0) * R, y, Math.sin(a0) * R), new THREE.Vector3(Math.cos(a1) * R, y, Math.sin(a1) * R));
+    }
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pts, 3));
+  return new THREE.LineSegments(
+    g,
+    new THREE.LineBasicMaterial({ color: '#d9a94e', transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending }),
+  );
+}
+
+function starTexture() {
+  const s = 128;
+  const cv = document.createElement('canvas');
+  cv.width = cv.height = s;
+  const g = cv.getContext('2d')!;
+  const grd = g.createRadialGradient(s / 2, s / 2, 0, s / 2, s / 2, s / 2);
+  grd.addColorStop(0, 'rgba(255,255,255,1)');
+  grd.addColorStop(0.15, 'rgba(255,240,200,0.6)');
+  grd.addColorStop(1, 'rgba(255,220,150,0)');
+  g.fillStyle = grd;
+  g.fillRect(0, 0, s, s);
+  g.strokeStyle = 'rgba(255,240,210,0.8)';
+  g.lineWidth = 2;
+  g.beginPath();
+  g.moveTo(s / 2, 4);
+  g.lineTo(s / 2, s - 4);
+  g.moveTo(4, s / 2);
+  g.lineTo(s - 4, s / 2);
+  g.stroke();
+  return new THREE.CanvasTexture(cv);
+}
 
 function label(html: string, cls: string) {
   const el = document.createElement('div');
@@ -51,6 +115,9 @@ export class Decor {
   private beadBase: THREE.Color[] = [];
   private bookLabels: CSS2DObject[] = [];
   readonly spine: THREE.Mesh;
+  private spinners: THREE.Object3D[] = [];
+  private nodeArr?: SoulNode[];
+  readonly ringR: number;
 
   constructor(private nodes: Map<string, SoulNode>) {
     // ---------- WEB: series sigils
@@ -63,10 +130,7 @@ export class Decor {
       );
       ring.position.set(a.x * 1.05, -70, a.z * 1.05);
       this.add('web', ring, 0.22);
-      const l = label(`<span class="num">${meta.numeral}</span><span class="nm">${meta.label}</span><span class="sub">${meta.sub}</span>`, 'region-label');
-      l.element.style.setProperty('--sc', meta.color);
-      l.position.set(a.x * 1.6, -40, a.z * 1.6);
-      this.addLabel('web', l);
+
     }
 
     // ---------- CHRONICLE: a ring per book, a central spine, lifelines and beads
@@ -74,6 +138,7 @@ export class Decor {
     let maxR = 0;
     for (const v of lay.values()) maxR = Math.max(maxR, Math.hypot(v.x, v.z));
     const ringR = maxR + 26;
+    this.ringR = ringR;
     books.forEach((bk, i) => {
       const y = CHRONICLE.ringY(i);
       const col = SERIES[bk.series].color;
@@ -109,6 +174,13 @@ export class Decor {
     );
     this.spine.position.y = CHRONICLE.bottom + CHRONICLE.height / 2;
     this.add('chronicle', this.spine, 0.35);
+    this.add('chronicle', spire(ringR + 14), 0.09);
+    const apex = new THREE.Sprite(
+      new THREE.SpriteMaterial({ map: starTexture(), color: '#ffe2a0', transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, opacity: 0 }),
+    );
+    apex.position.y = CHRONICLE.ringY(books.length - 1) + SPIRE_RISE;
+    apex.scale.setScalar(46);
+    this.add('chronicle', apex, 0.9);
 
     const lp: number[] = [];
     const bp: number[] = [];
@@ -181,9 +253,23 @@ export class Decor {
       );
       ring.position.set(centre.x, centre.y - r * 0.85, centre.z);
       this.add('allegiance', ring, 0.35);
+      const disc = new THREE.Mesh(
+        new THREE.PlaneGeometry(r * 1.5, r * 1.5),
+        new THREE.MeshBasicMaterial({ transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide }),
+      );
+      disc.rotation.x = -Math.PI / 2;
+      disc.position.set(centre.x, centre.y - r * 0.85, centre.z);
+      void emblemCanvas(f, FACTIONS[f].color, 512).then((cv) => {
+        const t = new THREE.CanvasTexture(cv);
+        t.colorSpace = THREE.SRGBColorSpace;
+        (disc.material as THREE.MeshBasicMaterial).map = t;
+        (disc.material as THREE.MeshBasicMaterial).needsUpdate = true;
+      });
+      this.add('allegiance', disc, 0.3);
+      this.spinners.push(disc);
       const l = label(`<span class="nm">${FACTIONS[f].label}</span><span class="sub">${FACTIONS[f].blurb} · ${n}</span>`, 'region-label faction');
       l.element.style.setProperty('--sc', FACTIONS[f].color);
-      l.position.set(centre.x * 1.08, centre.y + r + 12, centre.z * 1.08);
+      l.position.set(centre.x * 1.08, centre.y + r + 34, centre.z * 1.08);
       this.addLabel('allegiance', l);
     });
   }
@@ -231,6 +317,11 @@ export class Decor {
     return out;
   }
 
+  /** Current fade of a layout's scaffolding (0..1). */
+  fade(mode: LayoutId) {
+    return this.fades[mode] * (1 - 0.7 * this.dimNow);
+  }
+
   /** Book ids to emphasise on the chronicle (null = all). */
   activeBooks: Set<string> | null = null;
 
@@ -240,6 +331,7 @@ export class Decor {
 
   update(dt: number) {
     const k = 1 - Math.exp(-dt * 3);
+    for (const s of this.spinners) s.rotation.z += dt * 0.05;
     this.dimNow += (this.dim - this.dimNow) * k;
     const keep = 1 - 0.7 * this.dimNow;
     for (const mode of Object.keys(this.fades) as LayoutId[]) {
@@ -263,7 +355,7 @@ export class Decor {
     const cf = this.fades.chronicle;
     this.life.visible = this.beads.visible = cf > 0.005;
     if (!this.life.visible) return;
-    const nodeArr = characters.map((c) => this.nodes.get(c.id)!);
+    const nodeArr = (this.nodeArr ??= characters.map((c) => this.nodes.get(c.id)!));
     for (let i = 0; i < this.lifeOwner.length; i++) {
       const n = nodeArr[this.lifeOwner[i]];
       this.lifeAlpha[i] = (this.lifeTop[i] > this.progress ? 0 : this.lifeBase[i]) * cf * n.alpha * (0.1 + 0.9 * n.emphasis) * (1 + n.hover);
@@ -273,7 +365,9 @@ export class Decor {
       const n = nodeArr[this.beadOwner[i]];
       const a = this.beadRing[i] > this.progress ? 0 : cf * n.alpha * (0.1 + 0.9 * n.emphasis);
       const c = this.beadBase[i];
-      this.beadCol.set([c.r * a, c.g * a, c.b * a], i * 3);
+      this.beadCol[i * 3] = c.r * a;
+      this.beadCol[i * 3 + 1] = c.g * a;
+      this.beadCol[i * 3 + 2] = c.b * a;
     }
     this.beads.geometry.attributes.color.needsUpdate = true;
   }
@@ -295,3 +389,4 @@ function dotTexture() {
   g.fill();
   return new THREE.CanvasTexture(cv);
 }
+

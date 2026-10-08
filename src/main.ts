@@ -9,16 +9,17 @@ import '@fontsource/share-tech-mono/400.css';
 import './style.css';
 
 import * as THREE from 'three';
-import { bondsOf, charById, characters, other } from './data/codex';
-import { BOND_ORDER } from './data/theme';
+import { bonds, bondsOf, books, charById, characters, other, roleOf } from './data/codex';
+import { BONDS, BOND_ORDER, FACTIONS } from './data/theme';
 import type { LayoutId } from './scene/layouts';
 import { Stage } from './scene/stage';
 import { World } from './scene/world';
 import { Choir } from './ui/audio';
 import { Dossier } from './ui/dossier';
-import { mountFilters, mountSearch, mountTicker, mountTooltip } from './ui/hud';
+import { mountFilters, mountLocationTooltip, mountSearch, mountTicker, mountTooltip } from './ui/hud';
 import { emblemSVG } from './ui/sigils';
 import { spoilers } from './ui/spoilers';
+import { Saga } from './ui/saga';
 import { Tour } from './ui/tour';
 
 const params = new URLSearchParams(location.search);
@@ -31,14 +32,46 @@ const world = new World(stage);
 const dossier = new Dossier();
 const choir = new Choir();
 const tooltip = mountTooltip();
+const tooltipLoc = mountLocationTooltip();
+let bookQuery = false;
 const filters = mountFilters(world);
 mountTicker();
 
+// keep the focus of the scene in the part of the screen the panels leave free
+stage.freeArea = () => {
+  const W = window.innerWidth;
+  const H = window.innerHeight;
+  const a = { x0: 0, y0: 0, x1: W, y1: H };
+  const d = document.getElementById('dossier')!;
+  if (d.classList.contains('open')) {
+    const r = d.getBoundingClientRect();
+    if (W < 760) {
+      a.y1 = r.top;
+      a.y0 = document.querySelector('.hud-top')!.getBoundingClientRect().bottom;
+    } else a.x1 = r.left;
+  }
+  const f = document.getElementById('filters')!;
+  const fr = W >= 760 && !f.classList.contains('collapsed') ? f.getBoundingClientRect().right : 0;
+  // captions sit centred in the gap between the panels
+  const cap = document.getElementById('caption')!;
+  cap.style.left = `${(fr + a.x1) / 2}px`;
+  cap.style.maxWidth = `${Math.max(280, a.x1 - fr - 40)}px`;
+  a.x0 = fr * 0.6;
+  return a;
+};
+
 // ---------------------------------------------------------------- selection
 function select(id: string | null) {
+  if (id && !spoilers.isMet(charById.get(id)!)) return;
+  // a soul hidden by the filters is revealed by restoring them
+  if (id && !world.passes(id)) $('f-reset').click();
   void world.select(id);
 }
 world.onSelect = (id) => {
+  if (bookQuery) {
+    bookQuery = false;
+    world.setQuery(null);
+  }
   if (id) {
     void dossier.show(id);
     const c = charById.get(id)!;
@@ -55,9 +88,49 @@ world.onHover = (id, ev) => {
   if (id && id !== lastHover) choir.tick();
   lastHover = id;
 };
+world.onHoverLoc = (id, ev) => {
+  if (id) tooltipLoc(id, ev);
+  else if (!world.hovered) tooltip(null);
+};
+world.onLocation = (id) => {
+  tour.stop();
+  tooltip(null);
+  if (world.selected) select(null);
+  dossier.showLocation(id);
+  choir.bell();
+};
 dossier.onNavigate = (id) => {
   tour.stop();
   select(id);
+};
+const caption = $('caption');
+world.onThread = (t, from, to) => {
+  if (!t && !from) {
+    caption.classList.remove('show', 'thread');
+    return;
+  }
+  tour.stop();
+  caption.classList.add('show', 'thread');
+  caption.style.setProperty('--fc', '#f0d08a');
+  if (!t) {
+    caption.innerHTML = `<div class="step">+++ No thread binds them +++</div><div class="e">${charById.get(from)!.name} and ${charById.get(to)!.name} share no chain of bonds among the souls on show.</div>`;
+    return;
+  }
+  const chain = t.ids
+    .map((id, i) => {
+      const c = charById.get(id)!;
+      const name = `<b style="color:${FACTIONS[c.faction].color}">${c.name}</b>`;
+      if (!i) return name;
+      const b = bonds[t.bonds[i - 1]];
+      return `<i style="color:${BONDS[b.kind].color}">— ${roleOf(b, t.ids[i - 1]).toLowerCase()} —</i> ${name}`;
+    })
+    .join(' ');
+  caption.innerHTML = `<div class="step">+++ A thread of ${t.bonds.length} bond${t.bonds.length > 1 ? 's' : ''} +++</div><div class="chain">${chain}</div><div class="hint">Esc or click empty space to release</div>`;
+};
+dossier.onBook = (id) => world.onBook(id);
+dossier.onPreview = (id, on) => {
+  const n = world.nodes.get(id);
+  if (n) n.hoverTarget = on ? 1 : 0;
 };
 dossier.onClose = () => {
   if (world.selected) select(null);
@@ -67,14 +140,19 @@ world.onBook = (id) => {
   tour.stop();
   if (world.selected) select(null);
   dossier.showBook(id);
+  // light up the volume's cast in the scene while its card is open
+  world.setQuery(new Set(characters.filter((c) => c.books.includes(id)).map((c) => c.id)));
+  bookQuery = true;
   choir.bell();
+};
+dossier.onHide = () => {
+  if (bookQuery) {
+    bookQuery = false;
+    world.setQuery(null);
+  }
 };
 const search = mountSearch(world, (id) => {
   tour.stop();
-  if (!world.passes(id)) {
-    // reveal filtered-out souls when explicitly sought
-    $('f-reset').click();
-  }
   select(id);
 });
 
@@ -118,11 +196,35 @@ tour.onStop = () => tourBtn.classList.remove('on');
 tourBtn.addEventListener('click', () => {
   if (tour.active) tour.stop();
   else {
+    saga.stop();
     tourBtn.classList.add('on');
     tour.start();
   }
 });
 stage.labels.domElement.addEventListener('pointerdown', () => tour.stop());
+
+// ---------------------------------------------------------------- saga
+const saga = new Saga(stage, () => {
+  tour.stop();
+  select(null);
+  dossier.hide();
+  layoutButtons.forEach((b) => b.classList.toggle('on', b.dataset.layout === 'chronicle'));
+  if (world.layout !== 'chronicle') choir.whoosh();
+  world.setLayout('chronicle', false);
+});
+const sagaBtn = $('btn-saga');
+saga.onStop = () => {
+  sagaBtn.textContent = '▶ Replay the saga';
+  sagaBtn.classList.remove('on');
+};
+sagaBtn.addEventListener('click', () => {
+  if (saga.active) return saga.stop();
+  sagaBtn.textContent = '■ Halt the replay';
+  sagaBtn.classList.add('on');
+  saga.start();
+});
+stage.labels.domElement.addEventListener('pointerdown', () => saga.stop());
+world.onRegion = (s) => filters.isolateSeries(s);
 
 // ---------------------------------------------------------------- toggles
 const spoilerBtn = $('btn-spoiler');
@@ -141,25 +243,39 @@ function setSound(on: boolean) {
 }
 soundBtn.addEventListener('click', () => setSound(!choir.on));
 
+document.querySelector('.brand-title')!.addEventListener('click', () => {
+  select(null);
+  world.overview();
+});
+
 const help = $('help');
 $('btn-help').addEventListener('click', () => help.classList.toggle('open'));
 $('help-close').addEventListener('click', () => help.classList.remove('open'));
 help.addEventListener('click', (e) => e.target === help && help.classList.remove('open'));
 
 // ---------------------------------------------------------------- keyboard
+/** ←/→ walk round the associates of an anchor soul (the one selected before stepping began). */
+const cycle = { anchor: '', at: '', i: -1 };
 function stepAssociate(dir: number) {
   const sel = world.selected;
   if (!sel) return;
-  const list = [...bondsOf.get(sel)!]
-    .filter((b) => world.filters.bonds.has(b.kind) && world.passes(other(b, sel)))
+  if (sel !== cycle.at) {
+    cycle.anchor = sel;
+    cycle.i = -1;
+  }
+  const anchor = cycle.anchor;
+  const list = [...bondsOf.get(anchor)!]
+    .filter((b) => world.filters.bonds.has(b.kind) && world.passes(other(b, anchor)))
     .sort((a, b) => BOND_ORDER.indexOf(a.kind) - BOND_ORDER.indexOf(b.kind));
   if (!list.length) return;
-  const i = dir > 0 ? 0 : list.length - 1;
-  select(other(list[i], sel));
+  cycle.i = (cycle.i + dir + list.length + (cycle.i < 0 && dir < 0 ? 1 : 0)) % list.length;
+  cycle.at = other(list[cycle.i], anchor);
+  select(cycle.at);
 }
 window.addEventListener('keydown', (e) => {
   if ((e.target as HTMLElement).tagName === 'INPUT') return;
   if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (document.body.classList.contains('pre')) return;
   switch (e.key) {
     case '1':
       return setLayout('web');
@@ -170,8 +286,13 @@ window.addEventListener('keydown', (e) => {
     case '/':
       e.preventDefault();
       return search.focus();
+    case 'p':
+    case 'P':
+      return sagaBtn.click();
     case 'Escape':
+      saga.stop();
       tour.stop();
+      if (world.thread) return world.clearThread();
       help.classList.remove('open');
       return select(null);
     case 't':
@@ -215,7 +336,7 @@ function begin(sound: boolean) {
   stage.camera.position.set(0, 900, 1600);
   stage.controls.target.set(0, 0, 0);
   world.reveal();
-  stage.flyTo(new THREE.Vector3(40, 250, 600), new THREE.Vector3(0, -10, 0), 4.2, () => {
+  stage.flyTo(world.fitted(new THREE.Vector3(40, 250, 600), new THREE.Vector3(0, -10, 0)), new THREE.Vector3(0, -10, 0), 4.2, () => {
     const hash = decodeURIComponent(location.hash.slice(1));
     if (hash && charById.has(hash)) select(hash);
   });
@@ -223,33 +344,44 @@ function begin(sound: boolean) {
 }
 
 $('intro').querySelector('.intro-rosette')!.innerHTML = emblemSVG('inquisition');
+const readSel = $('intro-read') as HTMLSelectElement;
+readSel.innerHTML = books
+  .map((b, i) =>
+    i === books.length - 1
+      ? `<option value="${i}">everything, through ${b.title}</option>`
+      : `<option value="${i}">up to ${b.title}${b.kind === 'short' ? ' (short story)' : ''}</option>`,
+  )
+  .join('');
+readSel.value = String(spoilers.progress);
+readSel.addEventListener('change', () => spoilers.set({ progress: Number(readSel.value) }));
 stage.start();
 
 if (params.has('nointro')) {
   $('intro').style.display = 'none';
   begin(false);
 } else {
+  // time-based typewriter: robust to slow frames, ~3 s in total; click to skip
   const feed = $('intro-feed');
-  let line = 0;
-  let ch = 0;
-  let text = '';
-  const type = () => {
-    if (line >= FEED.length) {
-      feed.innerHTML = text + '<span class="cur">&nbsp;</span>';
-      $('intro').classList.add('ready');
-      return;
-    }
-    const l = FEED[line];
-    text += l[ch++] ?? '';
-    if (ch > l.length) {
-      text += '\n';
-      line++;
-      ch = 0;
-      setTimeout(type, 180);
-    } else setTimeout(type, 14 + Math.random() * 22);
-    feed.innerHTML = text + '<span class="cur">&nbsp;</span>';
+  const full = FEED.join('\n');
+  const t0 = performance.now() + 400;
+  const DURATION = 3200;
+  let done = false;
+  const finish = () => {
+    done = true;
+    feed.innerHTML = full + '\n<span class="cur">&nbsp;</span>';
+    $('intro').classList.add('ready');
   };
-  setTimeout(type, 500);
+  const type = () => {
+    if (done) return;
+    const k = Math.max(0, Math.min(1, (performance.now() - t0) / DURATION));
+    if (k >= 1) return finish();
+    feed.innerHTML = full.slice(0, Math.floor(full.length * k)) + '<span class="cur">&nbsp;</span>';
+    setTimeout(type, 30);
+  };
+  type();
+  $('intro').addEventListener('click', (e) => {
+    if (!done && !(e.target as HTMLElement).closest('button, select, label')) finish();
+  });
   $('intro-go').addEventListener('click', () => begin(($('intro-sound') as HTMLInputElement).checked));
   window.addEventListener('keydown', function enter(e) {
     if (e.key === 'Enter' && $('intro').classList.contains('ready') && !$('intro').classList.contains('gone')) {

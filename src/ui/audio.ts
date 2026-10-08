@@ -12,7 +12,14 @@ export class Choir {
     this.ctx = ctx;
     this.master = ctx.createGain();
     this.master.gain.value = 0;
-    this.master.connect(ctx.destination);
+    // gentle limiter so stacked bells and the choir never clip
+    const comp = ctx.createDynamicsCompressor();
+    comp.threshold.value = -18;
+    comp.knee.value = 12;
+    comp.ratio.value = 6;
+    comp.attack.value = 0.01;
+    comp.release.value = 0.4;
+    this.master.connect(comp).connect(ctx.destination);
 
     this.verb = ctx.createConvolver();
     this.verb.buffer = impulse(ctx, 6.5, 2.6);
@@ -112,7 +119,7 @@ export class Choir {
     const ctx = this.ensure();
     void ctx.resume();
     this.on = v;
-    this.master.gain.setTargetAtTime(v ? 0.9 : 0, ctx.currentTime, v ? 1.6 : 0.4);
+    this.master.gain.setTargetAtTime(v ? 0.75 : 0, ctx.currentTime, v ? 1.6 : 0.4);
   }
 
   /** A struck bell — used when a dossier opens. Pitch drops for darker souls. */

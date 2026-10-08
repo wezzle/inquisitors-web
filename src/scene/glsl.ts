@@ -49,3 +49,12 @@ float fbm(vec3 p) {
   return f;
 }
 `;
+
+/** Three-octave fbm for cheap domain warping. */
+export const NOISE_LITE = /* glsl */ `
+float fbm3(vec3 p) {
+  float f = 0.0, a = 0.5;
+  for (int i = 0; i < 3; i++) { f += a * snoise(p); p = p * 2.03 + vec3(1.7, 9.2, 3.1); a *= 0.5; }
+  return f;
+}
+`;

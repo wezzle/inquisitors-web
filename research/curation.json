@@ -20,7 +20,8 @@
       ]
     },
     "zygmunt-molotch": {
-      "importance": 4
+      "importance": 4,
+      "fate": "After allying with Ravenor to banish Slyte, he tries to flee once more and Ravenor executes him on Gudrun."
     },
     "king-in-yellow": {
       "faction": "heretic",
@@ -46,6 +47,10 @@
     "gideon-ravenor": {
       "removeRelationships": [
         "gregor-eisenhorn:mentor"
+      ],
+      "aliases": [
+        "Talon (Glossia codename)",
+        "the Chair"
       ]
     },
     "beta-bequin": {
@@ -58,7 +63,66 @@
           "type": "student",
           "note": "joins his hunt; he treats her as a surrogate daughter"
         }
+      ],
+      "aliases": [
+        "Beta",
+        "Laurael Raeside (cover identity)",
+        "Padua Prate (cover identity)"
       ]
+    },
+    "gregor-eisenhorn": {
+      "aliases": [
+        "Farchaval (cover identity)",
+        "Thorn (Glossia codename)"
+      ],
+      "removeRelationships": [
+        "bastian-verveuk:betrayer"
+      ]
+    },
+    "kara-swole": {
+      "books": [
+        "hereticus",
+        "ravenor",
+        "ravenor-returned",
+        "ravenor-rogue",
+        "thorn-wishes-talon",
+        "pariah",
+        "penitent"
+      ],
+      "removeRelationships": [
+        "carl-thonius:bound"
+      ],
+      "addRelationships": [
+        {
+          "target": "carl-thonius",
+          "type": "enemy",
+          "note": "cured by him, then mind-blocked to keep his secret"
+        }
+      ]
+    },
+    "esarhaddon": {
+      "removeRelationships": [
+        "cherubael:bound"
+      ],
+      "addRelationships": [
+        {
+          "target": "cherubael",
+          "type": "enemy",
+          "note": "abducted by it for Quixos"
+        }
+      ]
+    },
+    "arianhrod-esw-sweydyr": {
+      "psy": "none"
+    },
+    "thaddeus-saur": {
+      "fate": "His conditioning by the King's agents made him lead the graels to Mam Mordaunt, and he was killed immediately afterwards."
+    },
+    "wystan-frauka": {
+      "fate": "His blankness burned away by Zael, he is taken away by the Inquisition for testing."
+    },
+    "slyte": {
+      "title": "Daemon prince"
     }
   },
   "dropLocations": [
