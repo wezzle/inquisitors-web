@@ -7,7 +7,7 @@ Four existing portraits were edited with the **built-in ChatGPT Images tool**, p
 | Gregor Eisenhorn | Earlier incarnation: swept-back dark hair with silver streaks, red-lined collar, green shoulder armour, blue chest strap and gold insignia; no later-period cranial framework | [PNG](sources/gregor-eisenhorn.chatgpt-v3.png) | [Prompt](gregor-eisenhorn-chatgpt-v3.prompt.txt) |
 | Tobias Maxilla | Later-novel blue velvet finery, pale powdered wig, fantail hat, jabot and green jewel beauty spot | [PNG](sources/tobias-maxilla.chatgpt-v2.png) | [Prompt](tobias-maxilla-chatgpt-v2.prompt.txt) |
 | Uber Aemos | More ancient and fragile: hollow cheeks, bony neck, thin age-spotted skin, sparse white hair and narrow sloping shoulders; retain augmetic glasses | [PNG](sources/uber-aemos.chatgpt-v3.png) | [Prompt](uber-aemos-chatgpt-v3.prompt.txt) |
-| Geard Bure | Hood lowered, readable face, functional optics and tool apron in a materials-science laboratory | [PNG](sources/geard-bure.chatgpt-v2.png) | [Prompt](geard-bure-chatgpt-v2.prompt.txt) |
+| Geard Bure | Classic Mechanicus tech-priest: red hooded robes with a readable face, optic eye, jaw augmetic, servo-arms with smithing tools, Cog Mechanicus and smith's apron, in his Cinchare forge (an earlier v2 showed him as a lab metallurgist) | [PNG](sources/geard-bure.chatgpt-v3.png) | [Prompt](geard-bure-chatgpt-v3.prompt.txt) |
 
 ## Additional Maxilla appearance research
 
@@ -21,7 +21,7 @@ The sapphire/silver-cap and emerald/wig descriptions belong to different appeara
 
 Aemos retains his established ancient savant identity and distinctive augmetic eyewear; the edit emphasises physical frailty rather than changing him into a mechanical priest.
 
-Bure is identified as an Adeptus Mechanicus magos and metallurgist in the existing project research, with no physical description established. His exposed face, technical apron, compact optics and laboratory are therefore expressly **role-based artistic interpretation**, not newly discovered canonical traits. The user's request overrides the earlier prompt's deliberate face-obscuring shadow.
+Bure is identified as an Adeptus Mechanicus magos and metallurgist in the existing project research, with no physical description established. As a Magos he is a senior tech-priest, so the selected portrait gives him the classic Mechanicus look: hooded red robes, an optic eye, augmetics, servo-arms with smithing tools and a forge setting. These details, and his readable face, are expressly **role-based artistic interpretation**, not canonical traits.
 
 ## Astartes proportion corrections
 

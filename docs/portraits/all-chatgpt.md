@@ -67,7 +67,7 @@ These scenes and unrecorded physical details are **artistic interpretations, not
 | Feaver Skoh | rogue | [WebP](../../public/portraits/feaver-skoh.webp) | [PNG](sources/feaver-skoh.chatgpt.png) | [Prompt](feaver-skoh-chatgpt.prompt.txt) |
 | Freddy Dance | civilian | [WebP](../../public/portraits/freddy-dance.webp) | [PNG](sources/freddy-dance.chatgpt.png) | [Prompt](freddy-dance-chatgpt.prompt.txt) |
 | Gall Ballack | heretic | [WebP](../../public/portraits/gall-ballack.webp) | [PNG](sources/gall-ballack.chatgpt.png) | [Prompt](gall-ballack-chatgpt.prompt.txt) |
-| Geard Bure | imperial | [WebP](../../public/portraits/geard-bure.webp) | [PNG](sources/geard-bure.chatgpt-v2.png) | [Prompt](geard-bure-chatgpt-v2.prompt.txt) |
+| Geard Bure | imperial | [WebP](../../public/portraits/geard-bure.webp) | [PNG](sources/geard-bure.chatgpt-v3.png) | [Prompt](geard-bure-chatgpt-v3.prompt.txt) |
 | Gideon Ravenor | inquisition | [WebP](../../public/portraits/gideon-ravenor.webp) | [PNG](sources/gideon-ravenor.chatgpt-background-v2.png) | [Prompt](gideon-ravenor-chatgpt-background-v2.prompt.txt) |
 | Girolamo Malahite | heretic | [WebP](../../public/portraits/girolamo-malahite.webp) | [PNG](sources/girolamo-malahite.chatgpt.png) | [Prompt](girolamo-malahite-chatgpt.prompt.txt) |
 | Godwyn Fischig | retinue | [WebP](../../public/portraits/godwyn-fischig.webp) | [PNG](sources/godwyn-fischig.chatgpt.png) | [Prompt](godwyn-fischig-chatgpt.prompt.txt) |

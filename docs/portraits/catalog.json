@@ -463,9 +463,9 @@
       "id": "geard-bure",
       "name": "Geard Bure",
       "faction": "imperial",
-      "source": "docs/portraits/sources/geard-bure.chatgpt-v2.png",
-      "prompt": "docs/portraits/geard-bure-chatgpt-v2.prompt.txt",
-      "background": "A materials-science laboratory with workbench, metal samples, precision tools, microscope-like apparatus and subdued silver-blue instrument panels.",
+      "source": "docs/portraits/sources/geard-bure.chatgpt-v3.png",
+      "prompt": "docs/portraits/geard-bure-chatgpt-v3.prompt.txt",
+      "background": "His forge-laboratory on Cinchare: dim brass machinery, a glowing crucible, censer smoke, steel-blue accents mixed with forge orange.",
       "whole": false,
       "interpretive": true,
       "described": "none",
@@ -474,6 +474,11 @@
           "source": "docs/portraits/sources/geard-bure.chatgpt.png",
           "prompt": "docs/portraits/geard-bure-chatgpt.prompt.txt",
           "background": "an Adeptus Mechanicus forge laboratory, layered old brass machinery and low instrument light"
+        },
+        {
+          "source": "docs/portraits/sources/geard-bure.chatgpt-v2.png",
+          "prompt": "docs/portraits/geard-bure-chatgpt-v2.prompt.txt",
+          "background": "A materials-science laboratory with workbench, metal samples, precision tools, microscope-like apparatus and subdued silver-blue instrument panels."
         }
       ],
       "previousSource": "docs/portraits/sources/geard-bure.chatgpt.png",
