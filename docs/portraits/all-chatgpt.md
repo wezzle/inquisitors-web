@@ -73,7 +73,7 @@ These scenes and unrecorded physical details are **artistic interpretations, not
 | Godwyn Fischig | retinue | [WebP](../../public/portraits/godwyn-fischig.webp) | [PNG](sources/godwyn-fischig.chatgpt.png) | [Prompt](godwyn-fischig-chatgpt.prompt.txt) |
 | Golesh Heldane | inquisition | [WebP](../../public/portraits/golesh-heldane.webp) | [PNG](sources/golesh-heldane.chatgpt.png) | [Prompt](golesh-heldane-chatgpt.prompt.txt) |
 | Gorgone Locke | heretic | [WebP](../../public/portraits/gorgone-locke.webp) | [PNG](sources/gorgone-locke.chatgpt.png) | [Prompt](gorgone-locke-chatgpt.prompt.txt) |
-| Gregor Eisenhorn | inquisition | [WebP](../../public/portraits/gregor-eisenhorn.webp) | [PNG](sources/gregor-eisenhorn.chatgpt-v4.png) | [Prompt](gregor-eisenhorn-chatgpt-v4.prompt.txt) |
+| Gregor Eisenhorn | inquisition | [WebP](../../public/portraits/gregor-eisenhorn.webp) | [PNG](sources/gregor-eisenhorn.chatgpt-v3.png) | [Prompt](gregor-eisenhorn-chatgpt-v3.prompt.txt) |
 | Harlon Nayl | retinue | [WebP](../../public/portraits/harlon-nayl.webp) | [PNG](sources/harlon-nayl.chatgpt-background-v2.png) | [Prompt](harlon-nayl-chatgpt-background-v2.prompt.txt) |
 | Inquisitor Fenx | inquisition | [WebP](../../public/portraits/inquisitor-fenx.webp) | [PNG](sources/inquisitor-fenx.chatgpt.png) | [Prompt](inquisitor-fenx-chatgpt.prompt.txt) |
 | Iosob | civilian | [WebP](../../public/portraits/iosob.webp) | [PNG](sources/iosob.chatgpt.png) | [Prompt](iosob-chatgpt.prompt.txt) |

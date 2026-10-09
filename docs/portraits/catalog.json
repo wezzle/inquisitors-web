@@ -5,8 +5,8 @@
     {
       "id": "gregor-eisenhorn",
       "name": "Gregor Eisenhorn",
-      "source": "docs/portraits/sources/gregor-eisenhorn.chatgpt-v4.png",
-      "prompt": "docs/portraits/gregor-eisenhorn-chatgpt-v4.prompt.txt",
+      "source": "docs/portraits/sources/gregor-eisenhorn.chatgpt-v3.png",
+      "prompt": "docs/portraits/gregor-eisenhorn-chatgpt-v3.prompt.txt",
       "faction": "inquisition",
       "background": "An austere Inquisitorial investigation office, entirely unlike the current cathedral. Dim amber-gold practical light from a shaded brass lamp; aged dark timber, distant shelves of closed case folios and sealed evidence boxes, one restrained Ordo insignia as a softly resolved background motif. Layered shadows and a warm dull-gold atmosphere indicate Inquisition allegiance. No arched cathedral, no skull-lined columns, no repeating candles. Keep the environment blurred and behind his shoulder silhouette.",
       "revisions": [

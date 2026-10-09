@@ -4,7 +4,7 @@ Four existing portraits were edited with the **built-in ChatGPT Images tool**, p
 
 | Character | Revision direction | Selected source | Exact prompt |
 | --- | --- | --- | --- |
-| Gregor Eisenhorn | Slicked-back dark hair with a silver streak, stern gaunt older face, long charcoal greatcoat with a tall oxblood-lined collar and plain dark fastenings; no later-period cranial framework | [PNG](sources/gregor-eisenhorn.chatgpt-v4.png) | [Prompt](gregor-eisenhorn-chatgpt-v4.prompt.txt) |
+| Gregor Eisenhorn | Earlier incarnation: swept-back dark hair with silver streaks, red-lined collar, green shoulder armour, blue chest strap and gold insignia; no later-period cranial framework | [PNG](sources/gregor-eisenhorn.chatgpt-v3.png) | [Prompt](gregor-eisenhorn-chatgpt-v3.prompt.txt) |
 | Tobias Maxilla | Later-novel blue velvet finery, pale powdered wig, fantail hat, jabot and green jewel beauty spot | [PNG](sources/tobias-maxilla.chatgpt-v2.png) | [Prompt](tobias-maxilla-chatgpt-v2.prompt.txt) |
 | Uber Aemos | More ancient and fragile: hollow cheeks, bony neck, thin age-spotted skin, sparse white hair and narrow sloping shoulders; retain augmetic glasses | [PNG](sources/uber-aemos.chatgpt-v3.png) | [Prompt](uber-aemos-chatgpt-v3.prompt.txt) |
 | Geard Bure | Hood lowered, readable face, functional optics and tool apron in a materials-science laboratory | [PNG](sources/geard-bure.chatgpt-v2.png) | [Prompt](geard-bure-chatgpt-v2.prompt.txt) |
