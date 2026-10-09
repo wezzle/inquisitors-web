@@ -23,6 +23,17 @@ Aemos retains his established ancient savant identity and distinctive augmetic e
 
 Bure is identified as an Adeptus Mechanicus magos and metallurgist in the existing project research, with no physical description established. His exposed face, technical apron, compact optics and laboratory are therefore expressly **role-based artistic interpretation**, not newly discovered canonical traits. The user's request overrides the earlier prompt's deliberate face-obscuring shadow.
 
+## Astartes proportion corrections
+
+A proportion audit of all 102 portraits found four Space Marines drawn close to human scale. Each was edited to read as a 2.2–2.5 m transhuman (head small against massive shoulders, thick neck low in the gorget), with identity, costume, background and style unchanged.
+
+| Character | Correction | Selected source | Exact prompt |
+| --- | --- | --- | --- |
+| Senefuru of Tizca | Added the missing right pauldron, broader armoured torso, helm lower and smaller | [PNG](sources/senefuru-of-tizca.chatgpt-v2.png) | [Prompt](senefuru-of-tizca-chatgpt-v2.prompt.txt) |
+| Sadoth Xarbia | Smaller head, wider pauldrons, deeper gorget | [PNG](sources/sadoth-xarbia.chatgpt-v2.png) | [Prompt](sadoth-xarbia-chatgpt-v2.prompt.txt) |
+| Comus Nocturnus | Broader shoulders and trapezius, thicker neck, smaller head | [PNG](sources/comus-nocturnus.chatgpt-v2.png) | [Prompt](comus-nocturnus-chatgpt-v2.prompt.txt) |
+| Teke | Shorter, thicker neck set lower in the collar; less backward tilt | [PNG](sources/teke.chatgpt-v2.png) | [Prompt](teke-chatgpt-v2.prompt.txt) |
+
 ## Runtime deliverables
 
 Selected full images: `public/portraits/{gregor-eisenhorn,tobias-maxilla,uber-aemos,geard-bure}.webp` (800 x 1000).

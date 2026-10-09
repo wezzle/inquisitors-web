@@ -412,12 +412,19 @@
       "id": "comus-nocturnus",
       "name": "Comus Nocturnus",
       "faction": "rogue",
-      "source": "docs/portraits/sources/comus-nocturnus.chatgpt.png",
-      "prompt": "docs/portraits/comus-nocturnus-chatgpt.prompt.txt",
+      "source": "docs/portraits/sources/comus-nocturnus.chatgpt-v2.png",
+      "prompt": "docs/portraits/comus-nocturnus-chatgpt-v2.prompt.txt",
       "background": "an underhive hideout with weathered pipes and warm orange industrial light",
       "whole": true,
       "interpretive": true,
-      "described": "well"
+      "described": "well",
+      "revisions": [
+        {
+          "source": "docs/portraits/sources/comus-nocturnus.chatgpt.png",
+          "prompt": "docs/portraits/comus-nocturnus-chatgpt.prompt.txt",
+          "background": "an underhive hideout with weathered pipes and warm orange industrial light"
+        }
+      ]
     },
     {
       "id": "deathrow",
@@ -512,12 +519,19 @@
       "id": "teke",
       "name": "Teke",
       "faction": "heretic",
-      "source": "docs/portraits/sources/teke.chatgpt.png",
-      "prompt": "docs/portraits/teke-chatgpt.prompt.txt",
+      "source": "docs/portraits/sources/teke.chatgpt-v2.png",
+      "prompt": "docs/portraits/teke-chatgpt-v2.prompt.txt",
       "background": "a secret industrial cult sanctuary with dark iron and subtle ember-red illumination",
       "whole": true,
       "interpretive": true,
-      "described": "well"
+      "described": "well",
+      "revisions": [
+        {
+          "source": "docs/portraits/sources/teke.chatgpt.png",
+          "prompt": "docs/portraits/teke-chatgpt.prompt.txt",
+          "background": "a secret industrial cult sanctuary with dark iron and subtle ember-red illumination"
+        }
+      ]
     },
     {
       "id": "phlebas-alessandro-rorken",
@@ -875,12 +889,19 @@
       "id": "sadoth-xarbia",
       "name": "Sadoth Xarbia",
       "faction": "heretic",
-      "source": "docs/portraits/sources/sadoth-xarbia.chatgpt.png",
-      "prompt": "docs/portraits/sadoth-xarbia-chatgpt.prompt.txt",
+      "source": "docs/portraits/sources/sadoth-xarbia.chatgpt-v2.png",
+      "prompt": "docs/portraits/sadoth-xarbia-chatgpt-v2.prompt.txt",
       "background": "a secluded aristocratic study with dark timber, aged damask and muted light from a high window",
       "whole": true,
       "interpretive": true,
-      "described": "partial"
+      "described": "partial",
+      "revisions": [
+        {
+          "source": "docs/portraits/sources/sadoth-xarbia.chatgpt.png",
+          "prompt": "docs/portraits/sadoth-xarbia-chatgpt.prompt.txt",
+          "background": "a secluded aristocratic study with dark timber, aged damask and muted light from a high window"
+        }
+      ]
     },
     {
       "id": "scarpac",
@@ -897,12 +918,19 @@
       "id": "senefuru-of-tizca",
       "name": "Senefuru of Tizca",
       "faction": "heretic",
-      "source": "docs/portraits/sources/senefuru-of-tizca.chatgpt.png",
-      "prompt": "docs/portraits/senefuru-of-tizca-chatgpt.prompt.txt",
+      "source": "docs/portraits/sources/senefuru-of-tizca.chatgpt-v2.png",
+      "prompt": "docs/portraits/senefuru-of-tizca-chatgpt-v2.prompt.txt",
       "background": "a shuttered conspirators' study with oxblood curtains and smoky red lamp light",
       "whole": true,
       "interpretive": true,
-      "described": "none"
+      "described": "none",
+      "revisions": [
+        {
+          "source": "docs/portraits/sources/senefuru-of-tizca.chatgpt.png",
+          "prompt": "docs/portraits/senefuru-of-tizca-chatgpt.prompt.txt",
+          "background": "a shuttered conspirators' study with oxblood curtains and smoky red lamp light"
+        }
+      ]
     },
     {
       "id": "brass-thief",

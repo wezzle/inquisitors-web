@@ -48,7 +48,7 @@ These scenes and unrecorded physical details are **artistic interpretations, not
 | Carl Thonius | retinue | [WebP](../../public/portraits/carl-thonius.webp) | [PNG](sources/carl-thonius.chatgpt-background-v2.png) | [Prompt](carl-thonius-chatgpt-background-v2.prompt.txt) |
 | Cherubael | daemon | [WebP](../../public/portraits/cherubael.webp) | [PNG](sources/cherubael.chatgpt-background-v2.png) | [Prompt](cherubael-chatgpt-background-v2.prompt.txt) |
 | Commodus Voke | inquisition | [WebP](../../public/portraits/commodus-voke.webp) | [PNG](sources/commodus-voke.chatgpt.png) | [Prompt](commodus-voke-chatgpt.prompt.txt) |
-| Comus Nocturnus | rogue | [WebP](../../public/portraits/comus-nocturnus.webp) | [PNG](sources/comus-nocturnus.chatgpt.png) | [Prompt](comus-nocturnus-chatgpt.prompt.txt) |
+| Comus Nocturnus | rogue | [WebP](../../public/portraits/comus-nocturnus.webp) | [PNG](sources/comus-nocturnus.chatgpt-v2.png) | [Prompt](comus-nocturnus-chatgpt-v2.prompt.txt) |
 | Connort Timurlin | heretic | [WebP](../../public/portraits/connort-timurlin.webp) | [PNG](sources/connort-timurlin.chatgpt.png) | [Prompt](connort-timurlin-chatgpt.prompt.txt) |
 | Constant Shadrake | civilian | [WebP](../../public/portraits/constant-shadrake.webp) | [PNG](sources/constant-shadrake.chatgpt.png) | [Prompt](constant-shadrake-chatgpt.prompt.txt) |
 | Crezia Berschilde | civilian | [WebP](../../public/portraits/crezia-berschilde.webp) | [PNG](sources/crezia-berschilde.chatgpt.png) | [Prompt](crezia-berschilde-chatgpt.prompt.txt) |
@@ -114,12 +114,12 @@ These scenes and unrecorded physical details are **artistic interpretations, not
 | Quixos | heretic | [WebP](../../public/portraits/quixos.webp) | [PNG](sources/quixos.chatgpt.png) | [Prompt](quixos-chatgpt.prompt.txt) |
 | Raum Grumman | inquisition | [WebP](../../public/portraits/raum-grumman.webp) | [PNG](sources/raum-grumman.chatgpt.png) | [Prompt](raum-grumman-chatgpt.prompt.txt) |
 | Renner Lightburn | civilian | [WebP](../../public/portraits/renner-lightburn.webp) | [PNG](sources/renner-lightburn.chatgpt.png) | [Prompt](renner-lightburn-chatgpt.prompt.txt) |
-| Sadoth Xarbia | heretic | [WebP](../../public/portraits/sadoth-xarbia.webp) | [PNG](sources/sadoth-xarbia.chatgpt.png) | [Prompt](sadoth-xarbia-chatgpt.prompt.txt) |
+| Sadoth Xarbia | heretic | [WebP](../../public/portraits/sadoth-xarbia.webp) | [PNG](sources/sadoth-xarbia.chatgpt-v2.png) | [Prompt](sadoth-xarbia-chatgpt-v2.prompt.txt) |
 | Scarpac | heretic | [WebP](../../public/portraits/scarpac.webp) | [PNG](sources/scarpac.chatgpt.png) | [Prompt](scarpac-chatgpt.prompt.txt) |
-| Senefuru of Tizca | heretic | [WebP](../../public/portraits/senefuru-of-tizca.webp) | [PNG](sources/senefuru-of-tizca.chatgpt.png) | [Prompt](senefuru-of-tizca-chatgpt.prompt.txt) |
+| Senefuru of Tizca | heretic | [WebP](../../public/portraits/senefuru-of-tizca.webp) | [PNG](sources/senefuru-of-tizca.chatgpt-v2.png) | [Prompt](senefuru-of-tizca-chatgpt-v2.prompt.txt) |
 | Sholto Unwerth | rogue | [WebP](../../public/portraits/sholto-unwerth.webp) | [PNG](sources/sholto-unwerth.chatgpt.png) | [Prompt](sholto-unwerth-chatgpt.prompt.txt) |
 | Slyte | daemon | [WebP](../../public/portraits/slyte.webp) | [PNG](sources/slyte.chatgpt-v2.png) | [Prompt](slyte-chatgpt-v2.prompt.txt) |
-| Teke | heretic | [WebP](../../public/portraits/teke.webp) | [PNG](sources/teke.chatgpt.png) | [Prompt](teke-chatgpt.prompt.txt) |
+| Teke | heretic | [WebP](../../public/portraits/teke.webp) | [PNG](sources/teke.chatgpt-v2.png) | [Prompt](teke-chatgpt-v2.prompt.txt) |
 | Thaddeus Saur | heretic | [WebP](../../public/portraits/thaddeus-saur.webp) | [PNG](sources/thaddeus-saur.chatgpt.png) | [Prompt](thaddeus-saur-chatgpt.prompt.txt) |
 | The Brass Thief | daemon | [WebP](../../public/portraits/brass-thief.webp) | [PNG](sources/brass-thief.chatgpt.png) | [Prompt](brass-thief-chatgpt.prompt.txt) |
 | The King in Yellow | heretic | [WebP](../../public/portraits/king-in-yellow.webp) | [PNG](sources/king-in-yellow.chatgpt.png) | [Prompt](king-in-yellow-chatgpt.prompt.txt) |
