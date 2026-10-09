@@ -43,8 +43,7 @@ against a fixed vocabulary and writes `src/data/appearance.json`.
 
 - `src/ui/likeness-img.ts` selects approved WebP portraits and thumbnails from `src/data/portraits.json`. The original
   SVG renderer remains only as a fallback for missing assets; every current character has a painted asset.
-- A shared painted style runs through the archive. No published cover or official artwork is used as input: Alizebeth
-  and Beta Bequin are original portraits built from the books' descriptions alone.
+- The Beta Bequin portrait establishes the painted style shared across the archive.
   Backgrounds vary with allegiance and role: gold Inquisition rooms, cyan retinue workspaces, steel-blue Imperial
   locations, red heretic settings, violet daemon spaces, jade xenos architecture, rust-orange rogue locations and
   warm civilian interiors.

@@ -59,10 +59,11 @@
     {
       "id": "alizebeth-bequin",
       "name": "Alizebeth Bequin",
-      "source": "docs/portraits/sources/alizebeth-bequin.chatgpt-v3.png",
-      "prompt": "docs/portraits/alizebeth-bequin-chatgpt-v3.prompt.txt",
+      "source": "docs/portraits/sources/alizebeth-bequin.chatgpt-background-v2.png",
+      "prompt": "docs/portraits/alizebeth-bequin-chatgpt-background-v2.prompt.txt",
       "faction": "retinue",
-      "background": "The Distaff's quiet safehouse training room, an austere interior with frosted blue-gray partition glass and a small distant plain door, a narrow daylight slit and a discreet muted cyan status light. Still, orderly, low-tech restraint suited to the leader of Eisenhorn's blank cadre. No visible magic, no aura or halo, no distortion around her body. No cathedral, skull-lined wall or ornate candles. Preserve warm facial light while the room has a quiet subdued retinue-blue palette."
+      "background": "The Distaff's quiet safehouse training room, an austere interior with frosted blue-gray partition glass and a small distant plain door, a narrow daylight slit and a discreet muted cyan status light. Still, orderly, low-tech restraint suited to the leader of Eisenhorn's blank cadre. No visible magic, no aura or halo, no distortion around her body. No cathedral, skull-lined wall or ornate candles. Preserve warm facial light while the room has a quiet subdued retinue-blue palette.",
+      "previousSource": "docs/portraits/sources/alizebeth-bequin.chatgpt.png"
     },
     {
       "id": "uber-aemos",
@@ -94,10 +95,10 @@
     {
       "id": "beta-bequin",
       "name": "Alizebeth \"Beta\" Bequin",
-      "source": "docs/portraits/sources/beta-bequin.chatgpt-v3.png",
-      "prompt": "docs/portraits/beta-bequin-chatgpt-v3.prompt.txt",
+      "source": "docs/portraits/sources/beta-bequin.chatgpt-background-v2.png",
+      "prompt": "docs/portraits/beta-bequin-chatgpt-background-v2.prompt.txt",
       "faction": "retinue",
-      "background": "A modest gothic Queen Mab townhouse beside a rain-streaked window onto a lamplit street; muted retinue blue-cyan."
+      "background": "A rain-dark Queen Mab street at dusk: wet cobbles, tall gothic townhouse facades, a glowing street lamp, muted retinue blue-cyan."
     },
     {
       "id": "godwyn-fischig",

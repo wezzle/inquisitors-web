@@ -1,6 +1,6 @@
 # Complete ChatGPT Images portrait collection
 
-All **102 characters** in the current codex have a selected painted portrait, generated or edited with the built-in ChatGPT Images tool. An early Beta Bequin trial set the common painted style. That trial used published cover art as a reference, so it is not included here. Alizebeth and Beta Bequin were regenerated (v3) from textual descriptions only, using Kara Swole's portrait as the style reference. See [Beta's provenance](beta-bequin-chatgpt.md).
+All **102 characters** in the current codex have a selected painted portrait, generated or edited with the built-in ChatGPT Images tool. Beta Bequin supplies the common painted style.
 
 ## Runtime integration
 
@@ -34,8 +34,8 @@ These scenes and unrecorded physical details are **artistic interpretations, not
 | --- | --- | --- | --- | --- |
 | Ahenobarb | imperial | [WebP](../../public/portraits/ahenobarb.webp) | [PNG](sources/ahenobarb.chatgpt.png) | [Prompt](ahenobarb-chatgpt.prompt.txt) |
 | Alace Quatorze | heretic | [WebP](../../public/portraits/alace-quatorze.webp) | [PNG](sources/alace-quatorze.chatgpt.png) | [Prompt](alace-quatorze-chatgpt.prompt.txt) |
-| Alizebeth "Beta" Bequin | retinue | [WebP](../../public/portraits/beta-bequin.webp) | [PNG](sources/beta-bequin.chatgpt-v3.png) | [Prompt](beta-bequin-chatgpt-v3.prompt.txt) |
-| Alizebeth Bequin | retinue | [WebP](../../public/portraits/alizebeth-bequin.webp) | [PNG](sources/alizebeth-bequin.chatgpt-v3.png) | [Prompt](alizebeth-bequin-chatgpt-v3.prompt.txt) |
+| Alizebeth "Beta" Bequin | retinue | [WebP](../../public/portraits/beta-bequin.webp) | [PNG](sources/beta-bequin.chatgpt-background-v2.png) | [Prompt](beta-bequin-chatgpt-background-v2.prompt.txt) |
+| Alizebeth Bequin | retinue | [WebP](../../public/portraits/alizebeth-bequin.webp) | [PNG](sources/alizebeth-bequin.chatgpt-background-v2.png) | [Prompt](alizebeth-bequin-chatgpt-background-v2.prompt.txt) |
 | Angharad Esw Sweydyr | retinue | [WebP](../../public/portraits/angharad-esw-sweydyr.webp) | [PNG](sources/angharad-esw-sweydyr.chatgpt.png) | [Prompt](angharad-esw-sweydyr-chatgpt.prompt.txt) |
 | Arianhrod Esw Sweydyr | retinue | [WebP](../../public/portraits/arianhrod-esw-sweydyr.webp) | [PNG](sources/arianhrod-esw-sweydyr.chatgpt.png) | [Prompt](arianhrod-esw-sweydyr-chatgpt.prompt.txt) |
 | Arnault Tantalid | inquisition | [WebP](../../public/portraits/arnault-tantalid.webp) | [PNG](sources/arnault-tantalid.chatgpt.png) | [Prompt](arnault-tantalid-chatgpt.prompt.txt) |

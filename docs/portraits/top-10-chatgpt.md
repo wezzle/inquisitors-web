@@ -1,6 +1,6 @@
 # Top ten other characters — ChatGPT Images
 
-Ten new individual portraits generated with the built-in ChatGPT Images tool, all using the early Beta Bequin trial portrait as the master style reference. That trial is not published because it was referenced on cover art. Alizebeth Bequin's portrait below has since been replaced by an original v3 portrait, so her links here no longer resolve.
+Ten new individual portraits generated with the built-in ChatGPT Images tool, all using Beta Bequin's portrait as the master style reference.
 
 ## Selection
 
