@@ -1,0 +1,43 @@
+{
+  "url": "http://127.0.0.1:4173/?nointro",
+  "width": 1400,
+  "height": 1000,
+  "steps": [
+    {
+      "wait": 1200
+    },
+    {
+      "eval": "document.querySelector('#btn-gallery').click()"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "eval": "(async()=>{const imgs=[...document.querySelectorAll('.g-card img.pict')]; imgs.forEach(i=>i.loading='eager'); const failures=await Promise.all(imgs.map(i=>i.decode().then(()=>null,()=>i.getAttribute('src')))); const out={cards:document.querySelectorAll('.g-card').length,painted:imgs.length,svg:document.querySelectorAll('.g-card svg').length,failed:failures.filter(Boolean)}; if(out.cards!==102||out.painted!==102||out.svg!==0||out.failed.length)throw new Error(JSON.stringify(out)); return out;})()"
+    },
+    {
+      "eval": "document.querySelector('[data-g=\"faction\"] [data-v=\"daemon\"]').click()"
+    },
+    {
+      "wait": 200
+    },
+    {
+      "eval": "JSON.stringify({daemonCards:document.querySelectorAll('.g-card').length,daemonSVGs:document.querySelectorAll('.g-card svg').length})"
+    },
+    {
+      "eval": "document.querySelector('[data-g=\"faction\"] [data-v=\"all\"]').click();document.querySelector('.g-card[data-id=\"gregor-eisenhorn\"]').click();document.querySelector('[data-pict=\"gregor-eisenhorn\"]').focus();document.querySelector('[data-pict=\"gregor-eisenhorn\"]').click()"
+    },
+    {
+      "wait": 500
+    },
+    {
+      "eval": "(async()=>{await document.querySelector('.pict-viewer img').decode();return {open:document.querySelector('.pict-viewer').open,fullWidth:document.querySelector('.pict-viewer img').naturalWidth};})()"
+    },
+    {
+      "key": "Escape"
+    },
+    {
+      "eval": "(()=>{const out={closed:!document.querySelector('.pict-viewer').open,focusReturned:document.activeElement?.dataset.pict==='gregor-eisenhorn',dossierStillPresent:!!document.querySelector('[data-pict=\"gregor-eisenhorn\"]')};if(!out.closed||!out.focusReturned||!out.dossierStillPresent)throw new Error(JSON.stringify(out));return out;})()"
+    }
+  ]
+}

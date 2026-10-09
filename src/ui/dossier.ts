@@ -1,4 +1,8 @@
-import { bondsOf, bookById, books, characters, charById, locations, other, seriesOf } from '../data/codex';
+import { appearanceById, bondsOf, bookById, books, characters, charById, locations, other, seriesOf } from '../data/codex';
+import type { Appearance } from '../data/types';
+import { DESCRIBED, likenessChips } from './likeness';
+import { inferredAttire } from './portrait';
+import { hasPortrait, portraitImg } from './likeness-img';
 import { BONDS, BOND_ORDER, FACTIONS, IMPORTANCE_LABEL, PSY, SERIES, STATUS } from '../data/theme';
 import type { Character, SeriesId } from '../data/types';
 import { drawSeal } from './sigils';
@@ -207,13 +211,15 @@ export class Dossier {
       })
       .join(' · ');
 
+    const look = appearanceById.get(id);
+    const likeness = look ? likenessSection(look, spoilers.isSpoiled(c), c) : '';
     this.el.innerHTML = `
       ${PURITY_SEAL}
       <button class="close" title="Release (Esc)">×</button>
       <div class="d-head-strip"><span>+++ Dossier ${catalogue(c)} +++</span><span class="ser">${series.map((s) => `<b style="color:${SERIES[s].color}">${SERIES[s].label}</b>`).join(' · ')}</span></div>
       <div class="scroll">
         <div class="d-hero">
-          <div class="d-seal"></div>
+          <div class="d-portrait">${hasPortrait(c.id) ? `<button class="d-pict-open" data-pict="${c.id}" title="View full portrait" aria-label="View portrait of ${esc(c.name)}">${portraitImg(c, look)}</button>` : portraitImg(c, look)}<div class="d-seal"></div></div>
           <div>
             <h2 class="d-name">${esc(c.name)}</h2>
             <div class="d-title">${esc(c.title)}</div>
@@ -234,6 +240,7 @@ export class Dossier {
           <div class="d-appear-legend"><span>${books[0].title}, ${books[0].year}</span><span>${IMPORTANCE_LABEL[c.importance]} · ${spoilers.progress === books.length - 1 ? `${c.books.length} of ${books.length}` : 'reading…'}</span><span>${books[books.length - 1].title}, ${books[books.length - 1].year}</span></div>
         </div>
         ${record}
+        ${likeness}
         ${c.fate ? `<div class="d-sec"><h4>Fate</h4><div class="d-fate" data-spoiler>${esc(c.fate)}</div></div>` : ''}
         ${c.wargear ? `<div class="d-sec"><h4>Wargear &amp; effects</h4><p class="d-text plain" style="font-size:14.5px">${esc(c.wargear)}</p></div>` : ''}
         ${c.traits.length ? `<div class="d-sec"><h4>Marks</h4><div class="d-tags">${c.traits.map((t) => `<span>${esc(t)}</span>`).join('')}</div></div>` : ''}
@@ -275,4 +282,27 @@ export class Dossier {
     const seal = await drawSeal(c, 256);
     if (this.current === id) this.el.querySelector('.d-seal')?.replaceChildren(seal);
   }
+}
+
+function likenessSection(a: Appearance, veil: boolean, c: Character) {
+  const inferred = inferredAttire(a, c);
+  const chips = likenessChips(a);
+  const testimony = a.evidence
+    .map((e) => {
+      let host = e.source;
+      try {
+        host = new URL(e.source).hostname.replace(/^www\./, '');
+      } catch {
+        /* local research file */
+      }
+      const link = /^https?:/.test(e.source) ? `<a href="${esc(e.source)}" target="_blank" rel="noopener">${esc(host)}</a>` : `<span>${esc(host.replace(/^.*\//, ''))}</span>`;
+      return `<li>${esc(e.claim)} <span class="src">— ${link}</span></li>`;
+    })
+    .join('');
+  return `<div class="d-sec d-likeness"><h4>Likeness <span class="lv lv-${a.described}">${DESCRIBED[a.described]}</span></h4>
+    ${a.summary ? `<p class="d-text plain ${veil ? 'veiled' : ''}" data-spoiler>${esc(a.summary)}</p>` : ''}
+    ${chips.length ? `<div class="d-tags likeness">${chips.map((t) => `<span>${esc(t)}</span>`).join('')}</div>` : ''}
+    ${testimony ? `<details class="d-testimony"><summary>Testimony · ${a.evidence.length}</summary><ul>${testimony}</ul></details>` : ''}
+    <div class="d-note">${hasPortrait(c.id) ? 'AI-painted artistic interpretation informed by the descriptions above. Unrecorded details and allegiance-based backgrounds are creative choices, not additional canonical evidence.' : `Portrait reconstructed from the descriptions above; anything the books leave unsaid is left in shadow${inferred.length ? ', and the ghosted clothing is only typical of their role' : ''}.`}</div>
+  </div>`;
 }

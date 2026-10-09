@@ -273,6 +273,20 @@ export class SoulNode {
   }
 
   labelBelow = false;
+  /** Portrait medallion: loaded lazily, faded in when the soul is close or in focus. */
+  face?: THREE.Sprite;
+  faceState: 'none' | 'loading' | 'ready' = 'none';
+  faceTarget = 0;
+  private faceAlpha = 0;
+
+  setFace(tex: THREE.Texture) {
+    this.face = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false, depthTest: false, opacity: 0, color: 0xd8d0c4 }));
+    this.face.scale.setScalar(this.radius * 3.3);
+    this.face.renderOrder = 10;
+    this.face.visible = false;
+    this.group.add(this.face);
+    this.faceState = 'ready';
+  }
   private labelDx = 0;
 
   /** Horizontal nudge in px (CSS translate composes with CSS2DRenderer's own transform). */
@@ -363,6 +377,13 @@ export class SoulNode {
       r.rotation.y += dt * (0.09 - i * 0.05);
       (r.material as THREE.MeshBasicMaterial).opacity = a * 0.55 * (0.15 + 0.85 * e);
     });
+    if (this.face) {
+      this.faceAlpha += (this.faceTarget - this.faceAlpha) * (1 - Math.exp(-dt * 5));
+      const fa = this.faceAlpha * a * (0.35 + 0.65 * e);
+      this.face.visible = fa > 0.01;
+      this.face.material.opacity = fa;
+      this.face.scale.setScalar(this.radius * (3.3 + this.hover * 0.6) * (0.85 + 0.15 * this.faceAlpha));
+    }
     if (this.sparks) {
       this.sparks.material.uniforms.uTime.value = time;
       this.sparks.material.uniforms.uAlpha.value = a * (0.15 + 0.85 * e);

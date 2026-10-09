@@ -1,0 +1,22 @@
+// Persist one imagegen result, then publish its runtime WebPs and manifest entry.
+import { readFileSync, writeFileSync, copyFileSync, chmodSync, existsSync } from 'node:fs';
+import { spawnSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
+import { resolve, dirname, join } from 'node:path';
+const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const [id, generated] = process.argv.slice(2);
+if (!id || !generated || !existsSync(generated)) throw new Error('Usage: register-portrait.mjs id generated.png');
+const plan = JSON.parse(readFileSync(join(root, 'docs/portraits/generation-plan.json'), 'utf8'));
+const portrait = plan.portraits.find((p) => p.id === id);
+if (!portrait) throw new Error('Unknown planned portrait: ' + id);
+const target = join(root, portrait.source);
+if (existsSync(target)) throw new Error('Refusing to overwrite existing portrait: ' + portrait.source);
+copyFileSync(generated, target);
+chmodSync(target, 0o644);
+const path = join(root, 'docs/portraits/catalog.json');
+const catalog = JSON.parse(readFileSync(path, 'utf8'));
+const { generationPrompt, ...record } = portrait;
+catalog.portraits = [...catalog.portraits.filter((p) => p.id !== id), record];
+writeFileSync(path, JSON.stringify(catalog, null, 2) + '\n');
+const publish = spawnSync(process.execPath, [join(root, 'scripts/publish-portraits.mjs'), id], { stdio: 'inherit' });
+if (publish.status !== 0) throw new Error('Publishing failed for ' + id + '; source and catalog retained for retry.');

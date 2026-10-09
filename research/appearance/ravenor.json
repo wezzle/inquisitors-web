@@ -1,0 +1,1043 @@
+{
+  "appearance": [
+    {
+      "id": "carl-thonius",
+      "form": "human",
+      "sex": "male",
+      "age": "young",
+      "build": "slight",
+      "skin": "pale",
+      "hair": {
+        "color": "blonde",
+        "style": "unknown"
+      },
+      "facialHair": "none",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [
+        "finery",
+        "long-coat"
+      ],
+      "carries": [
+        "pistol"
+      ],
+      "palette": [
+        "#8b1a1a",
+        "#111111",
+        "#8a8a8a"
+      ],
+      "described": "well",
+      "summary": "Foppish, impeccably dressed young interrogator with heavy blond hair and a face powdered white; seen in a tailored red velvet suit, black buckled shoes and a grey plastek raincoat. After his right arm is severed and reattached he wears dozens of rings on that hand, dresses less foppishly and has dyed his hair black by Ravenor Rogue; when Slyte manifests he glows from within, skeleton visible, right forearm flayed to black bone with talons.",
+      "evidence": [
+        {
+          "claim": "heavy blond hair; average build per de-Lexicanum; red velvet suit, black buckled shoes, grey plastek-oxide raincoat, face powdered white, handkerchief",
+          "source": "https://wh40k-de.lexicanum.com/wiki/Carl_Thonius (read via web search summary; direct fetch blocked)"
+        },
+        {
+          "claim": "always poised, well-groomed and impeccably dressed (The Dandy)",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        },
+        {
+          "claim": "extremely thin, looks weak (Waif-Fu); conflicts with de-Lexicanum 'average build'",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        },
+        {
+          "claim": "dyed his normally blonde hair black by start of Ravenor Rogue; up to thirty rings on right hand",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        },
+        {
+          "claim": "Slyte form: body lit from within, skeleton visible, right arm flesh peels back, fingers become talons",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        },
+        {
+          "claim": "carries a Hecuter 6 pistol",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        }
+      ]
+    },
+    {
+      "id": "patience-kys",
+      "form": "human",
+      "sex": "female",
+      "age": "adult",
+      "build": "slight",
+      "skin": "unknown",
+      "hair": {
+        "color": "black",
+        "style": "tied"
+      },
+      "facialHair": "none",
+      "eyes": {
+        "color": "green",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [
+        "bodyglove"
+      ],
+      "carries": [
+        "blades-floating"
+      ],
+      "palette": [],
+      "described": "well",
+      "summary": "Tall, thin but athletic telekine with angular features, emerald-green eyes and raven-black hair worn up in a chignon held by two silver pins that double as kineblades; usually in a tight, lightly armoured bodyglove. In Pariah she first appears disguised as a nun ('Sister Tharpe'); no separate later physical description was found.",
+      "evidence": [
+        {
+          "claim": "tall, thin, athletic, angular features, emerald-green eyes, raven-black hair in a chignon with two silver hairpins, tight lightly-armoured bodygloves (cites Ravenor ch.1)",
+          "source": "https://wh40k-de.lexicanum.com/wiki/Patience_Kys (read via web search summary; direct fetch blocked)"
+        },
+        {
+          "claim": "almost never seen without a tight bodyglove; kineblades worn in her hair or up her sleeve",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        },
+        {
+          "claim": "tall but slight, physically unimposing (Waif-Fu)",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        },
+        {
+          "claim": "in Pariah disguised as a Sister ('Sister Tharpe') at Beta's orphanage",
+          "source": "research/raw_bequin/jm_pariah3.txt; https://bbs.stardestroyer.net/viewtopic.php?t=156874 (search summary)"
+        }
+      ]
+    },
+    {
+      "id": "slyte",
+      "form": "daemon",
+      "sex": "unknown",
+      "age": "unknown",
+      "build": "massive",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [],
+      "carries": [],
+      "palette": [],
+      "described": "partial",
+      "summary": "Daemon that possesses Carl Thonius: its harbinger form is Thonius glowing red from within, skin translucent and bones showing, the right forearm stripped to coal-black bone ending in claws. Its true manifestation in Ravenor Rogue is a mountain-sized, ever-growing mass of black flesh with mouths and tentacles hundreds of metres long; its touch rots and mummifies.",
+      "evidence": [
+        {
+          "claim": "red light from within, translucent skin, bones visible; forearm flesh withdraws exposing coal-black bones with claws; full form a huge mass of tissue with tentacle-like pseudopods hundreds of metres long",
+          "source": "https://wh40k-de.lexicanum.com/wiki/Slyte (read via web search summary; direct fetch blocked)"
+        },
+        {
+          "claim": "true form: towering mountain of filthy black flesh covered in mouths and tentacles; humanoid harbinger has visible skeleton and fleshless oversized right arm",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        },
+        {
+          "claim": "first manifestation as a black skeletal humanoid glowing with a baleful red aura",
+          "source": "research/raw_ravenor/src1.txt (https://tvtropes.org/pmwiki/pmwiki.php/Literature/Ravenor)"
+        }
+      ]
+    },
+    {
+      "id": "zael",
+      "form": "human",
+      "sex": "male",
+      "age": "child",
+      "build": "unknown",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [],
+      "carries": [],
+      "palette": [],
+      "described": "none",
+      "summary": "Flect-addicted hive street boy of about twelve to fourteen; no concrete physical description (hair, eyes, clothes) was found in accessible sources. He later becomes the Grey Knight Hyperion (outside these books).",
+      "evidence": [
+        {
+          "claim": "a boy about 14 years old, addicted to flects",
+          "source": "https://wh40k.lexicanum.com/wiki/Gideon_Ravenor (copy: research/raw_bequin/lex_Gideon_Ravenor.txt)"
+        },
+        {
+          "claim": "novel gives his age as twelve; on the streets since eleven",
+          "source": "Ravenor novel text, as quoted in web search result snippets (not independently fetched)"
+        },
+        {
+          "claim": "street urchin",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        }
+      ]
+    },
+    {
+      "id": "zygmunt-molotch",
+      "form": "human",
+      "sex": "male",
+      "age": "adult",
+      "build": "slight",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "none",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [
+        "wards"
+      ],
+      "attire": [],
+      "carries": [],
+      "palette": [
+        "#111111"
+      ],
+      "described": "partial",
+      "summary": "Slim, dignified, beardless man dressed in black whose face is quite handsome but strangely asymmetrical, with hexagrammic wards tattooed on his scalp under the hairline (Ravenor Rogue). In Ravenor Returned, disguised as Lord-Governor Barazan, his face is burn-scarred like melted wax, healed by the Enuncia ritual at that book's end.",
+      "evidence": [
+        {
+          "claim": "slim man, dignified, dressed in black, beardless face, quite handsome but strangely asymmetrical (Ravenor Rogue, Czech edition)",
+          "source": "research/raw_appearance/rav_polaris_raveodpad.htm (http://www.polarissf.cz/souborPOLAR/raveodpad.htm, Czech excerpt of Ravenor Rogue)"
+        },
+        {
+          "claim": "face described as handsome but completely asymmetrical",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        },
+        {
+          "claim": "face resembling melted wax as the Diadochoi; scars healed by the ritual",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        },
+        {
+          "claim": "hexagrammic wards tattooed on his scalp under the hairline (forum quote of Ravenor Rogue)",
+          "source": "https://bbs.stardestroyer.net/viewtopic.php?t=106944 (search summary)"
+        }
+      ]
+    },
+    {
+      "id": "angharad-esw-sweydyr",
+      "form": "human",
+      "sex": "female",
+      "age": "young",
+      "build": "athletic",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "braided"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [
+        "bodyglove"
+      ],
+      "carries": [
+        "sword"
+      ],
+      "palette": [],
+      "described": "partial",
+      "summary": "Very tall (about two metres) Carthaen swordswoman, the image of her aunt Arianhrod, with hair plaited with beads and an elaborately shaped bodysuit; wields the force sword Evisorex. Hair colour not confirmed for her specifically.",
+      "evidence": [
+        {
+          "claim": "tall, hair braided bead-like, elaborately shaped bodysuit, sword Evisorex",
+          "source": "https://wh40k-de.lexicanum.com/wiki/Angharad_Esw_Sweydyr (read via web search summary; direct fetch blocked)"
+        },
+        {
+          "claim": "two metres tall with hair plaited with beads; strikingly like her aunt",
+          "source": "https://wh40k.lexicanum.com/wiki/Angharad_Esw_Sweydyr (read via web search summary; direct fetch blocked)"
+        },
+        {
+          "claim": "spitting image of her late aunt Arianhrod; 'Built for fighting'",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        }
+      ]
+    },
+    {
+      "id": "jader-trice",
+      "form": "human",
+      "sex": "male",
+      "age": "unknown",
+      "build": "slight",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [
+        "finery"
+      ],
+      "carries": [],
+      "palette": [],
+      "described": "partial",
+      "summary": "Slender, well-dressed and well-groomed Grand Provost of the Ministry of Sub-Sector Trade; no hair, eye or face details found.",
+      "evidence": [
+        {
+          "claim": "described as having a slender build (Lean and Mean)",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        },
+        {
+          "claim": "well dressed and well groomed (A Man of Wealth and Taste)",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        }
+      ]
+    },
+    {
+      "id": "lucius-worna",
+      "form": "human",
+      "sex": "male",
+      "age": "unknown",
+      "build": "massive",
+      "skin": "unknown",
+      "hair": {
+        "color": "white",
+        "style": "shaven"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [
+        "scar-face"
+      ],
+      "attire": [
+        "power-armour"
+      ],
+      "carries": [],
+      "palette": [
+        "#eae3d8"
+      ],
+      "described": "well",
+      "summary": "Huge, brutish bounty hunter whose face is one solid mass of scar tissue, ears and nose worn to lumps of gristle; head shaved except for a bleached stripe; wears polished mother-of-pearl power armour without a helmet.",
+      "evidence": [
+        {
+          "claim": "face one massive scar; ears and nose eroded lumps of gristle",
+          "source": "https://wh40k.lexicanum.com/wiki/Lucius_Worna (read via web search summary; direct fetch blocked)"
+        },
+        {
+          "claim": "head shaved apart from a bleached stripe",
+          "source": "Ravenor Returned novel text, as quoted in web search result snippets (not independently fetched)"
+        },
+        {
+          "claim": "shock of white hair; polished mother-of-pearl power armour; face almost solid scar tissue; big, physically imposing",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        },
+        {
+          "claim": "pearl-coloured power armour, huge, no helmet",
+          "source": "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor (via research/raw_ravenor grep)"
+        }
+      ]
+    },
+    {
+      "id": "maud-plyton",
+      "form": "human",
+      "sex": "female",
+      "age": "young",
+      "build": "heavy",
+      "skin": "unknown",
+      "hair": {
+        "color": "black",
+        "style": "cropped"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [
+        "uniform"
+      ],
+      "carries": [
+        "rifle"
+      ],
+      "palette": [
+        "#8b8455"
+      ],
+      "described": "well",
+      "summary": "Ex-Magistratum marshal with a large, slightly thickset frame at odds with very delicate, pretty, youthful features; dark hair cropped short (a Magistratum habit); in Ravenor Rogue wears a shabby khaki zip-front flight suit, heavy combat boots and white undervest or Navy surplus fatigues; favours a shotgun.",
+      "evidence": [
+        {
+          "claim": "large, slightly thickset frame, very delicate features; dark hair cropped short (Magistratum regulation); khaki flight suit, combat boots, white undervest; Navy surplus fatigues",
+          "source": "Ravenor Rogue novel text, as quoted in web search result snippets (not independently fetched)"
+        },
+        {
+          "claim": "pretty, youthful face but built like a bruiser; shotgun is her weapon of choice",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        },
+        {
+          "claim": "cute facial features clashing with no-nonsense appearance",
+          "source": "https://wh40k.lexicanum.com/wiki/Gideon_Ravenor (copy: research/raw_bequin/lex_Gideon_Ravenor.txt)"
+        }
+      ]
+    },
+    {
+      "id": "orfeo-culzean",
+      "form": "human",
+      "sex": "male",
+      "age": "older",
+      "build": "heavy",
+      "skin": "unknown",
+      "hair": {
+        "color": "black",
+        "style": "short"
+      },
+      "facialHair": "beard",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [
+        "robes",
+        "finery"
+      ],
+      "carries": [],
+      "palette": [],
+      "described": "partial",
+      "summary": "Portly, middle-aged antiquarian with sleek swept-back black hair and a finely trimmed beard, dressed in comfortable robes of fine fabric.",
+      "evidence": [
+        {
+          "claim": "portly middle-aged man, slicked-back black hair, finely trimmed beard, comfortable robes of mostly fine fabric",
+          "source": "https://wh40k-de.lexicanum.com/wiki/Orfeo_Culzean (read via web search summary; direct fetch blocked)"
+        }
+      ]
+    },
+    {
+      "id": "patrik-belknap",
+      "form": "human",
+      "sex": "male",
+      "age": "unknown",
+      "build": "unknown",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [
+        "uniform",
+        "long-coat"
+      ],
+      "carries": [
+        "rifle"
+      ],
+      "palette": [
+        "#111111"
+      ],
+      "described": "partial",
+      "summary": "Ex-Guard medicae, slimmer than Nayl, in black army combat fatigues and a long flapping leather coat that gives him a piratical look; carries a black leather medical bag and a battered old Guard lascarbine with folding stock.",
+      "evidence": [
+        {
+          "claim": "slimmer than Nayl; black army fatigues; long leather coat; black leather doctor's bag; old lascarbine with skeletal folding stock",
+          "source": "Ravenor Returned novel text, as quoted in web search result snippets (not independently fetched)"
+        },
+        {
+          "claim": "six years in the Imperial Guard",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        }
+      ]
+    },
+    {
+      "id": "sholto-unwerth",
+      "form": "human",
+      "sex": "male",
+      "age": "unknown",
+      "build": "heavy",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "beard",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [
+        "bodyglove",
+        "armour-light"
+      ],
+      "carries": [],
+      "palette": [
+        "#6b1015"
+      ],
+      "described": "partial",
+      "summary": "Short, stocky, dwarf-like and bearded shipmaster (claims Squat ancestry), usually in a dark red bodysuit with attached metal plates, accompanied by his elquon manhound Fyflank; loses four fingers to torture in Ravenor Returned.",
+      "evidence": [
+        {
+          "claim": "short, stocky, akin to a dwarf; dark red bodysuit with metal plates; pet elquon",
+          "source": "https://wh40k-de.lexicanum.com/wiki/Sholto_Unwerth (read via web search summary; direct fetch blocked)"
+        },
+        {
+          "claim": "explains to Belknap why he is so short and bearded (Squat blood)",
+          "source": "research/raw_ravenor/src1.txt (https://tvtropes.org/pmwiki/pmwiki.php/Literature/Ravenor)"
+        },
+        {
+          "claim": "has four fingers cut off",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        }
+      ]
+    },
+    {
+      "id": "wystan-frauka",
+      "form": "human",
+      "sex": "male",
+      "age": "unknown",
+      "build": "heavy",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [],
+      "carries": [
+        "lho-stick"
+      ],
+      "palette": [],
+      "described": "partial",
+      "summary": "Big, bored, chain-smoking blank, always with a lho-stick, with a psychic limiter/inhibitor set in his neck; Kys privately thinks him reasonably good-looking. No hair or eye details found.",
+      "evidence": [
+        {
+          "claim": "big, chain-smoking; inhibitor in his neck",
+          "source": "https://wh40k.lexicanum.com/wiki/Gideon_Ravenor (copy: research/raw_bequin/lex_Gideon_Ravenor.txt)"
+        },
+        {
+          "claim": "constantly smokes lho-sticks; reasonably good looking per Kys; wears a limiter",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        }
+      ]
+    },
+    {
+      "id": "zeph-mathuin",
+      "form": "human",
+      "sex": "male",
+      "age": "adult",
+      "build": "massive",
+      "skin": "dark",
+      "hair": {
+        "color": "black",
+        "style": "braided"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "red",
+        "glow": true
+      },
+      "marks": [
+        "augmetic-eyes",
+        "augmetic-arm"
+      ],
+      "attire": [],
+      "carries": [],
+      "palette": [],
+      "described": "well",
+      "summary": "Very large, heavily muscled dark-skinned ex-bounty hunter with long black dreadlocks/braided strands, glowing red augmetic eyes and a chromed augmetic left arm that interfaces with his six-barrelled rotator cannon, worn with a counterweight support frame.",
+      "evidence": [
+        {
+          "claim": "dark-skinned, big and very muscular; black hair in long braided strands; red glowing bionic eyes; whole left arm augmetic and chrome-armoured",
+          "source": "https://wh40k-de.lexicanum.com/wiki/Zeph_Mathuin (read via web search summary; direct fetch blocked)"
+        },
+        {
+          "claim": "lengthy dreadlocks; red glowing augmetic eyes; augmetic left arm; rotator cannon with support frame",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        },
+        {
+          "claim": "fandom says right arm connects to autocannon (conflict; left preferred)",
+          "source": "https://wh40k.lexicanum.com/wiki/Gideon_Ravenor (copy: research/raw_bequin/lex_Gideon_Ravenor.txt)"
+        }
+      ]
+    },
+    {
+      "id": "bartol-siskind",
+      "form": "human",
+      "sex": "male",
+      "age": "unknown",
+      "build": "unknown",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [],
+      "carries": [],
+      "palette": [],
+      "described": "none",
+      "summary": "Shipmaster of the Allure and minor Cognitae-descended trader; no physical description found.",
+      "evidence": [
+        {
+          "claim": "master of the Allure, Cognitae third generation",
+          "source": "research/raw_ravenor/src2.txt; web search summary of Lexicanum"
+        }
+      ]
+    },
+    {
+      "id": "cynia-preest",
+      "form": "human",
+      "sex": "female",
+      "age": "older",
+      "build": "unknown",
+      "skin": "unknown",
+      "hair": {
+        "color": "blonde",
+        "style": "short"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [
+        "augmetic-cranial"
+      ],
+      "attire": [
+        "bodyglove",
+        "robes"
+      ],
+      "carries": [],
+      "palette": [
+        "#c9a227",
+        "#8b1a1a"
+      ],
+      "described": "well",
+      "summary": "284-year-old shipmistress described as both robust and thin, matronly; bleached hair spiked up, heavy mascara and big dangling earrings, a golden bodysuit under a red velvet robe, and fine circuitry running across the left side of her face.",
+      "evidence": [
+        {
+          "claim": "age 284, robust yet thin and matronly; golden bodysuit under red velvet robe; bleached spiked hair; heavy mascara, large dangling earrings; fine circuitry on left side of face (cites Ravenor ch.1)",
+          "source": "https://wh40k-de.lexicanum.com/wiki/Cynia_Preest (read via web search summary; direct fetch blocked)"
+        },
+        {
+          "claim": "'kind of hot but super old, 200+ years'",
+          "source": "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor (via research/raw_ravenor grep)"
+        }
+      ]
+    },
+    {
+      "id": "feaver-skoh",
+      "form": "human",
+      "sex": "male",
+      "age": "unknown",
+      "build": "unknown",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [],
+      "carries": [],
+      "palette": [],
+      "described": "none",
+      "summary": "Xenos hunter running a family game-hunting business; no physical description found.",
+      "evidence": [
+        {
+          "claim": "xenos hunter, brother Fernan",
+          "source": "research/raw_ravenor/src2.txt (lonepilgrim synopsis)"
+        }
+      ]
+    },
+    {
+      "id": "gall-ballack",
+      "form": "human",
+      "sex": "male",
+      "age": "unknown",
+      "build": "unknown",
+      "skin": "unknown",
+      "hair": {
+        "color": "white",
+        "style": "long"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [
+        "augmetic-arm"
+      ],
+      "attire": [],
+      "carries": [],
+      "palette": [],
+      "described": "partial",
+      "summary": "Interrogator and Cognitae mole marked by long white hair framing his face; after Angharad cuts off his hand he wears an augmetic replacement hiding a one-shot laspistol.",
+      "evidence": [
+        {
+          "claim": "much mention of his white hair (White Hair, Black Heart); hand hacked off and replaced with a cybernetic prosthetic",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        },
+        {
+          "claim": "face framed by long white hair at introduction",
+          "source": "Ravenor Rogue novel text, as quoted in web search result snippets (not independently fetched)"
+        }
+      ]
+    },
+    {
+      "id": "iosob",
+      "form": "human",
+      "sex": "female",
+      "age": "young",
+      "build": "slight",
+      "skin": "pale",
+      "hair": {
+        "color": "blonde",
+        "style": "cropped"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [
+        "hood"
+      ],
+      "carries": [],
+      "palette": [],
+      "described": "partial",
+      "summary": "Hooded Wych House housekeeper who turns out to be a girl barely into adolescence, with a thin, pale face fringed by cropped blonde hair and grazed, bleeding fingers clutching her key.",
+      "evidence": [
+        {
+          "claim": "hooded; a young girl barely into adolescence; thin pale face fringed by cropped blonde hair",
+          "source": "Ravenor Rogue novel text, as quoted in web search result snippets (not independently fetched)"
+        }
+      ]
+    },
+    {
+      "id": "kizary-thekla",
+      "form": "human",
+      "sex": "unknown",
+      "age": "unknown",
+      "build": "unknown",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [],
+      "carries": [],
+      "palette": [],
+      "described": "none",
+      "summary": "Rogue trader captain of the Oktober Country; no physical description found.",
+      "evidence": [
+        {
+          "claim": "rogue trader, Oktober Country",
+          "source": "https://wh40k-de.lexicanum.com/wiki/Oktober_Country_(Schiff) (read via web search summary; direct fetch blocked)"
+        }
+      ]
+    },
+    {
+      "id": "leyla-slade",
+      "form": "human",
+      "sex": "female",
+      "age": "young",
+      "build": "athletic",
+      "skin": "unknown",
+      "hair": {
+        "color": "blonde",
+        "style": "short"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [],
+      "carries": [
+        "pistol"
+      ],
+      "palette": [],
+      "described": "partial",
+      "summary": "Culzean's off-world bodyguard: a tall young woman built like a swimmer, with short fair hair and a hard, unforgiving face; carries a Hecuter 5 pistol (including daemon-summoning rounds).",
+      "evidence": [
+        {
+          "claim": "off-world girl, tall, swimmer's build, short fair hair, hard unforgiving expression; her Hecuter 5",
+          "source": "research/raw_appearance/rav_polaris_raveodpad.htm (http://www.polarissf.cz/souborPOLAR/raveodpad.htm, Czech excerpt of Ravenor Rogue)"
+        },
+        {
+          "claim": "magazine of daemon-summoning handgun bullets",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        }
+      ]
+    },
+    {
+      "id": "lomer-kinsky",
+      "form": "human",
+      "sex": "male",
+      "age": "unknown",
+      "build": "unknown",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [],
+      "carries": [],
+      "palette": [],
+      "described": "none",
+      "summary": "Powerful, crude Ministry psyker; no physical description found in accessible sources.",
+      "evidence": [
+        {
+          "claim": "powerful psyker; neck snapped by Frauka",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        }
+      ]
+    },
+    {
+      "id": "madsen",
+      "form": "human",
+      "sex": "female",
+      "age": "unknown",
+      "build": "unknown",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [],
+      "carries": [],
+      "palette": [],
+      "described": "none",
+      "summary": "Lusinda Madsen, Ministry tech-adept and code writer leading the team; no physical description found.",
+      "evidence": [
+        {
+          "claim": "tech-adept; she; throat slit by Kys",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        },
+        {
+          "claim": "first name Lusinda",
+          "source": "Ravenor novel text, as quoted in web search result snippets (not independently fetched)"
+        }
+      ]
+    },
+    {
+      "id": "brass-thief",
+      "form": "construct",
+      "sex": "unknown",
+      "age": "unknown",
+      "build": "slight",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [
+        "mask"
+      ],
+      "attire": [
+        "helmet",
+        "armour-heavy"
+      ],
+      "carries": [
+        "sword"
+      ],
+      "palette": [
+        "#c9a227",
+        "#b5a642"
+      ],
+      "described": "well",
+      "summary": "Daemon bound into a clockwork body unfolded from a small gold-and-silver pyramid: thin, sheathed in segmented gold and brass plates, faceless save for eye slits in a high-crested helm, with 'rhyming swords' deploying from its forearms.",
+      "evidence": [
+        {
+          "claim": "'thin, wrapped in segmented plates of gold and brass, faceless but for eye slits in the high-crested helm'",
+          "source": "http://heresy-legions.blogspot.com/2009/07/brass-thief.html (search summary quoting Ravenor Returned)"
+        },
+        {
+          "claim": "bound to a small gold and silver pyramid that unfolds into an armoured body; rhyming swords deploy from its forearms",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        }
+      ]
+    },
+    {
+      "id": "toros-revoke",
+      "form": "human",
+      "sex": "male",
+      "age": "unknown",
+      "build": "unknown",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "gold",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [],
+      "carries": [],
+      "palette": [],
+      "described": "partial",
+      "summary": "Trice's psyker enforcer, noted for stale yellow pupils; no other physical description found.",
+      "evidence": [
+        {
+          "claim": "his pupils are stale yellow",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        }
+      ]
+    },
+    {
+      "id": "ahenobarb",
+      "form": "human",
+      "sex": "male",
+      "age": "unknown",
+      "build": "massive",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [],
+      "carries": [],
+      "palette": [],
+      "described": "partial",
+      "summary": "Kinsky's burly 'brute minder', called 'the giant' in the narration; his fist leaves a huge bruise on Thonius's face.",
+      "evidence": [
+        {
+          "claim": "'the giant'; 'brute minder'",
+          "source": "Ravenor novel text, as quoted in web search result snippets (not independently fetched)"
+        },
+        {
+          "claim": "huge beatstick",
+          "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+        },
+        {
+          "claim": "burly minder",
+          "source": "research/raw_ravenor/src2.txt (lonepilgrim synopsis)"
+        }
+      ]
+    },
+    {
+      "id": "duboe",
+      "form": "human",
+      "sex": "male",
+      "age": "unknown",
+      "build": "unknown",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [],
+      "carries": [],
+      "palette": [],
+      "described": "partial",
+      "summary": "Carnivora flect supplier, seen after capture as haggard and blood-flecked in chain binders; no further description.",
+      "evidence": [
+        {
+          "claim": "'haggard and blood-flecked', chain binders",
+          "source": "Ravenor novel text, as quoted in web search result snippets (not independently fetched)"
+        }
+      ]
+    },
+    {
+      "id": "inquisitor-fenx",
+      "form": "human",
+      "sex": "male",
+      "age": "unknown",
+      "build": "unknown",
+      "skin": "unknown",
+      "hair": {
+        "color": "unknown",
+        "style": "unknown"
+      },
+      "facialHair": "unknown",
+      "eyes": {
+        "color": "unknown",
+        "glow": false
+      },
+      "marks": [],
+      "attire": [
+        "armour-light"
+      ],
+      "carries": [],
+      "palette": [
+        "#111111"
+      ],
+      "described": "partial",
+      "summary": "Inquisitor introduced as the man in black body armour; no face or hair details found.",
+      "evidence": [
+        {
+          "claim": "'The man in the black body armour' at his introduction",
+          "source": "Ravenor Rogue novel text, as quoted in web search result snippets (not independently fetched)"
+        }
+      ]
+    }
+  ]
+}

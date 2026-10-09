@@ -1,0 +1,77 @@
+{
+  "generator": "ChatGPT Images (built-in image_gen)",
+  "styleReference": "docs/portraits/sources/beta-bequin.chatgpt.png",
+  "selection": "Ten other characters, excluding the already-generated Beta Bequin; descending codex importance, book count, relationship count, then name.",
+  "portraits": [
+    {
+      "rank": 1,
+      "id": "gregor-eisenhorn",
+      "name": "Gregor Eisenhorn",
+      "image": "docs/portraits/sources/gregor-eisenhorn.chatgpt.png",
+      "prompt": "docs/portraits/gregor-eisenhorn-chatgpt.prompt.txt"
+    },
+    {
+      "rank": 2,
+      "id": "gideon-ravenor",
+      "name": "Gideon Ravenor",
+      "image": "docs/portraits/sources/gideon-ravenor.chatgpt-v2.png",
+      "prompt": "docs/portraits/gideon-ravenor-chatgpt-v2.prompt.txt"
+    },
+    {
+      "rank": 3,
+      "id": "harlon-nayl",
+      "name": "Harlon Nayl",
+      "image": "docs/portraits/sources/harlon-nayl.chatgpt.png",
+      "prompt": "docs/portraits/harlon-nayl-chatgpt.prompt.txt"
+    },
+    {
+      "rank": 4,
+      "id": "kara-swole",
+      "name": "Kara Swole",
+      "image": "docs/portraits/sources/kara-swole.chatgpt.png",
+      "prompt": "docs/portraits/kara-swole-chatgpt.prompt.txt"
+    },
+    {
+      "rank": 5,
+      "id": "cherubael",
+      "name": "Cherubael",
+      "image": "docs/portraits/sources/cherubael.chatgpt.png",
+      "prompt": "docs/portraits/cherubael-chatgpt.prompt.txt"
+    },
+    {
+      "rank": 6,
+      "id": "patience-kys",
+      "name": "Patience Kys",
+      "image": "docs/portraits/sources/patience-kys.chatgpt.png",
+      "prompt": "docs/portraits/patience-kys-chatgpt.prompt.txt"
+    },
+    {
+      "rank": 7,
+      "id": "alizebeth-bequin",
+      "name": "Alizebeth Bequin",
+      "image": "docs/portraits/sources/alizebeth-bequin.chatgpt.png",
+      "prompt": "docs/portraits/alizebeth-bequin-chatgpt.prompt.txt"
+    },
+    {
+      "rank": 8,
+      "id": "uber-aemos",
+      "name": "Uber Aemos",
+      "image": "docs/portraits/sources/uber-aemos.chatgpt.png",
+      "prompt": "docs/portraits/uber-aemos-chatgpt.prompt.txt"
+    },
+    {
+      "rank": 9,
+      "id": "medea-betancore",
+      "name": "Medea Betancore",
+      "image": "docs/portraits/sources/medea-betancore.chatgpt.png",
+      "prompt": "docs/portraits/medea-betancore-chatgpt.prompt.txt"
+    },
+    {
+      "rank": 10,
+      "id": "carl-thonius",
+      "name": "Carl Thonius",
+      "image": "docs/portraits/sources/carl-thonius.chatgpt.png",
+      "prompt": "docs/portraits/carl-thonius-chatgpt.prompt.txt"
+    }
+  ]
+}

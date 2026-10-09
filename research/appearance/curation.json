@@ -1,0 +1,62 @@
+{
+  "characters": {
+    "medea-betancore": {
+      "marks": [],
+      "extras": [
+        "hand-circuitry"
+      ],
+      "palette": [
+        "#17131a",
+        "#a3243a"
+      ]
+    },
+    "midas-betancore": {
+      "marks": [],
+      "extras": [
+        "hand-circuitry"
+      ]
+    },
+    "mandragore-carrion": {
+      "extras": [
+        "horns"
+      ]
+    },
+    "deathrow": {
+      "palette": [],
+      "form": "human",
+      "attire": [
+        "armour-heavy"
+      ],
+      "marks": [
+        "scar-face"
+      ],
+      "extras": [
+        "visor"
+      ]
+    },
+    "senefuru-of-tizca": {
+      "palette": []
+    },
+    "comus-nocturnus": {
+      "extras": [
+        "wings",
+        "fangs"
+      ],
+      "attire": []
+    },
+    "teke": {
+      "extras": [
+        "grin"
+      ],
+      "attire": [
+        "power-armour"
+      ]
+    },
+    "freddy-dance": {
+      "age": "old",
+      "extras": [
+        "blind"
+      ]
+    }
+  }
+}

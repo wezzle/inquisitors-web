@@ -1,4 +1,5 @@
-import { bonds, bookById, books, characters, charById, locations, seriesOf } from '../data/codex';
+import { appearanceById, bonds, bookById, books, characters, charById, locations, seriesOf } from '../data/codex';
+import { portraitImg } from './likeness-img';
 import { spoilers } from './spoilers';
 import { BONDS, BOND_ORDER, FACTIONS, FACTION_ORDER, IMPORTANCE_LABEL, SERIES, SERIES_ORDER } from '../data/theme';
 import type { SeriesId } from '../data/types';
@@ -263,7 +264,8 @@ export function mountTooltip() {
       current = id;
       delete el.dataset.loc;
       el.style.setProperty('--fc', FACTIONS[c.faction].color);
-      el.innerHTML = `<div class="n">${c.name}</div><div class="t">${c.title}</div>${c.epithet ? `<div class="e">${c.epithet}</div>` : ''}`;
+      el.classList.add('has-face');
+      el.innerHTML = `<div class="face">${portraitImg(c, appearanceById.get(c.id), 'thumb')}</div><div class="n">${c.name}</div><div class="t">${c.title}</div>${c.epithet ? `<div class="e">${c.epithet}</div>` : ''}`;
     }
     el.classList.add('show');
     if (ev) {
@@ -317,6 +319,7 @@ export function mountLocationTooltip() {
       el.dataset.loc = id;
       el.style.setProperty('--fc', '#c9a24b');
       const first = books.find((b) => l.books.includes(b.id));
+      el.classList.remove('has-face');
       el.innerHTML = `<div class="n">${l.name}</div><div class="t">${l.type !== 'other' ? l.type + ' · ' : ''}first seen in ${first?.title ?? '?'}</div><div class="e">${l.note}</div>`;
     }
     el.classList.add('show');

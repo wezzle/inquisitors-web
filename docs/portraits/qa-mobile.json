@@ -1,0 +1,40 @@
+{
+  "url": "http://127.0.0.1:5173/?nointro",
+  "width": 390,
+  "height": 844,
+  "steps": [
+    {
+      "wait": 1800
+    },
+    {
+      "eval": "document.querySelector('#btn-gallery').click()"
+    },
+    {
+      "wait": 300
+    },
+    {
+      "eval": "document.querySelector('.g-card[data-id=\"beta-bequin\"]').click()"
+    },
+    {
+      "wait": 300
+    },
+    {
+      "eval": "document.querySelector('[data-pict=\"beta-bequin\"]').click()"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "eval": "(async()=>{const dialog=document.querySelector('.pict-viewer');const img=dialog.querySelector('img');await img.decode();const out={open:dialog.open,width:dialog.getBoundingClientRect().width,viewport:innerWidth,loaded:img.naturalWidth};if(!out.open||out.width>out.viewport||!out.loaded)throw new Error(JSON.stringify(out));return out;})()"
+    },
+    {
+      "shot": "docs/portraits/app-viewer-mobile.jpg"
+    },
+    {
+      "key": "Escape"
+    },
+    {
+      "eval": "JSON.stringify({closed:!document.querySelector('.pict-viewer').open})"
+    }
+  ]
+}

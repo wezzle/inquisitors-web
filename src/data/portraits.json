@@ -1,0 +1,614 @@
+{
+  "ahenobarb": {
+    "image": "portraits/ahenobarb.webp",
+    "thumb": "portraits/ahenobarb.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "alace-quatorze": {
+    "image": "portraits/alace-quatorze.webp",
+    "thumb": "portraits/alace-quatorze.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "alizebeth-bequin": {
+    "image": "portraits/alizebeth-bequin.webp",
+    "thumb": "portraits/alizebeth-bequin.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "angharad-esw-sweydyr": {
+    "image": "portraits/angharad-esw-sweydyr.webp",
+    "thumb": "portraits/angharad-esw-sweydyr.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "arianhrod-esw-sweydyr": {
+    "image": "portraits/arianhrod-esw-sweydyr.webp",
+    "thumb": "portraits/arianhrod-esw-sweydyr.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "arnault-tantalid": {
+    "image": "portraits/arnault-tantalid.webp",
+    "thumb": "portraits/arnault-tantalid.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "bakunin": {
+    "image": "portraits/bakunin.webp",
+    "thumb": "portraits/bakunin.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "balthus-blackwards": {
+    "image": "portraits/balthus-blackwards.webp",
+    "thumb": "portraits/balthus-blackwards.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "bartol-siskind": {
+    "image": "portraits/bartol-siskind.webp",
+    "thumb": "portraits/bartol-siskind.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "bastian-verveuk": {
+    "image": "portraits/bastian-verveuk.webp",
+    "thumb": "portraits/bastian-verveuk.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "beldame-sadia": {
+    "image": "portraits/beldame-sadia.webp",
+    "thumb": "portraits/beldame-sadia.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "beta-bequin": {
+    "image": "portraits/beta-bequin.webp",
+    "thumb": "portraits/beta-bequin.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "brass-thief": {
+    "image": "portraits/brass-thief.webp",
+    "thumb": "portraits/brass-thief.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "brytnoth": {
+    "image": "portraits/brytnoth.webp",
+    "thumb": "portraits/brytnoth.thumb.webp",
+    "interpretive": true,
+    "whole": true
+  },
+  "captain-estrum": {
+    "image": "portraits/captain-estrum.webp",
+    "thumb": "portraits/captain-estrum.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "carl-thonius": {
+    "image": "portraits/carl-thonius.webp",
+    "thumb": "portraits/carl-thonius.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "cherubael": {
+    "image": "portraits/cherubael.webp",
+    "thumb": "portraits/cherubael.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "commodus-voke": {
+    "image": "portraits/commodus-voke.webp",
+    "thumb": "portraits/commodus-voke.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "comus-nocturnus": {
+    "image": "portraits/comus-nocturnus.webp",
+    "thumb": "portraits/comus-nocturnus.thumb.webp",
+    "interpretive": true,
+    "whole": true
+  },
+  "connort-timurlin": {
+    "image": "portraits/connort-timurlin.webp",
+    "thumb": "portraits/connort-timurlin.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "constant-shadrake": {
+    "image": "portraits/constant-shadrake.webp",
+    "thumb": "portraits/constant-shadrake.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "crezia-berschilde": {
+    "image": "portraits/crezia-berschilde.webp",
+    "thumb": "portraits/crezia-berschilde.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "crookley": {
+    "image": "portraits/crookley.webp",
+    "thumb": "portraits/crookley.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "cynia-preest": {
+    "image": "portraits/cynia-preest.webp",
+    "thumb": "portraits/cynia-preest.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "darra-voriet": {
+    "image": "portraits/darra-voriet.webp",
+    "thumb": "portraits/darra-voriet.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "deathrow": {
+    "image": "portraits/deathrow.webp",
+    "thumb": "portraits/deathrow.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "duboe": {
+    "image": "portraits/duboe.webp",
+    "thumb": "portraits/duboe.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "ebon-nastrand": {
+    "image": "portraits/ebon-nastrand.webp",
+    "thumb": "portraits/ebon-nastrand.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "eleena-koi": {
+    "image": "portraits/eleena-koi.webp",
+    "thumb": "portraits/eleena-koi.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "esarhaddon": {
+    "image": "portraits/esarhaddon.webp",
+    "thumb": "portraits/esarhaddon.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "eskeen-hansaard": {
+    "image": "portraits/eskeen-hansaard.webp",
+    "thumb": "portraits/eskeen-hansaard.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "faria": {
+    "image": "portraits/faria.webp",
+    "thumb": "portraits/faria.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "fayde-thuring": {
+    "image": "portraits/fayde-thuring.webp",
+    "thumb": "portraits/fayde-thuring.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "feaver-skoh": {
+    "image": "portraits/feaver-skoh.webp",
+    "thumb": "portraits/feaver-skoh.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "freddy-dance": {
+    "image": "portraits/freddy-dance.webp",
+    "thumb": "portraits/freddy-dance.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "gall-ballack": {
+    "image": "portraits/gall-ballack.webp",
+    "thumb": "portraits/gall-ballack.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "geard-bure": {
+    "image": "portraits/geard-bure.webp",
+    "thumb": "portraits/geard-bure.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "gideon-ravenor": {
+    "image": "portraits/gideon-ravenor.webp",
+    "thumb": "portraits/gideon-ravenor.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "girolamo-malahite": {
+    "image": "portraits/girolamo-malahite.webp",
+    "thumb": "portraits/girolamo-malahite.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "godwyn-fischig": {
+    "image": "portraits/godwyn-fischig.webp",
+    "thumb": "portraits/godwyn-fischig.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "golesh-heldane": {
+    "image": "portraits/golesh-heldane.webp",
+    "thumb": "portraits/golesh-heldane.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "gorgone-locke": {
+    "image": "portraits/gorgone-locke.webp",
+    "thumb": "portraits/gorgone-locke.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "gregor-eisenhorn": {
+    "image": "portraits/gregor-eisenhorn.webp",
+    "thumb": "portraits/gregor-eisenhorn.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "harlon-nayl": {
+    "image": "portraits/harlon-nayl.webp",
+    "thumb": "portraits/harlon-nayl.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "inquisitor-fenx": {
+    "image": "portraits/inquisitor-fenx.webp",
+    "thumb": "portraits/inquisitor-fenx.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "iosob": {
+    "image": "portraits/iosob.webp",
+    "thumb": "portraits/iosob.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "jader-trice": {
+    "image": "portraits/jader-trice.webp",
+    "thumb": "portraits/jader-trice.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "javes-thysser": {
+    "image": "portraits/javes-thysser.webp",
+    "thumb": "portraits/javes-thysser.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "judika-sowl": {
+    "image": "portraits/judika-sowl.webp",
+    "thumb": "portraits/judika-sowl.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "kara-swole": {
+    "image": "portraits/kara-swole.webp",
+    "thumb": "portraits/kara-swole.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "king-in-yellow": {
+    "image": "portraits/king-in-yellow.webp",
+    "thumb": "portraits/king-in-yellow.thumb.webp",
+    "interpretive": true,
+    "whole": true
+  },
+  "kizary-thekla": {
+    "image": "portraits/kizary-thekla.webp",
+    "thumb": "portraits/kizary-thekla.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "konrad-molitor": {
+    "image": "portraits/konrad-molitor.webp",
+    "thumb": "portraits/konrad-molitor.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "leonid-osma": {
+    "image": "portraits/leonid-osma.webp",
+    "thumb": "portraits/leonid-osma.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "leyla-slade": {
+    "image": "portraits/leyla-slade.webp",
+    "thumb": "portraits/leyla-slade.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "lilean-chase": {
+    "image": "portraits/lilean-chase.webp",
+    "thumb": "portraits/lilean-chase.thumb.webp",
+    "interpretive": true,
+    "whole": true
+  },
+  "lomer-kinsky": {
+    "image": "portraits/lomer-kinsky.webp",
+    "thumb": "portraits/lomer-kinsky.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "lores-vibben": {
+    "image": "portraits/lores-vibben.webp",
+    "thumb": "portraits/lores-vibben.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "lowink": {
+    "image": "portraits/lowink.webp",
+    "thumb": "portraits/lowink.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "lucius-worna": {
+    "image": "portraits/lucius-worna.webp",
+    "thumb": "portraits/lucius-worna.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "lupan": {
+    "image": "portraits/lupan.webp",
+    "thumb": "portraits/lupan.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "lyko": {
+    "image": "portraits/lyko.webp",
+    "thumb": "portraits/lyko.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "madsen": {
+    "image": "portraits/madsen.webp",
+    "thumb": "portraits/madsen.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "mam-mordaunt": {
+    "image": "portraits/mam-mordaunt.webp",
+    "thumb": "portraits/mam-mordaunt.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "mandragore-carrion": {
+    "image": "portraits/mandragore-carrion.webp",
+    "thumb": "portraits/mandragore-carrion.thumb.webp",
+    "interpretive": true,
+    "whole": true
+  },
+  "marla-tarray": {
+    "image": "portraits/marla-tarray.webp",
+    "thumb": "portraits/marla-tarray.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "massimo-ricci": {
+    "image": "portraits/massimo-ricci.webp",
+    "thumb": "portraits/massimo-ricci.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "maud-plyton": {
+    "image": "portraits/maud-plyton.webp",
+    "thumb": "portraits/maud-plyton.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "medea-betancore": {
+    "image": "portraits/medea-betancore.webp",
+    "thumb": "portraits/medea-betancore.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "midas-betancore": {
+    "image": "portraits/midas-betancore.webp",
+    "thumb": "portraits/midas-betancore.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "murdin-eyclone": {
+    "image": "portraits/murdin-eyclone.webp",
+    "thumb": "portraits/murdin-eyclone.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "nathun-inshabel": {
+    "image": "portraits/nathun-inshabel.webp",
+    "thumb": "portraits/nathun-inshabel.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "neve": {
+    "image": "portraits/neve.webp",
+    "thumb": "portraits/neve.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "oberon-glaw": {
+    "image": "portraits/oberon-glaw.webp",
+    "thumb": "portraits/oberon-glaw.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "orfeo-culzean": {
+    "image": "portraits/orfeo-culzean.webp",
+    "thumb": "portraits/orfeo-culzean.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "patience-kys": {
+    "image": "portraits/patience-kys.webp",
+    "thumb": "portraits/patience-kys.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "patrik-belknap": {
+    "image": "portraits/patrik-belknap.webp",
+    "thumb": "portraits/patrik-belknap.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "phlebas-alessandro-rorken": {
+    "image": "portraits/phlebas-alessandro-rorken.webp",
+    "thumb": "portraits/phlebas-alessandro-rorken.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "pontifex-urba": {
+    "image": "portraits/pontifex-urba.webp",
+    "thumb": "portraits/pontifex-urba.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "pontius-glaw": {
+    "image": "portraits/pontius-glaw.webp",
+    "thumb": "portraits/pontius-glaw.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "prophaniti": {
+    "image": "portraits/prophaniti.webp",
+    "thumb": "portraits/prophaniti.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "quixos": {
+    "image": "portraits/quixos.webp",
+    "thumb": "portraits/quixos.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "raum-grumman": {
+    "image": "portraits/raum-grumman.webp",
+    "thumb": "portraits/raum-grumman.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "renner-lightburn": {
+    "image": "portraits/renner-lightburn.webp",
+    "thumb": "portraits/renner-lightburn.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "sadoth-xarbia": {
+    "image": "portraits/sadoth-xarbia.webp",
+    "thumb": "portraits/sadoth-xarbia.thumb.webp",
+    "interpretive": true,
+    "whole": true
+  },
+  "scarpac": {
+    "image": "portraits/scarpac.webp",
+    "thumb": "portraits/scarpac.thumb.webp",
+    "interpretive": true,
+    "whole": true
+  },
+  "senefuru-of-tizca": {
+    "image": "portraits/senefuru-of-tizca.webp",
+    "thumb": "portraits/senefuru-of-tizca.thumb.webp",
+    "interpretive": true,
+    "whole": true
+  },
+  "sholto-unwerth": {
+    "image": "portraits/sholto-unwerth.webp",
+    "thumb": "portraits/sholto-unwerth.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "slyte": {
+    "image": "portraits/slyte.webp",
+    "thumb": "portraits/slyte.thumb.webp",
+    "interpretive": true,
+    "whole": true
+  },
+  "teke": {
+    "image": "portraits/teke.webp",
+    "thumb": "portraits/teke.thumb.webp",
+    "interpretive": true,
+    "whole": true
+  },
+  "thaddeus-saur": {
+    "image": "portraits/thaddeus-saur.webp",
+    "thumb": "portraits/thaddeus-saur.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "the-saruthi": {
+    "image": "portraits/the-saruthi.webp",
+    "thumb": "portraits/the-saruthi.thumb.webp",
+    "interpretive": true,
+    "whole": true
+  },
+  "titus-endor": {
+    "image": "portraits/titus-endor.webp",
+    "thumb": "portraits/titus-endor.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "tobias-maxilla": {
+    "image": "portraits/tobias-maxilla.webp",
+    "thumb": "portraits/tobias-maxilla.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "toros-revoke": {
+    "image": "portraits/toros-revoke.webp",
+    "thumb": "portraits/toros-revoke.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "uber-aemos": {
+    "image": "portraits/uber-aemos.webp",
+    "thumb": "portraits/uber-aemos.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "urisel-glaw": {
+    "image": "portraits/urisel-glaw.webp",
+    "thumb": "portraits/urisel-glaw.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "waltur-aulay": {
+    "image": "portraits/waltur-aulay.webp",
+    "thumb": "portraits/waltur-aulay.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "wystan-frauka": {
+    "image": "portraits/wystan-frauka.webp",
+    "thumb": "portraits/wystan-frauka.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "zael": {
+    "image": "portraits/zael.webp",
+    "thumb": "portraits/zael.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "zeph-mathuin": {
+    "image": "portraits/zeph-mathuin.webp",
+    "thumb": "portraits/zeph-mathuin.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  },
+  "zygmunt-molotch": {
+    "image": "portraits/zygmunt-molotch.webp",
+    "thumb": "portraits/zygmunt-molotch.thumb.webp",
+    "interpretive": true,
+    "whole": false
+  }
+}

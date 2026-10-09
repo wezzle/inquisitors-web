@@ -33,6 +33,40 @@ Useful URL options:
 | **II · Chronicle**: the eleven volumes stacked as rings in publication order inside a gilded spire. Each character sits on the ring of their first appearance, and a lifeline rises through every later book they return in (dim where they're absent). The 46 worlds, ships and places orbit outside the spire; hover one for its record, or click it for the books it appears in. Click a book's title to open its card: synopsis, the worlds it visits, and its cast. | ![Chronicle](docs/chronicle.jpg) |
 | **III · Allegiance**: the cast grouped by allegiance (Inquisition, retinues, Imperium, civilians, rogues, xenos, heretics and daemons), with the most important characters at the centre of each group. | ![Allegiance](docs/allegiance.jpg) |
 
+## Likenesses
+
+All 102 characters have painted portraits generated with ChatGPT Images, replacing the procedural SVGs in the app.
+A separate research pass
+collected each character's attested physical traits, with evidence (`research/appearance/*.json`): form, age, build,
+skin, hair, eyes, scars and augmetics, clothing and carried items. `scripts/merge-appearance.mjs` validates these
+against a fixed vocabulary and writes `src/data/appearance.json`.
+
+- `src/ui/likeness-img.ts` selects approved WebP portraits and thumbnails from `src/data/portraits.json`. The original
+  SVG renderer remains only as a fallback for missing assets; every current character has a painted asset.
+- A shared painted style runs through the archive. No published cover or official artwork is used as input: Alizebeth
+  and Beta Bequin are original portraits built from the books' descriptions alone.
+  Backgrounds vary with allegiance and role: gold Inquisition rooms, cyan retinue workspaces, steel-blue Imperial
+  locations, red heretic settings, violet daemon spaces, jade xenos architecture, rust-orange rogue locations and
+  warm civilian interiors.
+- **These are artistic interpretations, not canonical artwork.** The sourced *Likeness* evidence remains separate.
+  Unrecorded details, typical role clothing and environmental settings are creative choices. Unseen characters
+  such as the King in Yellow and Lilean Chase receive anonymous or symbolic depictions.
+- Portraits appear in the dossier, with a *Likeness* section listing each trait and the source behind it, and in
+  hover cards. In 3D they become medallions on each soul as you get close or select it. The **Pict Archive**
+  (`G`, or the arch icon) shows every likeness on one wall, filterable and sortable by how well attested it is.
+  Click a dossier portrait to open the enlarged pict viewer; `Esc` closes it without closing the dossier.
+
+Original PNGs and exact prompts are retained under `docs/portraits/`; only optimized 800×1000 WebPs and
+240×300 thumbnails are served from `public/portraits/`. [Complete asset and prompt index](docs/portraits/all-chatgpt.md).
+To republish approved sources:
+
+```sh
+nix shell nixpkgs#nodejs_22 nixpkgs#imagemagick --command node scripts/publish-portraits.mjs
+nix develop --command node scripts/check-portraits.mjs
+```
+
+![Pict Archive](docs/portraits/app-complete.jpg)
+
 ## Things to try
 
 - **Click** a character to open their dossier: a wax-sealed record with an emblem, epithet, psychic profile, appearances across all

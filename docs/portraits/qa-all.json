@@ -1,0 +1,55 @@
+{
+  "url": "http://127.0.0.1:5173/?nointro#gregor-eisenhorn",
+  "width": 1400,
+  "height": 1000,
+  "steps": [
+    {
+      "wait": 1200
+    },
+    {
+      "eval": "document.querySelector('#btn-gallery').click()"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "eval": "(async()=>{const imgs=[...document.querySelectorAll('.g-card img.pict')]; imgs.forEach(i=>i.loading='eager'); const failures=await Promise.all(imgs.map(i=>i.decode().then(()=>null,()=>i.getAttribute('src')))); const out={cards:document.querySelectorAll('.g-card').length,painted:imgs.length,svg:document.querySelectorAll('.g-card svg').length,failed:failures.filter(Boolean)}; if(out.cards!==102||out.painted!==102||out.svg!==0||out.failed.length)throw new Error(JSON.stringify(out)); return out;})()"
+    },
+    {
+      "shot": "docs/portraits/app-complete.jpg"
+    },
+    {
+      "eval": "document.querySelector('[data-g=\"faction\"] [data-v=\"daemon\"]').click()"
+    },
+    {
+      "wait": 200
+    },
+    {
+      "eval": "JSON.stringify({daemonCards:document.querySelectorAll('.g-card').length,daemonSVGs:document.querySelectorAll('.g-card svg').length})"
+    },
+    {
+      "shot": "docs/portraits/app-daemons.jpg"
+    },
+    {
+      "eval": "document.querySelector('[data-g=\"faction\"] [data-v=\"all\"]').click();document.querySelector('.g-card[data-id=\"gregor-eisenhorn\"]').click();document.querySelector('[data-pict=\"gregor-eisenhorn\"]').focus();document.querySelector('[data-pict=\"gregor-eisenhorn\"]').click()"
+    },
+    {
+      "wait": 500
+    },
+    {
+      "eval": "(async()=>{await document.querySelector('.pict-viewer img').decode();return {open:document.querySelector('.pict-viewer').open,fullWidth:document.querySelector('.pict-viewer img').naturalWidth};})()"
+    },
+    {
+      "shot": "docs/portraits/app-viewer.jpg"
+    },
+    {
+      "key": "Escape"
+    },
+    {
+      "eval": "(()=>{const out={closed:!document.querySelector('.pict-viewer').open,focusReturned:document.activeElement?.dataset.pict==='gregor-eisenhorn',dossierStillPresent:!!document.querySelector('[data-pict=\"gregor-eisenhorn\"]')};if(!out.closed||!out.focusReturned||!out.dossierStillPresent)throw new Error(JSON.stringify(out));return out;})()"
+    },
+    {
+      "eval": "(async()=>{const m=await import('/src/ui/likeness-img.ts');const d=await import('/src/data/codex.ts');return await Promise.all(['beta-bequin','gideon-ravenor','slyte'].map(async id=>{const cv=await m.portraitCanvas(d.charById.get(id),d.appearanceById.get(id),128);const data=cv.getContext('2d').getImageData(0,0,128,128).data;return {id,width:cv.width,height:cv.height,visiblePixels:data.filter((v,i)=>i%4===3&&v>0).length};}));})()"
+    }
+  ]
+}

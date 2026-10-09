@@ -1,5 +1,6 @@
 import * as THREE from 'three';
-import { bonds, bondsOf, bookById, books, characters, charById, other, roleOf, seriesOf } from '../data/codex';
+import { appearanceById, bonds, bondsOf, bookById, books, characters, charById, other, roleOf, seriesOf } from '../data/codex';
+import { portraitCanvas } from '../ui/likeness-img';
 import { spoilers } from '../ui/spoilers';
 import type { BondKind, Faction, SeriesId } from '../data/types';
 import { BONDS, BOND_ORDER, FACTIONS, FACTION_ORDER, SERIES, SERIES_ORDER } from '../data/theme';
@@ -67,6 +68,20 @@ export class World {
   private sealTex = new Map<string, Promise<THREE.Texture>>();
   private sealAlpha = 0;
   private pulse: THREE.Sprite;
+  private faceLoads = 0;
+
+  private loadFace(n: SoulNode) {
+    n.faceState = 'loading';
+    this.faceLoads++;
+    void portraitCanvas(n.c, appearanceById.get(n.c.id), 256)
+      .then((cv) => {
+        const tex = new THREE.CanvasTexture(cv);
+        tex.colorSpace = THREE.SRGBColorSpace;
+        n.setFace(tex);
+      })
+      .catch(() => (n.faceState = 'none'))
+      .finally(() => this.faceLoads--);
+  }
   private pulseT = 1;
   private raycaster = new THREE.Raycaster();
   private pointer = new THREE.Vector2();
@@ -496,9 +511,20 @@ export class World {
   private tick(t: number, dt: number) {
     this.backdrop.update(t);
     const cam = this.stage.camera.position;
+    const selId = this.selected;
+    let loads = 0;
     for (const n of this.nodes.values()) {
       const d = cam.distanceTo(n.position);
       n.near = THREE.MathUtils.clamp((d - n.radius * 3) / 90, 0.04, 1);
+      // portraits appear for souls in focus, or simply close to the lens
+      const id = n.c.id;
+      const focus = id === selId || id === this.hovered || ((selId || this.thread) && n.emphasisTarget > 0.9);
+      const want = n.alpha > 0.4 && (focus || d < 170 + n.c.importance * 30);
+      n.faceTarget = want ? 1 : 0;
+      if (want && n.faceState === 'none' && this.faceLoads + loads < 3) {
+        loads++;
+        this.loadFace(n);
+      }
       n.update(t, dt);
     }
     this.web.update(t, dt);

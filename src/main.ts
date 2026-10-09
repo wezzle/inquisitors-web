@@ -19,6 +19,8 @@ import { Dossier } from './ui/dossier';
 import { mountFilters, mountLocationTooltip, mountSearch, mountTicker, mountTooltip } from './ui/hud';
 import { emblemSVG } from './ui/sigils';
 import { spoilers } from './ui/spoilers';
+import { Gallery } from './ui/gallery';
+import { mountPictViewer } from './ui/pict-viewer';
 import { Saga } from './ui/saga';
 import { Tour } from './ui/tour';
 
@@ -270,6 +272,20 @@ document.querySelector('.brand-title')!.addEventListener('click', () => {
   world.overview();
 });
 
+const gallery = new Gallery();
+mountPictViewer();
+const galleryBtn = $('btn-gallery');
+gallery.onPick = (id) => {
+  tour.stop();
+  select(id);
+};
+gallery.onClose = () => galleryBtn.classList.remove('on');
+galleryBtn.addEventListener('click', () => {
+  tour.stop();
+  gallery.toggle();
+  galleryBtn.classList.toggle('on', gallery.isOpen);
+});
+
 const help = $('help');
 $('btn-help').addEventListener('click', () => help.classList.toggle('open'));
 $('help-close').addEventListener('click', () => help.classList.remove('open'));
@@ -311,7 +327,11 @@ window.addEventListener('keydown', (e) => {
     case 'p':
     case 'P':
       return sagaBtn.click();
+    case 'g':
+    case 'G':
+      return galleryBtn.click();
     case 'Escape':
+      if (gallery.isOpen) return gallery.close();
       saga.stop();
       tour.stop();
       if (world.thread || document.getElementById('caption')!.classList.contains('thread')) return world.clearThread();

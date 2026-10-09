@@ -91,3 +91,26 @@ export interface Bond {
   /** For directed kinds (service, mentor, betrayal): the superior / acting party. */
   from: string;
 }
+
+export type Form = 'human' | 'astartes' | 'daemonhost' | 'daemon' | 'xenos' | 'construct' | 'chair';
+
+export interface Appearance {
+  id: string;
+  form: Form;
+  sex: 'male' | 'female' | 'unknown';
+  age: 'child' | 'young' | 'adult' | 'older' | 'old' | 'ancient' | 'unknown';
+  build: 'slight' | 'average' | 'athletic' | 'heavy' | 'massive' | 'unknown';
+  skin: 'pale' | 'fair' | 'olive' | 'tan' | 'brown' | 'dark' | 'grey' | 'unknown';
+  hair: { color: string; style: string };
+  facialHair: 'none' | 'stubble' | 'moustache' | 'beard' | 'long-beard' | 'unknown';
+  eyes: { color: string; glow: boolean };
+  marks: string[];
+  attire: string[];
+  carries: string[];
+  palette: string[];
+  described: 'well' | 'partial' | 'none';
+  summary: string;
+  evidence: { claim: string; source: string }[];
+  /** Hand-tuned extras not covered by the vocabulary (e.g. "grin"). */
+  extras?: string[];
+}

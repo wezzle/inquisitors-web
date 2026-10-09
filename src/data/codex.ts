@@ -1,5 +1,6 @@
 import raw from './codex.json';
-import type { Bond, BondKind, Book, Character, Codex, RelType, SeriesId } from './types';
+import looks from './appearance.json';
+import type { Appearance, Bond, BondKind, Book, Character, Codex, RelType, SeriesId } from './types';
 
 export const codex = raw as unknown as Codex;
 
@@ -120,3 +121,6 @@ export function roleOf(b: Bond, selfId: string): string {
       return 'Warp-bound';
   }
 }
+
+/** Sourced physical descriptions, one per character (may be missing for some). */
+export const appearanceById = new Map((looks as unknown as Appearance[]).map((a) => [a.id, a]));

@@ -1,0 +1,3899 @@
+[
+ {
+  "id": "beta-bequin",
+  "form": "human",
+  "sex": "female",
+  "age": "young",
+  "build": "slight",
+  "skin": "unknown",
+  "hair": {
+   "color": "black",
+   "style": "unknown"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "dark",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [
+   "pistol"
+  ],
+  "palette": [],
+  "described": "partial",
+  "summary": "A tall, slender young woman (23-24 in Pariah) with black hair and large dark eyes. Teke calls her beautiful ('those eyes, that mouth'). She is a near-copy of the original Alizebeth Bequin, who was tall, dark-haired and very beautiful. She wears a dial-cuff that controls her blankness and constantly changes disguises (Laurael Raeside, Padua Prate, Violetta Flyde), so no single outfit defines her.",
+  "evidence": [
+   {
+    "claim": "tall, slender, black hair, large dark eyes (Pariah ch. 2)",
+    "source": "research/raw_appearance/beq_delex_Beta_Bequin.md"
+   },
+   {
+    "claim": "clone of Alizebeth Bequin, looks almost exactly like the original",
+    "source": "research/raw_bequin/tvt_chars.txt"
+   },
+   {
+    "claim": "original Bequin was tall, dark-haired and very beautiful",
+    "source": "research/raw_appearance/beq_delex_Alizebeth_Bequin.md"
+   },
+   {
+    "claim": "Teke: 'My, but you're beautiful... Those eyes, that mouth'",
+    "source": "research/raw_appearance/beq_shewhothirsts_teke.md"
+   },
+   {
+    "claim": "aged 23 at the start of Pariah",
+    "source": "research/raw_bequin/fr_Pariah.txt"
+   },
+   {
+    "claim": "fires Judika's laspistol; wears a blankness-control cuff/bracelet",
+    "source": "research/raw_appearance/beq_shewhothirsts_teke.md"
+   },
+   {
+    "claim": "uses the cover names Laurael Raeside and Padua Prate (Pariah) and Violetta Flyde (Penitent)",
+    "source": "research/raw_appearance/beq_bl_extract_penitent.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "gideon-ravenor",
+  "form": "chair",
+  "sex": "male",
+  "age": "unknown",
+  "build": "athletic",
+  "skin": "unknown",
+  "hair": {
+   "color": "black",
+   "style": "tied"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [
+   "burn-scars"
+  ],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "well",
+  "summary": "Before Thracian Primaris (Malleus) he was tall, handsome and well built, though not quite as tall as Eisenhorn, with long black hair tied back in a ponytail from a high-cheekboned, finely sculpted face. After the Lightning crash burned his whole body he lives sealed in an armoured, floating force chair with paired psycannons and a voice synthesiser. The withered body inside is described only in Ravenor Rogue.",
+  "evidence": [
+   {
+    "claim": "pre-injury: tall, handsome, long black hair pulled back in a ponytail, high cheekbones",
+    "source": "research/raw_ravenor/Gideon_Ravenor.txt"
+   },
+   {
+    "claim": "tall, strong, well built, not quite as tall as Eisenhorn",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Gideon_Ravenor"
+   },
+   {
+    "claim": "whole body burned; confined to a life-supporting force chair with psycannons and voice synthesiser",
+    "source": "research/raw_bequin/fd_Gideon_Ravenor.json"
+   },
+   {
+    "claim": "body inside the chair shrivelled into a limbless sack (Ravenor Rogue)",
+    "source": "research/raw_ravenor/tvt_chars.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "gregor-eisenhorn",
+  "form": "human",
+  "sex": "male",
+  "age": "older",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "none",
+   "style": "shaven"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [
+   "paralysed-face",
+   "augmetic-cranial"
+  ],
+  "attire": [
+   "long-coat",
+   "high-collar"
+  ],
+  "carries": [
+   "sword",
+   "staff",
+   "pistol"
+  ],
+  "palette": [
+   "#1f1f22",
+   "#1f2f4f"
+  ],
+  "described": "well",
+  "summary": "Tall (taller than Ravenor), clean-shaven and originally dark-haired. Locke's torture in Xenos left his face mostly paralysed so he cannot smile. After Hereticus he shaves his head for a crude augmetic rig that projects from the back of his skull and encases his legs, and he walks with a sword-stick. He wears sober dark grey or black suits under long blue or black high-collared coats, and carries the runestaff, Barbarisater and a sidearm. Juvenat treatments keep him looking roughly middle-aged; by the Bequin books he is a battered old man in powered leg braces.",
+  "evidence": [
+   {
+    "claim": "clean-shaven, dark-haired; shaved head for augmetic system",
+    "source": "research/raw/lexc/Gregor_Eisenhorn.txt"
+   },
+   {
+    "claim": "augmetic assist system projecting from back of head and encasing lower limbs; swordstick",
+    "source": "research/raw/lexc/Gregor_Eisenhorn.txt"
+   },
+   {
+    "claim": "facial nerves destroyed by Locke's torture; can no longer smile",
+    "source": "research/raw/lexc/Gregor_Eisenhorn.txt"
+   },
+   {
+    "claim": "sober dark grey/black suits under long blue or black high-collared coats",
+    "source": "research/raw/lexc/Gregor_Eisenhorn.txt"
+   },
+   {
+    "claim": "force staff topped with a skull lodestone; force sword Barbarisater; holstered sidearm",
+    "source": "research/raw/lexc/Gregor_Eisenhorn.txt"
+   },
+   {
+    "claim": "taller than Ravenor",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Gideon_Ravenor"
+   },
+   {
+    "claim": "heavily scarred; powered leg braces by The Magos; battered old man",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "alizebeth-bequin",
+  "form": "human",
+  "sex": "female",
+  "age": "adult",
+  "build": "slight",
+  "skin": "unknown",
+  "hair": {
+   "color": "black",
+   "style": "unknown"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "Tall, dark-haired and strikingly beautiful, although as a blank she unsettles people. Juvenat treatments and augmetic surgery keep her looking about thirty well past 125, with only crow's feet by Hereticus; she hates being seen in her half-moon reading spectacles. Her clone Beta Bequin, who looks almost exactly like her, is described as tall and slender with black hair and large dark eyes.",
+  "evidence": [
+   {
+    "claim": "tall, dark hair, very beautiful (Xenos ch.5)",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Alizebeth_Bequin"
+   },
+   {
+    "claim": "clone Beta: tall, slender, black hair, large dark eyes; identical appearance",
+    "source": "research/raw_bequin/de_Beta_Bequin.txt"
+   },
+   {
+    "claim": "looks ~30 at 125 via juvenat/augmetic surgery; crow's feet by Hereticus; half-moon spectacles",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "carl-thonius",
+  "form": "human",
+  "sex": "male",
+  "age": "young",
+  "build": "slight",
+  "skin": "pale",
+  "hair": {
+   "color": "blonde",
+   "style": "unknown"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "finery",
+   "long-coat"
+  ],
+  "carries": [
+   "pistol"
+  ],
+  "palette": [
+   "#8b1a1a",
+   "#111111",
+   "#8a8a8a"
+  ],
+  "described": "well",
+  "summary": "Foppish, impeccably dressed young interrogator with heavy blond hair and a face powdered white; seen in a tailored red velvet suit, black buckled shoes and a grey plastek raincoat. After his right arm is severed and reattached he wears dozens of rings on that hand, dresses less foppishly and has dyed his hair black by Ravenor Rogue; when Slyte manifests he glows from within, skeleton visible, right forearm flayed to black bone with talons.",
+  "evidence": [
+   {
+    "claim": "heavy blond hair; average build per de-Lexicanum; red velvet suit, black buckled shoes, grey plastek-oxide raincoat, face powdered white, handkerchief",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Carl_Thonius (read via web search summary; direct fetch blocked)"
+   },
+   {
+    "claim": "always poised, well-groomed and impeccably dressed (The Dandy)",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   },
+   {
+    "claim": "extremely thin, looks weak (Waif-Fu); conflicts with de-Lexicanum 'average build'",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   },
+   {
+    "claim": "dyed his normally blonde hair black by start of Ravenor Rogue; up to thirty rings on right hand",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   },
+   {
+    "claim": "Slyte form: body lit from within, skeleton visible, right arm flesh peels back, fingers become talons",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   },
+   {
+    "claim": "carries a Hecuter 6 pistol",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "cherubael",
+  "form": "daemonhost",
+  "sex": "male",
+  "age": "adult",
+  "build": "athletic",
+  "skin": "tan",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "white",
+   "glow": true
+  },
+  "marks": [
+   "chains"
+  ],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "In Xenos, Quixos's host body is tall and muscular with a golden sheen to the skin, a handsome face, tiny stunted horns sprouting from the skull and blank eyes that blaze with evil white light. Eisenhorn later binds him with psychic amulets and fetters, first in a cloned host, then in Bastian Verveuk, briefly in an astropath, and finally in Godwyn Fischig's corpse. Unbound in Hereticus, he appears as a ball of white light.",
+  "evidence": [
+   {
+    "claim": "tall, muscular, golden sheen on skin, handsome face, tiny stunted horns, blank gaze (Xenos)",
+    "source": "https://epdf.pub/xenosbc82a75372c07069b055075a5452684c71214.html (German translation, via search summary)"
+   },
+   {
+    "claim": "host's eyes radiate a white light",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   },
+   {
+    "claim": "bound with countless psychic amulets and fetters; hosts: clone, Verveuk, astropath, Fischig's corpse",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Cherubael"
+   },
+   {
+    "claim": "true form an unbound ball of white light (Hereticus)",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "godwyn-fischig",
+  "form": "human",
+  "sex": "male",
+  "age": "adult",
+  "build": "heavy",
+  "skin": "unknown",
+  "hair": {
+   "color": "blonde",
+   "style": "unknown"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [
+   "scar-face",
+   "augmetic-arm",
+   "mask"
+  ],
+  "attire": [
+   "uniform",
+   "armour-light",
+   "helmet"
+  ],
+  "carries": [],
+  "palette": [
+   "#3b2a1e"
+  ],
+  "described": "well",
+  "summary": "A tall, burly, fair-haired and clean-shaven Arbites chastener with a circular scar on one side of his face, usually in his dark-brown armoured Arbites uniform and visored helmet. After KCX-1288 he lost an arm, replaced with a metal bionic, and half his face, rebuilt with augmetic muscle and metal and covered by a white ceramite half-mask. After his death his corpse becomes Cherubael's host.",
+  "evidence": [
+   {
+    "claim": "tall and fair haired, physically imposing",
+    "source": "research/raw/lexc/Godwyn_Fischig.txt"
+   },
+   {
+    "claim": "tall, stocky, blond, clean-shaven, circular scar on one half of face; dark-brown armoured Arbites uniform and visored helmet",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Godwyn_Fischig"
+   },
+   {
+    "claim": "lost arm and half his face; metal bionic arm; white ceramite half-face mask",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Godwyn_Fischig"
+   },
+   {
+    "claim": "becomes host for Cherubael after death",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "harlon-nayl",
+  "form": "human",
+  "sex": "male",
+  "age": "adult",
+  "build": "heavy",
+  "skin": "unknown",
+  "hair": {
+   "color": "none",
+   "style": "shaven"
+  },
+  "facialHair": "beard",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "bodyglove",
+   "armour-light"
+  ],
+  "carries": [],
+  "palette": [
+   "#1a1a1a"
+  ],
+  "described": "well",
+  "summary": "A very big, stocky former bounty hunter with a heavy skull, shaved head and neat goatee, brutish-looking but graceful. He usually wears a dull or dark close-fitting bodyglove under black flak or carapace armour. Juvenat treatments make him look about late thirties at over a hundred; in the Ravenor books he loses his left middle finger.",
+  "evidence": [
+   {
+    "claim": "very tall and stocky; head shaved bald except a neat goatee; dark tight one-piece combat suits; lost left middle finger",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Harlon_Nayl"
+   },
+   {
+    "claim": "large man, heavy-looking skull, shaved head; dull bodyglove and black flak/carapace armour",
+    "source": "https://wh40k.lexicanum.com/wiki/Harlon_Nayl (via search summary)"
+   },
+   {
+    "claim": "over 100 but looks late thirties (juvenat); big, muscular",
+    "source": "research/raw_ravenor/tvt_chars.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "kara-swole",
+  "form": "human",
+  "sex": "female",
+  "age": "adult",
+  "build": "athletic",
+  "skin": "unknown",
+  "hair": {
+   "color": "red",
+   "style": "cropped"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "bodyglove"
+  ],
+  "carries": [],
+  "palette": [],
+  "described": "well",
+  "summary": "A former acrobat and dancer, small, lithe and so well-muscled she looks almost stocky. She is curvy and often called a beauty, with very short red hair in Hereticus. In Ravenor she is seen in a cream skinsleeve with her red hair under a hood.",
+  "evidence": [
+   {
+    "claim": "small and lithe, very short red hair, muscular frame almost stocky (Hereticus)",
+    "source": "https://onlinereadfreenovel.com/dan-abnett/p,2,68947-warhammer_-_eisenhorn_03_-_hereticus_abnett_dan_read.html (via search summary)"
+   },
+   {
+    "claim": "small, flexible, muscular; very short red hair on Durer 386.M41",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Kara_Swole"
+   },
+   {
+    "claim": "described as a beauty, athletic yet voluptuous",
+    "source": "research/raw/lexc/Kara_Swole.txt"
+   },
+   {
+    "claim": "cream skinsleeve, red hair under a hood (Ravenor)",
+    "source": "https://i.4pcdn.org/tg/1457898155991.pdf (via search summary)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "medea-betancore",
+  "form": "human",
+  "sex": "female",
+  "age": "adult",
+  "build": "unknown",
+  "skin": "dark",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "uniform"
+  ],
+  "carries": [],
+  "palette": [
+   "#17131a",
+   "#a3243a"
+  ],
+  "described": "partial",
+  "summary": "Dark-skinned like all Glavians, with gold bio-circuitry wires woven into her hands. She wears the black, red-piped Glavian pilot's suit and her father's cerise, gold-embroidered flight jacket. In Pariah she is undercover as 'Sister Bismillah'.",
+  "evidence": [
+   {
+    "claim": "red-piped black Glavian pilot suit, father's cerise embroidered jacket; skin dark like all Glavians",
+    "source": "https://www.specialist-arms.com/fanatic/20hshs.pdf (quoting the novel, via search summary)"
+   },
+   {
+    "claim": "dark skin; hands interwoven with gold wires; cherry-red gold-embroidered jacket",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Medea_Betancore"
+   },
+   {
+    "claim": "undercover as Sister Bismillah in Pariah",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   }
+  ],
+  "extras": [
+   "hand-circuitry"
+  ]
+ },
+ {
+  "id": "midas-betancore",
+  "form": "human",
+  "sex": "male",
+  "age": "adult",
+  "build": "slight",
+  "skin": "dark",
+  "hair": {
+   "color": "black",
+   "style": "medium"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "uniform"
+  ],
+  "carries": [
+   "pistol",
+   "rifle"
+  ],
+  "palette": [
+   "#111111",
+   "#b3202a",
+   "#d2386c"
+  ],
+  "described": "well",
+  "summary": "A dark-skinned Glavian pilot, about Eisenhorn's height but lighter built, with unruly black curls framing a slender, usually mischievous face. Silver bio-circuitry is inset into his hands. He wears the red-piped black leather Glavian pilot suit with an embroidered cerise silk jacket and light gloves, and carries paired needle pistols.",
+  "evidence": [
+   {
+    "claim": "unruly black curls framing a dark-skinned, slender face (Xenos)",
+    "source": "https://www.blacklibrary.com/downloads/product/pdf/x/xenos.pdf (via search summary)"
+   },
+   {
+    "claim": "dark skinned, hands covered in inset Glavian bio-circuitry; red-piped black suit",
+    "source": "research/raw/lexc/Midas_Betancore.txt"
+   },
+   {
+    "claim": "same height as Eisenhorn but lighter build; silver wires in hands; cherry-red silk jacket; leather gloves",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Midas_Betancore"
+   },
+   {
+    "claim": "pair of needle pistols; expert shot with rifle",
+    "source": "research/raw/lexc/Midas_Betancore.txt"
+   }
+  ],
+  "extras": [
+   "hand-circuitry"
+  ]
+ },
+ {
+  "id": "patience-kys",
+  "form": "human",
+  "sex": "female",
+  "age": "adult",
+  "build": "slight",
+  "skin": "unknown",
+  "hair": {
+   "color": "black",
+   "style": "tied"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "green",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "bodyglove"
+  ],
+  "carries": [
+   "blades-floating"
+  ],
+  "palette": [],
+  "described": "well",
+  "summary": "Tall, thin but athletic telekine with angular features, emerald-green eyes and raven-black hair worn up in a chignon held by two silver pins that double as kineblades; usually in a tight, lightly armoured bodyglove. In Pariah she first appears disguised as a nun ('Sister Tharpe'); no separate later physical description was found.",
+  "evidence": [
+   {
+    "claim": "tall, thin, athletic, angular features, emerald-green eyes, raven-black hair in a chignon with two silver hairpins, tight lightly-armoured bodygloves (cites Ravenor ch.1)",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Patience_Kys (read via web search summary; direct fetch blocked)"
+   },
+   {
+    "claim": "almost never seen without a tight bodyglove; kineblades worn in her hair or up her sleeve",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   },
+   {
+    "claim": "tall but slight, physically unimposing (Waif-Fu)",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   },
+   {
+    "claim": "in Pariah disguised as a Sister ('Sister Tharpe') at Beta's orphanage",
+    "source": "research/raw_bequin/jm_pariah3.txt; https://bbs.stardestroyer.net/viewtopic.php?t=156874 (search summary)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "pontius-glaw",
+  "form": "construct",
+  "sex": "male",
+  "age": "young",
+  "build": "massive",
+  "skin": "unknown",
+  "hair": {
+   "color": "blonde",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "cloak"
+  ],
+  "carries": [],
+  "palette": [
+   "#c8cbd0",
+   "#d4af37"
+  ],
+  "described": "well",
+  "summary": "In life he became corpulent with excess. For two centuries he survived only as an engram in a crystal, 'the Pontius'. In Hereticus Magos Bure builds him a tall, broad, human-shaped body of polished metal with a smiling golden face of the young Pontius and golden hair, the crystal set in its skull. It wears a cloak of overlapping knife-blades that he can fire, and extends blades from its fingers.",
+  "evidence": [
+   {
+    "claim": "became corpulent with excess",
+    "source": "research/raw/lexc/Pontius_Glaw.txt"
+   },
+   {
+    "claim": "polished metal body, tall and broad; golden face of the young Pontius smiling and golden hair; crystal in skull; cloak of knife blades; finger blades",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Pontius_Glaw"
+   },
+   {
+    "claim": "fires the blades of his cape by spinning",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "quixos",
+  "form": "human",
+  "sex": "male",
+  "age": "ancient",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "red",
+   "glow": false
+  },
+  "marks": [
+   "pale-sickly"
+  ],
+  "attire": [
+   "rosette"
+  ],
+  "carries": [
+   "sword"
+  ],
+  "palette": [],
+  "described": "partial",
+  "summary": "By Malleus he is an ancient, filthy, misshapen horned monster with crimson eyes and cracked skin covered in sores and stigmata, kept alive by numerous augmetics. He still wears his Inquisitorial rosette and fights with the daemon sword Kharnagar, moving too fast to see. When he dies he crumbles to dust, leaving his empty armour and implants.",
+  "evidence": [
+   {
+    "claim": "misshapen, crimson-eyed horned monster; skin cracked, sores, stigmata; ancient, filthy; numerous augmetics; still wore rosette",
+    "source": "research/raw/lexc/Quixos.txt"
+   },
+   {
+    "claim": "rudimentary antlers; daemon sword Kharnagar; crumbles to dust leaving armour and implants",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "renner-lightburn",
+  "form": "human",
+  "sex": "male",
+  "age": "adult",
+  "build": "athletic",
+  "skin": "unknown",
+  "hair": {
+   "color": "black",
+   "style": "unknown"
+  },
+  "facialHair": "beard",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [
+   "tattoos-body"
+  ],
+  "attire": [],
+  "carries": [
+   "pistol"
+  ],
+  "palette": [],
+  "described": "partial",
+  "summary": "A muscular, imposing former temple guard. He has black hair parted in the middle, a beard and dark clothing. As a Curst, the sins he has taken on are tattooed on his skin, covering him from the neck to at least the hips. He carries a heavy hard-round revolver, a Lammark Combination Thousander.",
+  "evidence": [
+   {
+    "claim": "black hair with a centre parting, beard, dark clothing, muscular body (Pariah ch. 16)",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Renner_Lightburn"
+   },
+   {
+    "claim": "covered in penance tattoos from neck to at least the hips (Pariah ch. 19)",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Renner_Lightburn"
+   },
+   {
+    "claim": "Curst write their crimes on their skin; Lightburn's cover most of his body",
+    "source": "research/raw_bequin/tvt_chars.txt"
+   },
+   {
+    "claim": "'the imposing mass of Lightburn'; Lammark Combination Thousander revolver",
+    "source": "research/raw_appearance/beq_shewhothirsts_teke.md"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "slyte",
+  "form": "daemon",
+  "sex": "unknown",
+  "age": "unknown",
+  "build": "massive",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "Daemon that possesses Carl Thonius: its harbinger form is Thonius glowing red from within, skin translucent and bones showing, the right forearm stripped to coal-black bone ending in claws. Its true manifestation in Ravenor Rogue is a mountain-sized, ever-growing mass of black flesh with mouths and tentacles hundreds of metres long; its touch rots and mummifies.",
+  "evidence": [
+   {
+    "claim": "red light from within, translucent skin, bones visible; forearm flesh withdraws exposing coal-black bones with claws; full form a huge mass of tissue with tentacle-like pseudopods hundreds of metres long",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Slyte (read via web search summary; direct fetch blocked)"
+   },
+   {
+    "claim": "true form: towering mountain of filthy black flesh covered in mouths and tentacles; humanoid harbinger has visible skeleton and fleshless oversized right arm",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   },
+   {
+    "claim": "first manifestation as a black skeletal humanoid glowing with a baleful red aura",
+    "source": "research/raw_ravenor/src1.txt (https://tvtropes.org/pmwiki/pmwiki.php/Literature/Ravenor)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "king-in-yellow",
+  "form": "human",
+  "sex": "unknown",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "Never seen on the page. Bequin is nearly taken before him in the City of Dust but escapes first. His name in Lilean Chase's book begins 'Constantin Valdor', but the books never describe his appearance. The form 'human' is only a placeholder.",
+  "evidence": [
+   {
+    "claim": "Bequin escapes before being brought before him; the name in the book begins 'Constantin Valdor'",
+    "source": "research/raw_appearance/beq_lex_King_in_Yellow.md"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "uber-aemos",
+  "form": "human",
+  "sex": "male",
+  "age": "old",
+  "build": "slight",
+  "skin": "unknown",
+  "hair": {
+   "color": "white",
+   "style": "bald"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [
+   "augmetic-eyes",
+   "wrinkles"
+  ],
+  "attire": [
+   "robes"
+  ],
+  "carries": [],
+  "palette": [
+   "#3e5f3a"
+  ],
+  "described": "well",
+  "summary": "A frail savant, already 278 in Xenos, with thin, liver-spotted skin and only a narrow crescent of white hair around the back of an otherwise bald head. His most distinctive feature is oversized augmetic eyewear. Extensive bionics and an augmetic exoskeleton hold up his body, and he is seen in sober green robes.",
+  "evidence": [
+   {
+    "claim": "skin liver-spotted and thin; narrow crescent of white hair at back of skull; 278 years old; bionics; sober green robes",
+    "source": "https://www.blacklibrary.com/downloads/product/pdf/x/xenos.pdf (via search summary)"
+   },
+   {
+    "claim": "oversized augmetic eyewear and bald pate",
+    "source": "research/raw/lexc/Uber_Aemos.txt"
+   },
+   {
+    "claim": "frail; relies on augmetic exoskeleton",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "zael",
+  "form": "human",
+  "sex": "male",
+  "age": "child",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "Flect-addicted hive street boy of about twelve to fourteen; no concrete physical description (hair, eyes, clothes) was found in accessible sources. He later becomes the Grey Knight Hyperion (outside these books).",
+  "evidence": [
+   {
+    "claim": "a boy about 14 years old, addicted to flects",
+    "source": "https://wh40k.lexicanum.com/wiki/Gideon_Ravenor (copy: research/raw_bequin/lex_Gideon_Ravenor.txt)"
+   },
+   {
+    "claim": "novel gives his age as twelve; on the streets since eleven",
+    "source": "Ravenor novel text, as quoted in web search result snippets (not independently fetched)"
+   },
+   {
+    "claim": "street urchin",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "zygmunt-molotch",
+  "form": "human",
+  "sex": "male",
+  "age": "adult",
+  "build": "slight",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [
+   "wards"
+  ],
+  "attire": [],
+  "carries": [],
+  "palette": [
+   "#111111"
+  ],
+  "described": "partial",
+  "summary": "Slim, dignified, beardless man dressed in black whose face is quite handsome but strangely asymmetrical, with hexagrammic wards tattooed on his scalp under the hairline (Ravenor Rogue). In Ravenor Returned, disguised as Lord-Governor Barazan, his face is burn-scarred like melted wax, healed by the Enuncia ritual at that book's end.",
+  "evidence": [
+   {
+    "claim": "slim man, dignified, dressed in black, beardless face, quite handsome but strangely asymmetrical (Ravenor Rogue, Czech edition)",
+    "source": "research/raw_appearance/rav_polaris_raveodpad.htm (http://www.polarissf.cz/souborPOLAR/raveodpad.htm, Czech excerpt of Ravenor Rogue)"
+   },
+   {
+    "claim": "face described as handsome but completely asymmetrical",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   },
+   {
+    "claim": "face resembling melted wax as the Diadochoi; scars healed by the ritual",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   },
+   {
+    "claim": "hexagrammic wards tattooed on his scalp under the hairline (forum quote of Ravenor Rogue)",
+    "source": "https://bbs.stardestroyer.net/viewtopic.php?t=106944 (search summary)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "angharad-esw-sweydyr",
+  "form": "human",
+  "sex": "female",
+  "age": "young",
+  "build": "athletic",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "braided"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "bodyglove"
+  ],
+  "carries": [
+   "sword"
+  ],
+  "palette": [],
+  "described": "partial",
+  "summary": "Very tall (about two metres) Carthaen swordswoman, the image of her aunt Arianhrod, with hair plaited with beads and an elaborately shaped bodysuit; wields the force sword Evisorex. Hair colour not confirmed for her specifically.",
+  "evidence": [
+   {
+    "claim": "tall, hair braided bead-like, elaborately shaped bodysuit, sword Evisorex",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Angharad_Esw_Sweydyr (read via web search summary; direct fetch blocked)"
+   },
+   {
+    "claim": "two metres tall with hair plaited with beads; strikingly like her aunt",
+    "source": "https://wh40k.lexicanum.com/wiki/Angharad_Esw_Sweydyr (read via web search summary; direct fetch blocked)"
+   },
+   {
+    "claim": "spitting image of her late aunt Arianhrod; 'Built for fighting'",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "commodus-voke",
+  "form": "human",
+  "sex": "male",
+  "age": "old",
+  "build": "slight",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "robes",
+   "hood"
+  ],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "A very old, physically frail Puritan inquisitor (405 when he dies in Malleus) who walks with a powered exoskeleton. He is frequently described in a hooded robe.",
+  "evidence": [
+   {
+    "claim": "frequently described wearing a hooded robe; old and frail, relies on powered exoskeleton",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   },
+   {
+    "claim": "killed aged 405 on Farness Beta",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Commodus_Voke"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "comus-nocturnus",
+  "form": "astartes",
+  "sex": "male",
+  "age": "unknown",
+  "build": "massive",
+  "skin": "pale",
+  "hair": {
+   "color": "black",
+   "style": "long"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "well",
+  "summary": "A winged, angel-like Blood Angel almost twice the size of a mortal, with silk-white feathered wings about five metres across, porcelain-white skin and long, bedraggled black hair. When the Red Thirst takes him he bares fangs. He fights naked, with no clothes or armour, and kills an armoured Night Lord with his bare hands.",
+  "evidence": [
+   {
+    "claim": "organic angelic wings like Sanguinius; Blood Angels Space Marine (Penitent ch. 11)",
+    "source": "research/raw_appearance/beq_lex_Comus_Nocturnus.md"
+   },
+   {
+    "claim": "silk-white wings ~5 m span; porcelain-white skin; long, black, bedraggled hair; fangs; almost twice mortal size",
+    "source": "Penitent ch. 11 text excerpt surfaced by web search (unofficial host readfrom.net/dan-abnett/page,9,600063-penitent.html)"
+   },
+   {
+    "claim": "full Sanguinius-style white wings",
+    "source": "research/raw_appearance/beq_fd_disc_ba_mutation.txt"
+   },
+   {
+    "claim": "has no clothes or armour",
+    "source": "research/raw_appearance/beq_tvt_rve.md"
+   },
+   {
+    "claim": "wings able to lift his massive body",
+    "source": "research/raw_bequin/jm_pen3.txt"
+   }
+  ],
+  "extras": [
+   "wings",
+   "fangs"
+  ]
+ },
+ {
+  "id": "deathrow",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "massive",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [
+   "scar-face"
+  ],
+  "attire": [
+   "armour-heavy"
+  ],
+  "carries": [
+   "sword"
+  ],
+  "palette": [],
+  "described": "well",
+  "summary": "A hulking 'warblind' killgang chief who watches the holloways with a big cattle dog. He is nearly as big as Teke, wears plate armour and a buzzing optic visor, and fights with an oil-dark broadsword. His scarred, ridged face is a mask: when it tears, a handsome, noble face shows beneath, and he names himself 'Alpharius' (Alpha Legion).",
+  "evidence": [
+   {
+    "claim": "almost as big as Teke; optic visor; plate armour; oil-dark broadsword; cattle dog",
+    "source": "research/raw_appearance/beq_shewhothirsts_teke.md"
+   },
+   {
+    "claim": "visor smashed; scarred, ridged facial tissue was a mask over a handsome, noble face; 'I am Alpharius'",
+    "source": "research/raw_appearance/beq_shewhothirsts_teke.md"
+   },
+   {
+    "claim": "wears a false face; Alpha Legion; has a hound",
+    "source": "research/raw_appearance/beq_tvt_rve.md"
+   },
+   {
+    "claim": "massive man fighting alongside a dog against Chaos Space Marines",
+    "source": "research/raw_bequin/fr_Pariah.txt"
+   },
+   {
+    "claim": "veteran of the Orphaeic wars (Pariah p.38, French ed.)",
+    "source": "research/raw_appearance/beq_frlex_Paria_Roman.md"
+   }
+  ],
+  "extras": [
+   "visor"
+  ]
+ },
+ {
+  "id": "fayde-thuring",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "No physical description found. He is the heretic who killed Midas Betancore and later pilots the Chaos Titan Cruor Vult in Hereticus.",
+  "evidence": [
+   {
+    "claim": "stub article without appearance details",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Fayde_Thuring"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "freddy-dance",
+  "form": "human",
+  "sex": "male",
+  "age": "old",
+  "build": "slight",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "A small, sad old man who is plainly blind, sitting at the bar of the Lengmur Salon with a drink always in his grip. He is a disgraced mathematician and astronomer, and his gangling friend Unvence acts as his eyes and voice.",
+  "evidence": [
+   {
+    "claim": "'a small, sad old man who was evidently blind' at the bar beside the long-limbed elderly man (Unvence)",
+    "source": "research/raw_appearance/beq_bl_extract_penitent.txt"
+   },
+   {
+    "claim": "the blind man beside Unvence is 'his mad friend Freddy. Freddy Dance'",
+    "source": "Penitent ch. 4-5 text excerpt surfaced by web search (unofficial host readfrom.net/dan-abnett/page,3,600063-penitent.html)"
+   },
+   {
+    "claim": "became blind after writing his treatise on the constellations",
+    "source": "research/raw_bequin/fr_Penitent.txt"
+   }
+  ],
+  "extras": [
+   "blind"
+  ]
+ },
+ {
+  "id": "geard-bure",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "No physical description found for the Adeptus Mechanicus magos of Cinchare, a metallurgist and friend of Hapshant who forged Eisenhorn's runestaff and reworked Barbarisater.",
+  "evidence": [
+   {
+    "claim": "role only; no appearance described",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Geard_Bure"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "golesh-heldane",
+  "form": "human",
+  "sex": "male",
+  "age": "adult",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [
+   "scar-face"
+  ],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "Mauled by a carnodon in Xenos. Rather than hide the scars, he has surgery to exaggerate them, giving his face an elongated, horse-like look that is fearsome by Malleus.",
+  "evidence": [
+   {
+    "claim": "surgery to exaggerate carnodon scars, giving face an elongated, equine appearance",
+    "source": "research/raw/lexc/Heldane.txt"
+   },
+   {
+    "claim": "face rebuilt to resemble a horse's between Xenos and Malleus",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   },
+   {
+    "claim": "face surgically reshaped into a frightening mask after extensive augmetic surgery",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Golesh_Constantine_Pheppos_Heldane"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "gorgone-locke",
+  "form": "human",
+  "sex": "male",
+  "age": "adult",
+  "build": "slight",
+  "skin": "unknown",
+  "hair": {
+   "color": "red",
+   "style": "tied"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "A gaunt, red-haired giant with sunken, heavy-lidded eyes, red hair tied back and a jutting chin (Xenos ch.10). He is the House Glaw shipmaster who tortures Eisenhorn with a neural scourge.",
+  "evidence": [
+   {
+    "claim": "a red-haired giant of a man",
+    "source": "research/raw/lexc/Gorgone_Locke.txt"
+   },
+   {
+    "claim": "gaunt giant, sunken heavy-lidded eyes, tied red hair, prominent chin (Xenos ch.10)",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Gorgone_Locke"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "jader-trice",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "slight",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "finery"
+  ],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "Slender, well-dressed and well-groomed Grand Provost of the Ministry of Sub-Sector Trade; no hair, eye or face details found.",
+  "evidence": [
+   {
+    "claim": "described as having a slender build (Lean and Mean)",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   },
+   {
+    "claim": "well dressed and well groomed (A Man of Wealth and Taste)",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "judika-sowl",
+  "form": "human",
+  "sex": "male",
+  "age": "young",
+  "build": "slight",
+  "skin": "pale",
+  "hair": {
+   "color": "black",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [
+   "pale-sickly"
+  ],
+  "attire": [],
+  "carries": [
+   "pistol"
+  ],
+  "palette": [],
+  "described": "partial",
+  "summary": "A tall, slender young man with curly black hair. He graduated from the Maze Undue a few years ahead of Beta, and Teke calls him beautiful. After the Word Bearer blade wounds him he looks pale and ill, hunches as though his ribs hurt, and has a crackling, static-like cough. He carries a laspistol.",
+  "evidence": [
+   {
+    "claim": "tall, slim, black curly hair (Pariah ch. 8)",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Judika_Sowl"
+   },
+   {
+    "claim": "'still looked pale and ill'; static-crackle cough; aims a laspistol",
+    "source": "research/raw_appearance/beq_shewhothirsts_teke.md"
+   },
+   {
+    "claim": "Teke: Beta is 'as beautiful as the boy'",
+    "source": "research/raw_appearance/beq_shewhothirsts_teke.md"
+   },
+   {
+    "claim": "graduated a few years ahead of Beta; health deteriorates",
+    "source": "research/raw_bequin/jm_pariah3.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "konrad-molitor",
+  "form": "human",
+  "sex": "male",
+  "age": "adult",
+  "build": "athletic",
+  "skin": "unknown",
+  "hair": {
+   "color": "black",
+   "style": "cropped"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "yellow",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "bodyglove",
+   "armour-light"
+  ],
+  "carries": [
+   "sword",
+   "pistol"
+  ],
+  "palette": [
+   "#e8c21a",
+   "#111111",
+   "#c0c0c0"
+  ],
+  "described": "well",
+  "summary": "A tall, fit, athletic radical with close-trimmed, tonsured black hair and shifty yellow eyes, styled like a warrior monk. He wears a tight weave-armour bodyglove in yellow-and-black check under a polished silver cuirass, and carries an ornate power sword and a laspistol. Hooded, robed acolytes and arco-flagellants attend him.",
+  "evidence": [
+   {
+    "claim": "tight weave-armour bodyglove of yellow and black check, polished silver cuirass; black hair close-trimmed and tonsured",
+    "source": "https://www.blacklibrary.com/downloads/product/pdf/x/xenos.pdf (via search summary)"
+   },
+   {
+    "claim": "tall and athletic, black hair, yellow eyes; ornate power sword and laspistol",
+    "source": "research/raw/lexc/Konrad_Molitor.txt"
+   },
+   {
+    "claim": "eyes consistently described as yellow",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "leonid-osma",
+  "form": "human",
+  "sex": "male",
+  "age": "older",
+  "build": "heavy",
+  "skin": "unknown",
+  "hair": {
+   "color": "grey",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [
+   "augmetic-jaw"
+  ],
+  "attire": [
+   "power-armour",
+   "fur",
+   "cloak"
+  ],
+  "carries": [
+   "hammer"
+  ],
+  "palette": [
+   "#b87333",
+   "#f2f2ee"
+  ],
+  "described": "well",
+  "summary": "A well-built, broad-shouldered Thorian with a blunt, pugnacious face and metal-grey hair. His lower jaw is a chrome prosthesis, fitted after a duel with a Khorne berserker. He wears copper-coloured power armour with ornate Malleus crests and purity seals, a wide white fur cloak and an Inquisition banner on his back, and fights one-handed with a power hammer.",
+  "evidence": [
+   {
+    "claim": "well-built broad-shouldered man with a blunt and pugnacious face",
+    "source": "research/raw/lexc/Leonid_Osma.txt"
+   },
+   {
+    "claim": "metal-grey hair; chrome lower-jaw prosthesis; copper power armour, white fur cloak, banner; power hammer",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Leonid_Osma"
+   },
+   {
+    "claim": "cybernetic lower jaw",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "lucius-worna",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "massive",
+  "skin": "unknown",
+  "hair": {
+   "color": "white",
+   "style": "shaven"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [
+   "scar-face"
+  ],
+  "attire": [
+   "power-armour"
+  ],
+  "carries": [],
+  "palette": [
+   "#eae3d8"
+  ],
+  "described": "well",
+  "summary": "Huge, brutish bounty hunter whose face is one solid mass of scar tissue, ears and nose worn to lumps of gristle; head shaved except for a bleached stripe; wears polished mother-of-pearl power armour without a helmet.",
+  "evidence": [
+   {
+    "claim": "face one massive scar; ears and nose eroded lumps of gristle",
+    "source": "https://wh40k.lexicanum.com/wiki/Lucius_Worna (read via web search summary; direct fetch blocked)"
+   },
+   {
+    "claim": "head shaved apart from a bleached stripe",
+    "source": "Ravenor Returned novel text, as quoted in web search result snippets (not independently fetched)"
+   },
+   {
+    "claim": "shock of white hair; polished mother-of-pearl power armour; face almost solid scar tissue; big, physically imposing",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   },
+   {
+    "claim": "pearl-coloured power armour, huge, no helmet",
+    "source": "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor (via research/raw_ravenor grep)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "mam-mordaunt",
+  "form": "human",
+  "sex": "female",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "pale",
+  "hair": {
+   "color": "black",
+   "style": "braided"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "robes"
+  ],
+  "carries": [],
+  "palette": [
+   "#0d0d0d",
+   "#b3122e"
+  ],
+  "described": "well",
+  "summary": "A tall, beautiful woman with long braided black hair. Her face is dusted with white powder, her lips painted red and her eyes lined with kohl. She dresses in black robes of fine spider-silk. Beta grew up thinking of her as tall. The skin is set to pale because of the white face powder.",
+  "evidence": [
+   {
+    "claim": "tall, beautiful, long braided black hair; white-powdered face, red lipstick, kohl-rimmed eyes; black robes of fine spider-silk (Pariah ch. 4)",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Eusebe_dea_Mordaunt"
+   },
+   {
+    "claim": "Beta is almost as tall as Mam Mordaunt, whom she grew up thinking of as a tall woman",
+    "source": "Pariah ch. 2 text surfaced by web search (summary of bookey.app / Pariah text)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "mandragore-carrion",
+  "form": "astartes",
+  "sex": "male",
+  "age": "unknown",
+  "build": "massive",
+  "skin": "pale",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "power-armour",
+   "helmet",
+   "cloak"
+  ],
+  "carries": [],
+  "palette": [
+   "#e3d22b",
+   "#7a3fb5",
+   "#d4af37"
+  ],
+  "described": "well",
+  "summary": "An Emperor's Children champion well over two metres tall, in heavily ornamented, blood-spattered power armour and a horned helm. Both are studded with gold and painted sulphur-yellow and violet, with disturbing hypnotic runes. A long cloak seems made of smoke and silk. His face is a white, powdered mask with a lipless mouth full of pearl-studded teeth and empty eyes ringed in gold and violet.",
+  "evidence": [
+   {
+    "claim": "over 2 m; ornate power armour and horned helm, gold-studded, sulphur-yellow and violet, blood-spattered; cloak of smoke and silk; white powdered face, lipless mouth, pearl-studded teeth, eyes ringed gold and violet",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Mandragore_Carrion"
+   },
+   {
+    "claim": "armour patterns hypnotic, induce terror",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   }
+  ],
+  "extras": [
+   "horns"
+  ]
+ },
+ {
+  "id": "maud-plyton",
+  "form": "human",
+  "sex": "female",
+  "age": "young",
+  "build": "heavy",
+  "skin": "unknown",
+  "hair": {
+   "color": "black",
+   "style": "cropped"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "uniform"
+  ],
+  "carries": [
+   "rifle"
+  ],
+  "palette": [
+   "#8b8455"
+  ],
+  "described": "well",
+  "summary": "Ex-Magistratum marshal with a large, slightly thickset frame at odds with very delicate, pretty, youthful features; dark hair cropped short (a Magistratum habit); in Ravenor Rogue wears a shabby khaki zip-front flight suit, heavy combat boots and white undervest or Navy surplus fatigues; favours a shotgun.",
+  "evidence": [
+   {
+    "claim": "large, slightly thickset frame, very delicate features; dark hair cropped short (Magistratum regulation); khaki flight suit, combat boots, white undervest; Navy surplus fatigues",
+    "source": "Ravenor Rogue novel text, as quoted in web search result snippets (not independently fetched)"
+   },
+   {
+    "claim": "pretty, youthful face but built like a bruiser; shotgun is her weapon of choice",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   },
+   {
+    "claim": "cute facial features clashing with no-nonsense appearance",
+    "source": "https://wh40k.lexicanum.com/wiki/Gideon_Ravenor (copy: research/raw_bequin/lex_Gideon_Ravenor.txt)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "orfeo-culzean",
+  "form": "human",
+  "sex": "male",
+  "age": "older",
+  "build": "heavy",
+  "skin": "unknown",
+  "hair": {
+   "color": "black",
+   "style": "short"
+  },
+  "facialHair": "beard",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "robes",
+   "finery"
+  ],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "Portly, middle-aged antiquarian with sleek swept-back black hair and a finely trimmed beard, dressed in comfortable robes of fine fabric.",
+  "evidence": [
+   {
+    "claim": "portly middle-aged man, slicked-back black hair, finely trimmed beard, comfortable robes of mostly fine fabric",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Orfeo_Culzean (read via web search summary; direct fetch blocked)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "patrik-belknap",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "uniform",
+   "long-coat"
+  ],
+  "carries": [
+   "rifle"
+  ],
+  "palette": [
+   "#111111"
+  ],
+  "described": "partial",
+  "summary": "Ex-Guard medicae, slimmer than Nayl, in black army combat fatigues and a long flapping leather coat that gives him a piratical look; carries a black leather medical bag and a battered old Guard lascarbine with folding stock.",
+  "evidence": [
+   {
+    "claim": "slimmer than Nayl; black army fatigues; long leather coat; black leather doctor's bag; old lascarbine with skeletal folding stock",
+    "source": "Ravenor Returned novel text, as quoted in web search result snippets (not independently fetched)"
+   },
+   {
+    "claim": "six years in the Imperial Guard",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "sholto-unwerth",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "heavy",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "beard",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "bodyglove",
+   "armour-light"
+  ],
+  "carries": [],
+  "palette": [
+   "#6b1015"
+  ],
+  "described": "partial",
+  "summary": "Short, stocky, dwarf-like and bearded shipmaster (claims Squat ancestry), usually in a dark red bodysuit with attached metal plates, accompanied by his elquon manhound Fyflank; loses four fingers to torture in Ravenor Returned.",
+  "evidence": [
+   {
+    "claim": "short, stocky, akin to a dwarf; dark red bodysuit with metal plates; pet elquon",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Sholto_Unwerth (read via web search summary; direct fetch blocked)"
+   },
+   {
+    "claim": "explains to Belknap why he is so short and bearded (Squat blood)",
+    "source": "research/raw_ravenor/src1.txt (https://tvtropes.org/pmwiki/pmwiki.php/Literature/Ravenor)"
+   },
+   {
+    "claim": "has four fingers cut off",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "teke",
+  "form": "astartes",
+  "sex": "male",
+  "age": "unknown",
+  "build": "massive",
+  "skin": "unknown",
+  "hair": {
+   "color": "none",
+   "style": "bald"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "gold",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "power-armour"
+  ],
+  "carries": [
+   "sword"
+  ],
+  "palette": [
+   "#e58fb5",
+   "#111111",
+   "#c9a227"
+  ],
+  "described": "well",
+  "summary": "An inhumanly tall, powerfully built Emperor's Children marine with an entirely hairless, oiled body and gold pupils. He never stops smiling, and the smile shows perfect alabaster-white teeth. He also has an alarmingly long tongue. At rest he wears only a loincloth, or a soft pink bodyglove made from rose petals. For battle he wears pink and glossy-black power armour edged with gold filigree, and his two gold silk ribbons become slender golden longswords.",
+  "evidence": [
+   {
+    "claim": "powerful physique, naked but for a loincloth, entirely hairless, oiled; gold pupils; smile with perfect white teeth like alabaster; inhumanly tall",
+    "source": "research/raw_appearance/beq_shewhothirsts_teke.md"
+   },
+   {
+    "claim": "rose petals form a soft pink bodysuit; armour pink and black edged with gold filigree; twin golden longswords from ribbons",
+    "source": "research/raw_appearance/beq_shewhothirsts_teke.md"
+   },
+   {
+    "claim": "Perpetual Smiler; petals form a bodyglove or power armour",
+    "source": "research/raw_appearance/beq_tvt_rve.md"
+   },
+   {
+    "claim": "no hair, golden pupils, black-and-pink power armour",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Teke"
+   }
+  ],
+  "extras": [
+   "grin"
+  ]
+ },
+ {
+  "id": "titus-endor",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "Eisenhorn's contemporary and friend. The only described details are a large scar from a saurapt bite on Brontotaph (on his leg) and the saurapt tooth he wears on a necklace for the rest of his life.",
+  "evidence": [
+   {
+    "claim": "saurapt left a large scar; wore its tooth as a necklace",
+    "source": "research/raw/lexc/Titus_Endor.txt"
+   },
+   {
+    "claim": "saurapt bit his leg; tooth worn as a pendant",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Titus_Endor"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "tobias-maxilla",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "heavy",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [
+   "beauty-mark"
+  ],
+  "attire": [
+   "finery",
+   "long-coat",
+   "cap"
+  ],
+  "carries": [],
+  "palette": [
+   "#5b2a86",
+   "#111111",
+   "#c0c0c0"
+  ],
+  "described": "well",
+  "summary": "A powerfully built Rogue Trader whose age can't be judged from his looks, and an extravagant dresser: a purple coat with a black cravat, face powder, a sapphire beauty spot, a cap of spun silver, heavy signet rings (one a digital laser) and teeth set with mother-of-pearl. Las-fire in Xenos reveals that much of his lower body is mechanical, and his servitors rebuild it.",
+  "evidence": [
+   {
+    "claim": "extravagant dress, purple coat with black cravat; powerfully built, ageless; mother-of-pearl teeth; powder, sapphire beauty spot, spun-silver cap, signet rings; half machine",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Tobius_Maxilla"
+   },
+   {
+    "claim": "known for extravagant dressing; injuries revealed lower body mechanical",
+    "source": "research/raw/lexc/Tobias_Maxilla.txt"
+   },
+   {
+    "claim": "mechanical from at least the chest down",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "wystan-frauka",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "heavy",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [
+   "lho-stick"
+  ],
+  "palette": [],
+  "described": "partial",
+  "summary": "Big, bored, chain-smoking blank, always with a lho-stick, with a psychic limiter/inhibitor set in his neck; Kys privately thinks him reasonably good-looking. No hair or eye details found.",
+  "evidence": [
+   {
+    "claim": "big, chain-smoking; inhibitor in his neck",
+    "source": "https://wh40k.lexicanum.com/wiki/Gideon_Ravenor (copy: research/raw_bequin/lex_Gideon_Ravenor.txt)"
+   },
+   {
+    "claim": "constantly smokes lho-sticks; reasonably good looking per Kys; wears a limiter",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "zeph-mathuin",
+  "form": "human",
+  "sex": "male",
+  "age": "adult",
+  "build": "massive",
+  "skin": "dark",
+  "hair": {
+   "color": "black",
+   "style": "braided"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "red",
+   "glow": true
+  },
+  "marks": [
+   "augmetic-eyes",
+   "augmetic-arm"
+  ],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "well",
+  "summary": "Very large, heavily muscled dark-skinned ex-bounty hunter with long black dreadlocks/braided strands, glowing red augmetic eyes and a chromed augmetic left arm that interfaces with his six-barrelled rotator cannon, worn with a counterweight support frame.",
+  "evidence": [
+   {
+    "claim": "dark-skinned, big and very muscular; black hair in long braided strands; red glowing bionic eyes; whole left arm augmetic and chrome-armoured",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Zeph_Mathuin (read via web search summary; direct fetch blocked)"
+   },
+   {
+    "claim": "lengthy dreadlocks; red glowing augmetic eyes; augmetic left arm; rotator cannon with support frame",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   },
+   {
+    "claim": "fandom says right arm connects to autocannon (conflict; left preferred)",
+    "source": "https://wh40k.lexicanum.com/wiki/Gideon_Ravenor (copy: research/raw_bequin/lex_Gideon_Ravenor.txt)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "alace-quatorze",
+  "form": "human",
+  "sex": "female",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "finery"
+  ],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "A noblewoman, the last of House Glaw, who lives at Feverfugue. Bequin notes her 'remarkable eyes' without giving their colour. She wears a long dress and carries a vermeil candelabrum. No further physical description was found.",
+  "evidence": [
+   {
+    "claim": "lifted 'the hem of her long dress'; carried a vermeil candelabrum; 'her remarkable eyes'",
+    "source": "research/raw_appearance/beq_shewhothirsts_teke.md"
+   },
+   {
+    "claim": "German Lexicanum article has no appearance section",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Alace_Quatorze"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "arianhrod-esw-sweydyr",
+  "form": "human",
+  "sex": "female",
+  "age": "adult",
+  "build": "athletic",
+  "skin": "unknown",
+  "hair": {
+   "color": "silver",
+   "style": "braided"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [
+   "sword"
+  ],
+  "palette": [],
+  "described": "partial",
+  "summary": "A two-metre-tall Carthaen swordswoman of Clan Esw Sweydyr, a clan described as muscular and very tall, with silver hair braided with pearls or beads. She wields the sabre Barbarisater and is Ravenor's lover until she dies on Lethe Eleven.",
+  "evidence": [
+   {
+    "claim": "two-metre swordswoman; silver hair braided with pearls; Barbarisater; Carthaen clan muscular and very tall",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Arianhrod_Esw_Sweydyr"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "arnault-tantalid",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "power-armour"
+  ],
+  "carries": [
+   "sword"
+  ],
+  "palette": [
+   "#d4af37"
+  ],
+  "described": "partial",
+  "summary": "A fanatical witch-hunter and former Confessor Militant who fights bareheaded in gilded power armour fitted with a mirror shield and psi-dampers. He wields the ancient chainsword Theophantus.",
+  "evidence": [
+   {
+    "claim": "gilded power armour, no helmet; mirror shield and psi-dampers; chainsword Theophantus",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Arnaut_Tantalid"
+   },
+   {
+    "claim": "gun-toting, power-armoured clergyman",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "balthus-blackwards",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "average",
+  "skin": "unknown",
+  "hair": {
+   "color": "none",
+   "style": "bald"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "robes"
+  ],
+  "carries": [],
+  "palette": [
+   "#1b2a5c",
+   "#c9a227"
+  ],
+  "described": "partial",
+  "summary": "Head of the Blackwards merchant dynasty, called the 'Young Master'. He is of average build and bald, and wears a dark blue robe with a gold collar.",
+  "evidence": [
+   {
+    "claim": "average build, bald, dark blue robe with gold collar",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Balthus_Blackwards"
+   },
+   {
+    "claim": "referred to as the 'young master'",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Blackwards"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "bartol-siskind",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "Shipmaster of the Allure and minor Cognitae-descended trader; no physical description found.",
+  "evidence": [
+   {
+    "claim": "master of the Allure, Cognitae third generation",
+    "source": "research/raw_ravenor/src2.txt; web search summary of Lexicanum"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "bastian-verveuk",
+  "form": "human",
+  "sex": "male",
+  "age": "young",
+  "build": "average",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "short"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "A newly elevated inquisitor of about 32, a youth of medium stature with a fresh face, an undercut hairstyle and earnest, hooded eyes. His expression wavers between yearning and spiritual rapture. After he dies, Cherubael is bound into his body.",
+  "evidence": [
+   {
+    "claim": "youth of medium stature, fresh face, undercut hairstyle, sincere hooded eyes",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Bastian_Verveuk"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "beldame-sadia",
+  "form": "human",
+  "sex": "female",
+  "age": "ancient",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "black",
+   "glow": false
+  },
+  "marks": [
+   "veil"
+  ],
+  "attire": [
+   "finery"
+  ],
+  "carries": [],
+  "palette": [
+   "#111111"
+  ],
+  "described": "well",
+  "summary": "A centuries-old xenophile whose destroyed legs were replaced by a chassis of eight hooked, bionic spider legs. She wears a black gauze dress and veil that make her look wrapped in cobwebs, and has entirely black eyes. Augmetic fangs and venom sacs in her cheeks let her spit corrosive poison.",
+  "evidence": [
+   {
+    "claim": "legs destroyed 150 years before Eisenhorn's birth; carriage with eight spider-like legs; augmetic fangs, venom sacs",
+    "source": "research/raw/lexc/Beldame_Sadia.txt"
+   },
+   {
+    "claim": "black gauze dress and veil like cobwebs; completely black eyes; eight hooked bionic legs",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Beldame_Sadia"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "connort-timurlin",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [
+   "sword"
+  ],
+  "palette": [],
+  "described": "none",
+  "summary": "A Cognitae perfecti assassin who summons a 'blinkblade' sword from a pocket of extimate space and can swat a bullet out of the air. No physical description was found.",
+  "evidence": [
+   {
+    "claim": "keeps a sword called a blinkblade in a pocket dimension",
+    "source": "research/raw_appearance/beq_rev11.txt"
+   },
+   {
+    "claim": "Cognitae perfecti in Mordaunt's service",
+    "source": "research/raw_bequin/fr_Penitent.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "constant-shadrake",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "A drunken, stammering painter who sees his models through a warp-tainted 'sighting glass', a lens he carries in his pocket. He keeps a house key in his coat pocket. Beyond that, no description of his looks was found.",
+  "evidence": [
+   {
+    "claim": "'the drunken artist'; key from his coat pocket; 'heartfelt stammer'; sighting glass in his pockets",
+    "source": "research/raw_appearance/beq_shewhothirsts_teke.md"
+   },
+   {
+    "claim": "no appearance details on the German Lexicanum page",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Constant_Shadrake"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "crezia-berschilde",
+  "form": "human",
+  "sex": "female",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "No physical description found. She is a professor of anatomy and surgeon at Ravello on Gudrun, and Eisenhorn's former lover, who gave him his replacement hand.",
+  "evidence": [
+   {
+    "claim": "role only, no appearance",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "cynia-preest",
+  "form": "human",
+  "sex": "female",
+  "age": "older",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "blonde",
+   "style": "short"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [
+   "augmetic-cranial"
+  ],
+  "attire": [
+   "bodyglove",
+   "robes"
+  ],
+  "carries": [],
+  "palette": [
+   "#c9a227",
+   "#8b1a1a"
+  ],
+  "described": "well",
+  "summary": "284-year-old shipmistress described as both robust and thin, matronly; bleached hair spiked up, heavy mascara and big dangling earrings, a golden bodysuit under a red velvet robe, and fine circuitry running across the left side of her face.",
+  "evidence": [
+   {
+    "claim": "age 284, robust yet thin and matronly; golden bodysuit under red velvet robe; bleached spiked hair; heavy mascara, large dangling earrings; fine circuitry on left side of face (cites Ravenor ch.1)",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Cynia_Preest (read via web search summary; direct fetch blocked)"
+   },
+   {
+    "claim": "'kind of hot but super old, 200+ years'",
+    "source": "https://1d6chan.miraheze.org/wiki/Gideon_Ravenor (via research/raw_ravenor grep)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "darra-voriet",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "slight",
+  "skin": "unknown",
+  "hair": {
+   "color": "blonde",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "bodyglove",
+   "armour-light"
+  ],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "A handsome, blond, slim Ordo Hereticus interrogator of average height. Under his disguises he wears an armoured bodyglove, and he carries a 'Salinter' weapon (its type is not specified).",
+  "evidence": [
+   {
+    "claim": "handsome, blond, slim, average height; armoured bodysuit under disguises; carried a Salinter",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Voriet"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "esarhaddon",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "slight",
+  "skin": "unknown",
+  "hair": {
+   "color": "black",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "An alpha-plus rogue psyker described as a tall, wiry man with wild black hair. Escaped psykers carry an Ordo Malleus brand on the ankle.",
+  "evidence": [
+   {
+    "claim": "tall, wiry man with wild black hair",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Esarhaddon"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "feaver-skoh",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "Xenos hunter running a family game-hunting business; no physical description found.",
+  "evidence": [
+   {
+    "claim": "xenos hunter, brother Fernan",
+    "source": "research/raw_ravenor/src2.txt (lonepilgrim synopsis)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "gall-ballack",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "white",
+   "style": "long"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [
+   "augmetic-arm"
+  ],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "Interrogator and Cognitae mole marked by long white hair framing his face; after Angharad cuts off his hand he wears an augmetic replacement hiding a one-shot laspistol.",
+  "evidence": [
+   {
+    "claim": "much mention of his white hair (White Hair, Black Heart); hand hacked off and replaced with a cybernetic prosthetic",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   },
+   {
+    "claim": "face framed by long white hair at introduction",
+    "source": "Ravenor Rogue novel text, as quoted in web search result snippets (not independently fetched)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "girolamo-malahite",
+  "form": "human",
+  "sex": "male",
+  "age": "older",
+  "build": "slight",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "blue",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "robes"
+  ],
+  "carries": [],
+  "palette": [
+   "#111111"
+  ],
+  "described": "partial",
+  "summary": "A heretic archaeoxenologist, strong and well built in his youth but thin and emaciated by 240.M41, with watery blue eyes and black robes.",
+  "evidence": [
+   {
+    "claim": "once strong and well built, thin and emaciated in 240.M41; watery blue eyes; black robes",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Girolamo_Malahite"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "iosob",
+  "form": "human",
+  "sex": "female",
+  "age": "young",
+  "build": "slight",
+  "skin": "pale",
+  "hair": {
+   "color": "blonde",
+   "style": "cropped"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "hood"
+  ],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "Hooded Wych House housekeeper who turns out to be a girl barely into adolescence, with a thin, pale face fringed by cropped blonde hair and grazed, bleeding fingers clutching her key.",
+  "evidence": [
+   {
+    "claim": "hooded; a young girl barely into adolescence; thin pale face fringed by cropped blonde hair",
+    "source": "Ravenor Rogue novel text, as quoted in web search result snippets (not independently fetched)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "kizary-thekla",
+  "form": "human",
+  "sex": "unknown",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "Rogue trader captain of the Oktober Country; no physical description found.",
+  "evidence": [
+   {
+    "claim": "rogue trader, Oktober Country",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Oktober_Country_(Schiff) (read via web search summary; direct fetch blocked)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "leyla-slade",
+  "form": "human",
+  "sex": "female",
+  "age": "young",
+  "build": "athletic",
+  "skin": "unknown",
+  "hair": {
+   "color": "blonde",
+   "style": "short"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [
+   "pistol"
+  ],
+  "palette": [],
+  "described": "partial",
+  "summary": "Culzean's off-world bodyguard: a tall young woman built like a swimmer, with short fair hair and a hard, unforgiving face; carries a Hecuter 5 pistol (including daemon-summoning rounds).",
+  "evidence": [
+   {
+    "claim": "off-world girl, tall, swimmer's build, short fair hair, hard unforgiving expression; her Hecuter 5",
+    "source": "research/raw_appearance/rav_polaris_raveodpad.htm (http://www.polarissf.cz/souborPOLAR/raveodpad.htm, Czech excerpt of Ravenor Rogue)"
+   },
+   {
+    "claim": "magazine of daemon-summoning handgun bullets",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "lilean-chase",
+  "form": "human",
+  "sex": "female",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [
+   "book"
+  ],
+  "palette": [],
+  "described": "none",
+  "summary": "The long-dead founder of the Cognitae, who appears only through her encrypted commonplace book. Neither novel describes her physically. The book is listed under 'carries' as her emblem.",
+  "evidence": [
+   {
+    "claim": "witch and founder of the Cognitae, killed long before; no appearance given",
+    "source": "research/raw_appearance/beq_delex_Lilean_Chase.md"
+   },
+   {
+    "claim": "her encoded book is a plot object in Penitent",
+    "source": "research/raw_bequin/jm_pen2.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "lomer-kinsky",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "Powerful, crude Ministry psyker; no physical description found in accessible sources.",
+  "evidence": [
+   {
+    "claim": "powerful psyker; neck snapped by Frauka",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "lores-vibben",
+  "form": "human",
+  "sex": "female",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "No physical description found. She is an ex-ganger from Tornish, Eisenhorn's bodyguard, who gang-marked his stub pistol with an ivory skull-and-rose grip and is killed on Hubris in chapter 1 of Xenos.",
+  "evidence": [
+   {
+    "claim": "ex-ganger from Tornish; gang-marked pistol; dies on Hubris",
+    "source": "https://wh40k.lexicanum.com/wiki/Gregor_Eisenhorn (via search summary)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "lyko",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "No physical description found. He is the traitor Ordo Malleus inquisitor who smuggles Esarhaddon off Thracian Primaris and is killed on Eechan.",
+  "evidence": [
+   {
+    "claim": "role only, no appearance",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Lyko"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "madsen",
+  "form": "human",
+  "sex": "female",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "Lusinda Madsen, Ministry tech-adept and code writer leading the team; no physical description found.",
+  "evidence": [
+   {
+    "claim": "tech-adept; she; throat slit by Kys",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   },
+   {
+    "claim": "first name Lusinda",
+    "source": "Ravenor novel text, as quoted in web search result snippets (not independently fetched)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "marla-tarray",
+  "form": "human",
+  "sex": "female",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "No physical description found. She is Pontius Glaw's psyker daughter and his intermediary with the Vessorine Janissaries, killed by the warp vortex in Hereticus.",
+  "evidence": [
+   {
+    "claim": "role only, no appearance",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Vessorine_Janissaries"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "murdin-eyclone",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [
+   "tattoos-body"
+  ],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "A Chaos 'facilitator' whose body shows Chaos cult tattoos, including the Seraph of Laoacus and the Buboe Chaotica, plus traces of removed tattoos marking his shifting allegiances. He hides a metallic worm under one fingernail.",
+  "evidence": [
+   {
+    "claim": "tattoos removed to mark shifting allegiances; metallic worm under fingernail",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   },
+   {
+    "claim": "tattooed Seraph of Laoacus and Buboe Chaotica as loyalty marks",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Murdin_Eyclone"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "nathun-inshabel",
+  "form": "human",
+  "sex": "male",
+  "age": "young",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "blonde",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "An interrogator (born c.314.M41, so in his twenties in Malleus) whose only described feature is thick blond hair.",
+  "evidence": [
+   {
+    "claim": "thick blond hair; born ~314.M41",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Nathun_Inshabel"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "neve",
+  "form": "human",
+  "sex": "female",
+  "age": "old",
+  "build": "heavy",
+  "skin": "pale",
+  "hair": {
+   "color": "grey",
+   "style": "tied"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "violet",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "armour-light"
+  ],
+  "carries": [
+   "staff"
+  ],
+  "palette": [],
+  "described": "well",
+  "summary": "A short, stocky Cadian inquisitor-general in her late 110s, with grey-white hair gathered in a bag at the nape and the typical Cadian violet pupils and pale skin. She limps on an ornate silver crutch, and in the field wears Cadian mesh armour and carries a lift-assist cane with a built-in grenade launcher.",
+  "evidence": [
+   {
+    "claim": "small stocky woman, grey-white hair tied at nape; violet pupils, pale skin; silver ornate crutch; mesh armour and grenade-launcher cane (Malleus ch.12, 14)",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Neve"
+   },
+   {
+    "claim": "bad limp, crutch, lift-assist cane with grenade launcher; late 110s",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "oberon-glaw",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "No physical description found. He is the patriarch of House Glaw on Gudrun, killed on KCX-1288.",
+  "evidence": [
+   {
+    "claim": "role only, no appearance",
+    "source": "research/raw/lexc/Oberon_Glaw.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "phlebas-alessandro-rorken",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "robes"
+  ],
+  "carries": [],
+  "palette": [
+   "#9b111e",
+   "#111111"
+  ],
+  "described": "partial",
+  "summary": "In Xenos the Lord Inquisitor sits on a marble throne in simple crimson robes over black clothes and gloves, with no ornament but a gold signet ring of office. Cherubs roost in his chambers.",
+  "evidence": [
+   {
+    "claim": "simple robes of crimson over black clothing and gloves; gold signet ring",
+    "source": "https://www.blacklibrary.com/downloads/product/pdf/x/xenos.pdf (via search summary)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "prophaniti",
+  "form": "daemonhost",
+  "sex": "unknown",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "Quixos's second daemonhost. The only physical detail found is that its host body bleeds glowing white ichor. It catches bolter rounds bare-handed and jumps into Duj Husmaan's body when its host is destroyed.",
+  "evidence": [
+   {
+    "claim": "host body bleeds glowing white ichor",
+    "source": "research/raw_appearance/tvt_eisenhorn_chars.txt"
+   },
+   {
+    "claim": "no appearance description; takes Husmaan's body",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Prophaniti"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "sadoth-xarbia",
+  "form": "astartes",
+  "sex": "male",
+  "age": "older",
+  "build": "massive",
+  "skin": "unknown",
+  "hair": {
+   "color": "grey",
+   "style": "long"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "black",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "power-armour"
+  ],
+  "carries": [
+   "staff"
+  ],
+  "palette": [
+   "#1b1f4a"
+  ],
+  "described": "partial",
+  "summary": "A Night Lord sorcerer of the Immaterial College who fights bareheaded. He has a haggard, gleeful face, long tousled grey hair, black-on-black eyes, a dark pointed tongue and an icy, hissing voice. Psychic wings of skeletal red light, bat-like in one summary, spread from him like a billowing cloak. He wields a 'saintie', a staff weapon with a spear blade and mace head; one French summary instead says lightning claws and a bolter.",
+  "evidence": [
+   {
+    "claim": "no helmet; haggard gleeful face; long tousled grey hair; black-on-black eyes; wings of skeletal red light; saintie (spear blade + mace head)",
+    "source": "Penitent text excerpt surfaced by web search (unofficial host dan-abnett.freenovelread.com/page,26,600063-penitent)"
+   },
+   {
+    "claim": "Night Lords (VIII Legion) sorcerer with psychically generated bat wings; lightning claws and bolter",
+    "source": "research/raw_bequin/fr_Penitent.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "scarpac",
+  "form": "astartes",
+  "sex": "male",
+  "age": "unknown",
+  "build": "massive",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "power-armour"
+  ],
+  "carries": [
+   "sword"
+  ],
+  "palette": [
+   "#8b0f1a"
+  ],
+  "described": "partial",
+  "summary": "A Word Bearers champion, one of 'three crimson brutes'. Seen in his true form he is 'grotesque and beautiful', and he moves with brute, tank-like fury. He wields a single heavy cursed blade, and one punch from him kills Shadrake.",
+  "evidence": [
+   {
+    "claim": "Scarpac's true form 'grotesque and beautiful'",
+    "source": "research/raw_appearance/beq_shewhothirsts_teke.md"
+   },
+   {
+    "claim": "'the three crimson brutes'; one heavy cursed blade; brute fury 'like tanks or charging aurochs'; huge fist",
+    "source": "research/raw_appearance/beq_shewhothirsts_teke.md"
+   },
+   {
+    "claim": "leader of the Word Bearers group",
+    "source": "research/raw_bequin/fr_Pariah.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "senefuru-of-tizca",
+  "form": "astartes",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "A powerful Thousand Sons psyker who leads the Immaterial College and binds its members together with sorcery. No physical description was found.",
+  "evidence": [
+   {
+    "claim": "leader of the Collegia, powerful psyker of the XV Legion (Thousand Sons)",
+    "source": "research/raw_bequin/fr_Penitent.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "thaddeus-saur",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "heavy",
+  "skin": "unknown",
+  "hair": {
+   "color": "white",
+   "style": "unknown"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "armour-light"
+  ],
+  "carries": [
+   "sword"
+  ],
+  "palette": [
+   "#5e1414"
+  ],
+  "described": "well",
+  "summary": "The Maze Undue's weapons-master: tall and stocky, clean-shaven, with a flat nose, small heavy-lidded eyes and snow-white hair. He usually wears a dark-red armoured suit with matching boots and gloves, and he is skilled with the cutro (a short blade).",
+  "evidence": [
+   {
+    "claim": "tall and stocky, clean-shaven, flat nose, small heavy-lidded eyes, snow-white hair; dark red armoured suit, boots, gloves; skilled with the cutro (Pariah ch. 3)",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Thaddeus_Saur"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "brass-thief",
+  "form": "construct",
+  "sex": "unknown",
+  "age": "unknown",
+  "build": "slight",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [
+   "mask"
+  ],
+  "attire": [
+   "helmet",
+   "armour-heavy"
+  ],
+  "carries": [
+   "sword"
+  ],
+  "palette": [
+   "#c9a227",
+   "#b5a642"
+  ],
+  "described": "well",
+  "summary": "Daemon bound into a clockwork body unfolded from a small gold-and-silver pyramid: thin, sheathed in segmented gold and brass plates, faceless save for eye slits in a high-crested helm, with 'rhyming swords' deploying from its forearms.",
+  "evidence": [
+   {
+    "claim": "'thin, wrapped in segmented plates of gold and brass, faceless but for eye slits in the high-crested helm'",
+    "source": "http://heresy-legions.blogspot.com/2009/07/brass-thief.html (search summary quoting Ravenor Returned)"
+   },
+   {
+    "claim": "bound to a small gold and silver pyramid that unfolds into an armoured body; rhyming swords deploy from its forearms",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "the-saruthi",
+  "form": "xenos",
+  "sex": "unknown",
+  "age": "unknown",
+  "build": "massive",
+  "skin": "grey",
+  "hair": {
+   "color": "none",
+   "style": "bald"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [
+   "#8a8a8a",
+   "#c0c0c0",
+   "#3fa9ff"
+  ],
+  "described": "well",
+  "summary": "Arachnoid or crustacean aliens about two metres tall and twice a man's mass, with five limbs set irregularly around a flat grey body and an oblate head on a thick boneless neck. They have no eyes or ears and walk on silver stilts that add a metre. They can interlace their fingers into an uncanny human face, bleed grey ichor and project electric-blue energy around the head. Their slave caste is bloated, with wrinkled, blotchy white skin.",
+  "evidence": [
+   {
+    "claim": "five limbs, flat grey body, oblate head on thick boneless neck, ~2 m, twice a man's mass, silver stilts, no optical organs, finger-face, grey ichor, electric-blue head field",
+    "source": "research/raw/lexc/Saruthi.txt"
+   },
+   {
+    "claim": "slaves sickly, bloated, wrinkled white blotchy skin",
+    "source": "research/raw/lexc/Saruthi.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "toros-revoke",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "gold",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "Trice's psyker enforcer, noted for stale yellow pupils; no other physical description found.",
+  "evidence": [
+   {
+    "claim": "his pupils are stale yellow",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "waltur-aulay",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "finery"
+  ],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "An Ordo Malleus inquisitor who has sunk into his cover as a famous engraver. He is a quiet, ink-stained man whose clothes show great wealth, and his hands shake from heavy drinking.",
+  "evidence": [
+   {
+    "claim": "ink-stained engraver, quiet; clothes showed wealth; hands shook; a hopeless lush",
+    "source": "Penitent text excerpt surfaced by web search (unofficial host readfrom.net/dan-abnett/600063-penitent.html)"
+   },
+   {
+    "claim": "Inquisitor of the Ordo Malleus posing as an engraver; became an alcoholic",
+    "source": "research/raw_appearance/beq_tvt_rve.md"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "ahenobarb",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "massive",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "Kinsky's burly 'brute minder', called 'the giant' in the narration; his fist leaves a huge bruise on Thonius's face.",
+  "evidence": [
+   {
+    "claim": "'the giant'; 'brute minder'",
+    "source": "Ravenor novel text, as quoted in web search result snippets (not independently fetched)"
+   },
+   {
+    "claim": "huge beatstick",
+    "source": "research/raw_ravenor/tvt_chars.txt (https://tvtropes.org/pmwiki/pmwiki.php/Characters/Ravenor)"
+   },
+   {
+    "claim": "burly minder",
+    "source": "research/raw_ravenor/src2.txt (lonepilgrim synopsis)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "bakunin",
+  "form": "human",
+  "sex": "unknown",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "No physical description found for the hololithographer of Sunsable's Fair in 'Backcloth for a Crown Additional'.",
+  "evidence": [
+   {
+    "claim": "no appearance data found in searched wikis",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Crucible_of_War_(Roman)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "brytnoth",
+  "form": "astartes",
+  "sex": "male",
+  "age": "unknown",
+  "build": "massive",
+  "skin": "pale",
+  "hair": {
+   "color": "none",
+   "style": "shaven"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "power-armour"
+  ],
+  "carries": [],
+  "palette": [
+   "#111111"
+  ],
+  "described": "partial",
+  "summary": "A Deathwatch Librarian, a shaven-headed giant even out of armour, with the sunken, colourless face of a man who lives inside a combat helmet. The kill-team wears black armour; off duty he wears plain black clothes. He gives Eisenhorn a matt-green bolt pistol.",
+  "evidence": [
+   {
+    "claim": "shaven-headed giant; sunken colourless face; plain black clothes; Deathwatch black armour",
+    "source": "https://onlinereadfreenovel.com/dan-abnett/p,27,68969-warhammer_-_eisenhorn_01_-_xenos_abnett_dan_read.html (via search summary)"
+   },
+   {
+    "claim": "Deathwatch Librarian of Cynewolf's kill-team; gave Eisenhorn a bolt pistol",
+    "source": "research/raw/lexc/Brytnoth.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "crookley",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "slight",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "A celebrated, dissolute poet who holds court at the Lengmur Salon. Eisenhorn says he is taller than a heavyset man Bequin mistakes for him, with 'less meat on him'. In other words, he is tall and lean.",
+  "evidence": [
+   {
+    "claim": "'Crookley is taller, less meat on him' (vs a heavyset man)",
+    "source": "research/raw_appearance/beq_bl_extract_penitent.txt"
+   },
+   {
+    "claim": "'odious and dissolute'",
+    "source": "Penitent text excerpt surfaced by web search (unofficial host readfrom.net/dan-abnett/page,3,600063-penitent.html)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "duboe",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "Carnivora flect supplier, seen after capture as haggard and blood-flecked in chain binders; no further description.",
+  "evidence": [
+   {
+    "claim": "'haggard and blood-flecked', chain binders",
+    "source": "Ravenor novel text, as quoted in web search result snippets (not independently fetched)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "ebon-nastrand",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "average",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "robes"
+  ],
+  "carries": [
+   "book"
+  ],
+  "palette": [],
+  "described": "partial",
+  "summary": "'The Secretary', head of the Maze Undue: an unremarkable man of average height and build with ordinary hair and indifferent eyes. He wears dark robes, has a crackling cough and keeps a large, disordered book collection.",
+  "evidence": [
+   {
+    "claim": "average height and build, ordinary hair, indifferent eyes; dark robes; crackling cough; large disordered book collection",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Ebon_Nastrand"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "eleena-koi",
+  "form": "human",
+  "sex": "female",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "none",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "No physical description found. She is a Distaff blank who keeps Cherubael at bay at Jeganda and later joins Ravenor's retinue.",
+  "evidence": [
+   {
+    "claim": "role only, no appearance",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Jeganda"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "eskeen-hansaard",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "No physical description found for Urbitane's Minister of Security in 'Missing in Action'.",
+  "evidence": [
+   {
+    "claim": "role only, no appearance",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Missing_in_Action_(Kurzgeschichte)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "captain-estrum",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "No physical description found. He is the renegade Battlefleet Scarus captain serving House Glaw, shot by Eisenhorn on KCX-1288.",
+  "evidence": [
+   {
+    "claim": "role only, no appearance",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Estrum"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "faria",
+  "form": "human",
+  "sex": "unknown",
+  "age": "young",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "An older Maze Undue student who was a better shot than Beta and left the year before the story. In Penitent, an apparent clone of Faria appears among the uniformed officers in the City of Dust. No physical description was found, not even the character's sex.",
+  "evidence": [
+   {
+    "claim": "Corlam and Faria, older students who had left; better marksmanship",
+    "source": "Pariah ch. 2-3 text surfaced by web search (summary)"
+   },
+   {
+    "claim": "apparent clones of classmates Judika and Faria in the City of Dust",
+    "source": "research/raw_appearance/beq_lex_Beta_Bequin.md"
+   },
+   {
+    "claim": "clone pariahs in officers' uniforms in the City of Dust",
+    "source": "research/raw_bequin/fr_Penitent.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "inquisitor-fenx",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "armour-light"
+  ],
+  "carries": [],
+  "palette": [
+   "#111111"
+  ],
+  "described": "partial",
+  "summary": "Inquisitor introduced as the man in black body armour; no face or hair details found.",
+  "evidence": [
+   {
+    "claim": "'The man in the black body armour' at his introduction",
+    "source": "Ravenor Rogue novel text, as quoted in web search result snippets (not independently fetched)"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "javes-thysser",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "No physical description found. In the Malleus prologue, Cherubael spares this Ordo Xenos inquisitor after mistaking him for Eisenhorn.",
+  "evidence": [
+   {
+    "claim": "role only, no appearance",
+    "source": "research/raw/lexc/Javes_Thysser.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "lowink",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "No physical description found. He is Eisenhorn's astropath in Xenos, who dies after the auto-seance with Malahite.",
+  "evidence": [
+   {
+    "claim": "role only, no appearance",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Lowink"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "lupan",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "The formal, knowing shopkeeper ('Master Lupan') of the Blackwards Emporium, a shop of antique dolls, relics and weapons. No physical description was found.",
+  "evidence": [
+   {
+    "claim": "shopkeeper of the Blackwards emporium (Pariah ch. 8, 17)",
+    "source": "https://www.bookey.app/book/pariah"
+   },
+   {
+    "claim": "Lupan, go-between of the Emporium (Pariah p.41, French ed.)",
+    "source": "research/raw_appearance/beq_frlex_Paria_Roman.md"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "massimo-ricci",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "armour-heavy",
+   "helmet"
+  ],
+  "carries": [],
+  "palette": [],
+  "described": "partial",
+  "summary": "An Ordo Xenos inquisitor with proud, noble features. When he meets Eisenhorn he wears a hounskull helm that hides his face, finely made plate armour engraved with decoration, and gloves.",
+  "evidence": [
+   {
+    "claim": "hounskull helmet, fine engraved plate armour, gloves; proud noble features",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Massimo_Ricci"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "pontifex-urba",
+  "form": "human",
+  "sex": "male",
+  "age": "old",
+  "build": "heavy",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "priest-vestments",
+   "robes"
+  ],
+  "carries": [],
+  "palette": [
+   "#5b2a86",
+   "#c9a227"
+  ],
+  "described": "partial",
+  "summary": "The senile Pontifex of Sancour: a tall man whose fat body is held up by augmetic support systems. He wears violet silk vestments under a gold robe, with a tall gold mitre on his head. He rambles and talks to himself.",
+  "evidence": [
+   {
+    "claim": "tall, fat body carried by augmetic systems; violet silk vestment and gold robe over his office garments; tall gold mitre; distracted, talks to himself",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Urba"
+   },
+   {
+    "claim": "completely senile, sinking into madness with age",
+    "source": "research/raw_bequin/fr_Pariah.txt"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "raum-grumman",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "average",
+  "skin": "pale",
+  "hair": {
+   "color": "none",
+   "style": "shaven"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "violet",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [
+   "armour-light",
+   "long-coat",
+   "rosette"
+  ],
+  "carries": [],
+  "palette": [
+   "#6b4423",
+   "#2a3f6e",
+   "#c0c0c0"
+  ],
+  "described": "well",
+  "summary": "An average-looking Cadian with a slightly domed, shaved head, pale skin and violet pupils. He wears brown leather armour and a long blue twill coat, with his silver rosette pinned at the left breast.",
+  "evidence": [
+   {
+    "claim": "average man, slightly domed shaved head, pale skin, violet pupils; brown leather armour, long blue twill coat, silver rosette at left chest",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Raum_Grumman"
+   }
+  ],
+  "extras": []
+ },
+ {
+  "id": "urisel-glaw",
+  "form": "human",
+  "sex": "male",
+  "age": "unknown",
+  "build": "unknown",
+  "skin": "unknown",
+  "hair": {
+   "color": "unknown",
+   "style": "unknown"
+  },
+  "facialHair": "unknown",
+  "eyes": {
+   "color": "unknown",
+   "glow": false
+  },
+  "marks": [],
+  "attire": [],
+  "carries": [],
+  "palette": [],
+  "described": "none",
+  "summary": "No physical description found for the commander of the Glaw militia, captured by Eisenhorn during Pacification 505.",
+  "evidence": [
+   {
+    "claim": "role only, no appearance",
+    "source": "https://wh40k-de.lexicanum.com/wiki/Urisel_Glaw"
+   }
+  ],
+  "extras": []
+ }
+]
