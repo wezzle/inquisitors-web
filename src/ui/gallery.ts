@@ -2,10 +2,13 @@ import { appearanceById, characters, seriesOf } from '../data/codex';
 import { FACTIONS, FACTION_ORDER, SERIES, SERIES_ORDER, STATUS } from '../data/theme';
 import type { Faction, SeriesId } from '../data/types';
 import { DESCRIBED } from './likeness';
-import { portraitImg } from './likeness-img';
+import { hasPortrait, portraitImg } from './likeness-img';
 import { spoilers } from './spoilers';
 
 type Sort = 'significance' | 'name' | 'likeness';
+
+const DOSSIER_ICON =
+  '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 11h7M9 14.5h7M9 18h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 
 /** The Pict Archive: every soul's reconstructed likeness on one wall. */
 export class Gallery {
@@ -39,11 +42,12 @@ export class Gallery {
     document.body.appendChild(this.el);
     this.grid = this.el.querySelector('.g-grid')!;
     this.el.querySelector('.g-close')!.addEventListener('click', () => this.close());
+    // painted portraits open in the pict viewer (via data-pict); the dossier is a secondary action
     this.el.addEventListener('click', (e) => {
-      const card = (e.target as HTMLElement).closest('[data-id]') as HTMLElement | null;
-      if (card) {
+      const goto = (e.target as HTMLElement).closest<HTMLElement>('[data-goto]');
+      if (goto) {
         this.close();
-        this.onPick(card.dataset.id!);
+        this.onPick(goto.dataset.goto!);
       }
     });
     this.buildBar();
@@ -116,12 +120,18 @@ export class Gallery {
         if (!this.cache.has(c.id)) this.cache.set(c.id, portraitImg(c, look, 'thumb'));
         const veil = spoilers.isSpoiled(c);
         const mark = !veil ? STATUS[c.status].mark : '';
-        return `<button class="g-card imp-${c.importance}" data-id="${c.id}" style="--fc:${FACTIONS[c.faction].color}">
-          ${this.cache.get(c.id)}
+        const pict = hasPortrait(c.id)
+          ? `<button class="g-pict" data-pict="${c.id}" title="View portrait" aria-label="View portrait of ${c.name}">${this.cache.get(c.id)}</button>`
+          : `<button class="g-pict" data-goto="${c.id}" title="Open dossier" aria-label="Open dossier of ${c.name}">${this.cache.get(c.id)}</button>`;
+        return `<div class="g-card imp-${c.importance}" data-id="${c.id}" style="--fc:${FACTIONS[c.faction].color}">
+          <div class="g-frame">
+            ${pict}
+            <button class="g-goto" data-goto="${c.id}" title="Open dossier" aria-label="Open dossier of ${c.name}">${DOSSIER_ICON}</button>
+          </div>
           <span class="g-name">${c.name}${mark ? ` <i>${mark}</i>` : ''}</span>
           <span class="g-title">${c.title}</span>
           <span class="g-lv lv-${look?.described ?? 'none'}">${DESCRIBED[look?.described ?? 'none']}</span>
-        </button>`;
+        </div>`;
       })
       .join('');
     if (!list.length) this.grid.innerHTML = '<p class="g-empty">No souls match — or you have yet to meet them.</p>';

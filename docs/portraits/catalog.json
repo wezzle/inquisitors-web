@@ -5,11 +5,18 @@
     {
       "id": "gregor-eisenhorn",
       "name": "Gregor Eisenhorn",
-      "source": "docs/portraits/sources/gregor-eisenhorn.chatgpt-background-v2.png",
-      "prompt": "docs/portraits/gregor-eisenhorn-chatgpt-background-v2.prompt.txt",
+      "source": "docs/portraits/sources/gregor-eisenhorn.chatgpt-v4.png",
+      "prompt": "docs/portraits/gregor-eisenhorn-chatgpt-v4.prompt.txt",
       "faction": "inquisition",
       "background": "An austere Inquisitorial investigation office, entirely unlike the current cathedral. Dim amber-gold practical light from a shaded brass lamp; aged dark timber, distant shelves of closed case folios and sealed evidence boxes, one restrained Ordo insignia as a softly resolved background motif. Layered shadows and a warm dull-gold atmosphere indicate Inquisition allegiance. No arched cathedral, no skull-lined columns, no repeating candles. Keep the environment blurred and behind his shoulder silhouette.",
-      "previousSource": "docs/portraits/sources/gregor-eisenhorn.chatgpt.png"
+      "revisions": [
+        {
+          "source": "docs/portraits/sources/gregor-eisenhorn.chatgpt-background-v2.png",
+          "prompt": "docs/portraits/gregor-eisenhorn-chatgpt-background-v2.prompt.txt",
+          "previousSource": "docs/portraits/sources/gregor-eisenhorn.chatgpt.png",
+          "background": "An austere Inquisitorial investigation office, entirely unlike the current cathedral. Dim amber-gold practical light from a shaded brass lamp; aged dark timber, distant shelves of closed case folios and sealed evidence boxes, one restrained Ordo insignia as a softly resolved background motif. Layered shadows and a warm dull-gold atmosphere indicate Inquisition allegiance. No arched cathedral, no skull-lined columns, no repeating candles. Keep the environment blurred and behind his shoulder silhouette."
+        }
+      ]
     },
     {
       "id": "gideon-ravenor",
@@ -68,11 +75,23 @@
     {
       "id": "uber-aemos",
       "name": "Uber Aemos",
-      "source": "docs/portraits/sources/uber-aemos.chatgpt-background-v2.png",
-      "prompt": "docs/portraits/uber-aemos-chatgpt-background-v2.prompt.txt",
+      "source": "docs/portraits/sources/uber-aemos.chatgpt-v3.png",
+      "prompt": "docs/portraits/uber-aemos-chatgpt-v3.prompt.txt",
       "faction": "retinue",
       "background": "An Inquisitorial retinue research archive and cogitator alcove: stacked old books and folded star charts, dark shelves with varied depths, a recessed faint blue-cyan data-screen glow, one soft amber desk-lamp pool distant behind the shoulder. An eccentric scholarly workplace, not a cathedral and not a spaceship cockpit. Retinue-cyan technology accents within warm tobacco-brown library materials. No readable screen text or book titles, no extra characters, no new equipment attached to his spectacles.",
-      "previousSource": "docs/portraits/sources/uber-aemos.chatgpt.png"
+      "previousSource": "docs/portraits/sources/uber-aemos.chatgpt-background-v2.png",
+      "revisions": [
+        {
+          "source": "docs/portraits/sources/uber-aemos.chatgpt-background-v2.png",
+          "prompt": "docs/portraits/uber-aemos-chatgpt-background-v2.prompt.txt",
+          "previousSource": "docs/portraits/sources/uber-aemos.chatgpt.png",
+          "background": "An Inquisitorial retinue research archive and cogitator alcove: stacked old books and folded star charts, dark shelves with varied depths, a recessed faint blue-cyan data-screen glow, one soft amber desk-lamp pool distant behind the shoulder. An eccentric scholarly workplace, not a cathedral and not a spaceship cockpit. Retinue-cyan technology accents within warm tobacco-brown library materials. No readable screen text or book titles, no extra characters, no new equipment attached to his spectacles."
+        }
+      ],
+      "revisionNotes": "docs/portraits/revisions-2026-10-09.md",
+      "references": [
+        "docs/portraits/sources/uber-aemos.chatgpt-background-v2.png"
+      ]
     },
     {
       "id": "medea-betancore",
@@ -249,12 +268,24 @@
       "id": "tobias-maxilla",
       "name": "Tobias Maxilla",
       "faction": "retinue",
-      "source": "docs/portraits/sources/tobias-maxilla.chatgpt.png",
-      "prompt": "docs/portraits/tobias-maxilla-chatgpt.prompt.txt",
+      "source": "docs/portraits/sources/tobias-maxilla.chatgpt-v2.png",
+      "prompt": "docs/portraits/tobias-maxilla-chatgpt-v2.prompt.txt",
       "background": "a private voidship bridge with a dim star field, weathered navigation instruments and softly resolved heavy framing",
       "whole": false,
       "interpretive": true,
-      "described": "well"
+      "described": "well",
+      "revisions": [
+        {
+          "source": "docs/portraits/sources/tobias-maxilla.chatgpt.png",
+          "prompt": "docs/portraits/tobias-maxilla-chatgpt.prompt.txt",
+          "background": "a private voidship bridge with a dim star field, weathered navigation instruments and softly resolved heavy framing"
+        }
+      ],
+      "previousSource": "docs/portraits/sources/tobias-maxilla.chatgpt.png",
+      "revisionNotes": "docs/portraits/revisions-2026-10-09.md",
+      "references": [
+        "docs/portraits/sources/tobias-maxilla.chatgpt.png"
+      ]
     },
     {
       "id": "wystan-frauka",
@@ -425,12 +456,24 @@
       "id": "geard-bure",
       "name": "Geard Bure",
       "faction": "imperial",
-      "source": "docs/portraits/sources/geard-bure.chatgpt.png",
-      "prompt": "docs/portraits/geard-bure-chatgpt.prompt.txt",
-      "background": "an Adeptus Mechanicus forge laboratory, layered old brass machinery and low instrument light",
+      "source": "docs/portraits/sources/geard-bure.chatgpt-v2.png",
+      "prompt": "docs/portraits/geard-bure-chatgpt-v2.prompt.txt",
+      "background": "A materials-science laboratory with workbench, metal samples, precision tools, microscope-like apparatus and subdued silver-blue instrument panels.",
       "whole": false,
       "interpretive": true,
-      "described": "none"
+      "described": "none",
+      "revisions": [
+        {
+          "source": "docs/portraits/sources/geard-bure.chatgpt.png",
+          "prompt": "docs/portraits/geard-bure-chatgpt.prompt.txt",
+          "background": "an Adeptus Mechanicus forge laboratory, layered old brass machinery and low instrument light"
+        }
+      ],
+      "previousSource": "docs/portraits/sources/geard-bure.chatgpt.png",
+      "revisionNotes": "docs/portraits/revisions-2026-10-09.md",
+      "references": [
+        "docs/portraits/sources/geard-bure.chatgpt.png"
+      ]
     },
     {
       "id": "gorgone-locke",

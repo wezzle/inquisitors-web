@@ -30,7 +30,7 @@ export function mountFilters(world: World) {
     $('f-progress-caption').textContent =
       spoilers.progress === books.length - 1
         ? 'All volumes read — every soul and fate revealed'
-        : `Read through ${last.title} — later souls hidden, fates veiled`;
+        : `Up to and including ${last.title} — later souls hidden, fates veiled`;
     facEl.querySelectorAll<HTMLButtonElement>('[data-faction]').forEach((b) => b.classList.toggle('off', !f.factions.has(b.dataset.faction as never)));
     bondEl.querySelectorAll<HTMLButtonElement>('[data-bond]').forEach((b) => b.classList.toggle('off', !f.bonds.has(b.dataset.bond as never)));
     $('f-importance-caption').textContent =

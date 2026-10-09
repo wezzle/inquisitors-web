@@ -13,7 +13,7 @@
       "wait": 400
     },
     {
-      "eval": "(async()=>{const imgs=[...document.querySelectorAll('.g-card img.pict')]; imgs.forEach(i=>i.loading='eager'); const failures=await Promise.all(imgs.map(i=>i.decode().then(()=>null,()=>i.getAttribute('src')))); const out={cards:document.querySelectorAll('.g-card').length,painted:imgs.length,svg:document.querySelectorAll('.g-card svg').length,failed:failures.filter(Boolean)}; if(out.cards!==102||out.painted!==102||out.svg!==0||out.failed.length)throw new Error(JSON.stringify(out)); return out;})()"
+      "eval": "(async()=>{const imgs=[...document.querySelectorAll('.g-card img.pict')]; imgs.forEach(i=>i.loading='eager'); const failures=await Promise.all(imgs.map(i=>i.decode().then(()=>null,()=>i.getAttribute('src')))); const out={cards:document.querySelectorAll('.g-card').length,painted:imgs.length,svg:document.querySelectorAll('.g-pict svg').length,failed:failures.filter(Boolean)}; if(out.cards!==102||out.painted!==102||out.svg!==0||out.failed.length)throw new Error(JSON.stringify(out)); return out;})()"
     },
     {
       "shot": "docs/portraits/app-complete.jpg"
@@ -25,13 +25,13 @@
       "wait": 200
     },
     {
-      "eval": "JSON.stringify({daemonCards:document.querySelectorAll('.g-card').length,daemonSVGs:document.querySelectorAll('.g-card svg').length})"
+      "eval": "JSON.stringify({daemonCards:document.querySelectorAll('.g-card').length,daemonSVGs:document.querySelectorAll('.g-pict svg').length})"
     },
     {
       "shot": "docs/portraits/app-daemons.jpg"
     },
     {
-      "eval": "document.querySelector('[data-g=\"faction\"] [data-v=\"all\"]').click();document.querySelector('.g-card[data-id=\"gregor-eisenhorn\"]').click();document.querySelector('[data-pict=\"gregor-eisenhorn\"]').focus();document.querySelector('[data-pict=\"gregor-eisenhorn\"]').click()"
+      "eval": "document.querySelector('[data-g=\"faction\"] [data-v=\"all\"]').click();document.querySelector('[data-goto=\"gregor-eisenhorn\"]').click();document.querySelector('[data-pict=\"gregor-eisenhorn\"]').focus();document.querySelector('[data-pict=\"gregor-eisenhorn\"]').click()"
     },
     {
       "wait": 500

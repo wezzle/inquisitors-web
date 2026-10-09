@@ -242,7 +242,7 @@ export class Dossier {
         ${record}
         ${likeness}
         ${c.fate ? `<div class="d-sec"><h4>Fate</h4><div class="d-fate" data-spoiler>${esc(c.fate)}</div></div>` : ''}
-        ${c.wargear ? `<div class="d-sec"><h4>Wargear &amp; effects</h4><p class="d-text plain" style="font-size:14.5px">${esc(c.wargear)}</p></div>` : ''}
+        ${c.wargear ? `<div class="d-sec"><h4>Wargear &amp; effects</h4><p class="d-text plain" style="font-size:calc(14.5 * var(--fs))">${esc(c.wargear)}</p></div>` : ''}
         ${c.traits.length ? `<div class="d-sec"><h4>Marks</h4><div class="d-tags">${c.traits.map((t) => `<span>${esc(t)}</span>`).join('')}</div></div>` : ''}
         ${assoc ? `<div class="d-sec"><h4>Known associates · ${bonds.length}</h4><div class="d-assoc">${assoc}</div></div>` : ''}
         <div class="d-hint">Shift-click another soul to trace the thread that binds them.</div>

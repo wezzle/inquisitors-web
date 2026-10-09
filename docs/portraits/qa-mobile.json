@@ -13,7 +13,7 @@
       "wait": 300
     },
     {
-      "eval": "document.querySelector('.g-card[data-id=\"beta-bequin\"]').click()"
+      "eval": "document.querySelector('[data-goto=\"beta-bequin\"]').click()"
     },
     {
       "wait": 300

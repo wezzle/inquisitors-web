@@ -27,7 +27,28 @@ import { Tour } from './ui/tour';
 const params = new URLSearchParams(location.search);
 const $ = (id: string) => document.getElementById(id)!;
 
-document.body.classList.add('pre');
+// Keep the boot screen up until the web fonts used on first paint have loaded (at most 1.5 s),
+// so nothing ever renders in a fallback face.
+const fontsReady = Promise.race([
+  Promise.all(
+    [
+      "12px 'Share Tech Mono'",
+      "48px 'UnifrakturMaguntia'",
+      "italic 16px 'IM Fell English'",
+      "16px 'IM Fell English'",
+      '400 14px Cinzel',
+      '600 14px Cinzel',
+    ].map((f) => document.fonts.load(f)),
+  ),
+  new Promise((r) => setTimeout(r, 1500)),
+]).catch(() => {});
+fontsReady.then(() => {
+  void document.body.offsetWidth; // flush styles so nothing transitions from its pre-CSS state
+  document.body.classList.remove('booting');
+  const boot = $('boot');
+  boot.classList.add('done');
+  setTimeout(() => boot.remove(), 600);
+});
 spoilers.load();
 const stage = new Stage($('stage'));
 const world = new World(stage);
@@ -402,8 +423,8 @@ const readSel = $('intro-read') as HTMLSelectElement;
 readSel.innerHTML = books
   .map((b, i) =>
     i === books.length - 1
-      ? `<option value="${i}">everything, through ${b.title}</option>`
-      : `<option value="${i}">up to ${b.title}${b.kind === 'short' ? ' (short story)' : ''}</option>`,
+      ? `<option value="${i}">${b.title} (everything)</option>`
+      : `<option value="${i}">${b.title}${b.kind === 'short' ? ' (short story)' : ''}</option>`,
   )
   .join('');
 readSel.value = String(spoilers.progress);
@@ -414,10 +435,10 @@ if (params.has('nointro')) {
   $('intro').style.display = 'none';
   begin(false);
 } else {
-  // time-based typewriter: robust to slow frames, ~3 s in total; click to skip
+  // time-based typewriter: robust to slow frames, ~3 s in total; click to skip. Starts once the boot screen lifts.
   const feed = $('intro-feed');
   const full = FEED.join('\n');
-  const t0 = performance.now() + 400;
+  let t0 = Infinity;
   const DURATION = 3200;
   let done = false;
   const finish = () => {
@@ -429,10 +450,15 @@ if (params.has('nointro')) {
     if (done) return;
     const k = Math.max(0, Math.min(1, (performance.now() - t0) / DURATION));
     if (k >= 1) return finish();
-    feed.innerHTML = full.slice(0, Math.floor(full.length * k)) + '<span class="cur">&nbsp;</span>';
+    const n = Math.floor(full.length * k);
+    // the untyped remainder, plus the final cursor line, stays in the layout (invisible) so the centred block never shifts
+    feed.innerHTML = full.slice(0, n) + '<span class="cur">&nbsp;</span><span class="rest">' + full.slice(n) + '\n<span class="cur">&nbsp;</span></span>';
     setTimeout(type, 30);
   };
-  type();
+  fontsReady.then(() => {
+    t0 = performance.now() + 400;
+    type();
+  });
   $('intro').addEventListener('click', (e) => {
     if (!done && !(e.target as HTMLElement).closest('button, select, label')) finish();
   });

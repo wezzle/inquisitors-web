@@ -9,9 +9,21 @@
     <meta property="og:title" content="The Inquisitor's Web" />
     <meta property="og:description" content="An interactive 3D codex of the characters of Dan Abnett's Eisenhorn, Ravenor, Pariah and Penitent." />
     <meta property="og:image" content="docs/web.jpg" />
+    <style>
+      /* Boot screen: shown before the app's CSS, JS and web fonts are ready. */
+      html, body { margin: 0; background: #07050a; }
+      body.booting > :not(#boot) { visibility: hidden !important; }
+      /* No transitions until the app reveals itself: elements snap to their initial (hidden) state as CSS arrives. */
+      body.booting *:not(#boot):not(#boot *) { transition: none !important; }
+      #boot { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; background: #07050a; transition: opacity 0.5s ease; }
+      #boot.done { opacity: 0; pointer-events: none; }
+      #boot div { width: 34px; height: 34px; border: 2px solid rgba(201, 162, 75, 0.2); border-top-color: #c9a24b; border-radius: 50%; animation: boot-spin 0.9s linear infinite; }
+      @keyframes boot-spin { to { transform: rotate(360deg); } }
+    </style>
     <title>The Inquisitor's Web — Eisenhorn · Ravenor · Bequin</title>
   </head>
-  <body>
+  <body class="pre booting">
+    <div id="boot" role="status" aria-label="Loading"><div></div></div>
     <div id="stage"></div>
     <div id="regions" class="regions"></div>
 
@@ -23,12 +35,12 @@
         <h1 class="intro-title"><span>The</span> Inquisitor's Web</h1>
         <p class="intro-sub">Dramatis personæ of the Eisenhorn, Ravenor &amp; Bequin chronicles of Dan Abnett</p>
         <div class="intro-progress">
-          <label for="intro-read">I have read</label>
+          <label for="intro-read">The last book I finished</label>
           <select id="intro-read"></select>
         </div>
-        <button id="intro-go" class="btn-gilt">Commence Inquisition</button>
-        <label class="intro-opt"><input type="checkbox" id="intro-sound" checked /> with ambient choir</label>
         <p class="intro-small">Souls you have yet to meet stay hidden, and fates beyond your reading are veiled. You can change this at any time under <em>Reading progress</em>.</p>
+        <button id="intro-go" class="btn-gilt">Commence Inquisition</button>
+        <label class="intro-opt"><input type="checkbox" id="intro-sound" /> with ambient choir</label>
       </div>
     </div>
 

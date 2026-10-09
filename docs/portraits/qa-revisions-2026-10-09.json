@@ -1,0 +1,103 @@
+{
+  "url": "http://127.0.0.1:5173/?nointro",
+  "width": 1400,
+  "height": 1000,
+  "steps": [
+    {
+      "wait": 1500
+    },
+    {
+      "eval": "document.querySelector('#btn-gallery').click()"
+    },
+    {
+      "wait": 250
+    },
+    {
+      "eval": "(async()=>{const ids=[\"gregor-eisenhorn\",\"tobias-maxilla\",\"uber-aemos\",\"geard-bure\"];return await Promise.all(ids.map(async id=>{const i=document.querySelector('.g-card[data-id=\"'+id+'\"] img.pict');i.loading='eager';await i.decode();if(i.naturalWidth!==240||i.naturalHeight!==300)throw Error('Invalid thumb '+id);return {id,src:i.getAttribute('src'),width:i.naturalWidth,height:i.naturalHeight};}));})()"
+    },
+    {
+      "eval": "document.querySelector('[data-pict=\"gregor-eisenhorn\"]').click()"
+    },
+    {
+      "wait": 200
+    },
+    {
+      "eval": "(async()=>{const v=document.querySelector('.pict-viewer'),i=v.querySelector('img');await i.decode();if(!v.open||i.naturalWidth!==800||i.naturalHeight!==1000||!i.getAttribute('src').includes('gregor-eisenhorn.webp'))throw Error('Invalid viewer gregor-eisenhorn');return {id:'gregor-eisenhorn',open:v.open,src:i.getAttribute('src'),width:i.naturalWidth,height:i.naturalHeight};})()"
+    },
+    {
+      "shot": "docs/portraits/app-revised-gregor-eisenhorn.jpg"
+    },
+    {
+      "key": "Escape"
+    },
+    {
+      "eval": "document.querySelector('#btn-gallery').click()"
+    },
+    {
+      "wait": 100
+    },
+    {
+      "eval": "document.querySelector('[data-pict=\"tobias-maxilla\"]').click()"
+    },
+    {
+      "wait": 200
+    },
+    {
+      "eval": "(async()=>{const v=document.querySelector('.pict-viewer'),i=v.querySelector('img');await i.decode();if(!v.open||i.naturalWidth!==800||i.naturalHeight!==1000||!i.getAttribute('src').includes('tobias-maxilla.webp'))throw Error('Invalid viewer tobias-maxilla');return {id:'tobias-maxilla',open:v.open,src:i.getAttribute('src'),width:i.naturalWidth,height:i.naturalHeight};})()"
+    },
+    {
+      "shot": "docs/portraits/app-revised-tobias-maxilla.jpg"
+    },
+    {
+      "key": "Escape"
+    },
+    {
+      "eval": "document.querySelector('#btn-gallery').click()"
+    },
+    {
+      "wait": 100
+    },
+    {
+      "eval": "document.querySelector('[data-pict=\"uber-aemos\"]').click()"
+    },
+    {
+      "wait": 200
+    },
+    {
+      "eval": "(async()=>{const v=document.querySelector('.pict-viewer'),i=v.querySelector('img');await i.decode();if(!v.open||i.naturalWidth!==800||i.naturalHeight!==1000||!i.getAttribute('src').includes('uber-aemos.webp'))throw Error('Invalid viewer uber-aemos');return {id:'uber-aemos',open:v.open,src:i.getAttribute('src'),width:i.naturalWidth,height:i.naturalHeight};})()"
+    },
+    {
+      "shot": "docs/portraits/app-revised-uber-aemos.jpg"
+    },
+    {
+      "key": "Escape"
+    },
+    {
+      "eval": "document.querySelector('#btn-gallery').click()"
+    },
+    {
+      "wait": 100
+    },
+    {
+      "eval": "document.querySelector('[data-pict=\"geard-bure\"]').click()"
+    },
+    {
+      "wait": 200
+    },
+    {
+      "eval": "(async()=>{const v=document.querySelector('.pict-viewer'),i=v.querySelector('img');await i.decode();if(!v.open||i.naturalWidth!==800||i.naturalHeight!==1000||!i.getAttribute('src').includes('geard-bure.webp'))throw Error('Invalid viewer geard-bure');return {id:'geard-bure',open:v.open,src:i.getAttribute('src'),width:i.naturalWidth,height:i.naturalHeight};})()"
+    },
+    {
+      "shot": "docs/portraits/app-revised-geard-bure.jpg"
+    },
+    {
+      "key": "Escape"
+    },
+    {
+      "eval": "document.querySelector('#btn-gallery').click()"
+    },
+    {
+      "wait": 100
+    }
+  ]
+}

@@ -65,7 +65,7 @@ const coreFragment = /* glsl */ `
   varying vec3 vN; varying vec3 vV; varying vec3 vP;
   ${NOISE}
   void main() {
-    float fres = pow(1.0 - max(dot(normalize(vN), normalize(vV)), 0.0), 2.2);
+    float fres = pow(1.0 - clamp(dot(normalize(vN), normalize(vV)), 0.0, 1.0), 2.2);
     float speed = uPsy > 0.5 ? 0.6 : 0.18;
     float n = fbm(vP * 1.8 + vec3(uSeed, uTime * speed, -uTime * speed * 0.7));
     vec3 base = uColor;

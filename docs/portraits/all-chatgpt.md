@@ -67,13 +67,13 @@ These scenes and unrecorded physical details are **artistic interpretations, not
 | Feaver Skoh | rogue | [WebP](../../public/portraits/feaver-skoh.webp) | [PNG](sources/feaver-skoh.chatgpt.png) | [Prompt](feaver-skoh-chatgpt.prompt.txt) |
 | Freddy Dance | civilian | [WebP](../../public/portraits/freddy-dance.webp) | [PNG](sources/freddy-dance.chatgpt.png) | [Prompt](freddy-dance-chatgpt.prompt.txt) |
 | Gall Ballack | heretic | [WebP](../../public/portraits/gall-ballack.webp) | [PNG](sources/gall-ballack.chatgpt.png) | [Prompt](gall-ballack-chatgpt.prompt.txt) |
-| Geard Bure | imperial | [WebP](../../public/portraits/geard-bure.webp) | [PNG](sources/geard-bure.chatgpt.png) | [Prompt](geard-bure-chatgpt.prompt.txt) |
+| Geard Bure | imperial | [WebP](../../public/portraits/geard-bure.webp) | [PNG](sources/geard-bure.chatgpt-v2.png) | [Prompt](geard-bure-chatgpt-v2.prompt.txt) |
 | Gideon Ravenor | inquisition | [WebP](../../public/portraits/gideon-ravenor.webp) | [PNG](sources/gideon-ravenor.chatgpt-background-v2.png) | [Prompt](gideon-ravenor-chatgpt-background-v2.prompt.txt) |
 | Girolamo Malahite | heretic | [WebP](../../public/portraits/girolamo-malahite.webp) | [PNG](sources/girolamo-malahite.chatgpt.png) | [Prompt](girolamo-malahite-chatgpt.prompt.txt) |
 | Godwyn Fischig | retinue | [WebP](../../public/portraits/godwyn-fischig.webp) | [PNG](sources/godwyn-fischig.chatgpt.png) | [Prompt](godwyn-fischig-chatgpt.prompt.txt) |
 | Golesh Heldane | inquisition | [WebP](../../public/portraits/golesh-heldane.webp) | [PNG](sources/golesh-heldane.chatgpt.png) | [Prompt](golesh-heldane-chatgpt.prompt.txt) |
 | Gorgone Locke | heretic | [WebP](../../public/portraits/gorgone-locke.webp) | [PNG](sources/gorgone-locke.chatgpt.png) | [Prompt](gorgone-locke-chatgpt.prompt.txt) |
-| Gregor Eisenhorn | inquisition | [WebP](../../public/portraits/gregor-eisenhorn.webp) | [PNG](sources/gregor-eisenhorn.chatgpt-background-v2.png) | [Prompt](gregor-eisenhorn-chatgpt-background-v2.prompt.txt) |
+| Gregor Eisenhorn | inquisition | [WebP](../../public/portraits/gregor-eisenhorn.webp) | [PNG](sources/gregor-eisenhorn.chatgpt-v4.png) | [Prompt](gregor-eisenhorn-chatgpt-v4.prompt.txt) |
 | Harlon Nayl | retinue | [WebP](../../public/portraits/harlon-nayl.webp) | [PNG](sources/harlon-nayl.chatgpt-background-v2.png) | [Prompt](harlon-nayl-chatgpt-background-v2.prompt.txt) |
 | Inquisitor Fenx | inquisition | [WebP](../../public/portraits/inquisitor-fenx.webp) | [PNG](sources/inquisitor-fenx.chatgpt.png) | [Prompt](inquisitor-fenx-chatgpt.prompt.txt) |
 | Iosob | civilian | [WebP](../../public/portraits/iosob.webp) | [PNG](sources/iosob.chatgpt.png) | [Prompt](iosob-chatgpt.prompt.txt) |
@@ -125,9 +125,9 @@ These scenes and unrecorded physical details are **artistic interpretations, not
 | The King in Yellow | heretic | [WebP](../../public/portraits/king-in-yellow.webp) | [PNG](sources/king-in-yellow.chatgpt.png) | [Prompt](king-in-yellow-chatgpt.prompt.txt) |
 | The Saruthi | xenos | [WebP](../../public/portraits/the-saruthi.webp) | [PNG](sources/the-saruthi.chatgpt.png) | [Prompt](the-saruthi-chatgpt.prompt.txt) |
 | Titus Endor | inquisition | [WebP](../../public/portraits/titus-endor.webp) | [PNG](sources/titus-endor.chatgpt.png) | [Prompt](titus-endor-chatgpt.prompt.txt) |
-| Tobias Maxilla | retinue | [WebP](../../public/portraits/tobias-maxilla.webp) | [PNG](sources/tobias-maxilla.chatgpt.png) | [Prompt](tobias-maxilla-chatgpt.prompt.txt) |
+| Tobias Maxilla | retinue | [WebP](../../public/portraits/tobias-maxilla.webp) | [PNG](sources/tobias-maxilla.chatgpt-v2.png) | [Prompt](tobias-maxilla-chatgpt-v2.prompt.txt) |
 | Toros Revoke | heretic | [WebP](../../public/portraits/toros-revoke.webp) | [PNG](sources/toros-revoke.chatgpt.png) | [Prompt](toros-revoke-chatgpt.prompt.txt) |
-| Uber Aemos | retinue | [WebP](../../public/portraits/uber-aemos.webp) | [PNG](sources/uber-aemos.chatgpt-background-v2.png) | [Prompt](uber-aemos-chatgpt-background-v2.prompt.txt) |
+| Uber Aemos | retinue | [WebP](../../public/portraits/uber-aemos.webp) | [PNG](sources/uber-aemos.chatgpt-v3.png) | [Prompt](uber-aemos-chatgpt-v3.prompt.txt) |
 | Urisel Glaw | heretic | [WebP](../../public/portraits/urisel-glaw.webp) | [PNG](sources/urisel-glaw.chatgpt.png) | [Prompt](urisel-glaw-chatgpt.prompt.txt) |
 | Waltur Aulay | inquisition | [WebP](../../public/portraits/waltur-aulay.webp) | [PNG](sources/waltur-aulay.chatgpt.png) | [Prompt](waltur-aulay-chatgpt.prompt.txt) |
 | Wystan Frauka | retinue | [WebP](../../public/portraits/wystan-frauka.webp) | [PNG](sources/wystan-frauka.chatgpt.png) | [Prompt](wystan-frauka-chatgpt.prompt.txt) |
@@ -135,7 +135,7 @@ These scenes and unrecorded physical details are **artistic interpretations, not
 | Zeph Mathuin | retinue | [WebP](../../public/portraits/zeph-mathuin.webp) | [PNG](sources/zeph-mathuin.chatgpt.png) | [Prompt](zeph-mathuin-chatgpt.prompt.txt) |
 | Zygmunt Molotch | heretic | [WebP](../../public/portraits/zygmunt-molotch.webp) | [PNG](sources/zygmunt-molotch.chatgpt.png) | [Prompt](zygmunt-molotch-chatgpt.prompt.txt) |
 
-For the first ten portraits, the selected prompt is a background-only edit; `catalog.json` also records the unchanged previous source. The first generation prompts remain beside the edit prompts. Every requested deliverable is retained locally.
+For the first ten portraits, the selected prompt is a background-only edit; `catalog.json` also records the unchanged previous source. Eisenhorn, Aemos, Maxilla and Geard Bure were later reworked; see the [revision notes](revisions-2026-10-09.md). The first generation prompts remain beside the edit prompts. Every requested deliverable is retained locally.
 
 ## Validation and publishing
 

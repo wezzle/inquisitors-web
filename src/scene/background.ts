@@ -39,7 +39,9 @@ export class Backdrop {
           vec3 q = d * 1.6 + vec3(t, -t * 0.6, t * 0.3);
           float warpN = fbm(q + fbm3(q * 1.7 + t) * (0.9 + uTurmoil * 0.8));
           float clouds = smoothstep(-0.15, 0.85, warpN);
-          float veins = pow(1.0 - abs(snoise(d * 4.0 + warpN * 2.0 + t * 2.0)), 9.0);
+          // pow() of a negative base is NaN on many GPUs, and bloom smears one NaN pixel into a black box:
+          // simplex noise can overshoot 1 slightly, so clamp the base.
+          float veins = pow(max(1.0 - abs(snoise(d * 4.0 + warpN * 2.0 + t * 2.0)), 0.0), 9.0);
           // palette: void black -> bruise violet -> blood -> tarnished gold veins
           vec3 col = vec3(0.006, 0.004, 0.012);
           col = mix(col, vec3(0.085, 0.022, 0.11), clouds);
@@ -47,7 +49,8 @@ export class Backdrop {
           col += vec3(0.5, 0.33, 0.12) * veins * clouds * 0.22;
           col += uTint * clouds * 0.25;
           // a dim band of galactic light along the ecliptic
-          float band = exp(-pow(d.y * 3.2 + warpN * 0.5, 2.0));
+          float bandX = d.y * 3.2 + warpN * 0.5;
+          float band = exp(-bandX * bandX);
           col += vec3(0.07, 0.05, 0.06) * band;
           col *= (0.5 + uTurmoil * 0.5);
           gl_FragColor = vec4(col, 1.0);
